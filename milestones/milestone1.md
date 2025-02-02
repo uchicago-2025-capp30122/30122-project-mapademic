@@ -9,9 +9,9 @@
 
 ## Abstract
 
-The global distribution of academic fields and the institutional mobility of researchers are key topics in scientometrics and computational social science. However, existing tools often only display researchers' current institutional information, failing to capture their cross-institutional and cross-regional career trajectories. Additionally, tools that visualize the global distribution of academic fields and research hotspots remain scarce.
+The global distribution of academic fields and the institutional mobility of researchers are critical areas of study in scientometrics and computational social science. While existing tools often focus on displaying researchers' current institutional affiliations, they frequently overlook the dynamic nature of academic careers, including cross-institutional and cross-regional transitions. Furthermore, there is a notable lack of tools that effectively visualize the global distribution of academic fields and emerging research hotspots.
 
-This project aims to develop a keyword-based application that leverages data from Google Scholar to analyze the global academic distribution of a research field. It dynamically visualizes research hotspots and academic mobility by integrating researchers' career trajectories and institutional transitions.
+This project aims to bridge these gaps by developing a keyword-based application that leverages data from **ScienceDirect's API**. The application will analyze the global academic distribution of specific research fields, dynamically visualizing research hotspots and academic mobility patterns. By integrating researchers' career trajectories and institutional transitions, the tool will provide a comprehensive view of how academic fields evolve geographically and how researchers move across institutions and regions over time.
 
 ## Preliminary Data Sources
 
