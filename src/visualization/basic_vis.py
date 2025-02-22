@@ -4,7 +4,7 @@ import plotly.express as px
 import streamlit as st
 import pathlib
 
-def generate_choropleth_map(geojson_file='cleaned_provinces_worldwide.json', csv_file='output_geo.csv'):
+def generate_choropleth_map():
     """
     Generates a choropleth map from the given GeoJSON and CSV files.
     
