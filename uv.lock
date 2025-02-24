@@ -7,18 +7,24 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "pandas" },
+<<<<<<< HEAD
     { name = "pathlib" },
     { name = "plotly-express" },
     { name = "requests" },
+=======
+>>>>>>> c39a49dbca1b4cc4028e942839ef46d3c8db1157
     { name = "streamlit" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "pandas", specifier = ">=2.2.3" },
+<<<<<<< HEAD
     { name = "pathlib", specifier = ">=1.0.1" },
     { name = "plotly-express", specifier = ">=0.4.1" },
     { name = "requests", specifier = ">=2.32.3" },
+=======
+>>>>>>> c39a49dbca1b4cc4028e942839ef46d3c8db1157
     { name = "streamlit", specifier = ">=1.42.2" },
 ]
 
@@ -312,6 +318,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "pathlib"
 version = "1.0.1"
 source = { registry = "https://pypi.org/simple" }
@@ -333,6 +340,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> c39a49dbca1b4cc4028e942839ef46d3c8db1157
 name = "pillow"
 version = "11.1.0"
 source = { registry = "https://pypi.org/simple" }
@@ -360,6 +369,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "plotly"
 version = "6.0.0"
 source = { registry = "https://pypi.org/simple" }
@@ -390,6 +400,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> c39a49dbca1b4cc4028e942839ef46d3c8db1157
 name = "protobuf"
 version = "5.29.3"
 source = { registry = "https://pypi.org/simple" }
@@ -512,7 +524,10 @@ wheels = [
 name = "rpds-py"
 version = "0.23.0"
 source = { registry = "https://pypi.org/simple" }
+<<<<<<< HEAD
 sdist = { url = "https://files.pythonhosted.org/packages/ca/0e/4c797078d00dbf1f63af96e4b3beffb67f71230f58442272b4b1962a61c8/rpds_py-0.23.0.tar.gz", hash = "sha256:ffac3b13182dc1bf648cde2982148dc9caf60f3eedec7ae639e05636389ebf5d", size = 26808 }
+=======
+>>>>>>> c39a49dbca1b4cc4028e942839ef46d3c8db1157
 wheels = [
     { url = "https://files.pythonhosted.org/packages/8a/37/c811fd70cb891dddb713896801e5062758caa5e3dc6764f92c74c9719c90/rpds_py-0.23.0-cp313-cp313-macosx_10_12_x86_64.whl", hash = "sha256:c46247ea1382758987417b9c47b05d32dc7f971cd2553e7b3088a76ad48c5a67", size = 363833 },
     { url = "https://files.pythonhosted.org/packages/5e/10/5b86bb62c0498353867d69519fa9a37162c42bf3417d40418535adae347d/rpds_py-0.23.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:fa93e2460b7791872a5dd355438b854a5d9ab317107380c2143d94a1ca5b10a7", size = 349485 },
@@ -543,6 +558,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "scipy"
 version = "1.15.2"
 source = { registry = "https://pypi.org/simple" }
@@ -572,6 +588,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> c39a49dbca1b4cc4028e942839ef46d3c8db1157
 name = "six"
 version = "1.17.0"
 source = { registry = "https://pypi.org/simple" }
@@ -590,6 +608,7 @@ wheels = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "statsmodels"
 version = "0.14.4"
 source = { registry = "https://pypi.org/simple" }
@@ -611,6 +630,8 @@ wheels = [
 ]
 
 [[package]]
+=======
+>>>>>>> c39a49dbca1b4cc4028e942839ef46d3c8db1157
 name = "streamlit"
 version = "1.42.2"
 source = { registry = "https://pypi.org/simple" }
