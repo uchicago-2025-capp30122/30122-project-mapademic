@@ -4,7 +4,11 @@
 **"Unfold the Map of Discovery" — A Global Visualization Platform for Academic Mobility and Knowledge Evolution**  
 
 ---
+23/2/2025: Version 0.1
 
+This version of the files output and delivery of the various modules is not yet fully unified; there are bugs in Streamlit run , still debugging.
+
+---
 ## Table of Contents
 - [Project Introduction](#project-introduction)
 - [Core Features](#core-features)
@@ -28,7 +32,7 @@
 - 🌍 **Visualize Global Research Distribution**:  
   Create interactive maps that display the worldwide spread of academic fields and emerging research hotspots.
 
-- 🏢 **Track Researcher Mobility**:  
+- 🏢 **Track Researcher Mobility** (Scheduled):  
   Illustrate scholars' career trajectories and cross-institutional transitions, highlighting the dynamic nature of academic careers.
 
 - 📊 **Reveal Evolutionary Trends**:  
