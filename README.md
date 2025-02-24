@@ -1,5 +1,5 @@
-# Mapademic · Academic Pulse 🌍🔭
-![logo](./doc/pics/mapademic-logo.pnglogo.png)
+# Mapademic · 脉谱学术 🌍🔭
+![Mapademic Logo](./doc/pics/mapademic-logo.png)
 
 **"Unfold the Map of Discovery" — A Global Visualization Platform for Academic Mobility and Knowledge Evolution**  
 
@@ -39,12 +39,12 @@ By leveraging keyword-driven data, Mapademic transforms static academic records 
 ---
 
 ## Core Features
-| Feature Module           | Description                                                                 |
-|--------------------------|-----------------------------------------------------------------------------|
-| **Academic Star Map**    | Global research hotspot heatmap based on geographic distribution, supporting drill-down at province levels. |
-| **Timeline Evolution** (scheduled)  | Slide along the timeline to observe the evolution of academic fields, dynamically rendering the diffusion and decline of hotspots. |
-| **Scholar Migration Paths** (scheduled) | Animated "star trails" display the career trajectories of top scholars, supporting comparison of institutional influence. |
-| **Personalized Analysis** | Enter keywords (e.g., "quantum computing") to generate a specialized academic pulse report for that field. |
+| Feature Module           | Description                                                                 | Visualization Example                   |
+|--------------------------|-----------------------------------------------------------------------------|--------------------------|
+| **Academic Distribution Map**    | Global research hotspot heatmap based on geographic distribution, supporting drill-down at province levels. |![Academic Distribution Map](./doc/pics/basic-map.png)|
+| **Timeline Evolution** (scheduled)  | Slide along the timeline to observe the evolution of academic fields, dynamically rendering the diffusion and decline of hotspots. |                      |
+| **Scholar Migration Paths** (scheduled) | Animated "star trails" display the career trajectories of top scholars, supporting comparison of institutional influence. |                      |
+| **Personalized Analysis** | Enter keywords (e.g., "quantum computing") to generate a specialized academic pulse report for that field. |                      |
 
 ---
 
@@ -70,15 +70,19 @@ uv sync
 
 ### Configuration
 1. **Obtain a ScienceDirect API Key**:  
-   - Visit the [Elsevier Developer Portal](https://dev.elsevier.com/) to register and apply for an API key.  
-2. **:
+   - Visit the [Elsevier Developer Portal](https://dev.elsevier.com/) to register and apply for an API key.
+2. **Set an Environment Variable**:
    ```bash
-   
+   #On Linux/MacOS:
+   export API_KEY="xxx"
+
+   #On Windows:
+   $env:API_KEY = "xxx"
    ```
 
 ### Running (scheduled)
 ```bash
-streamlit run src/app/streamlit.py
+uv run streamlit run src/app/streamlit.py
 ```
 Visit `http://localhost:8501` to begin your exploration!
 
@@ -119,7 +123,10 @@ Mapademic/
 │   └── test_app.py
 │
 ├── LICENSE
+├── .python-version
 ├── .gitignore
+├── uv.lock
+├── pyproject.toml
 └── README.md
 ```
 
