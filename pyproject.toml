@@ -6,11 +6,8 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "pandas>=2.2.3",
-<<<<<<< HEAD
     "pathlib>=1.0.1",
     "plotly-express>=0.4.1",
     "requests>=2.32.3",
-=======
->>>>>>> c39a49dbca1b4cc4028e942839ef46d3c8db1157
     "streamlit>=1.42.2",
 ]
