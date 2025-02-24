@@ -1,5 +1,8 @@
 # Mapademic · 脉谱学术 🌍🔭
-![Mapademic Logo](./doc/pics/mapademic-logo.png)
+
+<p align="center">
+<img src="./doc/pics/mapademic-logo.png" alt="Mapademic Logo" width="200"/>
+</p>
 
 **"Unfold the Map of Discovery" — A Global Visualization Platform for Academic Mobility and Knowledge Evolution**  
 
