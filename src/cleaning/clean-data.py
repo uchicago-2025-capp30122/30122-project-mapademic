@@ -3,8 +3,8 @@ import pandas as pd
 from collections import Counter
 from pathlib import Path
 from utils import remove, ignore, process_word_list
-#from wordcloud import WordCloud
-import matplotlib.pyplot as plt
+# from wordcloud import WordCloud
+# import matplotlib.pyplot as plt
 
 def building_city_df(output_filename: Path):
     output_filename = Path(output_filename)

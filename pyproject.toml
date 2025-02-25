@@ -1,4 +1,4 @@
-[project]
+[src]
 name = "30122-project-mapademic"
 version = "0.1.0"
 description = "Add your description here"
