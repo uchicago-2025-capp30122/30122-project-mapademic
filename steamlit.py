@@ -7,6 +7,7 @@ import pandas as pd
 
 # 导入 visualization 分支下的 basic_vis.py 中的函数
 from src.visualization.basic_vis import generate_basic_choropleth_map
+# from ..visualization.basic_vis import generate_basic_choropleth_map
 
 st.title("Mapedemic-Demo")
 st.write("Explore the geographic distribution of academic papers from Science Direct based on the keywords you enter.")
