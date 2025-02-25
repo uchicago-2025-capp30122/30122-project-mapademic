@@ -63,18 +63,6 @@ Since ISO codes are not required and ScienceDirect API provides **pre-standardiz
 - **Name Reconciliation**: Manual curation or lightweight scripts for critical mismatches.  
 - **Visualization**: Plotly Express with GeoJSON that aligns with API’s geographic naming conventions.  
 
-### Data Source #1: {Name}
-
-- Is the data coming from a webpage, bulk data, or an API?
-- Are there any challenges or remaining uncertainity about the data?
-- How many records (rows) does your data set have?
-- How many properties (columns) does your data set have?
-- Write a few sentences about your exploration of the data set. At this point you should have downloaded some of the data and explored it with an eye for things that might cause issues for your project.
-
-（由于技术原因，联网搜索暂不可用）
-
----
-
 ### **Data Source #1: ScienceDirect API**  
 - **Is the data coming from a webpage, bulk data, or an API?**  
   The data is retrieved via the **ScienceDirect Query API** (`https://dev.elsevier.com/documentation/ScienceDirectQueryAPI.wadl`), which programmatically returns metadata for academic articles, including titles, authors, and affiliations.  
