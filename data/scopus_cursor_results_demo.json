@@ -1,0 +1,3701 @@
+[
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85214211558"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85214211558?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85214211558&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85214211558&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85214211558",
+        "dc:identifier": "SCOPUS_ID:85214211558",
+        "eid": "2-s2.0-85214211558",
+        "dc:title": "Real-Time Intelligent Anomaly Detection and Prevention System",
+        "dc:creator": "G\u00fcrfidan R.",
+        "prism:publicationName": "Sakarya University Journal of Computer and Information Sciences",
+        "prism:eIssn": "26368129",
+        "prism:volume": "6",
+        "prism:issueIdentifier": "3",
+        "prism:pageRange": "160-171",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.35377/saucis...1296210",
+        "dc:description": "Real-time anomaly detection in network traffic is a method that detects unexpected and anomalous behavior by identifying normal behavior and statistical patterns in network traffic data. This method is used to detect potential attacks or other anomalous conditions in network traffic. Real-time anomaly detection uses different algorithms to detect abnormal activities in network traffic. These include statistical methods, machine learning, and deep learning techniques. By learning the normal behavior of network traffic, these methods can detect unexpected and anomalous situations. Attackers use various techniques to mimic normal patterns in network traffic, making it difficult to detect. Real-time anomaly detection allows network administrators to detect attacks faster and respond more effectively. Real-time anomaly detection can improve network performance by detecting abnormal conditions in network traffic. Abnormal traffic can overuse the network's resources and cause the network to slow down. Real-time anomaly detection detects abnormal traffic conditions, allowing network resources to be used more effectively. In this study, blockchain technology and machine learning algorithms are combined to propose a real-time prevention model that can detect anomalies in network traffic.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60193843",
+                "afid": "60193843",
+                "affilname": "Isparta University of Applied Sciences",
+                "affiliation-city": "Isparta",
+                "affiliation-country": "Turkey"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60000231",
+                "afid": "60000231",
+                "affilname": "S\u00fcleyman Demirel \u00dcniversitesi",
+                "affiliation-city": "Isparta",
+                "affiliation-country": "Turkey"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "3",
+            "$": "3"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57218893599",
+                "authid": "57218893599",
+                "orcid": "0000-0002-4899-2219",
+                "authname": "G\u00fcrfidan R.",
+                "surname": "G\u00fcrfidan",
+                "given-name": "Remzi",
+                "initials": "R.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60193843"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/59374420200",
+                "authid": "59374420200",
+                "orcid": "0000-0003-2407-1113",
+                "authname": "Atmaca \u015e.",
+                "surname": "Atmaca",
+                "given-name": "\u015eerafettin",
+                "initials": "\u015e.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60193843"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/59501898900",
+                "authid": "59501898900",
+                "orcid": "0000-0003-3074-6818",
+                "authname": "Yi\u011fit T.",
+                "surname": "Yi\u011fit",
+                "given-name": "Tuncay",
+                "initials": "T.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60000231"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "Anomaly behavior detection | blockchain | intrusion detection | machine learning",
+        "source-id": "21101268228",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                },
+                {
+                    "$": "repository"
+                },
+                {
+                    "$": "repositoryam"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                },
+                {
+                    "$": "Green"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85214197909"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85214197909?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85214197909&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85214197909&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85214197909",
+        "dc:identifier": "SCOPUS_ID:85214197909",
+        "eid": "2-s2.0-85214197909",
+        "dc:title": "Prediction of Cardiovascular Disease Based on Voting Ensemble Model and SHAP Analysis",
+        "dc:creator": "Akkur E.",
+        "prism:publicationName": "Sakarya University Journal of Computer and Information Sciences",
+        "prism:eIssn": "26368129",
+        "prism:volume": "6",
+        "prism:issueIdentifier": "3",
+        "prism:pageRange": "226-238",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.35377/saucis...1367326",
+        "dc:description": "Globally, cardiovascular diseases (CVD) account for a large number of deaths. Early detection plays a critical role in reducing the mortality rate. Early detection can be achieved by utilizing machine learning algorithms on existing data of patients. Ensemble learning methods are one of the techniques applied to improve the classification performance of ML algorithms. This study suggests a prediction model based on voting ensemble learning for the prediction of CVD. The hyperparameters of classification algorithms are optimized by using grid search. The results of each model are validated by using a 10-fold cross-validation schema. The IEEE Data port dataset is used for all experiments Furthermore, the SHAP technique is employed to interpret the proposed prediction model, including the risk factors that play a role in detecting this disease The proposed model for CVD prediction achieved an accuracy of 0.937 and an AUC-ROC score of 0.936. The model presented in this study has a high classification rate compared to previous similar studies.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/116474423",
+                "afid": "116474423",
+                "affilname": "Turkish Medicines and Medical Devices Agency",
+                "affiliation-city": "Cankaya",
+                "affiliation-country": "Turkey"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "1",
+            "$": "1"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55260189900",
+                "authid": "55260189900",
+                "orcid": "0000-0001-5573-5096",
+                "authname": "Akkur E.",
+                "surname": "Akkur",
+                "given-name": "Erkan",
+                "initials": "E.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "116474423"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "Cardiovascular disease | Machine learning | SHAP value | Voting ensemble model",
+        "source-id": "21101268228",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                },
+                {
+                    "$": "repository"
+                },
+                {
+                    "$": "repositoryam"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                },
+                {
+                    "$": "Green"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85202559418"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85202559418?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85202559418&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85202559418&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85202559418",
+        "dc:identifier": "SCOPUS_ID:85202559418",
+        "eid": "2-s2.0-85202559418",
+        "dc:title": "Social Media User Opinion Analysis Using Deep Learning and Machine Learning Methods: A Case Study on Airlines",
+        "dc:creator": "\u015eencan \u00d6.A.",
+        "prism:publicationName": "Turkish Journal of Mathematics and Computer Science",
+        "prism:eIssn": "21481830",
+        "prism:volume": "15",
+        "prism:issueIdentifier": "2",
+        "prism:pageRange": "449-463",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.47000/tjmcs.1368430",
+        "dc:description": "The rapid surge in social media usage has augmented the significance and value of data available on these platforms. As a result, analyzing community sentiment and opinions related to various topics and events using social media data has become increasingly crucial. However, the sheer volume of data produced on social media platforms surpasses human processing capabilities. Consequently, artificial intelligence-based models be-came frequently employed in social media analysis. In this study, deep learning (DL) and machine learning (ML) methods are applied to assess user opinions regarding airlines, and the effectiveness of these methods in social media analysis is comparatively discussed based on the performance results obtained. Due to the imbalanced na-ture of the dataset, synthetic data is produced using the Synthetic Minority Over-Sampling Technique (SMOTE) to enhance model performance. Before the SMOTE process, the dataset containing 14640 data points expanded to 27534 data points after the SMOTE process. The experimental results demonstrate that Support Vector Machines (SVM) achieved the highest performance among all methods with accuracy, precision, recall, and F-score values of 0.79 in the pre-SMOTE (imbalanced dataset). In contrast, Random Forest (RF) obtained the best performance among all methods, with accuracy, precision, recall, and F-score values of 0.88 in the post-SMOTE (balanced data set). Moreover, experimental findings demonstrate that SMOTE led to performance improvements in ML and DL models, ranging from a minimum of 3% to a maximum of 24% increase in F-Score metric.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60013849",
+                "afid": "60013849",
+                "affilname": "Gazi \u00dcniversitesi",
+                "affiliation-city": "Ankara",
+                "affiliation-country": "Turkey"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/59304646600",
+                "authid": "59304646600",
+                "orcid": "0000-0002-5519-0935",
+                "authname": "\u015eencan \u00d6.A.",
+                "surname": "\u015eencan",
+                "given-name": "\u00d6mer Ayberk",
+                "initials": "\u00d6.A.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60013849"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6507997764",
+                "authid": "6507997764",
+                "orcid": "0000-0002-6357-0073",
+                "authname": "Atacak \u0130.",
+                "surname": "Atacak",
+                "given-name": "\u0130smail",
+                "initials": "\u0130.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60013849"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "deep learning | machine learning | sentiment analysis | Social media",
+        "source-id": "21101244194",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                },
+                {
+                    "$": "repository"
+                },
+                {
+                    "$": "repositoryam"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                },
+                {
+                    "$": "Green"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85202547485"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85202547485?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85202547485&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85202547485&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85202547485",
+        "dc:identifier": "SCOPUS_ID:85202547485",
+        "eid": "2-s2.0-85202547485",
+        "dc:title": "Skin Lesion Classification Using Convolutional Neural Network and ABCRule",
+        "dc:creator": "Kestek E.",
+        "prism:publicationName": "Turkish Journal of Mathematics and Computer Science",
+        "prism:eIssn": "21481830",
+        "prism:volume": "15",
+        "prism:issueIdentifier": "2",
+        "prism:pageRange": "365-374",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.47000/tjmcs.1249300",
+        "dc:description": "Skin cancer, which can occur in any part of the human skin, is one of the common and serious types of cancer. Accurate diagnosis and segmentation of lesions are crucial to the early diagnosis. Computer-aided diagnosis make important contributions to help doctors in the diagnosis of cancer from skin images. The most important factor for such systems to reveal the accurate results is the correct feature extraction. In this study, a model for the classification of seven types of skin lesions is developed by combining the features of CNN-based feature extraction and the ABCD rule, which is widely used in the clinic. The model is evaluated on HAM10000 well-known dataset. The classification results obtained with different combinations of features and machine learning algorithms are compared. According to the results, the best classification accuracy is obtained with the Cosine Similarity Classifier with 96.4% when the features determined by CNN and the features in the ABCD rule are used together.",
+        "citedby-count": "1",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60101860",
+                "afid": "60101860",
+                "affilname": "Bartin \u00dcniversitesi",
+                "affiliation-city": "Bartin",
+                "affiliation-country": "Turkey"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60019963",
+                "afid": "60019963",
+                "affilname": "Y\u0131ld\u0131z Teknik \u00dcniversitesi",
+                "affiliation-city": "Istanbul",
+                "affiliation-country": "Turkey"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/127982182",
+                "afid": "127982182",
+                "affilname": "Health Institutes of T\u00fcrkiye",
+                "affiliation-city": "Istanbul",
+                "affiliation-country": "Turkey"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "3",
+            "$": "3"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/59304496000",
+                "authid": "59304496000",
+                "orcid": "0000-0002-9718-0815",
+                "authname": "Kestek E.",
+                "surname": "Kestek",
+                "given-name": "Ezgi",
+                "initials": "E.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60019963"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57200975365",
+                "authid": "57200975365",
+                "orcid": "0000-0001-7058-8362",
+                "authname": "Aktan M.E.",
+                "surname": "Aktan",
+                "given-name": "Mehmet Emin",
+                "initials": "M.E.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "127982182"
+                    },
+                    {
+                        "@_fa": "true",
+                        "$": "60101860"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/6603476687",
+                "authid": "6603476687",
+                "orcid": "0000-0003-1223-2725",
+                "authname": "Akdo\u011fan E.",
+                "surname": "Akdo\u011fan",
+                "given-name": "Erhan",
+                "initials": "E.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60019963"
+                    },
+                    {
+                        "@_fa": "true",
+                        "$": "127982182"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "ABCD rule | classification | convolutional neural network | deep learning | Skin cancer",
+        "source-id": "21101244194",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                },
+                {
+                    "$": "repository"
+                },
+                {
+                    "$": "repositoryam"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                },
+                {
+                    "$": "Green"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85188982318"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85188982318?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85188982318&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85188982318&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85188982318",
+        "dc:identifier": "SCOPUS_ID:85188982318",
+        "eid": "2-s2.0-85188982318",
+        "dc:title": "Artificial intelligence (AI) or augmented intelligence? How big data and AI are transforming healthcare: Challenges and opportunities",
+        "dc:creator": "Moodley K.",
+        "prism:publicationName": "South African medical journal = Suid-Afrikaanse tydskrif vir geneeskunde",
+        "prism:eIssn": "20785135",
+        "prism:volume": "114",
+        "prism:issueIdentifier": "1",
+        "prism:pageRange": "22-26",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.7196/SAMJ.2024.v114i1.1631",
+        "dc:description": "The sanctity of the doctor-patient relationship is deeply embedded in tradition - the Hippocratic oath, medical ethics, professional codes of conduct, and legislation - all of which are being disrupted by big data and 'artificial' intelligence (AI). The transition from paper-based records to electronic health records, wearables, mobile health applications and mobile phone data has created new opportunities to scale up data collection. Databases of unimaginable magnitude can be harnessed to develop algorithms for AI and to refine machine learning. Complex neural networks now lie at the core of ubiquitous AI systems in healthcare. A transformed healthcare environment enhanced by innovation, robotics, digital technology, and improved diagnostics and therapeutics is plagued by ethical, legal and social challenges. Global guidelines are emerging to ensure governance in AI, but many low- and middle-income countries have yet to develop context- specific frameworks. Legislation must be developed to frame liability and account for negligence due to robotics in the same way human healthcare providers are held accountable. The digital divide between high- and low-income settings is significant and has the potential to exacerbate health inequities globally.",
+        "citedby-count": "2",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60002522",
+                "afid": "60002522",
+                "affilname": "Stellenbosch University, Faculty of Medicine and Health Sciences",
+                "affiliation-city": "Cape Town",
+                "affiliation-country": "South Africa"
+            }
+        ],
+        "pubmed-id": "38525617",
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "1",
+            "$": "1"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/36948965400",
+                "authid": "36948965400",
+                "authname": "Moodley K.",
+                "surname": "Moodley",
+                "given-name": "K.",
+                "initials": "K.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60002522"
+                    }
+                ]
+            }
+        ],
+        "source-id": "18349",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85188072038"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85188072038?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85188072038&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85188072038&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85188072038",
+        "dc:identifier": "SCOPUS_ID:85188072038",
+        "eid": "2-s2.0-85188072038",
+        "dc:title": "PREDICTION OF TEMPERATURE FIELD DISTRIBUTION IN A GAS TURBINE USING A HIGHER ORDER NEURAL NETWORK",
+        "dc:creator": "Pa\u0159ez J.",
+        "prism:publicationName": "Acta Polytechnica",
+        "prism:eIssn": "18052363",
+        "prism:volume": "63",
+        "prism:issueIdentifier": "6",
+        "prism:pageRange": "430-438",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.14311/AP.2023.63.0430",
+        "dc:description": "This paper presents the prediction of temperature field distribution in a single annular section using an artificial neural network (ANN). This temperature distribution is non-uniform on the outer tube due to continuous natural convection and radiation caused by the homogeneous steady-state heating of the inner tube, which represents the hot gas flow path through the turbine. The outer tube represents the case of a gas turbine. This temperature is important for the electronic components attached to the engine or the overall engine deformation. The presented approach allows for a quick estimation of the temperature distribution without the need to perform time consuming computational fluid dynamics (CFD) simulations. This can greatly accelerate the design and development of gas turbines. A machine learning approach is applied to an extensive set of CFD simulations under different operating conditions and geometry setups.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60013323",
+                "afid": "60013323",
+                "affilname": "Czech Technical University in Prague",
+                "affiliation-city": "Prague",
+                "affiliation-country": "Czech Republic"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "3",
+            "$": "3"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57480005900",
+                "authid": "57480005900",
+                "authname": "Pa\u0159ez J.",
+                "surname": "Pa\u0159ez",
+                "given-name": "Jan",
+                "initials": "J.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60013323"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57225136353",
+                "authid": "57225136353",
+                "authname": "Kov\u00e1\u0159 P.",
+                "surname": "Kov\u00e1\u0159",
+                "given-name": "Patrik",
+                "initials": "P.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60013323"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57225145944",
+                "authid": "57225145944",
+                "authname": "Tater A.",
+                "surname": "Tater",
+                "given-name": "Adam",
+                "initials": "A.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60013323"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "artificial neural network | Gas turbine cooling | heat transfer | natural convection",
+        "source-id": "21100200605",
+        "fund-acr": "EC",
+        "fund-no": "CZ.02.1.01/0.0/0.0/16_019/0000826",
+        "fund-sponsor": "European Commission",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85186573353"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85186573353?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85186573353&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85186573353&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85186573353",
+        "dc:identifier": "SCOPUS_ID:85186573353",
+        "eid": "2-s2.0-85186573353",
+        "dc:title": "Hyperspectral prediction of pigment content in tomato leaves based on logistic-optimized sparrow search algorithm and back propagation neural network",
+        "dc:creator": "Zhao J.",
+        "prism:publicationName": "Journal of Agricultural Engineering",
+        "prism:issn": "19747071",
+        "prism:eIssn": "22396268",
+        "prism:volume": "54",
+        "prism:issueIdentifier": "4",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.4081/jae.2023.1528",
+        "dc:description": "Leaf pigment content can reflect the nutrient content of the cultivation medium indirectly. To rapidly and accurately predict the pigment content of tomato leaves, chlorophyll a, chlorophyll b, chlorophyll and carotenoid were extracted from the leaves of tomato seedlings cultured at different nitrogen concentrations. The visible/near-infrared hyperspectral imaging non-destructive measurement technology, 430-900 nm and 950-1650 nm, with total variables of 794, was used to obtain the reflection spectra of leaves. An improved strategy of the sparrow search algorithm (SSA) based on logistic chaotic mapping was proposed, and it optimized the back propagation neural network to predict the pigment content of leaves. Different pretreatment methods were used to effectively improve the prediction accuracy of the model. The results showed that when the nitrogen concentration in the nutrient solution was 302.84 mg\u00b7L-1, the pigment content of the leaves reached its maximum. Meanwhile, the inhibition effect of high concentrations was much stronger than that of low concentrations. To address the problem that the SSA is prone to premature convergence due to the reduction of population diversity at the end of the iteration, the initialization of the SSA population by logistic chaotic mapping improves the initial solution quality, convergence speed, and search capacity. The root mean squared error (RMSE), coefficient of determination (R2) and relative percent deviation (RPD) of chlorophyll a were 0.77, 0.77, and 2.08, respectively. The RMSE, R2 and RPD of chlorophyll b were 0.30, 0.66, and 1.71, respectively. The RMSE, R2 and RPD of chlorophyll were 0.88, 0.81, and 2.28, respectively. The RMSE, R2 and RPD of carotenoid were 0.14, 0.75, and 2.00, respectively. Hyperspectral imaging technology combined with machine learning algorithms can achieve rapid and accurate prediction of crop physiological information, providing data support for the precise management of fertilization in facility agriculture, which is conducive to improving the quality and output of tomatoes.",
+        "citedby-count": "3",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60087832",
+                "afid": "60087832",
+                "affilname": "Shanxi Agricultural University",
+                "affiliation-city": "Taiyuan",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "7",
+            "$": "7"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57951001200",
+                "authid": "57951001200",
+                "authname": "Zhao J.",
+                "surname": "Zhao",
+                "given-name": "Jiangui",
+                "initials": "J.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60087832"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58514766100",
+                "authid": "58514766100",
+                "authname": "Zhu T.",
+                "surname": "Zhu",
+                "given-name": "Tingyu",
+                "initials": "T.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60087832"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58514082400",
+                "authid": "58514082400",
+                "authname": "Qiu Z.",
+                "surname": "Qiu",
+                "given-name": "Zhichao",
+                "initials": "Z.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60087832"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58738613400",
+                "authid": "58738613400",
+                "authname": "Li T.",
+                "surname": "Li",
+                "given-name": "Tao",
+                "initials": "T.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60087832"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "5",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57288246600",
+                "authid": "57288246600",
+                "authname": "Wang G.",
+                "surname": "Wang",
+                "given-name": "Guoliang",
+                "initials": "G.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60087832"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "6",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57190751174",
+                "authid": "57190751174",
+                "authname": "Li Z.",
+                "surname": "Li",
+                "given-name": "Zhiwei",
+                "initials": "Z.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60087832"
+                    },
+                    {
+                        "@_fa": "true",
+                        "$": "60087832"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "7",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56746990100",
+                "authid": "56746990100",
+                "authname": "Du H.",
+                "surname": "Du",
+                "given-name": "Huiling",
+                "initials": "H.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60087832"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "hyperspectral imaging | logistic chaotic mapping | pigments content | sparrow search algorithm | tomato leaf",
+        "article-number": "1528",
+        "source-id": "21100320405",
+        "fund-no": "2021YFD1600301-4",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85186525348"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85186525348?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85186525348&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85186525348&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85186525348",
+        "dc:identifier": "SCOPUS_ID:85186525348",
+        "eid": "2-s2.0-85186525348",
+        "dc:title": "Departure Flight Delay Prediction and Visual Analysis Based on Machine Learning",
+        "dc:creator": "Qi X.",
+        "prism:publicationName": "SAE Technical Papers",
+        "prism:eIssn": "01487191",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.4271/2023-01-7091",
+        "dc:description": "Nowadays, the rapid growth of civil aviation transportation demand has led to more frequent flight delays. The major problem of flight delays is restricting the development of municipal airports. To further improve passenger satisfaction, and reduce economic losses caused by flight delays, environmental pollution and many other adverse consequences, three machine learning algorithms are constructed in current study: random forest (RF), gradient boosting decision tree (GBDT) and BP neural network (BPNN). The departure flight delay prediction model uses the actual data set of domestic flights in the United States to simulate and verify the performance and accuracy of the three models. This model combines the visual analysis system to show the density of departure flight delays between different airports. Firstly, the data set is reprocessed, and the main factors leading to flight delays are selected as sample attributes by principal component analysis. Secondly, the mean absolute error (MAE), mean absolute percentage error (MAPE) and root mean square error (RMSE) were selected as evaluation indexes to compare the prediction results of three different models. The final results show that the departure flight delay prediction model based on BPNN algorithm has faster solution speed and overcomes the over-fitting problem, and has higher prediction accuracy and robustness. Based on the algorithm developed in this paper, the airport system can be planned in a targeted manner, thereby alleviating the pressure of air transportation and reducing flight delays.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60005244",
+                "afid": "60005244",
+                "affilname": "Southeast University",
+                "affiliation-city": "Nanjing",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60001742",
+                "afid": "60001742",
+                "affilname": "Tibet University",
+                "affiliation-city": "Lhasa",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Conference Proceeding",
+        "subtype": "cp",
+        "subtypeDescription": "Conference Paper",
+        "author-count": {
+            "@limit": "100",
+            "@total": "3",
+            "$": "3"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58916426400",
+                "authid": "58916426400",
+                "authname": "Qi X.",
+                "surname": "Qi",
+                "given-name": "Xinyue",
+                "initials": "X.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60001742"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58915692500",
+                "authid": "58915692500",
+                "authname": "Qian P.",
+                "surname": "Qian",
+                "given-name": "Pinzheng",
+                "initials": "P.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60005244"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56002602400",
+                "authid": "56002602400",
+                "authname": "Zhang J.",
+                "surname": "Zhang",
+                "given-name": "Jian",
+                "initials": "J.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60005244"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "delay prediction | ITS | machine learning",
+        "source-id": "21100239259",
+        "fund-acr": "NKRDPC",
+        "fund-no": "XZ202201ZR0040G",
+        "fund-sponsor": "National Key Research and Development Program of China",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85186494403"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85186494403?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85186494403&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85186494403&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85186494403",
+        "dc:identifier": "SCOPUS_ID:85186494403",
+        "eid": "2-s2.0-85186494403",
+        "dc:title": "Machine Learning Based Flight State Prediction for Improving UAV Resistance to Uncertainty",
+        "dc:creator": "Mu J.",
+        "prism:publicationName": "SAE Technical Papers",
+        "prism:eIssn": "01487191",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.4271/2023-01-7114",
+        "dc:description": "Unmanned Aerial Vehicles (UAVs) encounter various uncertainties, including unfamiliar environments, signal delays, limited control precision, and other disturbances during task execution. Such factors can significantly compromise flight safety in complex scenarios. In this paper, to enhance the safety of UAVs amidst these uncertainties, a control accuracy prediction model based on ensemble learning abnormal state detection is designed. By analyzing the historical state data, the trained model can be used to judge the current state and obtain the command tracking control accuracy of the UAV at that instant. Ensemble learning offers superior classification capabilities compared to weak learners, particularly for anomaly detection in flight data. The learning efficacy of support vector machine, random forest classifier is compared and achieving a peak accuracy of 95% for the prediction results using random forest combined with adaboost model. Subsequently, a trajectory planning method leveraging the DWA(Dynamic Window approach) algorithm was designed to mitigate the safety risks associated with uncertain control command tracking. By employing the obtained model of nominal command execution results of UAVs subjected to uncertainty, and by adjusting the original assessment criteria to a probability-weighted comprehensive optimal metric, optimal control commands that factor in uncertainty are derived. The simulation results affirm the effectiveness of the designed method.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60098513",
+                "afid": "60098513",
+                "affilname": "Hangzhou City University",
+                "affiliation-city": "Hangzhou",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60019674",
+                "afid": "60019674",
+                "affilname": "Boston University",
+                "affiliation-city": "Boston",
+                "affiliation-country": "United States"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60013789",
+                "afid": "60013789",
+                "affilname": "Beihang University",
+                "affiliation-city": "Beijing",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/130979583",
+                "afid": "130979583",
+                "affilname": "AEROFUGIA Co. Ltd.",
+                "affiliation-city": null,
+                "affiliation-country": null
+            }
+        ],
+        "prism:aggregationType": "Conference Proceeding",
+        "subtype": "cp",
+        "subtypeDescription": "Conference Paper",
+        "author-count": {
+            "@limit": "100",
+            "@total": "4",
+            "$": "4"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58916387200",
+                "authid": "58916387200",
+                "authname": "Mu J.",
+                "surname": "Mu",
+                "given-name": "Jianfeng",
+                "initials": "J.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "130979583"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58694578500",
+                "authid": "58694578500",
+                "authname": "Fei Y.",
+                "surname": "Fei",
+                "given-name": "Yuheng",
+                "initials": "Y.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60013789"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58660158600",
+                "authid": "58660158600",
+                "authname": "Wang F.",
+                "surname": "Wang",
+                "given-name": "Fang",
+                "initials": "F.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60098513"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58916536800",
+                "authid": "58916536800",
+                "authname": "Zeng X.",
+                "surname": "Zeng",
+                "given-name": "Xinyue",
+                "initials": "X.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60019674"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "abnormal state detection | adaboost | Dynamic Window approach | trajectory planning | UAVs",
+        "source-id": "21100239259",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85186493003"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85186493003?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85186493003&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85186493003&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85186493003",
+        "dc:identifier": "SCOPUS_ID:85186493003",
+        "eid": "2-s2.0-85186493003",
+        "dc:title": "Aeroengine Gas Path Parameter Trend Prediction Based on LSTM",
+        "dc:creator": "Liu Y.",
+        "prism:publicationName": "SAE Technical Papers",
+        "prism:eIssn": "01487191",
+        "prism:pageRange": null,
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.4271/2023-01-7087",
+        "dc:description": "Accurately predicting the trend of aero-engine gas path parameters is crucial for ensuring safe flight and enabling condition-based maintenance. However, the demanding and uncertain service environment introduces challenges in dealing with the noisy and non-stationary data collected by engine gas path sensors. Traditional time series models struggle to accurately predicts parameter trends, resulting in insufficient fitting and prediction accuracy. In this paper, we address these challenges by leveraging the characteristics of engine post-flight data and introducing Long Short-Term Memory (LSTM), a type of artificial neural network in deep learning. We construct both single-feature input and multi-feature input LSTM prediction models for six key indicators of engine gas path performance. We analyze the models' capabilities for single-step and multistep predictions. To evaluate the effectiveness of our approach, we compare the LSTM model with the traditional Autoregressive Moving Average (ARMA) model and support vector regression (SVR) method. The results demonstrate that the LSTM model outperforms the traditional ARMA and SVR models in terms of prediction accuracy and stability. This indicates that utilizing LSTM is an effective approach for improving the accuracy of engine gas path parameter prediction. By accurately predicting these parameters, we can enhance flight safety and enable more efficient condition based maintenance.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60025278",
+                "afid": "60025278",
+                "affilname": "Tsinghua University",
+                "affiliation-city": "Beijing",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60018205",
+                "afid": "60018205",
+                "affilname": "Xiamen University",
+                "affiliation-city": "Xiamen",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Conference Proceeding",
+        "subtype": "cp",
+        "subtypeDescription": "Conference Paper",
+        "author-count": {
+            "@limit": "100",
+            "@total": "6",
+            "$": "6"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57560215600",
+                "authid": "57560215600",
+                "authname": "Liu Y.",
+                "surname": "Liu",
+                "given-name": "Yuan",
+                "initials": "Y.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60025278"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57226333321",
+                "authid": "57226333321",
+                "authname": "Chen X.",
+                "surname": "Chen",
+                "given-name": "Xiaonan",
+                "initials": "X.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60018205"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57330847800",
+                "authid": "57330847800",
+                "authname": "Lin Z.",
+                "surname": "Lin",
+                "given-name": "Zhou",
+                "initials": "Z.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60018205"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/8653161200",
+                "authid": "8653161200",
+                "authname": "Wang Y.S.",
+                "surname": "Wang",
+                "given-name": "Yi Shou",
+                "initials": "Y.S.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60018205"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "5",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55722099600",
+                "authid": "55722099600",
+                "authname": "Zhou Q.",
+                "surname": "Zhou",
+                "given-name": "Qifeng",
+                "initials": "Q.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60018205"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "6",
+                "author-url": "https://api.elsevier.com/content/author/author_id/13611971500",
+                "authid": "13611971500",
+                "authname": "Qing X.",
+                "surname": "Qing",
+                "given-name": "Xinlin",
+                "initials": "X.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60018205"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "Aircraft engine | ARMA model | Deep learning | LSTM networks | Parameter prediction",
+        "source-id": "21100239259",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85185521670"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85185521670?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85185521670&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85185521670&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85185521670",
+        "dc:identifier": "SCOPUS_ID:85185521670",
+        "eid": "2-s2.0-85185521670",
+        "dc:title": "Yield Prediction and Recommendation of Crops in India\u2019s Northeastern Region Using Machine Learning Regression Models",
+        "dc:creator": "Sharma N.",
+        "prism:publicationName": "Yuzuncu Yil University Journal of Agricultural Sciences",
+        "prism:issn": "13087576",
+        "prism:eIssn": "13087584",
+        "prism:volume": "33",
+        "prism:issueIdentifier": "4",
+        "prism:pageRange": "700-708",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.29133/YYUTBD.1321518",
+        "dc:description": "Agriculture has a big impact on society because it is essential for a large percentage of our food. The issue of hunger is getting worse because of a growing population in many nations, resulting in food shortages or insufficiencies. To meet the world's food needs, it is ever more crucial to provide crop protection, conduct detailed land surveys, and predict crop yields. To calculate the estimated number of crops that are produced in a year, this research focuses on the use of machine learning techniques to predict crop yield and recommend crops with the highest yield and profitability in the Northeast region of India. The crop market's fluctuations in prices may be controlled with the aid of this information. To estimate agricultural crop yields, this study accurately evaluates a range of machine learning regression models, such as Linear Regression, Decision Tree, Random Forest, Gradient Boosting, XGBoost (eXtreme Gradient Boosting), and AdaBoost. With a 0.98 R2 score for the XGBoost and 0.96 for the Random Forest, they performed better than the other models. By evaluating crop yields along with their corresponding market prices and costs, we have determined their profitability. As a result, we have provided recommendations for the top five profitable crops in India\u2019s Northeastern region.",
+        "citedby-count": "3",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60282099",
+                "afid": "60282099",
+                "affilname": "Assam down town University",
+                "affiliation-city": "Guwahati",
+                "affiliation-country": "India"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57218951750",
+                "authid": "57218951750",
+                "orcid": "0000-0002-4315-8225",
+                "authname": "Sharma N.",
+                "surname": "Sharma",
+                "given-name": "Nisha",
+                "initials": "N.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60282099"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56249599400",
+                "authid": "56249599400",
+                "orcid": "0000-0001-9560-0751",
+                "authname": "Dutta M.",
+                "surname": "Dutta",
+                "given-name": "Mala",
+                "initials": "M.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60282099"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "Crop yield prediction | Ensemble Learning | Machine Learning | Recommender system | Regression",
+        "source-id": "21100794584",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                },
+                {
+                    "$": "repository"
+                },
+                {
+                    "$": "repositoryam"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                },
+                {
+                    "$": "Green"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184818271"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184818271?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184818271&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85184818271&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85184818271",
+        "dc:identifier": "SCOPUS_ID:85184818271",
+        "eid": "2-s2.0-85184818271",
+        "dc:title": "A review of computer-aided classification prediction of Parkinson\u2019s disease based on machine learning",
+        "dc:creator": "Wen J.Y.",
+        "prism:publicationName": "Journal of Graphics",
+        "prism:issn": "2095302X",
+        "prism:volume": "44",
+        "prism:issueIdentifier": "6",
+        "prism:pageRange": "1065-1079",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.11996/JG.j.2095-302X.2023061065",
+        "dc:description": "Parkinson\u2019s disease (PD) is among the top ten most challenging diseases according to the World Health Organization, placing a substantial burden on patients and their families. Currently, treatment can only offer partial relief from clinical symptoms and cannot achieve a complete cure. Therefore, early auxiliary diagnosis holds significant practical significance for PD patients. This research conducted a comprehensive analysis of computer-aided diagnosis techniques for PD classification prediction both domestically and internationally. It also summarized research endeavors utilizing machine learning models to assist in the early detection of PD, aiming to guide early intervention and prevent disease progression. Common prediction methods involved data preprocessing, feature selection, and classification. Traditional machine learning methods might not be as effective when dealing with large datasets or high data complexity, making deep learning or improved machine learning methods more promising for improving prediction accuracy. Furthermore, there has been a growing focus on diagnosing brain structural images of PD patients with cognitive impairment. Research on cognitive dysfunction followed a progressive trajectory, emphasizing the need for early screening and timely intervention. Future research should further explore computer-assisted diagnostic techniques based on machine learning methods and apply them to the early classification prediction of PD, aiming to enhance the accuracy of medical diagnosis and elevate the quality of diagnosis and treatment.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60025345",
+                "afid": "60025345",
+                "affilname": "Guangzhou University",
+                "affiliation-city": "Guangzhou",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57451822000",
+                "authid": "57451822000",
+                "authname": "Wen J.Y.",
+                "surname": "Wen",
+                "given-name": "Jin Yu",
+                "initials": "J.Y.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60025345"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56266034300",
+                "authid": "56266034300",
+                "authname": "Fang M.E.",
+                "surname": "Fang",
+                "given-name": "Mei E.",
+                "initials": "M.E.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60025345"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "computer-aided diagnosis | machine learning | Parkinson\u2019s disease | prediction of disease | progress prediction",
+        "source-id": "21101120334",
+        "fund-acr": "NSFC",
+        "fund-no": "62072126",
+        "fund-sponsor": "National Natural Science Foundation of China",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184441312"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184441312?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184441312&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85184441312&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85184441312",
+        "dc:identifier": "SCOPUS_ID:85184441312",
+        "eid": "2-s2.0-85184441312",
+        "dc:title": "A STEP TOWARDS IMO GREENHOUSE GAS REDUCTION GOAL: EFFECTIVENESS OF MACHINE LEARNING BASED CO<inf>2</inf> EMISSION PREDICTION MODEL",
+        "dc:creator": "Monisha I.I.",
+        "prism:publicationName": "Journal of Naval Architecture and Marine Engineering",
+        "prism:issn": "18138535",
+        "prism:eIssn": "20708998",
+        "prism:volume": "20",
+        "prism:issueIdentifier": "3",
+        "prism:pageRange": "1-8",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.3329/jname.v20i3.70870",
+        "dc:description": "Ships are the world\u2019s most economical means of freight transportation, and day by day, it is expanding quickly. The increase in ship transportation activities has resulted in a significant concern about CO2 emissions. International Maritime Organization has agreed to set a goal of reducing the maritime sector\u2019s total gas emissions by at least 50% by 2050. In this regard, a CO2 emission prediction model followed by an emission inventory can play a vital role in decision-making to optimize the ship\u2019s speed, draft, trim, and other influencing parameters under Ship Energy Efficiency Management Plan to decrease carbon emissions during operation. Machine learning, a branch of the data science approach, can be utilized to create effective emission-prediction models. In this research, two machine-learning models have been developed using actual voyage data collected from the noon reports of ships in Bangladesh. The models have been trained with the ship\u2019s speed, engine rpm, wind force, and sea condition during voyages. The models\u2019 performances have been assessed employing the Coefficient of Determination (R2) and Root Mean Square Error (RMSE). The prediction accuracies for the K Nearest Neighbor Regression model and the Light Gradient Boosted Machine Regression model are 84% and 81%, with RMSE of 5.12 and 5.53, respectively.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60021158",
+                "afid": "60021158",
+                "affilname": "Bangladesh University of Engineering and Technology",
+                "affiliation-city": "Dhaka",
+                "affiliation-country": "Bangladesh"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "3",
+            "$": "3"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58870385800",
+                "authid": "58870385800",
+                "authname": "Monisha I.I.",
+                "surname": "Monisha",
+                "given-name": "I. I.",
+                "initials": "I.I.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60021158"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57449360900",
+                "authid": "57449360900",
+                "authname": "Mehtaj N.",
+                "surname": "Mehtaj",
+                "given-name": "N.",
+                "initials": "N.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60021158"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/15057614200",
+                "authid": "15057614200",
+                "authname": "Awal Z.I.",
+                "surname": "Awal",
+                "given-name": "Z. I.",
+                "initials": "Z.I.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60021158"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "CO  emission prediction 2 | Machine learning | maritime transportation | ship\u2019s energy efficiency",
+        "source-id": "21100244649",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184431566"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184431566?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184431566&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85184431566&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85184431566",
+        "dc:identifier": "SCOPUS_ID:85184431566",
+        "eid": "2-s2.0-85184431566",
+        "dc:title": "WSN-IoT Forecast: Wireless Sensor Network Throughput Prediction Framework in Multimedia Internet of Things",
+        "dc:creator": "Eliviani R.",
+        "prism:publicationName": "Journal of ICT Research and Applications",
+        "prism:issn": "23375787",
+        "prism:eIssn": "23385499",
+        "prism:volume": "17",
+        "prism:issueIdentifier": "3",
+        "prism:pageRange": "336-355",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.5614/itbj.ict.res.appl.2023.17.3.4",
+        "dc:description": "Accurate throughput predictions can significantly improve the quality of experience (QoE), where QoE denotes a network\u2019s capacity to provide satisfactory service. By increasing the results of good throughput predictions, the best strategy can be planned for managing data transmission networks with the aim of better and faster data transmission, thereby increasing QoE. Consequently, this paper investigates how to predict the throughput of wireless sensor networks utilizing multimedia data. First, we conducted a comparative analysis of relevant prior research on the topic of throughput prediction in Multimedia Internet of Things (Multimedia IoT). We developed a throughput prediction framework for wireless sensor networks based on what we learned from these studies using machine learning. The Throughput Prediction Framework identifies historical throughput data and employs these traits to predict throughput. In the final phase, multiple camera nodes and local servers are utilized to test a framework for throughput prediction. Our analysis demonstrates that WSN-IoT predictions are quite precise. For a 1-second time breakdown, the average absolute percentage error for all investigated scenarios ranges from 1 to 8 percent.",
+        "citedby-count": "1",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60069382",
+                "afid": "60069382",
+                "affilname": "Institut Teknologi Bandung",
+                "affiliation-city": "Bandung",
+                "affiliation-country": "Indonesia"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57980205100",
+                "authid": "57980205100",
+                "authname": "Eliviani R.",
+                "surname": "Eliviani",
+                "given-name": "Rosa",
+                "initials": "R.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60069382"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/25824690200",
+                "authid": "25824690200",
+                "authname": "Bandung Y.",
+                "surname": "Bandung",
+                "given-name": "Yoanes",
+                "initials": "Y.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60069382"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "framework | Internet of Things (IoT) | multimedia | throughput prediction | wireless sensor network",
+        "source-id": "21100268428",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184415798"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184415798?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184415798&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85184415798&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85184415798",
+        "dc:identifier": "SCOPUS_ID:85184415798",
+        "eid": "2-s2.0-85184415798",
+        "dc:title": "An Efficient Intrusion Detection System to Combat Cyber Threats using a Deep Neural Network Model",
+        "dc:creator": "Ramaiah M.",
+        "prism:publicationName": "Journal of ICT Research and Applications",
+        "prism:issn": "23375787",
+        "prism:eIssn": "23385499",
+        "prism:volume": "17",
+        "prism:issueIdentifier": "3",
+        "prism:pageRange": "292-315",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.5614/itbj.ict.res.appl.2023.17.3.2",
+        "dc:description": "The proliferation of Internet of Things (IoT) solutions has led to a significant increase in cyber-attacks targeting IoT networks. Securing networks and especially wireless IoT networks against these attacks has become a crucial but challenging task for organizations. Therefore, ensuring the security of wireless IoT networks is of the utmost importance in today\u2019s world. Among various solutions for detecting intruders, there is a growing demand for more effective techniques. This paper introduces a network intrusion detection system (NIDS) based on a deep neural network that utilizes network data features selected through the bagging and boosting methods. The presented NIDS implements both binary and multiclass attack detection models and was evaluated using the KDDCUP 99 and CICDDoS datasets. The experimental results demonstrated that the presented NIDS achieved an impressive accuracy rate of 99.4% while using a minimal number of features. This high level of accuracy makes the presented IDS a valuable tool.",
+        "citedby-count": "2",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60010618",
+                "afid": "60010618",
+                "affilname": "Vellore Institute of Technology",
+                "affiliation-city": "Vellore",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60008920",
+                "afid": "60008920",
+                "affilname": "Taibah University",
+                "affiliation-city": "Medina",
+                "affiliation-country": "Saudi Arabia"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/36449422900",
+                "authid": "36449422900",
+                "authname": "Ramaiah M.",
+                "surname": "Ramaiah",
+                "given-name": "Mangayarkarasi",
+                "initials": "M.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60010618"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57224603000",
+                "authid": "57224603000",
+                "authname": "Vanmathi C.",
+                "surname": "Vanmathi",
+                "given-name": "C.",
+                "initials": "C.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60010618"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57208017886",
+                "authid": "57208017886",
+                "authname": "Khan M.Z.",
+                "surname": "Khan",
+                "given-name": "Mohammad Zubair",
+                "initials": "M.Z.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60008920"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57190578779",
+                "authid": "57190578779",
+                "authname": "Vanitha M.",
+                "surname": "Vanitha",
+                "given-name": "M.",
+                "initials": "M.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60010618"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "5",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57923779700",
+                "authid": "57923779700",
+                "authname": "Deepa M.",
+                "surname": "Deepa",
+                "given-name": "M.",
+                "initials": "M.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60010618"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "artificial deep neural network | correlation tool | DDoS | machine learning | network intrusion detection system | RF-score | XGBoost-score",
+        "source-id": "21100268428",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184068182"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85184068182?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85184068182&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85184068182&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85184068182",
+        "dc:identifier": "SCOPUS_ID:85184068182",
+        "eid": "2-s2.0-85184068182",
+        "dc:title": "Prediction of hold-up in pulsed disc-doughnut column based on least absolute shrinkage and selection operator regression",
+        "dc:creator": "Jin L.",
+        "prism:publicationName": "Harbin Gongcheng Daxue Xuebao/Journal of Harbin Engineering University",
+        "prism:issn": "10067043",
+        "prism:volume": "44",
+        "prism:issueIdentifier": "12",
+        "prism:pageRange": "2151-2156",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.11990/jheu.202309025",
+        "dc:description": "To obtain a predictive equation that provides high applicability and analytical convenience, based on the least absolute shrinkage and selection operator (LASSO). Investigate the effects of pulse intensity, disperse phase velocity, and continuous phase velocity on the hold-up in a pulsed disc-doughnut column with a kerosene-water system using the volume replacement method. Subsequently, several sets of empirical equations from related literature were compared and analyzed with new multivariate quadratic prediction equations fitted using the LASSO method. The results revealed that the prediction equations fitted using the LASSO method fit the experimental data extremely well, and the effect of the parameter on the hold-up in the specific operating range could be quantitatively analyzed by calculating the partial derivatives of the equation for each of the three operating parameters. The results also adapted very well to other literature data, and the average relative deviation of the fitted results from the experimental data was within 20%. This demonstrates that LASSO is a simple and intuitive way to analyze the effect of each parameter on the hold-up.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60026626",
+                "afid": "60026626",
+                "affilname": "China Institute of Atomic Energy",
+                "affiliation-city": "Beijing",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60003353",
+                "afid": "60003353",
+                "affilname": "Harbin Engineering University",
+                "affiliation-city": "Harbin",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "6",
+            "$": "6"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58023974800",
+                "authid": "58023974800",
+                "authname": "Jin L.",
+                "surname": "Jin",
+                "given-name": "Lei",
+                "initials": "L.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60003353"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57191031766",
+                "authid": "57191031766",
+                "authname": "Gao Y.",
+                "surname": "Gao",
+                "given-name": "Yang",
+                "initials": "Y.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60003353"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55214927600",
+                "authid": "55214927600",
+                "authname": "He H.",
+                "surname": "He",
+                "given-name": "Hui",
+                "initials": "H.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60003353"
+                    },
+                    {
+                        "@_fa": "true",
+                        "$": "60026626"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58863403300",
+                "authid": "58863403300",
+                "authname": "Xie B.",
+                "surname": "Xie",
+                "given-name": "Bingjunlong",
+                "initials": "B.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60003353"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "5",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57191656719",
+                "authid": "57191656719",
+                "authname": "Zhou Y.",
+                "surname": "Zhou",
+                "given-name": "Yu",
+                "initials": "Y.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60003353"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "6",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56202830800",
+                "authid": "56202830800",
+                "authname": "Zhang M.",
+                "surname": "Zhang",
+                "given-name": "Meng",
+                "initials": "M.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60003353"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "holdup | hydraulic properties | kerosene-water system | liquid-liquid system | machine learning | pulsed disc-doughnut column | the least absolute shrinkage and selection operator | volume replacement method",
+        "source-id": "29706",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85183968459"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85183968459?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85183968459&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85183968459&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85183968459",
+        "dc:identifier": "SCOPUS_ID:85183968459",
+        "eid": "2-s2.0-85183968459",
+        "dc:title": "Transformer Fault Diagnosis Method Based on Variation Sparrow Search Algorithm and Improved SMOTE Under Unbalanced Samples",
+        "dc:creator": "Zhu L.",
+        "prism:publicationName": "Gaodianya Jishu/High Voltage Engineering",
+        "prism:issn": "10036520",
+        "prism:volume": "49",
+        "prism:issueIdentifier": "12",
+        "prism:pageRange": "4993-5001",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.13336/j.1003-6520.hve.20221528",
+        "dc:description": "To solve the problem of poor classification results caused by the serious homogeneity of the sparrow search algorithm and the unbalance of the transformer fault sample, a method of transformer fault diagnosis is proposed. It is based on a variation sparrow search algorithm-support vector machine(VSSA-SVM) and improved synthetic minority over-sampling technique (ISMOTE). Firstly, the dataset is denoised by the Tomek Link, and the center offset weight (COW) is introduced to improve the SMOTE for minority class sample synthesis of the unbalanced dataset, which can obtain the balancing processed transformer fault dataset. Then, a transformer fault diagnosis model based on the variation of the VSSA-SVM is proposed using the idea of mutation. Finally, the dissoived gas anaiysis (DGA) data of 413 cases of the collecting oil-immersed transformers are diagnosed using SSA-SVM, PSO-SVM and VSSA-SVM models, and the diagnosis accuracy results are 81.45%, 88.71% and 96.77% respectively. Additionally, compared to the SMOTE-NND, SVM SMOTE, Borderline-SMOTE, SMOTE and original dataset methods, the diagnosis accuracy of the ISMOTE model is improved by 3.22%, 4.03%, 6.45%, 7.52% and 11.29% respectively. The results show that the proposed method in this paper can be adopted to accurately judge the transformer fault state, and to effectively solve the problem of unbalanced fault data caused by low classification accuracy, which has a certain engineering practical value.",
+        "citedby-count": "8",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60108756",
+                "afid": "60108756",
+                "affilname": "Hubei University of Technology",
+                "affiliation-city": "Wuhan",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57194384627",
+                "authid": "57194384627",
+                "authname": "Zhu L.",
+                "surname": "Zhu",
+                "given-name": "Li",
+                "initials": "L.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60108756"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58862150000",
+                "authid": "58862150000",
+                "authname": "Wang X.",
+                "surname": "Wang",
+                "given-name": "Xiaohao",
+                "initials": "X.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60108756"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/59068246000",
+                "authid": "59068246000",
+                "authname": "Li H.",
+                "surname": "Li",
+                "given-name": "Hao",
+                "initials": "H.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60108756"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58246547000",
+                "authid": "58246547000",
+                "authname": "Jiang C.",
+                "surname": "Jiang",
+                "given-name": "Chenglong",
+                "initials": "C.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60108756"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "5",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58862645000",
+                "authid": "58862645000",
+                "authname": "Cao M.",
+                "surname": "Cao",
+                "given-name": "Minghai",
+                "initials": "M.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60108756"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "fault diagnosis | improved synthetic minority oversampling | transformer | unbalanced samples | variation sparrow search algorithm",
+        "source-id": "83986",
+        "fund-no": "HBSKF202124",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85183320089"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85183320089?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85183320089&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85183320089&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85183320089",
+        "dc:identifier": "SCOPUS_ID:85183320089",
+        "eid": "2-s2.0-85183320089",
+        "dc:title": "Resolving the Human-subjects Status of Machine learning\u2019s Crowdworkers",
+        "dc:creator": "Kaushik D.",
+        "prism:publicationName": "Queue",
+        "prism:issn": "15427730",
+        "prism:eIssn": "15427749",
+        "prism:volume": "21",
+        "prism:issueIdentifier": "6",
+        "prism:pageRange": "101-127",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.1145/3639452",
+        "dc:description": "As toward datasets, crowdsourcing (naturalthe focus settingslanguage researchers of MLplatforms.characterized (machineprocessing) have 13,25learning) become Just taskby massivefor of reliant hasthe passage-shiftedNLP on based QA (question answering), more than 15 new datasets containing at least 50k annotations have been introduced since 2016. Prior to 2016, available QA datasets contained orders of magnitude fewer examples.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60027950",
+                "afid": "60027950",
+                "affilname": "Carnegie Mellon University",
+                "affiliation-city": "Pittsburgh",
+                "affiliation-country": "United States"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/130773402",
+                "afid": "130773402",
+                "affilname": "U.S.-China strategic",
+                "affiliation-city": null,
+                "affiliation-country": "United States"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "3",
+            "$": "3"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57201685485",
+                "authid": "57201685485",
+                "authname": "Kaushik D.",
+                "surname": "Kaushik",
+                "given-name": "Divyansh",
+                "initials": "D.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "130773402"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56358302800",
+                "authid": "56358302800",
+                "authname": "Lipton Z.C.",
+                "surname": "Lipton",
+                "given-name": "Zachary C.",
+                "initials": "Z.C.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60027950"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/7005248959",
+                "authid": "7005248959",
+                "authname": "London A.J.",
+                "surname": "London",
+                "given-name": "Alex John",
+                "initials": "A.J.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60027950"
+                    }
+                ]
+            }
+        ],
+        "source-id": "19700186817",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfree2read"
+                },
+                {
+                    "$": "repository"
+                },
+                {
+                    "$": "repositoryam"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Bronze"
+                },
+                {
+                    "$": "Green"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182914408"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182914408?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85182914408&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85182914408&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85182914408",
+        "dc:identifier": "SCOPUS_ID:85182914408",
+        "eid": "2-s2.0-85182914408",
+        "dc:title": "ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING-DRIVEN DECISION-MAKING IN SPINAL DISEASE TREATMENT",
+        "dc:creator": "Sundaramoorthy K.",
+        "prism:publicationName": "Journal of Theoretical and Applied Information Technology",
+        "prism:issn": "19928645",
+        "prism:eIssn": "18173195",
+        "prism:volume": "101",
+        "prism:issueIdentifier": "24",
+        "prism:pageRange": "8388-8406",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "dc:description": "Aside from people with significant neurological abnormalities, it's unclear whether conservative or surgical therapy of spinal disorders is better for each patient. This research looks into the use of Artificial Intelligence (AI) and Machine Learning (ML) in the therapy of spinal diseases decision-making. A supervised ML was trained and tested using the datasets of 70 patients with goal of accurately predicting the Oswestry Disability Index (ODI) 5 months following operation or the beginning of conservative therapy. In addition, using tenfold cross-validation, created an approach that forecasts the ODI of 5 arbitrarily chosen testing patients. The use of AI in this study also enabled for a comparison of the genuine patient data after 5 months with different treatment forecast, revealing variances of up to 19.6%. In the supervised version used here, ML can detect patients who'd receive from conservative treatment earlier on and, on the other hand, avoid unnecessary delays and painful for patients who'd gain from surgical treatment. Furthermore, despite tiny diagnostic categories, this strategy can be applied in various other fields of medical as an excellent instrument for decision-making when deciding between competing treatments alternatives.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60251083",
+                "afid": "60251083",
+                "affilname": "Panipat Institute of Engineering &amp; Technology",
+                "affiliation-city": "Panipat",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60114876",
+                "afid": "60114876",
+                "affilname": "Jerusalem College of Engineering, Chennai",
+                "affiliation-city": "Chennai",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60114366",
+                "afid": "60114366",
+                "affilname": "Pragati Engineering College",
+                "affiliation-city": "Kakinada",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60000237",
+                "afid": "60000237",
+                "affilname": "University of Bahrain",
+                "affiliation-city": "Zallaq",
+                "affiliation-country": "Bahrain"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "4",
+            "$": "4"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57202678279",
+                "authid": "57202678279",
+                "authname": "Sundaramoorthy K.",
+                "surname": "Sundaramoorthy",
+                "given-name": "K.",
+                "initials": "K.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60114876"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/55851947048",
+                "authid": "55851947048",
+                "authname": "Al Ansari M.S.",
+                "surname": "Al Ansari",
+                "given-name": "Mohammed Saleh",
+                "initials": "M.S.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60000237"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56373648800",
+                "authid": "56373648800",
+                "authname": "Koteswari S.",
+                "surname": "Koteswari",
+                "given-name": "S.",
+                "initials": "S.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60114366"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58710897400",
+                "authid": "58710897400",
+                "authname": "Kumari M.",
+                "surname": "Kumari",
+                "given-name": "Mamta",
+                "initials": "M.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60251083"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "Artificial Intelligence | Machine Learning | ODI | Pain | Spine | Therapy",
+        "source-id": "19700182903",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182899767"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182899767?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85182899767&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85182899767&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85182899767",
+        "dc:identifier": "SCOPUS_ID:85182899767",
+        "eid": "2-s2.0-85182899767",
+        "dc:title": "PREDICTION OF LUNG DISEASE SEVERITY BY APPLYING MACHINE AND DEEP LEARNING TECHNIQUES",
+        "dc:creator": "Guttula S.P.",
+        "prism:publicationName": "Journal of Theoretical and Applied Information Technology",
+        "prism:issn": "19928645",
+        "prism:eIssn": "18173195",
+        "prism:volume": "101",
+        "prism:issueIdentifier": "24",
+        "prism:pageRange": "8072-8079",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "dc:description": "Virus infected diseases are increasing rapidly. SARS covid -19 is one emerged into human body to extinct the human life. Prediction of the rapid changes and meticulous interpretation of the type of decease is challenging. Various stages of the risk severity prediction and interpretation is challenging. This paper discussed various machine learning algorithms applied on X-radiation chest images to predict the severity of the decease. Significant features are extracted using Principal component analysis (PCA). Bagging, Ada boost, XG boost, KNN machine learning methodologies applied to achieve the reliable performance. Bagging methodology shows dominant performance over other machine learning methodologies with 98.82% precision value and 98.67% accuracy. The F1 score and recall value is significantly good with 98.755 and 98.69 respectively. Bagging methodology is much reliable to interpret X-radiation images for Sars Covid-19 infections.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60117204",
+                "afid": "60117204",
+                "affilname": "Rabindranath Tagore University",
+                "affiliation-city": "Mendua",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60109586",
+                "afid": "60109586",
+                "affilname": "Vallurupalli Nageswara Rao Vignana Jyothi Institute of Engineering &amp; Technology",
+                "affiliation-city": "Hyderabad",
+                "affiliation-country": "India"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "4",
+            "$": "4"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58832808100",
+                "authid": "58832808100",
+                "authname": "Guttula S.P.",
+                "surname": "Guttula",
+                "given-name": "Surya Prakash",
+                "initials": "S.P.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60117204"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57218644079",
+                "authid": "57218644079",
+                "authname": "Gupta S.K.",
+                "surname": "Gupta",
+                "given-name": "Sanjeev Kumar",
+                "initials": "S.K.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60117204"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57217752775",
+                "authid": "57217752775",
+                "authname": "Singh L.",
+                "surname": "Singh",
+                "given-name": "Laxmi",
+                "initials": "L.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60117204"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58312506100",
+                "authid": "58312506100",
+                "authname": "Sagar K.V.",
+                "surname": "Sagar",
+                "given-name": "K. Vidya",
+                "initials": "K.V.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60109586"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "Ada boost | Bagging | KNN | PCA | SARs Covid-19 | X-radiation images | XG boost",
+        "source-id": "19700182903",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182890889"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182890889?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85182890889&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85182890889&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85182890889",
+        "dc:identifier": "SCOPUS_ID:85182890889",
+        "eid": "2-s2.0-85182890889",
+        "dc:title": "Machine-learning methods based on the texture and non-texture features of MRI for the preoperative prediction of sentinel lymph node metastasis in breast cancer",
+        "dc:creator": "Wang J.",
+        "prism:publicationName": "Translational Cancer Research",
+        "prism:issn": "2218676X",
+        "prism:eIssn": "22196803",
+        "prism:volume": "12",
+        "prism:issueIdentifier": "12",
+        "prism:pageRange": "3471-3485",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.21037/tcr-22-2534",
+        "dc:description": "Background: The establishment of an accurate, stable, and non-invasive prediction model of sentinel lymph node (SLN) metastasis in breast cancer is difficult nowadays. The aim of this work is to identify the optimal machine learning model based on the three-dimensional (3D) image features of magnetic resonance imaging (MRI) for the preoperative prediction of SLN metastasis in breast cancer patients. Methods: A total of 172 patients with histologically proven breast cancer were enrolled retrospectively, including 74 SLN metastasis patients and 98 non-SLN metastasis patients. All of them underwent diffusion-weighted imaging (DWI) magnetic resonance imaging (MRI) scan. Firstly, a total of 10,320 texture and four non-texture features were extracted from the region of interests (ROIs) of image. Twenty-four feature selection methods and 11 classification methods were then evaluated by using 10-fold cross-validation to identify the optimal machine learning model in terms of the mean area under the curve (AUC), accuracy (ACC), and stability. Results: The result showed that the model based on the combination of minimum redundancy maximum relevance (MRMR) + random forest (RF) exhibited the optimal predictive performance (AUC: 0.97\u00b10.03; ACC: 0.89\u00b10.05; stability: 2.94). Moreover, we independently investigated the performance of feature selection methods and classification methods, and observed that L1-support vector machine (L1-SVM) (AUC: 0.80\u00b10.08; ACC: 0.76\u00b10.07) and sequential forward floating selection (SFFS) (stability: 3.04) presented the best average predictive performance and stability among all feature selection methods, respectively. RF (AUC: 0.85\u00b10.11; ACC: 0.80\u00b10.09) and SVM (stability: 8.43) showed the best average predictive performance and stability among all classification methods, respectively. Conclusions: The identified model based on the 3D image features of MRI provides a non-invasive way for the preoperative prediction of SLN metastasis in breast cancer patients.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60017456",
+                "afid": "60017456",
+                "affilname": "Jinan University",
+                "affiliation-city": "Guangzhou",
+                "affiliation-country": "China"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60002593",
+                "afid": "60002593",
+                "affilname": "Southern Medical University",
+                "affiliation-city": "Guangzhou",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "4",
+            "$": "4"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58041831300",
+                "authid": "58041831300",
+                "authname": "Wang J.",
+                "surname": "Wang",
+                "given-name": "Jian",
+                "initials": "J.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60002593"
+                    },
+                    {
+                        "@_fa": "true",
+                        "$": "60002593"
+                    },
+                    {
+                        "@_fa": "true",
+                        "$": "60002593"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58131929500",
+                "authid": "58131929500",
+                "authname": "Gao X.",
+                "surname": "Gao",
+                "given-name": "Xinna",
+                "initials": "X.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60002593"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/35084570500",
+                "authid": "35084570500",
+                "orcid": "0000-0001-7377-382X",
+                "authname": "Zhang S.",
+                "surname": "Zhang",
+                "given-name": "Shuixing",
+                "initials": "S.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60017456"
+                    },
+                    {
+                        "@_fa": "true",
+                        "$": "60017456"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/19838706500",
+                "authid": "19838706500",
+                "orcid": "0000-0001-8456-7335",
+                "authname": "Zhang Y.",
+                "surname": "Zhang",
+                "given-name": "Yu",
+                "initials": "Y.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60002593"
+                    },
+                    {
+                        "@_fa": "true",
+                        "$": "60002593"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "breast cancer | Machine learning | magnetic resonance imaging (MRI) | preoperative prediction | sentinel lymph node (SLN)",
+        "source-id": "21100455430",
+        "fund-acr": "NSFC",
+        "fund-no": "2014B030301042",
+        "fund-sponsor": "National Natural Science Foundation of China",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                },
+                {
+                    "$": "repository"
+                },
+                {
+                    "$": "repositoryvor"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                },
+                {
+                    "$": "Green"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182889752"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182889752?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85182889752&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85182889752&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85182889752",
+        "dc:identifier": "SCOPUS_ID:85182889752",
+        "eid": "2-s2.0-85182889752",
+        "dc:title": "AN ENSEMBLE APPROACH FOR HARVEST VINTAGE FORECAST WITH MACHINE LEARNING TECHNIQUES: AN EXPERIMENTAL STUDY",
+        "dc:creator": "Pittala S.K.",
+        "prism:publicationName": "Journal of Theoretical and Applied Information Technology",
+        "prism:issn": "19928645",
+        "prism:eIssn": "18173195",
+        "prism:volume": "101",
+        "prism:issueIdentifier": "24",
+        "prism:pageRange": "8299-8304",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "dc:description": "Since crop yield forecasting directly affects the production and security of food, it is an essential part of agricultural research and development. The traditional methods of calculating harvest vintages centered on agriculturalists' explanations and expertise have become increasingly challenging as a result of the rapid ups and downs in soil and climatic state of affairs. Machine-learning techniques have been applied in recent years to find a solution to this issue. This study centers around the utilization of a few AI models, for example, nearest neighbor relapse, closest polynomial relapse, irregular woodland relapse, slope helped tree relapse, and backing vector relapse, for the expectation of farming efficiency. The raw data was transformed into a format that is conducive to machine learning using efficient feature selection techniques. The study's findings showed that, in comparison to other tactics, when choosing features, using an ensemble technique can lead to more accurate predictions. By combining several data sources and machine learning algorithms, the ensemble approach generates a detailed and precise forecast. This work highlights both the benefits of using machine learning techniques to forecast agricultural amount produced and the recompenses of using a collaborative line of attack to feature selection.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60115567",
+                "afid": "60115567",
+                "affilname": "Shri Vishnu Engineering College For Women",
+                "affiliation-city": "Bhimavaram",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60114542",
+                "afid": "60114542",
+                "affilname": "Gayatri Vidya Parishad College of Engineering",
+                "affiliation-city": "Visakhapatnam",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60114321",
+                "afid": "60114321",
+                "affilname": "P.V.P.Siddhartha Institute Of Technology",
+                "affiliation-city": "Vijayawada",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60108979",
+                "afid": "60108979",
+                "affilname": "ICFAI Foundation for Higher Education, Hyderabad",
+                "affiliation-city": "Hyderabad",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60081053",
+                "afid": "60081053",
+                "affilname": "R.V.R. &amp; J.C.College of Engineering",
+                "affiliation-city": "Guntur",
+                "affiliation-country": "India"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60027171",
+                "afid": "60027171",
+                "affilname": "Annamalai University",
+                "affiliation-city": "Chidambaram",
+                "affiliation-country": "India"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "7",
+            "$": "7"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57190571619",
+                "authid": "57190571619",
+                "authname": "Pittala S.K.",
+                "surname": "Pittala",
+                "given-name": "Suresh Kumar",
+                "initials": "S.K.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60081053"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58103304400",
+                "authid": "58103304400",
+                "authname": "Rao K.S.",
+                "surname": "Rao",
+                "given-name": "Kongara Srinivasa",
+                "initials": "K.S.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60108979"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58371888700",
+                "authid": "58371888700",
+                "authname": "Tata B.I.",
+                "surname": "Tata",
+                "given-name": "Balaj I.",
+                "initials": "B.I.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60114321"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58944207400",
+                "authid": "58944207400",
+                "authname": "Kumar P.R.",
+                "surname": "Kumar",
+                "given-name": "P. Ravi",
+                "initials": "P.R.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60115567"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "5",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58450946100",
+                "authid": "58450946100",
+                "authname": "Jaya N.",
+                "surname": "Jaya",
+                "given-name": "N.",
+                "initials": "N.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60027171"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "6",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56418218700",
+                "authid": "56418218700",
+                "authname": "Anuradha Y.",
+                "surname": "Anuradha",
+                "given-name": "Y.",
+                "initials": "Y.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60114542"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "7",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57211609691",
+                "authid": "57211609691",
+                "authname": "Chowdary K.U.",
+                "surname": "Chowdary",
+                "given-name": "Kurra Upendra",
+                "initials": "K.U.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60081053"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "Agriculture | Ensemble | Forecast | Harvest | Vintage",
+        "source-id": "19700182903",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182872743"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182872743?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85182872743&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85182872743&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85182872743",
+        "dc:identifier": "SCOPUS_ID:85182872743",
+        "eid": "2-s2.0-85182872743",
+        "dc:title": "EXPLORING THE CAPABILITIES OF DEEP LEARNING FOR ADVANCING CREDIT CARD FRAUD DETECTION: A REVOLUTIONARY APPROACH",
+        "dc:creator": "Daif A.",
+        "prism:publicationName": "Journal of Theoretical and Applied Information Technology",
+        "prism:issn": "19928645",
+        "prism:eIssn": "18173195",
+        "prism:volume": "101",
+        "prism:issueIdentifier": "24",
+        "prism:pageRange": "8209-8220",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "dc:description": "The use of credit cards for both online and in-person purchases has become increasingly prevalent in our daily lives. However, this convenience also exposes users to the risks associated with credit card fraud. Credit card fraud presents a significant challenge for banks, merchants, and consumers, emphasizing the crucial need for the swift and accurate detection of such fraudulent activities. In response to this challenge, recent research has delved into the application of deep learning techniques for credit card fraud detection. This article presents a study that combines a Bi-LSTM (Bidirectional Long Short-Term Memory) with an attention layer to identify fraudulent transaction patterns and achieve a balanced classification of data. The results of this study demonstrate the method's high accuracy, surpassing the performance of other fraud detection approaches. Notably, this innovative approach efficiently identifies critical transactions within input sequences, significantly improving the prediction accuracy for fraudulent transactions. This research provides a unique perspective on the use of deep learning to enhance security in credit card transactions.",
+        "citedby-count": "0",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60192384",
+                "afid": "60192384",
+                "affilname": "Laboratoire de Technologie de l'Information et Mod\u00e9lisation",
+                "affiliation-city": "Casablanca",
+                "affiliation-country": "Morocco"
+            },
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60025457",
+                "afid": "60025457",
+                "affilname": "Hassan II University of Casablanca",
+                "affiliation-city": "Casablanca",
+                "affiliation-country": "Morocco"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "5",
+            "$": "5"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57189215241",
+                "authid": "57189215241",
+                "authname": "Daif A.",
+                "surname": "Daif",
+                "given-name": "Abderrahmane",
+                "initials": "A.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60192384"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57203636683",
+                "authid": "57203636683",
+                "authname": "Ounacer S.",
+                "surname": "Ounacer",
+                "given-name": "Soumaya",
+                "initials": "S.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60192384"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57194390180",
+                "authid": "57194390180",
+                "authname": "Ardchir S.",
+                "surname": "Ardchir",
+                "given-name": "Soufiane",
+                "initials": "S.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60025457"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57205752730",
+                "authid": "57205752730",
+                "authname": "Ghazouani M.",
+                "surname": "Ghazouani",
+                "given-name": "Mohamed",
+                "initials": "M.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60192384"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "5",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57189220959",
+                "authid": "57189220959",
+                "authname": "Azzouazi M.",
+                "surname": "Azzouazi",
+                "given-name": "Mohamed",
+                "initials": "M.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60192384"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "Attention Layer | Bi-LSTM | Credit Card Fraud | Deep Learning | Machine Learning | SMOTE",
+        "source-id": "19700182903",
+        "fund-no": "undefined",
+        "openaccess": "0",
+        "openaccessFlag": false
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182870116"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182870116?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85182870116&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85182870116&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85182870116",
+        "dc:identifier": "SCOPUS_ID:85182870116",
+        "eid": "2-s2.0-85182870116",
+        "dc:title": "Use of survival support vector machine combined with random survival forest to predict the survival of nasopharyngeal carcinoma patients",
+        "dc:creator": "Xiao Z.",
+        "prism:publicationName": "Translational Cancer Research",
+        "prism:issn": "2218676X",
+        "prism:eIssn": "22196803",
+        "prism:volume": "12",
+        "prism:issueIdentifier": "12",
+        "prism:pageRange": "3581-3590",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.21037/tcr-23-316",
+        "dc:description": "Background: The Cox regression model is not sufficiently accurate to predict the survival prognosis of nasopharyngeal carcinoma (NPC) patients. It is impossible to calculate and rank the importance of impact factors due to the low predictive accuracy of the Cox regression model. So, we developed a system. Using the SEER (The Surveillance, Epidemiology, and End Results) database data on NPC patients, we proposed the use of random survival forest (RSF) and survival-support vector machine (SVM) from the machine learning methods to develop a survival prediction system specifically for NPC patients. This approach aimed to make up for the insufficiency of the Cox regression model. We also used the Cox regression model to validate the development of the nomogram and compared it with machine learning methods. Methods: A total of 1,683 NPC patients were extracted from the SEER database from January 2010 to December 2015. We used R language for modeling work, established the nomogram of survival prognosis of NPC patients by Cox regression model, ranked the correlation of influencing factors by RSF model VIMP (variable important) method, developed a survival prognosis system for NPC patients based on survival-SVM, and used C-index for model evaluation and performance comparison. Results: Although the Cox regression models can be developed to predict the prognosis of NPC patients, their accuracy was lower than that of machine learning methods. When we substituted the data for the Cox model, the C-index for the training set was only 0.740, and the C-index for the test set was 0.721. In contrast, the C index of the survival-SVM model was 0.785. The C-index of the RSF model was 0.729. The importance ranking of each variable could be obtained according to the VIMP method. Conclusions: The prediction results from the Cox model are not as good as those of the RSF method and survival-SVM based on the machine learning method. For the survival prognosis of NPC patients, the machine learning method can be considered for clinical application.",
+        "citedby-count": "3",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60002821",
+                "afid": "60002821",
+                "affilname": "Guangxi Medical University",
+                "affiliation-city": "Nanning",
+                "affiliation-country": "China"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "6",
+            "$": "6"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58414505400",
+                "authid": "58414505400",
+                "orcid": "0000-0001-6638-4332",
+                "authname": "Xiao Z.",
+                "surname": "Xiao",
+                "given-name": "Zhiwei",
+                "initials": "Z.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60002821"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57193670127",
+                "authid": "57193670127",
+                "authname": "Song Q.",
+                "surname": "Song",
+                "given-name": "Qiong",
+                "initials": "Q.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60002821"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "3",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58203297000",
+                "authid": "58203297000",
+                "authname": "Wei Y.",
+                "surname": "Wei",
+                "given-name": "Yuekun",
+                "initials": "Y.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60002821"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "4",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58203418000",
+                "authid": "58203418000",
+                "authname": "Fu Y.",
+                "surname": "Fu",
+                "given-name": "Yong",
+                "initials": "Y.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60002821"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "5",
+                "author-url": "https://api.elsevier.com/content/author/author_id/56539095400",
+                "authid": "56539095400",
+                "authname": "Huang D.",
+                "surname": "Huang",
+                "given-name": "Daizheng",
+                "initials": "D.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60002821"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "6",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57201084501",
+                "authid": "57201084501",
+                "authname": "Huang C.",
+                "surname": "Huang",
+                "given-name": "Chao",
+                "initials": "C.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60002821"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "nasopharyngeal carcinoma (NPC) | random survival forest (RSF) | Survival analysis | survival-support vector machine (survival-SVM) | The Surveillance, Epidemiology, and End Results (SEER)",
+        "source-id": "21100455430",
+        "fund-no": "2019GXNSFGA245002",
+        "fund-sponsor": "Guangxi Innovation-Driven Development Project",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfullgold"
+                },
+                {
+                    "$": "repository"
+                },
+                {
+                    "$": "repositoryvor"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Gold"
+                },
+                {
+                    "$": "Green"
+                }
+            ]
+        }
+    },
+    {
+        "@_fa": "true",
+        "link": [
+            {
+                "@_fa": "true",
+                "@ref": "self",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182716781"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "author-affiliation",
+                "@href": "https://api.elsevier.com/content/abstract/scopus_id/85182716781?field=author,affiliation"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus",
+                "@href": "https://www.scopus.com/inward/record.uri?partnerID=HzOxMe3b&scp=85182716781&origin=inward"
+            },
+            {
+                "@_fa": "true",
+                "@ref": "scopus-citedby",
+                "@href": "https://www.scopus.com/inward/citedby.uri?partnerID=HzOxMe3b&scp=85182716781&origin=inward"
+            }
+        ],
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85182716781",
+        "dc:identifier": "SCOPUS_ID:85182716781",
+        "eid": "2-s2.0-85182716781",
+        "dc:title": "Integrating Phylogenetic Analysis and Machine Learning for Enhanced Phenotype Prediction in Oryza Sativa",
+        "dc:creator": "Kiranmai B.",
+        "prism:publicationName": "International Journal of Agriculture and Biosciences",
+        "prism:issn": "23056622",
+        "prism:eIssn": "23063599",
+        "prism:volume": "12",
+        "prism:issueIdentifier": "4",
+        "prism:pageRange": "277-283",
+        "prism:coverDate": "2023-12-31",
+        "prism:coverDisplayDate": "31 December 2023",
+        "prism:doi": "10.47278/journal.ijab/2023.078",
+        "dc:description": "Genomic selection has revolutionized plant breeding by enabling the efficient and accurate selection of elite genotypes. Traditional approaches require resource-intensive phenotyping at all stages of artificial selection. However, genomic selection reduces this burden by leveraging genotyping data and machine learning techniques to predict agronomically relevant phenotypic traits. In this paper, we present a two-level prediction system that incorporates both phylogenetic analysis and machine learning models to predict the height of Oryza Sativa L. (Rice) plants based on their gene sequences. The only input for our model is a genomic sequence, whose length does not have to be equal to 24 (number of SNPs considered for our model). At the first level, we employ phylogenetic analysis to classify the plants into subpopulations, capturing the inherent genetic diversity within the dataset. This approach addresses the limitations of existing research, as it incorporates population structure information from gene sequences that is often overlooked in machine learning-based approaches. Subsequently, at the second level, we leverage the population structure information and genomic data to train a machine learning model for accurately predicting plant height. We compare and evaluate various methods employed at both levels to identify the most effective approach. Hence our approach of predicting Phenotype with reference to genotype is accurate compared with other existing systems. Two level classification has done well in identifying phenotype and performed well in predicting subpopulation.",
+        "citedby-count": "3",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60114595",
+                "afid": "60114595",
+                "affilname": "Keshav Memorial Institute of Technology",
+                "affiliation-city": "Hyderabad",
+                "affiliation-country": "India"
+            }
+        ],
+        "prism:aggregationType": "Journal",
+        "subtype": "ar",
+        "subtypeDescription": "Article",
+        "author-count": {
+            "@limit": "100",
+            "@total": "2",
+            "$": "2"
+        },
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/57217223443",
+                "authid": "57217223443",
+                "authname": "Kiranmai B.",
+                "surname": "Kiranmai",
+                "given-name": "B.",
+                "initials": "B.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60114595"
+                    }
+                ]
+            },
+            {
+                "@_fa": "true",
+                "@seq": "2",
+                "author-url": "https://api.elsevier.com/content/author/author_id/58819960800",
+                "authid": "58819960800",
+                "authname": "Gurbani R.",
+                "surname": "Gurbani",
+                "given-name": "Rishabh",
+                "initials": "R.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60114595"
+                    }
+                ]
+            }
+        ],
+        "authkeywords": "Breeding value | Genomic prediction | GWAS | Machine Learning | Phylogeny",
+        "source-id": "21101162543",
+        "fund-no": "undefined",
+        "openaccess": "1",
+        "openaccessFlag": true,
+        "freetoread": {
+            "value": [
+                {
+                    "$": "all"
+                },
+                {
+                    "$": "publisherfree2read"
+                }
+            ]
+        },
+        "freetoreadLabel": {
+            "value": [
+                {
+                    "$": "All Open Access"
+                },
+                {
+                    "$": "Bronze"
+                }
+            ]
+        }
+    }
+]
