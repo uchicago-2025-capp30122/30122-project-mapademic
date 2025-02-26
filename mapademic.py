@@ -1,4 +1,4 @@
-import streamlit as st
+import mapademic as st
 import os
 import subprocess
 import json
@@ -38,6 +38,7 @@ if "discipline" not in st.session_state:
     st.session_state.discipline = ""
 if "keyword" not in st.session_state:
     st.session_state.keyword = ""
+    st.session_s
 
 if api_key:
     st.write("You have successfully logged in and your API Key has been authenticated.")
@@ -59,6 +60,8 @@ if api_key:
 
                 st.session_state.search_completed = True
                 st.experimental_rerun()
+
+    #2020-2024年每年的图  选
     else:
         st.write("### The search and data processing is completed and the visualisation results are displayed:")
         # 使用 basic_vis.py 中的函数生成 choropleth 地图
