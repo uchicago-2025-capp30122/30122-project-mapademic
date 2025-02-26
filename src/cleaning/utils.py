@@ -9,46 +9,36 @@ INDEX_IGNORE = set(
         "me", "him", "her", "us", "them", "my", "your", "his", "its", "our", "their",
         "mine", "yours", "hers", "ours", "theirs",
         "who", "whom", "whose", "which", "that", 
-
-        # 疑问词
         "what", "where", "when", "why", "how",
-
-        # 助动词
         "can", "could", "may", "might", "shall", "should", "will", "would",
         "do", "does", "did", "done",
 
-        # 关系词和连接词
+        # Conjections
         "and", "or", "but", "if", "because", "since", "although", "though",
         "while", "whereas", "unless", "however", "moreover", "furthermore",
         "therefore", "thus", "such", "for", "also", "from"
 
-        # 介词
+        # Preposition
         "in", "on", "at", "by", "with", "without", "over", "under", "between", 
         "among", "through", "before", "after", "about", "above", "below", "from",
 
-        # 频率副词和程度副词
+        # Adverbs
         "very", "too", "quite", "rather", "almost", "always", "never", "sometimes",
         "often", "rarely", "seldom",
-
-        # Be动词及变形
+        
+        # Normal verbs
         "be", "am", "is", "are", "was", "were", "been", "being",
-
-        # Have动词及变形
-        "have", "has", "had", "having",
-
-        # Make/Do/Take 相关
-        "make", "makes", "made", "making",
-        "do", "does", "doing", "done",
-        "take", "takes", "took", "taken", "taking",
-
-        # 常见无意义动词
         "get", "gets", "got", "getting",
         "give", "gives", "gave", "given", "giving",
         "use", "uses", "used", "using",
         "put", "puts", "putting",
         "set", "sets", "setting",
+        "make", "makes", "made", "making",
+        "do", "does", "doing", "done",
+        "take", "takes", "took", "taken", "taking",
+        "have", "has", "had", "having",
 
-        # 学术论文常见无意义词
+        # Meaningless words in paper abstract
         "research", "study", "paper", "article", "findings", "results", "conclusion",
         "approach", "method", "methods", "analysis", "data", "dataset", "datasets",
         "experiment", "experiments", "observations", "observation",
@@ -60,13 +50,13 @@ INDEX_IGNORE = set(
         "used", "utilized", "utilize", "develop", "developed", "development", "into",
         "one", "two", "three", "four", "five", "six", "seven","eight",
 
-        # 其他常见停用词
+        # Normal conjections and no-meaning words
         "like", "such", "many", "much", "more", "most", "less", "least",
         "some", "any", "none", "all", "both", "each", "every", "either", "neither",
         "other", "another", "same", "different",
         "this", "these", "those", "their", "they", "them",
 
-        # 其他可能的无意义字符
+        # Other Strange characters
         "om", "log"
     ]
 )
@@ -81,20 +71,12 @@ def remove(word_lst):
         word_lst[i] = word
     return word_lst
 
-
-
-
-
-
 def ignore(word_lst):
     new_words = [
         word for word in word_lst
         if word not in INDEX_IGNORE and not re.fullmatch(r"\d+|[a-zA-Z]{1,2}", word)
     ]
     return new_words
-
-
-
 
 def process_word_list(word_list):
     word_set = set(word_list)  # 使用集合加速查找
