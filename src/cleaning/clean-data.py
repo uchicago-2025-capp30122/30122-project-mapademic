@@ -4,15 +4,15 @@ from collections import Counter
 from pathlib import Path
 from utils import remove, ignore, process_word_list
 from wordcloud import WordCloud
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 def building_city_df(output_filename: Path):
     output_filename = Path(output_filename)
-    with open('keyword_with_abstract.json', 'r', encoding='utf-8') as f:
+    with open('data/keyword_with_abstract.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     paper_df = pd.DataFrame(data)
     
-    city_df = pd.read_excel('../../data/cities.xlsx')
+    city_df = pd.read_excel('data/cities.xlsx')
     merged_df = pd.merge(paper_df, city_df[['name', 'country_name', 'state_name','latitude', 'longitude']], 
                         left_on=['affiliation_city', 'affiliation_country'], 
                         right_on=['name', 'country_name'], 
@@ -24,7 +24,7 @@ def building_city_df(output_filename: Path):
     df_selected.to_csv(output_filename, index=False, sep=';', encoding='utf-8')
 
 def building_wordfrq_dict(output_filename: Path):
-    with open('keyword_with_abstract.json', 'r', encoding='utf-8') as f:
+    with open('data/keyword_with_abstract.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     paper_df = pd.DataFrame(data)
     abstract_list = paper_df["Abstract"].tolist()
@@ -33,35 +33,21 @@ def building_wordfrq_dict(output_filename: Path):
     word_freq = Counter(processed_list)
     word_freq_df = pd.DataFrame(word_freq.items(), columns=["word", "frequency"])
     word_freq_df.to_csv(output_filename, index=False, encoding="utf-8")
-    # wordcloud = WordCloud(background_color='white').generate_from_frequencies(word_freq)
-    # plt.figure(figsize=(10, 8))
-    # plt.imshow(wordcloud, interpolation='bilinear')
-    # plt.axis('off')
-    # plt.savefig('../../data/WordCloud.jpg', format='jpg', dpi=300)
+    return word_freq
+
+def plot_word_cloud(word_freq, output_filename: Path):
+    wordcloud = WordCloud(background_color='white').generate_from_frequencies(word_freq)
+    plt.figure(figsize=(10, 8))
+    plt.imshow(wordcloud, interpolation='bilinear')
+    plt.axis('off')
+    plt.savefig(output_filename, format='png', dpi=300)
+    
+
 
 if __name__ == "__main__":
-    building_city_df("../../data/output_geo_data.csv")
-    building_wordfrq_dict("../../data/word_frequency.csv")
+    building_city_df("data/output_geo_data.csv")
+    word_freq = building_wordfrq_dict("data/word_frequency.csv")
+    plot_word_cloud(word_freq, "data/word_cloud.png")
 
 
-
-
-
-# merged_freq = Counter()
-# for word, freq in word_freq.items():
-#     merged_freq[word] += freq
-
-# Plot the word-cloud
-
-# wordcloud = WordCloud(background_color='white').generate_from_frequencies(merged_freq)
-# plt.figure(figsize=(10, 8))
-# plt.imshow(wordcloud, interpolation='bilinear')
-# plt.axis('off')
-# plt.savefig('WordCloud.jpg', format='jpg', dpi=300)
-
-
-# Clean city data
-
-
-###
 
