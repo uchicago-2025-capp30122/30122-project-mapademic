@@ -79,22 +79,23 @@ def ignore(word_lst):
     return new_words
 
 def process_word_list(word_list):
-    word_set = set(word_list)  # 使用集合加速查找
+    word_set = set(word_list)
     processed_list = []
-    
     for word in word_list:
+        # Process the plural form of the word
         if word.endswith("ss"):
-            processed_list.append(word)  # 直接保留 "ss" 结尾的单词
+            processed_list.append(word)
         elif word.endswith("ies"):
-            singular = word[:-3] + "y"  # 将 "ies" 替换为 "y"
+            # Check if this word is the plural form of a word end with "y"
+            singular = word[:-3] + "y"
             if singular in word_set:
                 processed_list.append(singular)
             else:
                 processed_list.append(word)
         elif word.endswith("es"):
-            word_without_s = word[:-1]  # 去掉 's'
-            word_without_es = word[:-2]  # 去掉 'es'
-            
+            # Check if this word ends with "e"
+            word_without_s = word[:-1]
+            word_without_es = word[:-2]
             if word_without_s in word_set:
                 processed_list.append(word_without_s)
             elif word_without_es in word_set:
@@ -106,9 +107,7 @@ def process_word_list(word_list):
             if word_without_s in word_set:
                 processed_list.append(word_without_s)
             else:
-                processed_list.append(word)
-                    
+                processed_list.append(word)           
         else:
-            processed_list.append(word)  # 不是 "es"/"ies" 结尾的词直接保留
-    
+            processed_list.append(word)
     return processed_list

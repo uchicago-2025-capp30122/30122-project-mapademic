@@ -20,7 +20,9 @@ def get_feature(output_filename: Path):
     with open('data/keyword_with_abstract.json', 'r', encoding='utf-8') as f:
         data = json.load(f)
     paper_df = pd.DataFrame(data)
-    paper_df["cleaned_title"] = paper_df["paper_title"].astype(str).apply(preprocess_title)
+    paper_df["cleaned_title"] = paper_df["paper_title"].apply(preprocess_title)
+    
+    # 1-gram and 2-gram are included in the model
     vectorizer = CountVectorizer(ngram_range=(1, 3))
     X = vectorizer.fit_transform(paper_df["cleaned_title"])
     word_freq_df = pd.DataFrame(X.toarray(), columns=vectorizer.get_feature_names_out())
@@ -33,22 +35,22 @@ def get_feature(output_filename: Path):
     if "NA" in final_matrix.columns:
         final_matrix = final_matrix.drop(columns=["NA"])
 
-
+    # Number of citations is a skewed distribution so I took the log of the number here
     paper_df["log_cited_by"] = np.log1p(paper_df["citied_by"].astype(int))
-
+    
+    # Fit a Lasso Model
     X = final_matrix
     y = paper_df["log_cited_by"]
     scaler = StandardScaler()
     X_scaled = scaler.fit_transform(X)
     lasso = Lasso(alpha=0.01, max_iter=1000)
     lasso.fit(X_scaled, y)
-
     coef_series = pd.Series(lasso.coef_, index=X.columns)
-    non_zero_coefs = coef_series[coef_series != 0].abs().sort_values(ascending=True)
     
     non_zero_coefs = coef_series[coef_series != 0].sort_values(key=abs, ascending=False)
     top_30_features = non_zero_coefs.head(30)
     inverse_top_30_features = top_30_features.iloc[::-1]
+    
     colors = ['red' if coef > 0 else 'blue' for coef in inverse_top_30_features.values]
     plt.figure(figsize=(10, 6))
     bars = plt.barh(inverse_top_30_features.index, inverse_top_30_features.values, color=colors, alpha=0.7)
@@ -57,12 +59,10 @@ def get_feature(output_filename: Path):
     plt.ylabel("Variables")
     plt.title("Top 30 Lasso Regression Coefficients")
     plt.savefig(output_filename, format='png', dpi=300)
-    print("The top k features for citing:")
+    print("Top k features for citing:")
+    print("============")
     print(top_30_features[:10])
     
 
 if __name__ == "__main__":
-    # building_city_df("data/output_geo_data.csv")
-    # word_freq = building_wordfrq_dict("data/word_frequency.csv")
-    # plot_word_cloud(word_freq, "data/word_cloud.png")
     get_feature("data/features.png")
