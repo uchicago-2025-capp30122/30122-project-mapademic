@@ -41,6 +41,10 @@ def plot_word_cloud(word_freq, output_filename: Path):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis('off')
     plt.savefig(output_filename, format='png', dpi=300)
+
+def plot_frq_barchart(word_freq, output_filename: Path):
+    word_freq = 1
+    pass 
     
 
 
