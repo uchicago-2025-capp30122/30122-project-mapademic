@@ -5,14 +5,15 @@ from pathlib import Path
 from utils import remove, ignore, process_word_list
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+from visualize_words_yr import generate_word_frq_yearlygif
 
-def building_city_df(output_filename: Path):
+YEARS = [2020,2021,2022,2023,2024]
+
+
+def building_city_df(data, output_filename: Path):
     output_filename = Path(output_filename)
-    with open('data/keyword_with_abstract.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
     paper_df = pd.DataFrame(data)
-    
-    city_df = pd.read_excel('data/cities.xlsx')
+    city_df = pd.read_excel('data/raw_data/cities.xlsx')
     merged_df = pd.merge(paper_df, city_df[['name', 'country_name', 'state_name','latitude', 'longitude']], 
                         left_on=['affiliation_city', 'affiliation_country'], 
                         right_on=['name', 'country_name'], 
@@ -23,9 +24,9 @@ def building_city_df(output_filename: Path):
     df_selected = df_selected.dropna(subset=["state_name"])
     df_selected.to_csv(output_filename, index=False, sep=';', encoding='utf-8')
 
-def building_wordfrq_dict(output_filename: Path):
-    with open('data/keyword_with_abstract.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
+def building_wordfrq_dict(data, output_filename: Path):
+    output_filename = Path(output_filename)
+    
     paper_df = pd.DataFrame(data)
     abstract_list = paper_df["Abstract"].tolist()
     full_text = ignore(remove(" ".join(abstract_list).lower().split()))
@@ -47,11 +48,22 @@ def plot_frq_barchart(word_freq, output_filename: Path):
     pass 
     
 
-
+KEY_WORDS = "machinelearning"
 if __name__ == "__main__":
-    building_city_df("data/output_geo_data.csv")
-    word_freq = building_wordfrq_dict("data/word_frequency.csv")
-    plot_word_cloud(word_freq, "data/word_cloud.png")
+    yearly_wordfrq_dict = {}
+    for year in YEARS:
+        data_file_name = f"{KEY_WORDS}_{year}_classified.xlsx"
+        with open('data/keyword_with_abstract.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        building_city_df(data,f"data/output_data/{KEY_WORDS}_{year}_state_data.csv")
+        word_freq = building_wordfrq_dict(data, f"data/output_data/{KEY_WORDS}_{year}_word_frequency.csv")
+        yearly_wordfrq_dict[year] = word_freq
+        plot_word_cloud(word_freq, f"data/output_data/{KEY_WORDS}_{year}_word_cloud.png")
+    generate_word_frq_yearlygif(yearly_wordfrq_dict)
+
+    
+   
+   
 
 
 

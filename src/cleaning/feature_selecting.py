@@ -65,4 +65,4 @@ def get_feature(output_filename: Path):
     
 
 if __name__ == "__main__":
-    get_feature("data/features.png")
+    get_feature("data/output_data/features.png")
