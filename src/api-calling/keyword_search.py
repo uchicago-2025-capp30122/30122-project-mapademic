@@ -171,7 +171,7 @@ def save_results(results):
 
             keyword_result.append(search_result)
 
-        json.dump(results, f, ensure_ascii=False, indent=4)
+        json.dump(keyword_result, f, ensure_ascii=False, indent=4)
 
     print(f"Results saved to {FILENAME}")
 
