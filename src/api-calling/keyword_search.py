@@ -21,7 +21,7 @@ HEADERS = {
     "X-ELS-APIKey": API_KEY
 }
 
-RESULTS_JSON = "data/scopus_cursor_results_demo.json"
+# RESULTS_JSON = "data/scopus_cursor_results_demo.json"
 PAGE_SIZE = 25 # When set the parameter "view" as "COMPLETE", MAXIMUM be 25 !!!
                # when set the parameter "view" as "STANDARD", Maximum could be 200
 
@@ -56,7 +56,7 @@ def fetch_results_with_cursor(keywords, year):
     results = []
     cursor = "*"  # First request starts with cursor="*"
     retrieved_count = 0
-    MAX_RESULTS = 25 # Using for demo
+    MAX_RESULTS = 2000 # Using for demo
     # MAX_RESULTS = total_available # Number of results to fetch
 
     while retrieved_count < min(MAX_RESULTS, total_available):
@@ -135,26 +135,19 @@ def fetch_results_with_cursor(keywords, year):
     # Save results as JSON
     save_results(results)
 
+def generate_filenames(keyword, start_year, end_year):
+    year_filenames = []
+    keyword_lower = keyword.lower().replace(" ","")
+    for year in range(start_year, end_year + 1):
+        filename = f"data/raw_data/{keyword_lower}_{year}_paper.json"
+        year_filenames.append((year, filename))
+    return year_filenames
+
 def save_results(results):
     # Save results to a JSON file
-    with open(RESULTS_JSON, "w", encoding="utf-8") as f:
-        json.dump(results, f, indent=4)
-
-    print(f"Results saved to {RESULTS_JSON}")
-
-# Demo Example
-keywords = "machine learning"
-year = 2023
-
-fetch_results_with_cursor(keywords, year)
-
-"""Part II: Store the data as what we want"""
-# Filter and get the data needed
-keyword_result = []
-with open ("data/keyword_search_2023_cleaned_with_abstract.json","w") as f:
-    with open ('data/scopus_cursor_results_demo.json', "r") as resource:
-        raw_data = json.load(resource)
-        for each_search in raw_data:
+    with open(FILENAME, "w", encoding="utf-8") as f:
+        keyword_result = []
+        for each_search in results:
             # Important!! Using dict.get is necessary and safe, since there exsists missing part of the imfo          
             search_result = {
                 "paper_title": each_search.get("dc:title","NA"),
@@ -162,7 +155,8 @@ with open ("data/keyword_search_2023_cleaned_with_abstract.json","w") as f:
                 "publication": each_search.get("prism:publicationName","NA"),
                 "citied_by": each_search.get("citedby-count","NA"),
                 "cover_date" : each_search.get("prism:coverDate","NA"),
-                "Abstract": each_search.get("dc:description","NA")
+                "Abstract": each_search.get("dc:description","NA"),
+                "DOI": each_search.get("prism:doi","NA")
             }
 
             affiliation = each_search.get("affiliation", [])
@@ -177,5 +171,15 @@ with open ("data/keyword_search_2023_cleaned_with_abstract.json","w") as f:
 
             keyword_result.append(search_result)
 
-    # ensure_ascii can clean the result: Decode the unicode
-    json.dump(keyword_result, f, ensure_ascii=False, indent=4)
+        json.dump(results, f, ensure_ascii=False, indent=4)
+
+    print(f"Results saved to {FILENAME}")
+
+# Demo Example
+keywords = "machine learning and policy"
+# year = 2023
+
+file_name_lst = generate_filenames(keywords, 2020, 2024)
+for each_year_result in file_name_lst:
+    year, FILENAME = each_year_result[0], each_year_result[1]
+    fetch_results_with_cursor(keywords, year)
