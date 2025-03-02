@@ -2,6 +2,7 @@ import json
 import pandas as pd
 import plotly.express as px
 import pathlib
+from mapadmic import KEY_WORDS, YEARS
 
 def main_heatmap():
     """
@@ -19,20 +20,22 @@ def main_heatmap():
     with geojsonpath.open(mode="r", encoding="utf-8") as f:
         geojson_data = json.load(f)
     
-    # Read the CSV file containing paper information
-    csvpath = pathlib.Path("data") / "output_data" / "output_geo_data.csv"
-    df = pd.read_csv(csvpath, encoding="utf-8")
-    
-    # Group the data by province and year, counting the number of papers for each combination
-    df_grouped = df.groupby(['state_name', 'year']).size().reset_index(name='paper_count')
+    # Read all CSV files containing paper information
+    dfs = []
+    for year in YEARS:
+        csvpath = pathlib.Path("data") / "output_data" / f"{KEY_WORDS}_{year}_cleaned.csv"
+        df = pd.read_csv(csvpath, encoding="utf-8")
+        dfs.append(df)
+
+    merged_df = pd.concat(dfs, ignore_index=True)
     
     # Create an animated choropleth map using Plotly Express
     fig = px.choropleth_mapbox(
-        df_grouped,
+        merged_df,
         geojson=geojson_data,
         locations='state_name',           # DataFrame column with province names
         featureidkey='properties.name',   # Corresponding key in GeoJSON
-        color='paper_count',              # Column to determine color intensity
+        color='RDI',                      # Column to determine color intensity
         color_continuous_scale=[
             "#E9F8F6", "#C2DEDB", "#9CC4C1", "#75AAA6",
             "#4D908A", "#277670", "#005C55"
