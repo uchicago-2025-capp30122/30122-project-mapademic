@@ -5,7 +5,7 @@ import plotly.graph_objects as go
 from cache_utils import load_geojson, load_csv
 from plotly.subplots import make_subplots
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from mapadmic import load_geojson, load_csv
+from cache_utils import load_geojson, load_csv
 
 
 def main_heatmap(keywords, year, geojson_data=None):
