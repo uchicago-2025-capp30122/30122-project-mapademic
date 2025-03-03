@@ -7,9 +7,6 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from visualize_words_yr import generate_word_frq_yearlygif
 
-YEARS = [2020,2021,2022,2023,2024]
-
-
 def building_city_df(data, output_filename: Path):
     output_filename = Path(output_filename)
     paper_df = pd.DataFrame(data)
@@ -31,7 +28,16 @@ def building_wordfrq_dict(data, output_filename: Path):
     abstract_list = paper_df["Abstract"].tolist()
     full_text = ignore(remove(" ".join(abstract_list).lower().split()))
     processed_list = process_word_list(full_text)
-    word_freq = Counter(processed_list)
+    
+    filtered_list = []
+    for word in processed_list:
+        is_keyword_substring = False
+        if word in KEY_WORDS:  # 检查 word 是否是 keyword 的子字符串
+            is_keyword_substring  = True
+        if not is_keyword_substring:
+            filtered_list.append(word)  # 只有不是子字符串的词才加入 filtered_list
+
+    word_freq = Counter(filtered_list)
     word_freq_df = pd.DataFrame(word_freq.items(), columns=["word", "frequency"])
     word_freq_df.to_csv(output_filename, index=False, encoding="utf-8")
     return word_freq
@@ -46,14 +52,16 @@ def plot_word_cloud(word_freq, output_filename: Path):
 def plot_frq_barchart(word_freq, output_filename: Path):
     word_freq = 1
     pass 
-    
 
-KEY_WORDS = "machinelearning"
+
+YEARS = [2020,2021,2022,2023,2024]
+KEY_WORDS = "machinelearningandpolicy"
+
 if __name__ == "__main__":
     yearly_wordfrq_dict = {}
     for year in YEARS:
-        data_file_name = f"{KEY_WORDS}_{year}_classified.xlsx"
-        with open('data/keyword_with_abstract.json', 'r', encoding='utf-8') as f:
+        data_file_name = f"data/raw_data/{KEY_WORDS}_{year}_paper.json"
+        with open(data_file_name, 'r', encoding='utf-8') as f:
             data = json.load(f)
         building_city_df(data,f"data/output_data/{KEY_WORDS}_{year}_state_data.csv")
         word_freq = building_wordfrq_dict(data, f"data/output_data/{KEY_WORDS}_{year}_word_frequency.csv")

@@ -16,8 +16,8 @@ def preprocess_title(title):
     words = remove(words)
     return ' '.join(words)
 
-def get_feature(output_filename: Path):
-    with open('data/keyword_with_abstract.json', 'r', encoding='utf-8') as f:
+def get_feature(data_filename, output_filename: Path):
+    with open(data_filename, 'r', encoding='utf-8') as f:
         data = json.load(f)
     paper_df = pd.DataFrame(data)
     paper_df["cleaned_title"] = paper_df["paper_title"].apply(preprocess_title)
@@ -62,7 +62,14 @@ def get_feature(output_filename: Path):
     print("Top k features for citing:")
     print("============")
     print(top_30_features[:10])
-    
+
+YEARS = [2020,2021,2022,2023,2024]
+KEY_WORDS = "machinelearningandpolicy"
+
+
+
 
 if __name__ == "__main__":
-    get_feature("data/output_data/features.png")
+    for year in YEARS:
+        data_file_name = f"data/raw_data/{KEY_WORDS}_{year}_paper.json"  
+        get_feature(data_file_name, f"data/output_data/{KEY_WORDS}_{year}_features.png")
