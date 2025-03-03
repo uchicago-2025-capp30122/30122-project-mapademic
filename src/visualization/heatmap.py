@@ -65,6 +65,7 @@ def main_heatmap(keywords, year, geojson_data=None):
     
     return fig
 
+
 def combined_heatmaps_with_timeline_and_arrows(keywords: str, years: list):
     """
     Combines individual heatmaps for each year in the 'years' list,
