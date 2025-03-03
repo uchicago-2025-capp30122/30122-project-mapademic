@@ -106,27 +106,33 @@ Visit `http://localhost:8501` to begin your exploration!
 Mapademic/
 │
 ├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── example_data.csv
+│   ├── raw_data/
+│   ├── output_data/
+│   └── example_data/
 │
 ├── src/
+│   ├── __init__.py
 │   ├── api-calling/
+│   │   ├── __init__.py
 │   │   ├── keyword_search.py
+│   │   └── institute_match.py
 │   ├── cleaning
+│   │   ├── __init__.py
 │   │   ├── clean-data.py
 │   │   └── utils.py
-│   ├── vis
-│   │   └── basci-vis.py
-│   └── app/
-│       └── streamlit.py
+│   └── vis
+│       ├── __init__.py
+│       └── basci-vis.py
+│ 
 ├── docs/
 │   ├── pics/
 │   └── video/
 │
+├── milestones/
+│
 ├── tests/
-│   ├── test_scraper.py
-│   ├── test_visualization.py
+│   ├── test_api.py
+│   ├── test_data_clean.py
 │   └── test_app.py
 │
 ├── LICENSE
