@@ -56,11 +56,7 @@ def fetch_results_with_cursor(keywords, year):
     results = []
     cursor = "*"  # First request starts with cursor="*"
     retrieved_count = 0
-<<<<<<< HEAD
     MAX_RESULTS = 2000 # Using for demo
-=======
-    MAX_RESULTS = 25 # Using for demo
->>>>>>> 4cd495969a147a0507e260d142441f9679a9f97a
     # MAX_RESULTS = total_available # Number of results to fetch
 
     while retrieved_count < min(MAX_RESULTS, total_available):
