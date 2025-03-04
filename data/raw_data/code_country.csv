@@ -1,0 +1,3434 @@
+state_code,state_name,country_id,country_code,country_name
+BDS,Badakhshan,1,AF,Afghanistan
+BDG,Badghis,1,AF,Afghanistan
+BGL,Baghlan,1,AF,Afghanistan
+BAL,Balkh,1,AF,Afghanistan
+BAM,Bamyan,1,AF,Afghanistan
+DAY,Daykundi,1,AF,Afghanistan
+FRA,Farah,1,AF,Afghanistan
+FYB,Faryab,1,AF,Afghanistan
+GHA,Ghazni,1,AF,Afghanistan
+GHO,Ghōr,1,AF,Afghanistan
+HEL,Helmand,1,AF,Afghanistan
+HER,Herat,1,AF,Afghanistan
+JOW,Jowzjan,1,AF,Afghanistan
+KAB,Kabul,1,AF,Afghanistan
+KAN,Kandahar,1,AF,Afghanistan
+KAP,Kapisa,1,AF,Afghanistan
+KHO,Khost,1,AF,Afghanistan
+KNR,Kunar,1,AF,Afghanistan
+KDZ,Kunduz Province,1,AF,Afghanistan
+LAG,Laghman,1,AF,Afghanistan
+LOG,Logar,1,AF,Afghanistan
+NAN,Nangarhar,1,AF,Afghanistan
+NIM,Nimruz,1,AF,Afghanistan
+NUR,Nuristan,1,AF,Afghanistan
+PIA,Paktia,1,AF,Afghanistan
+PKA,Paktika,1,AF,Afghanistan
+PAN,Panjshir,1,AF,Afghanistan
+PAR,Parwan,1,AF,Afghanistan
+SAM,Samangan,1,AF,Afghanistan
+SAR,Sar-e Pol,1,AF,Afghanistan
+TAK,Takhar,1,AF,Afghanistan
+URU,Urozgan,1,AF,Afghanistan
+ZAB,Zabul,1,AF,Afghanistan
+BR,Berat District,3,AL,Albania
+9,Dibër County,3,AL,Albania
+DR,Durrës District,3,AL,Albania
+4,Fier County,3,AL,Albania
+GJ,Gjirokastër District,3,AL,Albania
+6,Korçë County,3,AL,Albania
+KU,Kukës District,3,AL,Albania
+8,Lezhë County,3,AL,Albania
+SH,Shkodër District,3,AL,Albania
+TR,Tirana District,3,AL,Albania
+12,Vlorë County,3,AL,Albania
+1,Adrar,4,DZ,Algeria
+44,Aïn Defla,4,DZ,Algeria
+46,Aïn Témouchent,4,DZ,Algeria
+16,Algiers,4,DZ,Algeria
+23,Annaba,4,DZ,Algeria
+5,Batna,4,DZ,Algeria
+8,Béchar,4,DZ,Algeria
+6,Béjaïa,4,DZ,Algeria
+7,Biskra,4,DZ,Algeria
+9,Blida,4,DZ,Algeria
+34,Bordj Bou Arréridj,4,DZ,Algeria
+10,Bouïra,4,DZ,Algeria
+35,Boumerdès,4,DZ,Algeria
+2,Chlef,4,DZ,Algeria
+25,Constantine,4,DZ,Algeria
+17,Djelfa,4,DZ,Algeria
+32,El Bayadh,4,DZ,Algeria
+39,El Oued,4,DZ,Algeria
+36,El Tarf,4,DZ,Algeria
+47,Ghardaïa,4,DZ,Algeria
+24,Guelma,4,DZ,Algeria
+33,Illizi,4,DZ,Algeria
+18,Jijel,4,DZ,Algeria
+40,Khenchela,4,DZ,Algeria
+3,Laghouat,4,DZ,Algeria
+28,M'Sila,4,DZ,Algeria
+29,Mascara,4,DZ,Algeria
+26,Médéa,4,DZ,Algeria
+43,Mila,4,DZ,Algeria
+27,Mostaganem,4,DZ,Algeria
+45,Naama,4,DZ,Algeria
+31,Oran,4,DZ,Algeria
+30,Ouargla,4,DZ,Algeria
+4,Oum El Bouaghi,4,DZ,Algeria
+48,Relizane,4,DZ,Algeria
+20,Saïda,4,DZ,Algeria
+19,Sétif,4,DZ,Algeria
+22,Sidi Bel Abbès,4,DZ,Algeria
+21,Skikda,4,DZ,Algeria
+41,Souk Ahras,4,DZ,Algeria
+11,Tamanghasset,4,DZ,Algeria
+12,Tébessa,4,DZ,Algeria
+14,Tiaret,4,DZ,Algeria
+37,Tindouf,4,DZ,Algeria
+42,Tipasa,4,DZ,Algeria
+38,Tissemsilt,4,DZ,Algeria
+15,Tizi Ouzou,4,DZ,Algeria
+13,Tlemcen,4,DZ,Algeria
+7,Andorra la Vella,6,AD,Andorra
+2,Canillo,6,AD,Andorra
+3,Encamp,6,AD,Andorra
+8,Escaldes-Engordany,6,AD,Andorra
+4,La Massana,6,AD,Andorra
+5,Ordino,6,AD,Andorra
+6,Sant Julià de Lòria,6,AD,Andorra
+BGO,Bengo Province,7,AO,Angola
+BGU,Benguela Province,7,AO,Angola
+BIE,Bié Province,7,AO,Angola
+CAB,Cabinda Province,7,AO,Angola
+CCU,Cuando Cubango Province,7,AO,Angola
+CNO,Cuanza Norte Province,7,AO,Angola
+CUS,Cuanza Sul,7,AO,Angola
+CNN,Cunene Province,7,AO,Angola
+HUA,Huambo Province,7,AO,Angola
+HUI,Huíla Province,7,AO,Angola
+LUA,Luanda Province,7,AO,Angola
+LNO,Lunda Norte Province,7,AO,Angola
+LSU,Lunda Sul Province,7,AO,Angola
+MAL,Malanje Province,7,AO,Angola
+MOX,Moxico Province,7,AO,Angola
+UIG,Uíge Province,7,AO,Angola
+ZAI,Zaire Province,7,AO,Angola
+10,Barbuda,10,AG,Antigua And Barbuda
+3,Saint George Parish,10,AG,Antigua And Barbuda
+4,Saint John Parish,10,AG,Antigua And Barbuda
+5,Saint Mary Parish,10,AG,Antigua And Barbuda
+6,Saint Paul Parish,10,AG,Antigua And Barbuda
+7,Saint Peter Parish,10,AG,Antigua And Barbuda
+B,Buenos Aires,11,AR,Argentina
+K,Catamarca,11,AR,Argentina
+H,Chaco,11,AR,Argentina
+U,Chubut,11,AR,Argentina
+X,Córdoba,11,AR,Argentina
+W,Corrientes,11,AR,Argentina
+E,Entre Ríos,11,AR,Argentina
+P,Formosa,11,AR,Argentina
+Y,Jujuy,11,AR,Argentina
+L,La Pampa,11,AR,Argentina
+F,La Rioja,11,AR,Argentina
+M,Mendoza,11,AR,Argentina
+N,Misiones,11,AR,Argentina
+Q,Neuquén,11,AR,Argentina
+R,Río Negro,11,AR,Argentina
+A,Salta,11,AR,Argentina
+J,San Juan,11,AR,Argentina
+D,San Luis	,11,AR,Argentina
+Z,Santa Cruz,11,AR,Argentina
+S,Santa Fe,11,AR,Argentina
+G,Santiago del Estero,11,AR,Argentina
+V,Tierra del Fuego,11,AR,Argentina
+T,Tucumán,11,AR,Argentina
+AG,Aragatsotn Region,12,AM,Armenia
+AR,Ararat Province,12,AM,Armenia
+AV,Armavir Region,12,AM,Armenia
+GR,Gegharkunik Province,12,AM,Armenia
+KT,Kotayk Region,12,AM,Armenia
+LO,Lori Region,12,AM,Armenia
+SH,Shirak Region,12,AM,Armenia
+SU,Syunik Province,12,AM,Armenia
+TV,Tavush Region,12,AM,Armenia
+VD,Vayots Dzor Region,12,AM,Armenia
+ER,Yerevan,12,AM,Armenia
+ACT,Australian Capital Territory,14,AU,Australia
+NSW,New South Wales,14,AU,Australia
+NT,Northern Territory,14,AU,Australia
+QLD,Queensland,14,AU,Australia
+SA,South Australia,14,AU,Australia
+TAS,Tasmania,14,AU,Australia
+VIC,Victoria,14,AU,Australia
+WA,Western Australia,14,AU,Australia
+1,Burgenland,15,AT,Austria
+2,Carinthia,15,AT,Austria
+3,Lower Austria,15,AT,Austria
+5,Salzburg,15,AT,Austria
+6,Styria,15,AT,Austria
+7,Tyrol,15,AT,Austria
+4,Upper Austria,15,AT,Austria
+9,Vienna,15,AT,Austria
+8,Vorarlberg,15,AT,Austria
+ABS,Absheron District,16,AZ,Azerbaijan
+AGM,Agdam District,16,AZ,Azerbaijan
+AGS,Agdash District,16,AZ,Azerbaijan
+AGC,Aghjabadi District,16,AZ,Azerbaijan
+AGA,Agstafa District,16,AZ,Azerbaijan
+AGU,Agsu District,16,AZ,Azerbaijan
+AST,Astara District,16,AZ,Azerbaijan
+BA,Baku,16,AZ,Azerbaijan
+BAL,Balakan District,16,AZ,Azerbaijan
+BAR,Barda District,16,AZ,Azerbaijan
+BEY,Beylagan District,16,AZ,Azerbaijan
+BIL,Bilasuvar District,16,AZ,Azerbaijan
+DAS,Dashkasan District,16,AZ,Azerbaijan
+FUZ,Fizuli District,16,AZ,Azerbaijan
+GA,Ganja,16,AZ,Azerbaijan
+GAD,Gədəbəy,16,AZ,Azerbaijan
+QOB,Gobustan District,16,AZ,Azerbaijan
+GOR,Goranboy District,16,AZ,Azerbaijan
+GOY,Goychay,16,AZ,Azerbaijan
+GYG,Goygol District,16,AZ,Azerbaijan
+HAC,Hajigabul District,16,AZ,Azerbaijan
+IMI,Imishli District,16,AZ,Azerbaijan
+ISM,Ismailli District,16,AZ,Azerbaijan
+CAB,Jabrayil District,16,AZ,Azerbaijan
+CAL,Jalilabad District,16,AZ,Azerbaijan
+KAL,Kalbajar District,16,AZ,Azerbaijan
+XAC,Khachmaz District,16,AZ,Azerbaijan
+XIZ,Khizi District,16,AZ,Azerbaijan
+XCI,Khojali District,16,AZ,Azerbaijan
+KUR,Kurdamir District,16,AZ,Azerbaijan
+LAC,Lachin District,16,AZ,Azerbaijan
+LA,Lankaran District,16,AZ,Azerbaijan
+LER,Lerik District,16,AZ,Azerbaijan
+XVD,Martuni,16,AZ,Azerbaijan
+MAS,Masally District,16,AZ,Azerbaijan
+MI,Mingachevir,16,AZ,Azerbaijan
+NX,Nakhchivan Autonomous Republic,16,AZ,Azerbaijan
+NEF,Neftchala District,16,AZ,Azerbaijan
+OGU,Oghuz District,16,AZ,Azerbaijan
+QAB,Qabala District,16,AZ,Azerbaijan
+QAX,Qakh District,16,AZ,Azerbaijan
+QAZ,Qazakh District,16,AZ,Azerbaijan
+QBA,Quba District,16,AZ,Azerbaijan
+QBI,Qubadli District,16,AZ,Azerbaijan
+QUS,Qusar District,16,AZ,Azerbaijan
+SAT,Saatly District,16,AZ,Azerbaijan
+SAB,Sabirabad District,16,AZ,Azerbaijan
+SAL,Salyan District,16,AZ,Azerbaijan
+SMX,Samukh District,16,AZ,Azerbaijan
+SBN,Shabran District,16,AZ,Azerbaijan
+SA,Shaki,16,AZ,Azerbaijan
+SAK,Shaki District,16,AZ,Azerbaijan
+SMI,Shamakhi District,16,AZ,Azerbaijan
+SKR,Shamkir District,16,AZ,Azerbaijan
+SR,Shirvan,16,AZ,Azerbaijan
+SUS,Shusha District,16,AZ,Azerbaijan
+SIY,Siazan District,16,AZ,Azerbaijan
+SM,Sumqayit,16,AZ,Azerbaijan
+TAR,Tartar District,16,AZ,Azerbaijan
+TOV,Tovuz District,16,AZ,Azerbaijan
+UCA,Ujar District,16,AZ,Azerbaijan
+YAR,Yardymli District,16,AZ,Azerbaijan
+YE,Yevlakh,16,AZ,Azerbaijan
+YEV,Yevlakh District,16,AZ,Azerbaijan
+ZAN,Zangilan District,16,AZ,Azerbaijan
+ZAQ,Zaqatala District,16,AZ,Azerbaijan
+ZAR,Zardab District,16,AZ,Azerbaijan
+BI,Bimini,17,BS,Bahamas The
+CI,Cat Island,17,BS,Bahamas The
+CO,Central Abaco,17,BS,Bahamas The
+CK,Crooked Island,17,BS,Bahamas The
+EG,East Grand Bahama,17,BS,Bahamas The
+EX,Exuma,17,BS,Bahamas The
+FP,Freeport,17,BS,Bahamas The
+HI,Harbour Island,17,BS,Bahamas The
+IN,Inagua,17,BS,Bahamas The
+LI,Long Island,17,BS,Bahamas The
+MG,Mayaguana District,17,BS,Bahamas The
+NP,New Providence,17,BS,Bahamas The
+NO,North Abaco,17,BS,Bahamas The
+NS,North Andros,17,BS,Bahamas The
+RI,Ragged Island,17,BS,Bahamas The
+RC,Rum Cay District,17,BS,Bahamas The
+SS,San Salvador Island,17,BS,Bahamas The
+SW,Spanish Wells,17,BS,Bahamas The
+WG,West Grand Bahama,17,BS,Bahamas The
+13,Capital Governorate,18,BH,Bahrain
+16,Central Governorate,18,BH,Bahrain
+15,Muharraq Governorate,18,BH,Bahrain
+14,Southern Governorate,18,BH,Bahrain
+6,Barisal District,19,BD,Bangladesh
+B,Chittagong Division,19,BD,Bangladesh
+13,Dhaka District,19,BD,Bangladesh
+27,Khulna District,19,BD,Bangladesh
+34,Mymensingh District,19,BD,Bangladesh
+54,Rajshahi District,19,BD,Bangladesh
+55,Rangpur District,19,BD,Bangladesh
+60,Sylhet District,19,BD,Bangladesh
+1,Christ Church,20,BB,Barbados
+2,Saint Andrew,20,BB,Barbados
+4,Saint James,20,BB,Barbados
+6,Saint Joseph,20,BB,Barbados
+8,Saint Michael,20,BB,Barbados
+9,Saint Peter,20,BB,Barbados
+10,Saint Philip,20,BB,Barbados
+BR,Brest Region,21,BY,Belarus
+HO,Gomel Region,21,BY,Belarus
+HR,Grodno Region,21,BY,Belarus
+HM,Minsk,21,BY,Belarus
+MI,Minsk Region,21,BY,Belarus
+MA,Mogilev Region,21,BY,Belarus
+VI,Vitebsk Region,21,BY,Belarus
+BRU,Brussels-Capital Region,22,BE,Belgium
+VLG,Flanders,22,BE,Belgium
+WAL,Wallonia,22,BE,Belgium
+BZ,Belize District,23,BZ,Belize
+CY,Cayo District,23,BZ,Belize
+CZL,Corozal District,23,BZ,Belize
+OW,Orange Walk District,23,BZ,Belize
+SC,Stann Creek District,23,BZ,Belize
+TOL,Toledo District,23,BZ,Belize
+AL,Alibori Department,24,BJ,Benin
+AK,Atakora Department,24,BJ,Benin
+AQ,Atlantique Department,24,BJ,Benin
+BO,Borgou Department,24,BJ,Benin
+CO,Collines Department,24,BJ,Benin
+DO,Donga Department,24,BJ,Benin
+KO,Kouffo Department,24,BJ,Benin
+LI,Littoral Department,24,BJ,Benin
+MO,Mono Department,24,BJ,Benin
+OU,Ouémé Department,24,BJ,Benin
+PL,Plateau Department,24,BJ,Benin
+ZO,Zou Department,24,BJ,Benin
+33,Bumthang District,26,BT,Bhutan
+12,Chukha District,26,BT,Bhutan
+22,Dagana District,26,BT,Bhutan
+GA,Gasa District,26,BT,Bhutan
+13,Haa District,26,BT,Bhutan
+44,Lhuntse District,26,BT,Bhutan
+42,Mongar District,26,BT,Bhutan
+11,Paro District,26,BT,Bhutan
+43,Pemagatshel District,26,BT,Bhutan
+23,Punakha District,26,BT,Bhutan
+45,Samdrup Jongkhar District,26,BT,Bhutan
+14,Samtse District,26,BT,Bhutan
+31,Sarpang District,26,BT,Bhutan
+15,Thimphu District,26,BT,Bhutan
+41,Trashigang District,26,BT,Bhutan
+21,Tsirang District,26,BT,Bhutan
+24,Wangdue Phodrang District,26,BT,Bhutan
+34,Zhemgang District,26,BT,Bhutan
+B,Beni Department,27,BO,Bolivia
+H,Chuquisaca Department,27,BO,Bolivia
+C,Cochabamba Department,27,BO,Bolivia
+L,La Paz Department,27,BO,Bolivia
+O,Oruro Department,27,BO,Bolivia
+N,Pando Department,27,BO,Bolivia
+P,Potosí Department,27,BO,Bolivia
+S,Santa Cruz Department,27,BO,Bolivia
+T,Tarija Department,27,BO,Bolivia
+BRC,Brčko District,28,BA,Bosnia and Herzegovina
+BIH,Federation of Bosnia and Herzegovina,28,BA,Bosnia and Herzegovina
+SRP,Republika Srpska,28,BA,Bosnia and Herzegovina
+CE,Central District,29,BW,Botswana
+GH,Ghanzi District,29,BW,Botswana
+KG,Kgalagadi District,29,BW,Botswana
+KL,Kgatleng District,29,BW,Botswana
+KW,Kweneng District,29,BW,Botswana
+NE,North-East District,29,BW,Botswana
+NW,North-West District,29,BW,Botswana
+SE,South-East District,29,BW,Botswana
+SO,Southern District,29,BW,Botswana
+AC,Acre,31,BR,Brazil
+AL,Alagoas,31,BR,Brazil
+AP,Amapá,31,BR,Brazil
+AM,Amazonas,31,BR,Brazil
+BA,Bahia,31,BR,Brazil
+CE,Ceará,31,BR,Brazil
+DF,Distrito Federal,31,BR,Brazil
+ES,Espírito Santo,31,BR,Brazil
+GO,Goiás,31,BR,Brazil
+MA,Maranhão,31,BR,Brazil
+MT,Mato Grosso,31,BR,Brazil
+MS,Mato Grosso do Sul,31,BR,Brazil
+MG,Minas Gerais,31,BR,Brazil
+PA,Pará,31,BR,Brazil
+PB,Paraíba,31,BR,Brazil
+PR,Paraná,31,BR,Brazil
+PE,Pernambuco,31,BR,Brazil
+PI,Piauí,31,BR,Brazil
+RJ,Rio de Janeiro,31,BR,Brazil
+RN,Rio Grande do Norte,31,BR,Brazil
+RS,Rio Grande do Sul,31,BR,Brazil
+RO,Rondônia,31,BR,Brazil
+RR,Roraima,31,BR,Brazil
+SC,Santa Catarina,31,BR,Brazil
+SP,São Paulo,31,BR,Brazil
+SE,Sergipe,31,BR,Brazil
+TO,Tocantins,31,BR,Brazil
+BE,Belait District,33,BN,Brunei
+BM,Brunei-Muara District,33,BN,Brunei
+TE,Temburong District,33,BN,Brunei
+TU,Tutong District,33,BN,Brunei
+1,Blagoevgrad Province,34,BG,Bulgaria
+2,Burgas Province,34,BG,Bulgaria
+8,Dobrich Province,34,BG,Bulgaria
+7,Gabrovo Province,34,BG,Bulgaria
+26,Haskovo Province,34,BG,Bulgaria
+9,Kardzhali Province,34,BG,Bulgaria
+10,Kyustendil Province,34,BG,Bulgaria
+11,Lovech Province,34,BG,Bulgaria
+12,Montana Province,34,BG,Bulgaria
+13,Pazardzhik Province,34,BG,Bulgaria
+14,Pernik Province,34,BG,Bulgaria
+15,Pleven Province,34,BG,Bulgaria
+16,Plovdiv Province,34,BG,Bulgaria
+17,Razgrad Province,34,BG,Bulgaria
+18,Ruse Province,34,BG,Bulgaria
+27,Shumen,34,BG,Bulgaria
+19,Silistra Province,34,BG,Bulgaria
+20,Sliven Province,34,BG,Bulgaria
+21,Smolyan Province,34,BG,Bulgaria
+22,Sofia City Province,34,BG,Bulgaria
+23,Sofia Province,34,BG,Bulgaria
+24,Stara Zagora Province,34,BG,Bulgaria
+25,Targovishte Province,34,BG,Bulgaria
+3,Varna Province,34,BG,Bulgaria
+4,Veliko Tarnovo Province,34,BG,Bulgaria
+5,Vidin Province,34,BG,Bulgaria
+6,Vratsa Province,34,BG,Bulgaria
+28,Yambol Province,34,BG,Bulgaria
+1,Boucle du Mouhoun Region,35,BF,Burkina Faso
+2,Cascades Region,35,BF,Burkina Faso
+3,Centre,35,BF,Burkina Faso
+4,Centre-Est Region,35,BF,Burkina Faso
+5,Centre-Nord Region,35,BF,Burkina Faso
+6,Centre-Ouest Region,35,BF,Burkina Faso
+7,Centre-Sud Region,35,BF,Burkina Faso
+8,Est Region,35,BF,Burkina Faso
+9,Hauts-Bassins Region,35,BF,Burkina Faso
+10,"Nord Region, Burkina Faso",35,BF,Burkina Faso
+11,Plateau-Central Region,35,BF,Burkina Faso
+12,Sahel Region,35,BF,Burkina Faso
+13,Sud-Ouest Region,35,BF,Burkina Faso
+BB,Bubanza Province,36,BI,Burundi
+BM,Bujumbura Mairie Province,36,BI,Burundi
+BR,Bururi Province,36,BI,Burundi
+CA,Cankuzo Province,36,BI,Burundi
+CI,Cibitoke Province,36,BI,Burundi
+GI,Gitega Province,36,BI,Burundi
+KR,Karuzi Province,36,BI,Burundi
+KY,Kayanza Province,36,BI,Burundi
+KI,Kirundo Province,36,BI,Burundi
+MA,Makamba Province,36,BI,Burundi
+MU,Muramvya Province,36,BI,Burundi
+MY,Muyinga Province,36,BI,Burundi
+MW,Mwaro Province,36,BI,Burundi
+NG,Ngozi Province,36,BI,Burundi
+RM,Rumonge Province,36,BI,Burundi
+RT,Rutana Province,36,BI,Burundi
+RY,Ruyigi Province,36,BI,Burundi
+1,Banteay Meanchey Province,37,KH,Cambodia
+2,Battambang Province,37,KH,Cambodia
+3,Kampong Cham Province,37,KH,Cambodia
+4,Kampong Chhnang Province,37,KH,Cambodia
+5,Kampong Speu Province,37,KH,Cambodia
+7,Kampot Province,37,KH,Cambodia
+8,Kandal Province,37,KH,Cambodia
+23,Kep Province,37,KH,Cambodia
+9,Koh Kong Province,37,KH,Cambodia
+10,Kratié Province,37,KH,Cambodia
+11,Mondulkiri Province,37,KH,Cambodia
+22,Oddar Meanchey Province,37,KH,Cambodia
+24,Pailin Province,37,KH,Cambodia
+12,Phnom Penh,37,KH,Cambodia
+13,Preah Vihear Province,37,KH,Cambodia
+14,Prey Veng Province,37,KH,Cambodia
+15,Pursat Province,37,KH,Cambodia
+16,Ratanakiri Province,37,KH,Cambodia
+17,Siem Reap Province,37,KH,Cambodia
+18,Sihanoukville Province,37,KH,Cambodia
+19,Stung Treng Province,37,KH,Cambodia
+20,Svay Rieng Province,37,KH,Cambodia
+21,Takéo Province,37,KH,Cambodia
+AD,Adamawa,38,CM,Cameroon
+CE,Centre,38,CM,Cameroon
+ES,East,38,CM,Cameroon
+EN,Far North,38,CM,Cameroon
+LT,Littoral,38,CM,Cameroon
+NO,North,38,CM,Cameroon
+NW,Northwest,38,CM,Cameroon
+SU,South,38,CM,Cameroon
+SW,Southwest,38,CM,Cameroon
+OU,West,38,CM,Cameroon
+AB,Alberta,39,CA,Canada
+BC,British Columbia,39,CA,Canada
+MB,Manitoba,39,CA,Canada
+NB,New Brunswick,39,CA,Canada
+NL,Newfoundland and Labrador,39,CA,Canada
+NT,Northwest Territories,39,CA,Canada
+NS,Nova Scotia,39,CA,Canada
+NU,Nunavut,39,CA,Canada
+ON,Ontario,39,CA,Canada
+PE,Prince Edward Island,39,CA,Canada
+QC,Quebec,39,CA,Canada
+SK,Saskatchewan,39,CA,Canada
+YT,Yukon,39,CA,Canada
+BV,Boa Vista,40,CV,Cape Verde
+BR,Brava,40,CV,Cape Verde
+MA,Maio Municipality,40,CV,Cape Verde
+MO,Mosteiros,40,CV,Cape Verde
+PA,Paul,40,CV,Cape Verde
+PN,Porto Novo,40,CV,Cape Verde
+PR,Praia,40,CV,Cape Verde
+RB,Ribeira Brava Municipality,40,CV,Cape Verde
+RG,Ribeira Grande,40,CV,Cape Verde
+RS,Ribeira Grande de Santiago,40,CV,Cape Verde
+SL,Sal,40,CV,Cape Verde
+CA,Santa Catarina,40,CV,Cape Verde
+CF,Santa Catarina do Fogo,40,CV,Cape Verde
+CR,Santa Cruz,40,CV,Cape Verde
+SD,São Domingos,40,CV,Cape Verde
+SF,São Filipe,40,CV,Cape Verde
+SO,São Lourenço dos Órgãos,40,CV,Cape Verde
+SM,São Miguel,40,CV,Cape Verde
+SV,São Vicente,40,CV,Cape Verde
+TA,Tarrafal,40,CV,Cape Verde
+TS,Tarrafal de São Nicolau,40,CV,Cape Verde
+BB,Bamingui-Bangoran Prefecture,42,CF,Central African Republic
+BGF,Bangui,42,CF,Central African Republic
+BK,Basse-Kotto Prefecture,42,CF,Central African Republic
+HM,Haut-Mbomou Prefecture,42,CF,Central African Republic
+HK,Haute-Kotto Prefecture,42,CF,Central African Republic
+KG,Kémo Prefecture,42,CF,Central African Republic
+LB,Lobaye Prefecture,42,CF,Central African Republic
+HS,Mambéré-Kadéï,42,CF,Central African Republic
+MB,Mbomou Prefecture,42,CF,Central African Republic
+KB,Nana-Grébizi Economic Prefecture,42,CF,Central African Republic
+NM,Nana-Mambéré Prefecture,42,CF,Central African Republic
+MP,Ombella-M'Poko Prefecture,42,CF,Central African Republic
+UK,Ouaka Prefecture,42,CF,Central African Republic
+AC,Ouham Prefecture,42,CF,Central African Republic
+OP,Ouham-Pendé Prefecture,42,CF,Central African Republic
+SE,Sangha-Mbaéré,42,CF,Central African Republic
+VK,Vakaga Prefecture,42,CF,Central African Republic
+BG,Bahr el Gazel,43,TD,Chad
+BA,Batha Region,43,TD,Chad
+BO,Borkou,43,TD,Chad
+EO,Ennedi-Ouest,43,TD,Chad
+GR,Guéra Region,43,TD,Chad
+HL,Hadjer-Lamis,43,TD,Chad
+KA,Kanem Region,43,TD,Chad
+LC,Lac Region,43,TD,Chad
+LO,Logone Occidental Region,43,TD,Chad
+LR,Logone Oriental Region,43,TD,Chad
+MA,Mandoul Region,43,TD,Chad
+ME,Mayo-Kebbi Est Region,43,TD,Chad
+MO,Mayo-Kebbi Ouest Region,43,TD,Chad
+MC,Moyen-Chari Region,43,TD,Chad
+OD,Ouaddaï Region,43,TD,Chad
+SA,Salamat Region,43,TD,Chad
+SI,Sila Region,43,TD,Chad
+TA,Tandjilé Region,43,TD,Chad
+TI,Tibesti Region,43,TD,Chad
+WF,Wadi Fira Region,43,TD,Chad
+AI,Aisén del General Carlos Ibañez del Campo,44,CL,Chile
+AN,Antofagasta,44,CL,Chile
+AP,Arica y Parinacota,44,CL,Chile
+AT,Atacama,44,CL,Chile
+BI,Biobío,44,CL,Chile
+CO,Coquimbo,44,CL,Chile
+AR,La Araucanía,44,CL,Chile
+LI,Libertador General Bernardo O'Higgins,44,CL,Chile
+LL,Los Lagos,44,CL,Chile
+LR,Los Ríos,44,CL,Chile
+MA,Magallanes y de la Antártica Chilena,44,CL,Chile
+ML,Maule,44,CL,Chile
+NB,Ñuble,44,CL,Chile
+RM,Región Metropolitana de Santiago,44,CL,Chile
+TA,Tarapacá,44,CL,Chile
+VS,Valparaíso,44,CL,Chile
+AH,Anhui,45,CN,China
+BJ,Beijing,45,CN,China
+CQ,Chongqing,45,CN,China
+FJ,Fujian,45,CN,China
+GS,Gansu,45,CN,China
+GD,Guangdong,45,CN,China
+GX,Guangxi Zhuang,45,CN,China
+GZ,Guizhou,45,CN,China
+HI,Hainan,45,CN,China
+HE,Hebei,45,CN,China
+HL,Heilongjiang,45,CN,China
+HA,Henan,45,CN,China
+HB,Hubei,45,CN,China
+HN,Hunan,45,CN,China
+NM,Inner Mongolia,45,CN,China
+JS,Jiangsu,45,CN,China
+JX,Jiangxi,45,CN,China
+JL,Jilin,45,CN,China
+LN,Liaoning,45,CN,China
+NX,Ningxia Huizu,45,CN,China
+QH,Qinghai,45,CN,China
+SN,Shaanxi,45,CN,China
+SD,Shandong,45,CN,China
+SH,Shanghai,45,CN,China
+SX,Shanxi,45,CN,China
+SC,Sichuan,45,CN,China
+TW,Taiwan,45,CN,China
+TJ,Tianjin,45,CN,China
+XJ,Xinjiang,45,CN,China
+XZ,Xizang,45,CN,China
+YN,Yunnan,45,CN,China
+ZJ,Zhejiang,45,CN,China
+AMA,Amazonas,48,CO,Colombia
+ANT,Antioquia,48,CO,Colombia
+ARA,Arauca,48,CO,Colombia
+ATL,Atlántico,48,CO,Colombia
+DC,Bogotá D.C.,48,CO,Colombia
+BOL,Bolívar,48,CO,Colombia
+BOY,Boyacá,48,CO,Colombia
+CAL,Caldas,48,CO,Colombia
+CAQ,Caquetá,48,CO,Colombia
+CAS,Casanare,48,CO,Colombia
+CAU,Cauca,48,CO,Colombia
+CES,Cesar,48,CO,Colombia
+CHO,Chocó,48,CO,Colombia
+COR,Córdoba,48,CO,Colombia
+CUN,Cundinamarca,48,CO,Colombia
+GUA,Guainía,48,CO,Colombia
+GUV,Guaviare,48,CO,Colombia
+HUI,Huila,48,CO,Colombia
+LAG,La Guajira,48,CO,Colombia
+MAG,Magdalena,48,CO,Colombia
+MET,Meta,48,CO,Colombia
+NAR,Nariño,48,CO,Colombia
+NSA,Norte de Santander,48,CO,Colombia
+PUT,Putumayo,48,CO,Colombia
+QUI,Quindío,48,CO,Colombia
+RIS,Risaralda,48,CO,Colombia
+SAP,"San Andrés, Providencia y Santa Catalina",48,CO,Colombia
+SAN,Santander,48,CO,Colombia
+SUC,Sucre,48,CO,Colombia
+TOL,Tolima,48,CO,Colombia
+VAC,Valle del Cauca,48,CO,Colombia
+VAU,Vaupés,48,CO,Colombia
+VID,Vichada,48,CO,Colombia
+A,Anjouan,49,KM,Comoros
+G,Grande Comore,49,KM,Comoros
+M,Mohéli,49,KM,Comoros
+11,Bouenza Department,50,CG,Congo
+BZV,Brazzaville,50,CG,Congo
+8,Cuvette Department,50,CG,Congo
+15,Cuvette-Ouest Department,50,CG,Congo
+2,Lékoumou Department,50,CG,Congo
+7,Likouala Department,50,CG,Congo
+9,Niari Department,50,CG,Congo
+14,Plateaux Department,50,CG,Congo
+16,Pointe-Noire,50,CG,Congo
+12,Pool Department,50,CG,Congo
+13,Sangha Department,50,CG,Congo
+A,Alajuela Province,53,CR,Costa Rica
+G,Guanacaste Province,53,CR,Costa Rica
+H,Heredia Province,53,CR,Costa Rica
+L,Limón Province,53,CR,Costa Rica
+C,Provincia de Cartago,53,CR,Costa Rica
+P,Puntarenas Province,53,CR,Costa Rica
+SJ,San José Province,53,CR,Costa Rica
+AB,Abidjan,54,CI,Cote D'Ivoire (Ivory Coast)
+BS,Bas-Sassandra District,54,CI,Cote D'Ivoire (Ivory Coast)
+CM,Comoé District,54,CI,Cote D'Ivoire (Ivory Coast)
+DN,Denguélé District,54,CI,Cote D'Ivoire (Ivory Coast)
+6,Dix-Huit Montagnes,54,CI,Cote D'Ivoire (Ivory Coast)
+GD,Gôh-Djiboua District,54,CI,Cote D'Ivoire (Ivory Coast)
+7,Lacs Region,54,CI,Cote D'Ivoire (Ivory Coast)
+1,Lagunes region,54,CI,Cote D'Ivoire (Ivory Coast)
+SM,Sassandra-Marahoué District,54,CI,Cote D'Ivoire (Ivory Coast)
+4,Vallée du Bandama Region,54,CI,Cote D'Ivoire (Ivory Coast)
+WR,Woroba District,54,CI,Cote D'Ivoire (Ivory Coast)
+ZZ,Zanzan Region,54,CI,Cote D'Ivoire (Ivory Coast)
+7,Bjelovar-Bilogora County,55,HR,Croatia
+12,Brod-Posavina County,55,HR,Croatia
+19,Dubrovnik-Neretva County,55,HR,Croatia
+18,Istria County,55,HR,Croatia
+6,Koprivnica-Križevci County,55,HR,Croatia
+2,Krapina-Zagorje County,55,HR,Croatia
+9,Lika-Senj County,55,HR,Croatia
+20,Međimurje County,55,HR,Croatia
+14,Osijek-Baranja County,55,HR,Croatia
+11,Požega-Slavonia County,55,HR,Croatia
+8,Primorje-Gorski Kotar County,55,HR,Croatia
+15,Šibenik-Knin County,55,HR,Croatia
+3,Sisak-Moslavina County,55,HR,Croatia
+17,Split-Dalmatia County,55,HR,Croatia
+5,Varaždin County,55,HR,Croatia
+10,Virovitica-Podravina County,55,HR,Croatia
+16,Vukovar-Syrmia County,55,HR,Croatia
+13,Zadar County,55,HR,Croatia
+21,Zagreb,55,HR,Croatia
+1,Zagreb County,55,HR,Croatia
+15,Artemisa Province,56,CU,Cuba
+9,Camagüey Province,56,CU,Cuba
+8,Ciego de Ávila Province,56,CU,Cuba
+6,Cienfuegos Province,56,CU,Cuba
+12,Granma Province,56,CU,Cuba
+14,Guantánamo Province,56,CU,Cuba
+3,Havana Province,56,CU,Cuba
+11,Holguín Province,56,CU,Cuba
+99,Isla de la Juventud,56,CU,Cuba
+10,Las Tunas Province,56,CU,Cuba
+4,Matanzas Province,56,CU,Cuba
+16,Mayabeque Province,56,CU,Cuba
+1,Pinar del Río Province,56,CU,Cuba
+7,Sancti Spíritus Province,56,CU,Cuba
+13,Santiago de Cuba Province,56,CU,Cuba
+5,Villa Clara Province,56,CU,Cuba
+4,Famagusta District (Mağusa),57,CY,Cyprus
+6,Kyrenia District (Keryneia),57,CY,Cyprus
+3,Larnaca District (Larnaka),57,CY,Cyprus
+2,Limassol District (Leymasun),57,CY,Cyprus
+3,Limassol District (Leymasun),57,CY,Cyprus
+1,Nicosia District (Lefkoşa),57,CY,Cyprus
+5,Paphos District (Pafos),57,CY,Cyprus
+31,Jihočeský kraj,58,CZ,Czech Republic
+64,Jihomoravský kraj,58,CZ,Czech Republic
+41,Karlovarský kraj,58,CZ,Czech Republic
+63,Kraj Vysočina,58,CZ,Czech Republic
+52,Královéhradecký kraj,58,CZ,Czech Republic
+51,Liberecký kraj,58,CZ,Czech Republic
+80,Moravskoslezský kraj,58,CZ,Czech Republic
+71,Olomoucký kraj,58,CZ,Czech Republic
+53,Pardubický kraj,58,CZ,Czech Republic
+324,Plzeň-jih,58,CZ,Czech Republic
+10,"Praha, Hlavní město",58,CZ,Czech Republic
+20,Středočeský kraj,58,CZ,Czech Republic
+42,Ústecký kraj,58,CZ,Czech Republic
+724,Zlín,58,CZ,Czech Republic
+BU,Bas-Uélé,51,CD,Democratic Republic of the Congo
+EQ,Équateur,51,CD,Democratic Republic of the Congo
+HK,Haut-Katanga,51,CD,Democratic Republic of the Congo
+HL,Haut-Lomami,51,CD,Democratic Republic of the Congo
+HU,Haut-Uélé,51,CD,Democratic Republic of the Congo
+IT,Ituri,51,CD,Democratic Republic of the Congo
+KS,Kasaï,51,CD,Democratic Republic of the Congo
+KE,Kasaï Oriental,51,CD,Democratic Republic of the Congo
+KN,Kinshasa,51,CD,Democratic Republic of the Congo
+BC,Kongo Central,51,CD,Democratic Republic of the Congo
+KG,Kwango,51,CD,Democratic Republic of the Congo
+KL,Kwilu,51,CD,Democratic Republic of the Congo
+LO,Lomami,51,CD,Democratic Republic of the Congo
+MN,Mai-Ndombe,51,CD,Democratic Republic of the Congo
+MA,Maniema,51,CD,Democratic Republic of the Congo
+MO,Mongala,51,CD,Democratic Republic of the Congo
+NK,Nord-Kivu,51,CD,Democratic Republic of the Congo
+NU,Nord-Ubangi,51,CD,Democratic Republic of the Congo
+SA,Sankuru,51,CD,Democratic Republic of the Congo
+SK,Sud-Kivu,51,CD,Democratic Republic of the Congo
+SU,Sud-Ubangi,51,CD,Democratic Republic of the Congo
+TA,Tanganyika,51,CD,Democratic Republic of the Congo
+TO,Tshopo,51,CD,Democratic Republic of the Congo
+TU,Tshuapa,51,CD,Democratic Republic of the Congo
+84,Capital Region of Denmark,59,DK,Denmark
+82,Central Denmark Region,59,DK,Denmark
+81,North Denmark Region,59,DK,Denmark
+83,Region of Southern Denmark,59,DK,Denmark
+85,Region Zealand,59,DK,Denmark
+AS,Ali Sabieh Region,60,DJ,Djibouti
+AR,Arta Region,60,DJ,Djibouti
+DI,Dikhil Region,60,DJ,Djibouti
+DJ,Djibouti,60,DJ,Djibouti
+OB,Obock Region,60,DJ,Djibouti
+TA,Tadjourah Region,60,DJ,Djibouti
+2,Saint Andrew Parish,61,DM,Dominica
+3,Saint David Parish,61,DM,Dominica
+4,Saint George Parish,61,DM,Dominica
+5,Saint John Parish,61,DM,Dominica
+6,Saint Joseph Parish,61,DM,Dominica
+7,Saint Luke Parish,61,DM,Dominica
+8,Saint Mark Parish,61,DM,Dominica
+9,Saint Patrick Parish,61,DM,Dominica
+10,Saint Paul Parish,61,DM,Dominica
+11,Saint Peter Parish,61,DM,Dominica
+2,Azua Province,62,DO,Dominican Republic
+3,Baoruco Province,62,DO,Dominican Republic
+4,Barahona Province,62,DO,Dominican Republic
+5,Dajabón Province,62,DO,Dominican Republic
+1,Distrito Nacional,62,DO,Dominican Republic
+6,Duarte Province,62,DO,Dominican Republic
+8,El Seibo Province,62,DO,Dominican Republic
+9,Espaillat Province,62,DO,Dominican Republic
+30,Hato Mayor Province,62,DO,Dominican Republic
+19,Hermanas Mirabal Province,62,DO,Dominican Republic
+10,Independencia,62,DO,Dominican Republic
+11,La Altagracia Province,62,DO,Dominican Republic
+12,La Romana Province,62,DO,Dominican Republic
+13,La Vega Province,62,DO,Dominican Republic
+14,María Trinidad Sánchez Province,62,DO,Dominican Republic
+28,Monseñor Nouel Province,62,DO,Dominican Republic
+15,Monte Cristi Province,62,DO,Dominican Republic
+29,Monte Plata Province,62,DO,Dominican Republic
+16,Pedernales Province,62,DO,Dominican Republic
+17,Peravia Province,62,DO,Dominican Republic
+18,Puerto Plata Province,62,DO,Dominican Republic
+20,Samaná Province,62,DO,Dominican Republic
+21,San Cristóbal Province,62,DO,Dominican Republic
+31,San José de Ocoa Province,62,DO,Dominican Republic
+22,San Juan Province,62,DO,Dominican Republic
+23,San Pedro de Macorís,62,DO,Dominican Republic
+24,Sánchez Ramírez Province,62,DO,Dominican Republic
+25,Santiago Province,62,DO,Dominican Republic
+26,Santiago Rodríguez Province,62,DO,Dominican Republic
+32,Santo Domingo Province,62,DO,Dominican Republic
+27,Valverde Province,62,DO,Dominican Republic
+AL,Aileu municipality,63,TL,East Timor
+AN,Ainaro Municipality,63,TL,East Timor
+BA,Baucau Municipality,63,TL,East Timor
+BO,Bobonaro Municipality,63,TL,East Timor
+CO,Cova Lima Municipality,63,TL,East Timor
+DI,Dili municipality,63,TL,East Timor
+ER,Ermera District,63,TL,East Timor
+LA,Lautém Municipality,63,TL,East Timor
+LI,Liquiçá Municipality,63,TL,East Timor
+MT,Manatuto District,63,TL,East Timor
+MF,Manufahi Municipality,63,TL,East Timor
+VI,Viqueque Municipality,63,TL,East Timor
+A,Azuay,64,EC,Ecuador
+B,Bolívar,64,EC,Ecuador
+F,Cañar,64,EC,Ecuador
+C,Carchi,64,EC,Ecuador
+H,Chimborazo,64,EC,Ecuador
+X,Cotopaxi,64,EC,Ecuador
+O,El Oro,64,EC,Ecuador
+E,Esmeraldas,64,EC,Ecuador
+W,Galápagos,64,EC,Ecuador
+G,Guayas,64,EC,Ecuador
+I,Imbabura,64,EC,Ecuador
+L,Loja,64,EC,Ecuador
+R,Los Ríos,64,EC,Ecuador
+M,Manabí,64,EC,Ecuador
+S,Morona-Santiago,64,EC,Ecuador
+N,Napo,64,EC,Ecuador
+D,Orellana,64,EC,Ecuador
+Y,Pastaza,64,EC,Ecuador
+P,Pichincha,64,EC,Ecuador
+SE,Santa Elena,64,EC,Ecuador
+SD,Santo Domingo de los Tsáchilas,64,EC,Ecuador
+U,Sucumbíos,64,EC,Ecuador
+T,Tungurahua,64,EC,Ecuador
+Z,Zamora Chinchipe,64,EC,Ecuador
+ALX,Alexandria,65,EG,Egypt
+ASN,Aswan,65,EG,Egypt
+AST,Asyut,65,EG,Egypt
+BH,Beheira,65,EG,Egypt
+BNS,Beni Suef,65,EG,Egypt
+C,Cairo,65,EG,Egypt
+DK,Dakahlia,65,EG,Egypt
+DT,Damietta,65,EG,Egypt
+FYM,Faiyum,65,EG,Egypt
+GH,Gharbia,65,EG,Egypt
+GZ,Giza,65,EG,Egypt
+IS,Ismailia,65,EG,Egypt
+KFS,Kafr el-Sheikh,65,EG,Egypt
+LX,Luxor,65,EG,Egypt
+MT,Matrouh,65,EG,Egypt
+MN,Minya,65,EG,Egypt
+MNF,Monufia,65,EG,Egypt
+WAD,New Valley,65,EG,Egypt
+SIN,North Sinai,65,EG,Egypt
+PTS,Port Said,65,EG,Egypt
+KB,Qalyubia,65,EG,Egypt
+KN,Qena,65,EG,Egypt
+BA,Red Sea,65,EG,Egypt
+SHR,Sharqia,65,EG,Egypt
+SHG,Sohag,65,EG,Egypt
+JS,South Sinai,65,EG,Egypt
+SUZ,Suez,65,EG,Egypt
+AH,Ahuachapán Department,66,SV,El Salvador
+CA,Cabañas Department,66,SV,El Salvador
+CH,Chalatenango Department,66,SV,El Salvador
+CU,Cuscatlán Department,66,SV,El Salvador
+LI,La Libertad Department,66,SV,El Salvador
+PA,La Paz Department,66,SV,El Salvador
+UN,La Unión Department,66,SV,El Salvador
+MO,Morazán Department,66,SV,El Salvador
+SM,San Miguel Department,66,SV,El Salvador
+SS,San Salvador Department,66,SV,El Salvador
+SV,San Vicente Department,66,SV,El Salvador
+SA,Santa Ana Department,66,SV,El Salvador
+SO,Sonsonate Department,66,SV,El Salvador
+US,Usulután Department,66,SV,El Salvador
+AN,Annobón Province,67,GQ,Equatorial Guinea
+BN,Bioko Norte Province,67,GQ,Equatorial Guinea
+BS,Bioko Sur Province,67,GQ,Equatorial Guinea
+CS,Centro Sur Province,67,GQ,Equatorial Guinea
+KN,Kié-Ntem Province,67,GQ,Equatorial Guinea
+LI,Litoral Province,67,GQ,Equatorial Guinea
+WN,Wele-Nzas Province,67,GQ,Equatorial Guinea
+AN,Anseba Region,68,ER,Eritrea
+DU,Debub Region,68,ER,Eritrea
+GB,Gash-Barka Region,68,ER,Eritrea
+MA,Maekel Region,68,ER,Eritrea
+SK,Northern Red Sea Region,68,ER,Eritrea
+DK,Southern Red Sea Region,68,ER,Eritrea
+37,Harju County,69,EE,Estonia
+39,Hiiu County,69,EE,Estonia
+44,Ida-Viru County,69,EE,Estonia
+51,Järva County,69,EE,Estonia
+49,Jõgeva County,69,EE,Estonia
+57,Lääne County,69,EE,Estonia
+59,Lääne-Viru County,69,EE,Estonia
+67,Pärnu County,69,EE,Estonia
+65,Põlva County,69,EE,Estonia
+70,Rapla County,69,EE,Estonia
+74,Saare County,69,EE,Estonia
+78,Tartu County,69,EE,Estonia
+82,Valga County,69,EE,Estonia
+84,Viljandi County,69,EE,Estonia
+86,Võru County,69,EE,Estonia
+AA,Addis Ababa,70,ET,Ethiopia
+AF,Afar Region,70,ET,Ethiopia
+AM,Amhara Region,70,ET,Ethiopia
+BE,Benishangul-Gumuz Region,70,ET,Ethiopia
+DD,Dire Dawa,70,ET,Ethiopia
+GA,Gambela Region,70,ET,Ethiopia
+HA,Harari Region,70,ET,Ethiopia
+OR,Oromia Region,70,ET,Ethiopia
+SO,Somali Region,70,ET,Ethiopia
+SN,"Southern Nations, Nationalities, and Peoples' Region",70,ET,Ethiopia
+TI,Tigray Region,70,ET,Ethiopia
+C,Central Division,73,FJ,Fiji Islands
+E,Eastern Division,73,FJ,Fiji Islands
+N,Northern Division,73,FJ,Fiji Islands
+W,Western Division,73,FJ,Fiji Islands
+8,Central Finland,74,FI,Finland
+7,Central Ostrobothnia,74,FI,Finland
+19,Finland Proper,74,FI,Finland
+5,Kainuu,74,FI,Finland
+9,Kymenlaakso,74,FI,Finland
+LL,Lapland,74,FI,Finland
+13,North Karelia,74,FI,Finland
+14,Northern Ostrobothnia,74,FI,Finland
+12,Ostrobothnia,74,FI,Finland
+16,Päijänne Tavastia,74,FI,Finland
+11,Pirkanmaa,74,FI,Finland
+17,Satakunta,74,FI,Finland
+2,South Karelia,74,FI,Finland
+3,Southern Ostrobothnia,74,FI,Finland
+4,Southern Savonia,74,FI,Finland
+6,Tavastia Proper,74,FI,Finland
+18,Uusimaa,74,FI,Finland
+ARA,Auvergne-Rhône-Alpes,75,FR,France
+BFC,Bourgogne-Franche-Comté,75,FR,France
+BRE,Bretagne,75,FR,France
+CVL,Centre-Val de Loire,75,FR,France
+COR,Corse,75,FR,France
+GES,Grand-Est,75,FR,France
+HDF,Hauts-de-France,75,FR,France
+IDF,Île-de-France,75,FR,France
+NOR,Normandie,75,FR,France
+NAQ,Nouvelle-Aquitaine,75,FR,France
+OCC,Occitanie,75,FR,France
+PDL,Pays-de-la-Loire,75,FR,France
+PAC,Provence-Alpes-Côte-d’Azur,75,FR,France
+1,Estuaire Province,79,GA,Gabon
+2,Haut-Ogooué Province,79,GA,Gabon
+3,Moyen-Ogooué Province,79,GA,Gabon
+4,Ngounié Province,79,GA,Gabon
+5,Nyanga Province,79,GA,Gabon
+6,Ogooué-Ivindo Province,79,GA,Gabon
+7,Ogooué-Lolo Province,79,GA,Gabon
+8,Ogooué-Maritime Province,79,GA,Gabon
+9,Woleu-Ntem Province,79,GA,Gabon
+B,Banjul,80,GM,Gambia The
+M,Central River Division,80,GM,Gambia The
+L,Lower River Division,80,GM,Gambia The
+N,North Bank Division,80,GM,Gambia The
+U,Upper River Division,80,GM,Gambia The
+W,West Coast Division,80,GM,Gambia The
+AJ,Adjara,81,GE,Georgia
+AB,Autonomous Republic of Abkhazia,81,GE,Georgia
+GU,Guria,81,GE,Georgia
+IM,Imereti,81,GE,Georgia
+KA,Kakheti,81,GE,Georgia
+KK,Kvemo Kartli,81,GE,Georgia
+MM,Mtskheta-Mtianeti,81,GE,Georgia
+RL,Racha-Lechkhumi and Kvemo Svaneti,81,GE,Georgia
+SZ,Samegrelo-Zemo Svaneti,81,GE,Georgia
+SJ,Samtskhe-Javakheti,81,GE,Georgia
+SK,Shida Kartli,81,GE,Georgia
+TB,Tbilisi,81,GE,Georgia
+BW,Baden-Württemberg,82,DE,Germany
+BY,Bavaria,82,DE,Germany
+BE,Berlin,82,DE,Germany
+BB,Brandenburg,82,DE,Germany
+HB,Bremen,82,DE,Germany
+HH,Hamburg,82,DE,Germany
+HE,Hesse,82,DE,Germany
+NI,Lower Saxony,82,DE,Germany
+MV,Mecklenburg-Vorpommern,82,DE,Germany
+NW,North Rhine-Westphalia,82,DE,Germany
+RP,Rhineland-Palatinate,82,DE,Germany
+SL,Saarland,82,DE,Germany
+SN,Saxony,82,DE,Germany
+ST,Saxony-Anhalt,82,DE,Germany
+SH,Schleswig-Holstein,82,DE,Germany
+TH,Thuringia,82,DE,Germany
+AF,Ahafo,83,GH,Ghana
+AH,Ashanti,83,GH,Ghana
+BO,Bono,83,GH,Ghana
+BE,Bono East,83,GH,Ghana
+CP,Central,83,GH,Ghana
+EP,Eastern,83,GH,Ghana
+AA,Greater Accra,83,GH,Ghana
+NE,North East,83,GH,Ghana
+NP,Northern,83,GH,Ghana
+OT,Oti,83,GH,Ghana
+SV,Savannah,83,GH,Ghana
+UE,Upper East,83,GH,Ghana
+UW,Upper West,83,GH,Ghana
+TV,Volta,83,GH,Ghana
+WP,Western,83,GH,Ghana
+WN,Western North,83,GH,Ghana
+I,Attica Region,85,GR,Greece
+H,Central Greece Region,85,GR,Greece
+B,Central Macedonia,85,GR,Greece
+22,Corfu Prefecture,85,GR,Greece
+M,Crete Region,85,GR,Greece
+A2,East Attica Regional Unit,85,GR,Greece
+D,Epirus Region,85,GR,Greece
+F,Ionian Islands Region,85,GR,Greece
+23,Kefalonia Prefecture,85,GR,Greece
+24,Lefkada Regional Unit,85,GR,Greece
+J,Peloponnese Region,85,GR,Greece
+L,South Aegean,85,GR,Greece
+G,West Greece Region,85,GR,Greece
+C,West Macedonia Region,85,GR,Greece
+10,Carriacou and Petite Martinique,87,GD,Grenada
+1,Saint Andrew Parish,87,GD,Grenada
+2,Saint David Parish,87,GD,Grenada
+3,Saint George Parish,87,GD,Grenada
+4,Saint John Parish,87,GD,Grenada
+5,Saint Mark Parish,87,GD,Grenada
+6,Saint Patrick Parish,87,GD,Grenada
+AV,Alta Verapaz Department,90,GT,Guatemala
+BV,Baja Verapaz Department,90,GT,Guatemala
+CM,Chimaltenango Department,90,GT,Guatemala
+CQ,Chiquimula Department,90,GT,Guatemala
+PR,El Progreso Department,90,GT,Guatemala
+ES,Escuintla Department,90,GT,Guatemala
+GU,Guatemala Department,90,GT,Guatemala
+HU,Huehuetenango Department,90,GT,Guatemala
+IZ,Izabal Department,90,GT,Guatemala
+JA,Jalapa Department,90,GT,Guatemala
+JU,Jutiapa Department,90,GT,Guatemala
+PE,Petén Department,90,GT,Guatemala
+QZ,Quetzaltenango Department,90,GT,Guatemala
+QC,Quiché Department,90,GT,Guatemala
+RE,Retalhuleu Department,90,GT,Guatemala
+SA,Sacatepéquez Department,90,GT,Guatemala
+SM,San Marcos Department,90,GT,Guatemala
+SR,Santa Rosa Department,90,GT,Guatemala
+SO,Sololá Department,90,GT,Guatemala
+SU,Suchitepéquez Department,90,GT,Guatemala
+TO,Totonicapán Department,90,GT,Guatemala
+B,Boké Region,92,GN,Guinea
+C,Conakry,92,GN,Guinea
+K,Kankan Region,92,GN,Guinea
+D,Kindia Region,92,GN,Guinea
+L,Labé Region,92,GN,Guinea
+M,Mamou Region,92,GN,Guinea
+N,Nzérékoré Region,92,GN,Guinea
+BA,Bafatá,93,GW,Guinea-Bissau
+BM,Biombo Region,93,GW,Guinea-Bissau
+BL,Bolama Region,93,GW,Guinea-Bissau
+CA,Cacheu Region,93,GW,Guinea-Bissau
+GA,Gabú Region,93,GW,Guinea-Bissau
+OI,Oio Region,93,GW,Guinea-Bissau
+QU,Quinara Region,93,GW,Guinea-Bissau
+TO,Tombali Region,93,GW,Guinea-Bissau
+BA,Barima-Waini,94,GY,Guyana
+CU,Cuyuni-Mazaruni,94,GY,Guyana
+DE,Demerara-Mahaica,94,GY,Guyana
+EB,East Berbice-Corentyne,94,GY,Guyana
+ES,Essequibo Islands-West Demerara,94,GY,Guyana
+MA,Mahaica-Berbice,94,GY,Guyana
+PM,Pomeroon-Supenaam,94,GY,Guyana
+PT,Potaro-Siparuni,94,GY,Guyana
+UD,Upper Demerara-Berbice,94,GY,Guyana
+UT,Upper Takutu-Upper Essequibo,94,GY,Guyana
+AR,Artibonite,95,HT,Haiti
+CE,Centre,95,HT,Haiti
+GA,Grand'Anse,95,HT,Haiti
+NI,Nippes,95,HT,Haiti
+ND,Nord,95,HT,Haiti
+NE,Nord-Est,95,HT,Haiti
+NO,Nord-Ouest,95,HT,Haiti
+OU,Ouest,95,HT,Haiti
+SD,Sud,95,HT,Haiti
+SE,Sud-Est,95,HT,Haiti
+AT,Atlántida Department,97,HN,Honduras
+IB,Bay Islands Department,97,HN,Honduras
+CH,Choluteca Department,97,HN,Honduras
+CL,Colón Department,97,HN,Honduras
+CM,Comayagua Department,97,HN,Honduras
+CP,Copán Department,97,HN,Honduras
+CR,Cortés Department,97,HN,Honduras
+EP,El Paraíso Department,97,HN,Honduras
+FM,Francisco Morazán Department,97,HN,Honduras
+GD,Gracias a Dios Department,97,HN,Honduras
+IN,Intibucá Department,97,HN,Honduras
+LP,La Paz Department,97,HN,Honduras
+LE,Lempira Department,97,HN,Honduras
+OC,Ocotepeque Department,97,HN,Honduras
+OL,Olancho Department,97,HN,Honduras
+SB,Santa Bárbara Department,97,HN,Honduras
+VA,Valle Department,97,HN,Honduras
+YO,Yoro Department,97,HN,Honduras
+BK,Bács-Kiskun County,99,HU,Hungary
+BA,Baranya County,99,HU,Hungary
+BE,Békés County,99,HU,Hungary
+BZ,Borsod-Abaúj-Zemplén County,99,HU,Hungary
+BU,Budapest,99,HU,Hungary
+CS,Csongrád County,99,HU,Hungary
+FE,Fejér County,99,HU,Hungary
+GS,Győr-Moson-Sopron County,99,HU,Hungary
+HB,Hajdú-Bihar County,99,HU,Hungary
+HE,Heves County,99,HU,Hungary
+JN,Jász-Nagykun-Szolnok County,99,HU,Hungary
+NO,Nógrád County,99,HU,Hungary
+PE,Pest County,99,HU,Hungary
+SO,Somogy County,99,HU,Hungary
+SZ,Szabolcs-Szatmár-Bereg County,99,HU,Hungary
+TO,Tolna County,99,HU,Hungary
+VA,Vas County,99,HU,Hungary
+VE,Veszprém County,99,HU,Hungary
+ZA,Zala County,99,HU,Hungary
+1,Capital Region,100,IS,Iceland
+7,Eastern Region,100,IS,Iceland
+6,Northeastern Region,100,IS,Iceland
+5,Northwestern Region,100,IS,Iceland
+2,Southern Peninsula Region,100,IS,Iceland
+8,Southern Region,100,IS,Iceland
+3,Western Region,100,IS,Iceland
+4,Westfjords,100,IS,Iceland
+AN,Andaman and Nicobar Islands,101,IN,India
+AP,Andhra Pradesh,101,IN,India
+AR,Arunachal Pradesh,101,IN,India
+AS,Assam,101,IN,India
+BR,Bihar,101,IN,India
+CH,Chandigarh,101,IN,India
+CT,Chhattisgarh,101,IN,India
+DH,Dadra and Nagar Haveli and Daman and Diu,101,IN,India
+DL,Delhi,101,IN,India
+GA,Goa,101,IN,India
+GJ,Gujarat,101,IN,India
+HR,Haryana,101,IN,India
+HP,Himachal Pradesh,101,IN,India
+JK,Jammu and Kashmir,101,IN,India
+JH,Jharkhand,101,IN,India
+KA,Karnataka,101,IN,India
+KL,Kerala,101,IN,India
+LA,Ladakh,101,IN,India
+LD,Lakshadweep,101,IN,India
+MP,Madhya Pradesh,101,IN,India
+MH,Maharashtra,101,IN,India
+MN,Manipur,101,IN,India
+ML,Meghalaya,101,IN,India
+MZ,Mizoram,101,IN,India
+NL,Nagaland,101,IN,India
+OR,Odisha,101,IN,India
+PY,Puducherry,101,IN,India
+PB,Punjab,101,IN,India
+RJ,Rajasthan,101,IN,India
+SK,Sikkim,101,IN,India
+TN,Tamil Nadu,101,IN,India
+TG,Telangana,101,IN,India
+TR,Tripura,101,IN,India
+UP,Uttar Pradesh,101,IN,India
+UT,Uttarakhand,101,IN,India
+WB,West Bengal,101,IN,India
+AC,Aceh,102,ID,Indonesia
+BA,Bali,102,ID,Indonesia
+BT,Banten,102,ID,Indonesia
+BE,Bengkulu,102,ID,Indonesia
+YO,DI Yogyakarta,102,ID,Indonesia
+JK,DKI Jakarta,102,ID,Indonesia
+GO,Gorontalo,102,ID,Indonesia
+JA,Jambi,102,ID,Indonesia
+JB,Jawa Barat,102,ID,Indonesia
+JT,Jawa Tengah,102,ID,Indonesia
+JI,Jawa Timur,102,ID,Indonesia
+KS,Kalimantan Selatan,102,ID,Indonesia
+KT,Kalimantan Tengah,102,ID,Indonesia
+KI,Kalimantan Timur,102,ID,Indonesia
+KU,Kalimantan Utara,102,ID,Indonesia
+BB,Kepulauan Bangka Belitung,102,ID,Indonesia
+KR,Kepulauan Riau,102,ID,Indonesia
+LA,Lampung,102,ID,Indonesia
+MA,Maluku,102,ID,Indonesia
+MU,Maluku Utara,102,ID,Indonesia
+NB,Nusa Tenggara Barat,102,ID,Indonesia
+NT,Nusa Tenggara Timur,102,ID,Indonesia
+PA,Papua,102,ID,Indonesia
+PB,Papua Barat,102,ID,Indonesia
+RI,Riau,102,ID,Indonesia
+SR,Sulawesi Barat,102,ID,Indonesia
+SN,Sulawesi Selatan,102,ID,Indonesia
+ST,Sulawesi Tengah,102,ID,Indonesia
+SG,Sulawesi Tenggara,102,ID,Indonesia
+SA,Sulawesi Utara,102,ID,Indonesia
+SB,Sumatera Barat,102,ID,Indonesia
+SS,Sumatera Selatan,102,ID,Indonesia
+SU,Sumatera Utara,102,ID,Indonesia
+30,Alborz Province,103,IR,Iran
+24,Ardabil Province,103,IR,Iran
+18,Bushehr Province,103,IR,Iran
+14,Chaharmahal and Bakhtiari Province,103,IR,Iran
+3,East Azerbaijan Province,103,IR,Iran
+7,Fars Province,103,IR,Iran
+1,Gilan Province,103,IR,Iran
+27,Golestan Province,103,IR,Iran
+13,Hamadan Province,103,IR,Iran
+22,Hormozgan Province,103,IR,Iran
+16,Ilam Province,103,IR,Iran
+10,Isfahan Province,103,IR,Iran
+8,Kerman Province,103,IR,Iran
+5,Kermanshah Province,103,IR,Iran
+6,Khuzestan Province,103,IR,Iran
+17,Kohgiluyeh and Boyer-Ahmad Province,103,IR,Iran
+12,Kurdistan Province,103,IR,Iran
+15,Lorestan Province,103,IR,Iran
+0,Markazi Province,103,IR,Iran
+2,Mazandaran Province,103,IR,Iran
+28,North Khorasan Province,103,IR,Iran
+26,Qazvin Province,103,IR,Iran
+25,Qom Province,103,IR,Iran
+9,Razavi Khorasan Province,103,IR,Iran
+20,Semnan Province,103,IR,Iran
+11,Sistan and Baluchestan,103,IR,Iran
+29,South Khorasan Province,103,IR,Iran
+23,Tehran Province,103,IR,Iran
+4,West Azarbaijan Province,103,IR,Iran
+21,Yazd Province,103,IR,Iran
+19,Zanjan Province,103,IR,Iran
+AN,Al Anbar Governorate,104,IQ,Iraq
+MU,Al Muthanna Governorate,104,IQ,Iraq
+QA,Al-Qādisiyyah Governorate,104,IQ,Iraq
+BB,Babylon Governorate,104,IQ,Iraq
+BG,Baghdad Governorate,104,IQ,Iraq
+BA,Basra Governorate,104,IQ,Iraq
+DQ,Dhi Qar Governorate,104,IQ,Iraq
+DI,Diyala Governorate,104,IQ,Iraq
+DA,Dohuk Governorate,104,IQ,Iraq
+AR,Erbil Governorate,104,IQ,Iraq
+KA,Karbala Governorate,104,IQ,Iraq
+KI,Kirkuk Governorate,104,IQ,Iraq
+MA,Maysan Governorate,104,IQ,Iraq
+,Najaf Governorate,104,IQ,Iraq
+NI,Nineveh Governorate,104,IQ,Iraq
+SD,Saladin Governorate,104,IQ,Iraq
+SU,Sulaymaniyah Governorate,104,IQ,Iraq
+WA,Wasit Governorate,104,IQ,Iraq
+C,Connacht,105,IE,Ireland
+L,Leinster,105,IE,Ireland
+M,Munster,105,IE,Ireland
+U,Ulster,105,IE,Ireland
+M,Central District,106,IL,Israel
+HA,Haifa District,106,IL,Israel
+JM,Jerusalem District,106,IL,Israel
+Z,Northern District,106,IL,Israel
+D,Southern District,106,IL,Israel
+TA,Tel Aviv District,106,IL,Israel
+65,Abruzzo,107,IT,Italy
+23,Aosta Valley,107,IT,Italy
+75,Apulia,107,IT,Italy
+77,Basilicata,107,IT,Italy
+78,Calabria,107,IT,Italy
+72,Campania,107,IT,Italy
+45,Emilia-Romagna,107,IT,Italy
+36,Friuli–Venezia Giulia,107,IT,Italy
+62,Lazio,107,IT,Italy
+42,Liguria,107,IT,Italy
+25,Lombardy,107,IT,Italy
+57,Marche,107,IT,Italy
+67,Molise,107,IT,Italy
+21,Piedmont,107,IT,Italy
+88,Sardinia,107,IT,Italy
+82,Sicily,107,IT,Italy
+32,Trentino-South Tyrol,107,IT,Italy
+52,Tuscany,107,IT,Italy
+55,Umbria,107,IT,Italy
+34,Veneto,107,IT,Italy
+13,Clarendon Parish,108,JM,Jamaica
+9,Hanover Parish,108,JM,Jamaica
+1,Kingston Parish,108,JM,Jamaica
+12,Manchester Parish,108,JM,Jamaica
+4,Portland Parish,108,JM,Jamaica
+2,Saint Andrew,108,JM,Jamaica
+6,Saint Ann Parish,108,JM,Jamaica
+14,Saint Catherine Parish,108,JM,Jamaica
+11,Saint Elizabeth Parish,108,JM,Jamaica
+8,Saint James Parish,108,JM,Jamaica
+5,Saint Mary Parish,108,JM,Jamaica
+3,Saint Thomas Parish,108,JM,Jamaica
+7,Trelawny Parish,108,JM,Jamaica
+10,Westmoreland Parish,108,JM,Jamaica
+23,Aichi Prefecture,109,JP,Japan
+5,Akita Prefecture,109,JP,Japan
+2,Aomori Prefecture,109,JP,Japan
+12,Chiba Prefecture,109,JP,Japan
+38,Ehime Prefecture,109,JP,Japan
+18,Fukui Prefecture,109,JP,Japan
+40,Fukuoka Prefecture,109,JP,Japan
+7,Fukushima Prefecture,109,JP,Japan
+21,Gifu Prefecture,109,JP,Japan
+10,Gunma Prefecture,109,JP,Japan
+34,Hiroshima Prefecture,109,JP,Japan
+1,Hokkaidō Prefecture,109,JP,Japan
+28,Hyōgo Prefecture,109,JP,Japan
+8,Ibaraki Prefecture,109,JP,Japan
+17,Ishikawa Prefecture,109,JP,Japan
+3,Iwate Prefecture,109,JP,Japan
+37,Kagawa Prefecture,109,JP,Japan
+46,Kagoshima Prefecture,109,JP,Japan
+14,Kanagawa Prefecture,109,JP,Japan
+39,Kōchi Prefecture,109,JP,Japan
+43,Kumamoto Prefecture,109,JP,Japan
+26,Kyōto Prefecture,109,JP,Japan
+24,Mie Prefecture,109,JP,Japan
+4,Miyagi Prefecture,109,JP,Japan
+45,Miyazaki Prefecture,109,JP,Japan
+20,Nagano Prefecture,109,JP,Japan
+42,Nagasaki Prefecture,109,JP,Japan
+29,Nara Prefecture,109,JP,Japan
+15,Niigata Prefecture,109,JP,Japan
+44,Ōita Prefecture,109,JP,Japan
+33,Okayama Prefecture,109,JP,Japan
+47,Okinawa Prefecture,109,JP,Japan
+27,Ōsaka Prefecture,109,JP,Japan
+41,Saga Prefecture,109,JP,Japan
+11,Saitama Prefecture,109,JP,Japan
+25,Shiga Prefecture,109,JP,Japan
+32,Shimane Prefecture,109,JP,Japan
+22,Shizuoka Prefecture,109,JP,Japan
+9,Tochigi Prefecture,109,JP,Japan
+36,Tokushima Prefecture,109,JP,Japan
+13,Tokyo,109,JP,Japan
+31,Tottori Prefecture,109,JP,Japan
+16,Toyama Prefecture,109,JP,Japan
+30,Wakayama Prefecture,109,JP,Japan
+6,Yamagata Prefecture,109,JP,Japan
+35,Yamaguchi Prefecture,109,JP,Japan
+19,Yamanashi Prefecture,109,JP,Japan
+AJ,Ajloun Governorate,111,JO,Jordan
+AM,Amman Governorate,111,JO,Jordan
+AQ,Aqaba Governorate,111,JO,Jordan
+BA,Balqa Governorate,111,JO,Jordan
+IR,Irbid Governorate,111,JO,Jordan
+JA,Jerash Governorate,111,JO,Jordan
+KA,Karak Governorate,111,JO,Jordan
+MN,Ma'an Governorate,111,JO,Jordan
+MD,Madaba Governorate,111,JO,Jordan
+MA,Mafraq Governorate,111,JO,Jordan
+AT,Tafilah Governorate,111,JO,Jordan
+AZ,Zarqa Governorate,111,JO,Jordan
+AKM,Akmola Region,112,KZ,Kazakhstan
+AKT,Aktobe Region,112,KZ,Kazakhstan
+ALA,Almaty,112,KZ,Kazakhstan
+ALM,Almaty Region,112,KZ,Kazakhstan
+ATY,Atyrau Region,112,KZ,Kazakhstan
+BAY,Baikonur,112,KZ,Kazakhstan
+VOS,East Kazakhstan Region,112,KZ,Kazakhstan
+ZHA,Jambyl Region,112,KZ,Kazakhstan
+KAR,Karaganda Region,112,KZ,Kazakhstan
+KUS,Kostanay Region,112,KZ,Kazakhstan
+KZY,Kyzylorda Region,112,KZ,Kazakhstan
+MAN,Mangystau Region,112,KZ,Kazakhstan
+SEV,North Kazakhstan Region,112,KZ,Kazakhstan
+AST,Nur-Sultan,112,KZ,Kazakhstan
+PAV,Pavlodar Region,112,KZ,Kazakhstan
+YUZ,Turkestan Region,112,KZ,Kazakhstan
+ZAP,West Kazakhstan Province,112,KZ,Kazakhstan
+1,Baringo,113,KE,Kenya
+2,Bomet,113,KE,Kenya
+3,Bungoma,113,KE,Kenya
+4,Busia,113,KE,Kenya
+6,Embu,113,KE,Kenya
+7,Garissa,113,KE,Kenya
+8,Homa Bay,113,KE,Kenya
+9,Isiolo,113,KE,Kenya
+10,Kajiado,113,KE,Kenya
+11,Kakamega,113,KE,Kenya
+12,Kericho,113,KE,Kenya
+13,Kiambu,113,KE,Kenya
+110,Kiambu,113,KE,Kenya
+14,Kilifi,113,KE,Kenya
+15,Kirinyaga,113,KE,Kenya
+16,Kisii,113,KE,Kenya
+17,Kisumu,113,KE,Kenya
+18,Kitui,113,KE,Kenya
+19,Kwale,113,KE,Kenya
+20,Laikipia,113,KE,Kenya
+21,Lamu,113,KE,Kenya
+22,Machakos,113,KE,Kenya
+23,Makueni,113,KE,Kenya
+24,Mandera,113,KE,Kenya
+25,Marsabit,113,KE,Kenya
+26,Meru,113,KE,Kenya
+27,Migori,113,KE,Kenya
+28,Mombasa,113,KE,Kenya
+29,Murang'a,113,KE,Kenya
+110,Nairobi City,113,KE,Kenya
+31,Nakuru,113,KE,Kenya
+32,Nandi,113,KE,Kenya
+33,Narok,113,KE,Kenya
+34,Nyamira,113,KE,Kenya
+35,Nyandarua,113,KE,Kenya
+36,Nyeri,113,KE,Kenya
+37,Samburu,113,KE,Kenya
+38,Siaya,113,KE,Kenya
+40,Tana River,113,KE,Kenya
+41,Tharaka-Nithi,113,KE,Kenya
+42,Trans Nzoia,113,KE,Kenya
+43,Turkana,113,KE,Kenya
+44,Uasin Gishu,113,KE,Kenya
+46,Wajir,113,KE,Kenya
+47,West Pokot,113,KE,Kenya
+G,Gilbert Islands,114,KI,Kiribati
+L,Line Islands,114,KI,Kiribati
+P,Phoenix Islands,114,KI,Kiribati
+AH,Al Ahmadi Governorate,117,KW,Kuwait
+FA,Al Farwaniyah Governorate,117,KW,Kuwait
+JA,Al Jahra Governorate,117,KW,Kuwait
+KU,Capital Governorate,117,KW,Kuwait
+HA,Hawalli Governorate,117,KW,Kuwait
+MU,Mubarak Al-Kabeer Governorate,117,KW,Kuwait
+B,Batken Region,118,KG,Kyrgyzstan
+GB,Bishkek,118,KG,Kyrgyzstan
+C,Chuy Region,118,KG,Kyrgyzstan
+Y,Issyk-Kul Region,118,KG,Kyrgyzstan
+J,Jalal-Abad Region,118,KG,Kyrgyzstan
+N,Naryn Region,118,KG,Kyrgyzstan
+O,Osh Region,118,KG,Kyrgyzstan
+T,Talas Region,118,KG,Kyrgyzstan
+AT,Attapeu Province,119,LA,Laos
+BK,Bokeo Province,119,LA,Laos
+BL,Bolikhamsai Province,119,LA,Laos
+CH,Champasak Province,119,LA,Laos
+HO,Houaphanh Province,119,LA,Laos
+KH,Khammouane Province,119,LA,Laos
+LM,Luang Namtha Province,119,LA,Laos
+LP,Luang Prabang Province,119,LA,Laos
+OU,Oudomxay Province,119,LA,Laos
+PH,Phongsaly Province,119,LA,Laos
+XA,Sainyabuli Province,119,LA,Laos
+SL,Salavan Province,119,LA,Laos
+SV,Savannakhet Province,119,LA,Laos
+XE,Sekong Province,119,LA,Laos
+VT,Vientiane Prefecture,119,LA,Laos
+VI,Vientiane Province,119,LA,Laos
+XS,Xaisomboun Province,119,LA,Laos
+XI,Xiangkhouang Province,119,LA,Laos
+1,Aglona Municipality,120,LV,Latvia
+2,Aizkraukle Municipality,120,LV,Latvia
+3,Aizpute Municipality,120,LV,Latvia
+4,Aknīste Municipality,120,LV,Latvia
+5,Aloja Municipality,120,LV,Latvia
+6,Alsunga Municipality,120,LV,Latvia
+7,Alūksne Municipality,120,LV,Latvia
+9,Ape Municipality,120,LV,Latvia
+10,Auce Municipality,120,LV,Latvia
+12,Babīte Municipality,120,LV,Latvia
+13,Baldone Municipality,120,LV,Latvia
+14,Baltinava Municipality,120,LV,Latvia
+15,Balvi Municipality,120,LV,Latvia
+16,Bauska Municipality,120,LV,Latvia
+17,Beverīna Municipality,120,LV,Latvia
+18,Brocēni Municipality,120,LV,Latvia
+20,Carnikava Municipality,120,LV,Latvia
+22,Cēsis Municipality,120,LV,Latvia
+21,Cesvaine Municipality,120,LV,Latvia
+23,Cibla Municipality,120,LV,Latvia
+24,Dagda Municipality,120,LV,Latvia
+25,Daugavpils Municipality,120,LV,Latvia
+26,Dobele Municipality,120,LV,Latvia
+27,Dundaga Municipality,120,LV,Latvia
+28,Durbe Municipality,120,LV,Latvia
+29,Engure Municipality,120,LV,Latvia
+30,Ērgļi Municipality,120,LV,Latvia
+31,Garkalne Municipality,120,LV,Latvia
+32,Grobiņa Municipality,120,LV,Latvia
+33,Gulbene Municipality,120,LV,Latvia
+34,Iecava Municipality,120,LV,Latvia
+35,Ikšķile Municipality,120,LV,Latvia
+36,Ilūkste Municipality,120,LV,Latvia
+37,Inčukalns Municipality,120,LV,Latvia
+38,Jaunjelgava Municipality,120,LV,Latvia
+40,Jaunpils Municipality,120,LV,Latvia
+42,Jēkabpils Municipality,120,LV,Latvia
+JEL,Jelgava,120,LV,Latvia
+41,Jelgava Municipality,120,LV,Latvia
+JUR,Jūrmala,120,LV,Latvia
+43,Kandava Municipality,120,LV,Latvia
+44,Kārsava Municipality,120,LV,Latvia
+51,Ķegums Municipality,120,LV,Latvia
+52,Ķekava Municipality,120,LV,Latvia
+45,Kocēni Municipality,120,LV,Latvia
+46,Koknese Municipality,120,LV,Latvia
+47,Krāslava Municipality,120,LV,Latvia
+50,Kuldīga Municipality,120,LV,Latvia
+53,Lielvārde Municipality,120,LV,Latvia
+LPX,Liepāja,120,LV,Latvia
+55,Līgatne Municipality,120,LV,Latvia
+54,Limbaži Municipality,120,LV,Latvia
+56,Līvāni Municipality,120,LV,Latvia
+57,Lubāna Municipality,120,LV,Latvia
+58,Ludza Municipality,120,LV,Latvia
+59,Madona Municipality,120,LV,Latvia
+61,Mālpils Municipality,120,LV,Latvia
+62,Mārupe Municipality,120,LV,Latvia
+60,Mazsalaca Municipality,120,LV,Latvia
+64,Naukšēni Municipality,120,LV,Latvia
+65,Nereta Municipality,120,LV,Latvia
+66,Nīca Municipality,120,LV,Latvia
+67,Ogre Municipality,120,LV,Latvia
+68,Olaine Municipality,120,LV,Latvia
+69,Ozolnieki Municipality,120,LV,Latvia
+70,Pārgauja Municipality,120,LV,Latvia
+71,Pāvilosta Municipality,120,LV,Latvia
+72,Pļaviņas Municipality,120,LV,Latvia
+73,Preiļi Municipality,120,LV,Latvia
+74,Priekule Municipality,120,LV,Latvia
+75,Priekuļi Municipality,120,LV,Latvia
+76,Rauna Municipality,120,LV,Latvia
+REZ,Rēzekne,120,LV,Latvia
+78,Riebiņi Municipality,120,LV,Latvia
+RIX,Riga,120,LV,Latvia
+79,Roja Municipality,120,LV,Latvia
+80,Ropaži Municipality,120,LV,Latvia
+81,Rucava Municipality,120,LV,Latvia
+82,Rugāji Municipality,120,LV,Latvia
+84,Rūjiena Municipality,120,LV,Latvia
+83,Rundāle Municipality,120,LV,Latvia
+86,Salacgrīva Municipality,120,LV,Latvia
+87,Salaspils Municipality,120,LV,Latvia
+88,Saldus Municipality,120,LV,Latvia
+89,Saulkrasti Municipality,120,LV,Latvia
+90,Sēja Municipality,120,LV,Latvia
+91,Sigulda Municipality,120,LV,Latvia
+92,Skrīveri Municipality,120,LV,Latvia
+93,Skrunda Municipality,120,LV,Latvia
+94,Smiltene Municipality,120,LV,Latvia
+95,Stopiņi Municipality,120,LV,Latvia
+96,Strenči Municipality,120,LV,Latvia
+97,Talsi Municipality,120,LV,Latvia
+98,Tērvete Municipality,120,LV,Latvia
+100,Vaiņode Municipality,120,LV,Latvia
+101,Valka Municipality,120,LV,Latvia
+VMR,Valmiera,120,LV,Latvia
+102,Varakļāni Municipality,120,LV,Latvia
+103,Vārkava Municipality,120,LV,Latvia
+104,Vecpiebalga Municipality,120,LV,Latvia
+105,Vecumnieki Municipality,120,LV,Latvia
+VEN,Ventspils,120,LV,Latvia
+106,Ventspils Municipality,120,LV,Latvia
+107,Viesīte Municipality,120,LV,Latvia
+108,Viļaka Municipality,120,LV,Latvia
+109,Viļāni Municipality,120,LV,Latvia
+110,Zilupe Municipality,120,LV,Latvia
+AK,Akkar Governorate,121,LB,Lebanon
+BH,Baalbek-Hermel Governorate,121,LB,Lebanon
+BA,Beirut Governorate,121,LB,Lebanon
+BI,Beqaa Governorate,121,LB,Lebanon
+JL,Mount Lebanon Governorate,121,LB,Lebanon
+,Nabatieh Governorate,121,LB,Lebanon
+AS,North Governorate,121,LB,Lebanon
+JA,South Governorate,121,LB,Lebanon
+D,Berea District,122,LS,Lesotho
+B,Butha-Buthe District,122,LS,Lesotho
+C,Leribe District,122,LS,Lesotho
+E,Mafeteng District,122,LS,Lesotho
+A,Maseru District,122,LS,Lesotho
+F,Mohale's Hoek District,122,LS,Lesotho
+J,Mokhotlong District,122,LS,Lesotho
+H,Qacha's Nek District,122,LS,Lesotho
+G,Quthing District,122,LS,Lesotho
+K,Thaba-Tseka District,122,LS,Lesotho
+BM,Bomi County,123,LR,Liberia
+BG,Bong County,123,LR,Liberia
+GP,Gbarpolu County,123,LR,Liberia
+GB,Grand Bassa County,123,LR,Liberia
+CM,Grand Cape Mount County,123,LR,Liberia
+GG,Grand Gedeh County,123,LR,Liberia
+GK,Grand Kru County,123,LR,Liberia
+LO,Lofa County,123,LR,Liberia
+MG,Margibi County,123,LR,Liberia
+MY,Maryland County,123,LR,Liberia
+MO,Montserrado County,123,LR,Liberia
+NI,Nimba,123,LR,Liberia
+RI,River Cess County,123,LR,Liberia
+RG,River Gee County,123,LR,Liberia
+SI,Sinoe County,123,LR,Liberia
+WA,Al Wahat District,124,LY,Libya
+BA,Benghazi,124,LY,Libya
+DR,Derna District,124,LY,Libya
+GT,Ghat District,124,LY,Libya
+JA,Jabal al Akhdar,124,LY,Libya
+JG,Jabal al Gharbi District,124,LY,Libya
+JI,Jafara,124,LY,Libya
+JU,Jufra,124,LY,Libya
+KF,Kufra District,124,LY,Libya
+MJ,Marj District,124,LY,Libya
+MI,Misrata District,124,LY,Libya
+MB,Murqub,124,LY,Libya
+MQ,Murzuq District,124,LY,Libya
+NL,Nalut District,124,LY,Libya
+NQ,Nuqat al Khams,124,LY,Libya
+SB,Sabha District,124,LY,Libya
+SR,Sirte District,124,LY,Libya
+TB,Tripoli District,124,LY,Libya
+WD,Wadi al Hayaa District,124,LY,Libya
+WS,Wadi al Shatii District,124,LY,Libya
+ZA,Zawiya District,124,LY,Libya
+1,Balzers,125,LI,Liechtenstein
+2,Eschen,125,LI,Liechtenstein
+3,Gamprin,125,LI,Liechtenstein
+4,Mauren,125,LI,Liechtenstein
+5,Planken,125,LI,Liechtenstein
+6,Ruggell,125,LI,Liechtenstein
+7,Schaan,125,LI,Liechtenstein
+8,Schellenberg,125,LI,Liechtenstein
+9,Triesen,125,LI,Liechtenstein
+10,Triesenberg,125,LI,Liechtenstein
+11,Vaduz,125,LI,Liechtenstein
+2,Alytus City Municipality,126,LT,Lithuania
+15,Kaunas City Municipality,126,LT,Lithuania
+21,Klaipėda District Municipality,126,LT,Lithuania
+25,Marijampolė Municipality,126,LT,Lithuania
+33,Panevėžys District Municipality,126,LT,Lithuania
+43,Šiauliai City Municipality,126,LT,Lithuania
+TA,Tauragė County,126,LT,Lithuania
+51,Telšiai District Municipality,126,LT,Lithuania
+UT,Utena County,126,LT,Lithuania
+57,Vilnius City Municipality,126,LT,Lithuania
+CA,Canton of Capellen,127,LU,Luxembourg
+CL,Canton of Clervaux,127,LU,Luxembourg
+DI,Canton of Diekirch,127,LU,Luxembourg
+EC,Canton of Echternach,127,LU,Luxembourg
+ES,Canton of Esch-sur-Alzette,127,LU,Luxembourg
+GR,Canton of Grevenmacher,127,LU,Luxembourg
+LU,Canton of Luxembourg,127,LU,Luxembourg
+ME,Canton of Mersch,127,LU,Luxembourg
+RD,Canton of Redange,127,LU,Luxembourg
+RM,Canton of Remich,127,LU,Luxembourg
+VD,Canton of Vianden,127,LU,Luxembourg
+WI,Canton of Wiltz,127,LU,Luxembourg
+2,Aračinovo Municipality,129,MK,Macedonia
+3,Berovo Municipality,129,MK,Macedonia
+4,Bitola Municipality,129,MK,Macedonia
+5,Bogdanci Municipality,129,MK,Macedonia
+6,Bogovinje Municipality,129,MK,Macedonia
+7,Bosilovo Municipality,129,MK,Macedonia
+8,Brvenica Municipality,129,MK,Macedonia
+9,Butel Municipality,129,MK,Macedonia
+79,Čair Municipality,129,MK,Macedonia
+80,Čaška Municipality,129,MK,Macedonia
+78,Centar Župa Municipality,129,MK,Macedonia
+81,Češinovo-Obleševo Municipality,129,MK,Macedonia
+82,Čučer-Sandevo Municipality,129,MK,Macedonia
+22,Debarca Municipality,129,MK,Macedonia
+23,Delčevo Municipality,129,MK,Macedonia
+25,Demir Hisar Municipality,129,MK,Macedonia
+24,Demir Kapija Municipality,129,MK,Macedonia
+26,Dojran Municipality,129,MK,Macedonia
+27,Dolneni Municipality,129,MK,Macedonia
+17,Gazi Baba Municipality,129,MK,Macedonia
+18,Gevgelija Municipality,129,MK,Macedonia
+29,Gjorče Petrov Municipality,129,MK,Macedonia
+19,Gostivar Municipality,129,MK,Macedonia
+20,Gradsko Municipality,129,MK,Macedonia
+85,Greater Skopje,129,MK,Macedonia
+34,Ilinden Municipality,129,MK,Macedonia
+35,Jegunovce Municipality,129,MK,Macedonia
+37,Karbinci,129,MK,Macedonia
+38,Karpoš Municipality,129,MK,Macedonia
+36,Kavadarci Municipality,129,MK,Macedonia
+40,Kičevo Municipality,129,MK,Macedonia
+39,Kisela Voda Municipality,129,MK,Macedonia
+42,Kočani Municipality,129,MK,Macedonia
+41,Konče Municipality,129,MK,Macedonia
+43,Kratovo Municipality,129,MK,Macedonia
+44,Kriva Palanka Municipality,129,MK,Macedonia
+45,Krivogaštani Municipality,129,MK,Macedonia
+46,Kruševo Municipality,129,MK,Macedonia
+47,Kumanovo Municipality,129,MK,Macedonia
+48,Lipkovo Municipality,129,MK,Macedonia
+49,Lozovo Municipality,129,MK,Macedonia
+51,Makedonska Kamenica Municipality,129,MK,Macedonia
+52,Makedonski Brod Municipality,129,MK,Macedonia
+50,Mavrovo and Rostuša Municipality,129,MK,Macedonia
+53,Mogila Municipality,129,MK,Macedonia
+54,Negotino Municipality,129,MK,Macedonia
+55,Novaci Municipality,129,MK,Macedonia
+56,Novo Selo Municipality,129,MK,Macedonia
+58,Ohrid Municipality,129,MK,Macedonia
+60,Pehčevo Municipality,129,MK,Macedonia
+59,Petrovec Municipality,129,MK,Macedonia
+61,Plasnica Municipality,129,MK,Macedonia
+62,Prilep Municipality,129,MK,Macedonia
+63,Probištip Municipality,129,MK,Macedonia
+64,Radoviš Municipality,129,MK,Macedonia
+65,Rankovce Municipality,129,MK,Macedonia
+66,Resen Municipality,129,MK,Macedonia
+67,Rosoman Municipality,129,MK,Macedonia
+68,Saraj Municipality,129,MK,Macedonia
+70,Sopište Municipality,129,MK,Macedonia
+71,Staro Nagoričane Municipality,129,MK,Macedonia
+83,Štip Municipality,129,MK,Macedonia
+72,Struga Municipality,129,MK,Macedonia
+73,Strumica Municipality,129,MK,Macedonia
+74,Studeničani Municipality,129,MK,Macedonia
+84,Šuto Orizari Municipality,129,MK,Macedonia
+69,Sveti Nikole Municipality,129,MK,Macedonia
+75,Tearce Municipality,129,MK,Macedonia
+76,Tetovo Municipality,129,MK,Macedonia
+10,Valandovo Municipality,129,MK,Macedonia
+11,Vasilevo Municipality,129,MK,Macedonia
+13,Veles Municipality,129,MK,Macedonia
+12,Vevčani Municipality,129,MK,Macedonia
+14,Vinica Municipality,129,MK,Macedonia
+16,Vrapčište Municipality,129,MK,Macedonia
+32,Zelenikovo Municipality,129,MK,Macedonia
+30,Želino Municipality,129,MK,Macedonia
+33,Zrnovci Municipality,129,MK,Macedonia
+D,Antsiranana Province,130,MG,Madagascar
+C,Central Region,131,MW,Malawi
+N,Northern Region,131,MW,Malawi
+S,Southern Region,131,MW,Malawi
+1,Johor,132,MY,Malaysia
+2,Kedah,132,MY,Malaysia
+3,Kelantan,132,MY,Malaysia
+14,Kuala Lumpur,132,MY,Malaysia
+15,Labuan,132,MY,Malaysia
+4,Malacca,132,MY,Malaysia
+5,Negeri Sembilan,132,MY,Malaysia
+6,Pahang,132,MY,Malaysia
+7,Penang,132,MY,Malaysia
+8,Perak,132,MY,Malaysia
+9,Perlis,132,MY,Malaysia
+16,Putrajaya,132,MY,Malaysia
+12,Sabah,132,MY,Malaysia
+13,Sarawak,132,MY,Malaysia
+10,Selangor,132,MY,Malaysia
+11,Terengganu,132,MY,Malaysia
+1,Addu Atoll,133,MV,Maldives
+17,Dhaalu Atoll,133,MV,Maldives
+27,Gaafu Alif Atoll,133,MV,Maldives
+28,Gaafu Dhaalu Atoll,133,MV,Maldives
+29,Gnaviyani Atoll,133,MV,Maldives
+7,Haa Alif Atoll,133,MV,Maldives
+23,Haa Dhaalu Atoll,133,MV,Maldives
+26,Kaafu Atoll,133,MV,Maldives
+5,Laamu Atoll,133,MV,Maldives
+3,Lhaviyani Atoll,133,MV,Maldives
+12,Meemu Atoll,133,MV,Maldives
+25,Noonu Atoll,133,MV,Maldives
+13,Raa Atoll,133,MV,Maldives
+24,Shaviyani Atoll,133,MV,Maldives
+SC,South Central Province,133,MV,Maldives
+8,Thaa Atoll,133,MV,Maldives
+4,Vaavu Atoll,133,MV,Maldives
+BKO,Bamako,134,ML,Mali
+7,Gao Region,134,ML,Mali
+1,Kayes Region,134,ML,Mali
+8,Kidal Region,134,ML,Mali
+2,Koulikoro Region,134,ML,Mali
+5,Mopti Region,134,ML,Mali
+4,Ségou Region,134,ML,Mali
+3,Sikasso Region,134,ML,Mali
+6,Tombouctou Region,134,ML,Mali
+1,Attard,135,MT,Malta
+2,Balzan,135,MT,Malta
+3,Birgu,135,MT,Malta
+4,Birkirkara,135,MT,Malta
+5,Birżebbuġa,135,MT,Malta
+6,Cospicua,135,MT,Malta
+7,Dingli,135,MT,Malta
+8,Fgura,135,MT,Malta
+9,Floriana,135,MT,Malta
+10,Fontana,135,MT,Malta
+13,Għajnsielem,135,MT,Malta
+15,Għargħur,135,MT,Malta
+16,Għasri,135,MT,Malta
+17,Għaxaq,135,MT,Malta
+12,Gżira,135,MT,Malta
+18,Ħamrun,135,MT,Malta
+19,Iklin,135,MT,Malta
+21,Kalkara,135,MT,Malta
+22,Kerċem,135,MT,Malta
+23,Kirkop,135,MT,Malta
+24,Lija,135,MT,Malta
+25,Luqa,135,MT,Malta
+26,Marsa,135,MT,Malta
+27,Marsaskala,135,MT,Malta
+28,Marsaxlokk,135,MT,Malta
+31,Mġarr,135,MT,Malta
+34,Msida,135,MT,Malta
+36,Munxar,135,MT,Malta
+37,Nadur,135,MT,Malta
+38,Naxxar,135,MT,Malta
+39,Paola,135,MT,Malta
+40,Pembroke,135,MT,Malta
+41,Pietà,135,MT,Malta
+42,Qala,135,MT,Malta
+43,Qormi,135,MT,Malta
+44,Qrendi,135,MT,Malta
+50,Saint Lawrence,135,MT,Malta
+49,San Ġwann,135,MT,Malta
+52,Sannat,135,MT,Malta
+53,Santa Luċija,135,MT,Malta
+20,Senglea,135,MT,Malta
+55,Siġġiewi,135,MT,Malta
+56,Sliema,135,MT,Malta
+48,St. Julian's,135,MT,Malta
+51,St. Paul's Bay,135,MT,Malta
+57,Swieqi,135,MT,Malta
+58,Ta' Xbiex,135,MT,Malta
+59,Tarxien,135,MT,Malta
+60,Valletta,135,MT,Malta
+45,Victoria,135,MT,Malta
+61,Xagħra,135,MT,Malta
+62,Xewkija,135,MT,Malta
+63,Xgħajra,135,MT,Malta
+64,Żabbar,135,MT,Malta
+65,Żebbuġ Gozo,135,MT,Malta
+66,Żebbuġ Malta,135,MT,Malta
+67,Żejtun,135,MT,Malta
+68,Żurrieq,135,MT,Malta
+7,Adrar Region,139,MR,Mauritania
+3,Assaba Region,139,MR,Mauritania
+5,Brakna Region,139,MR,Mauritania
+8,Dakhlet Nouadhibou,139,MR,Mauritania
+4,Gorgol Region,139,MR,Mauritania
+10,Guidimaka Region,139,MR,Mauritania
+1,Hodh Ech Chargui Region,139,MR,Mauritania
+2,Hodh El Gharbi Region,139,MR,Mauritania
+12,Inchiri Region,139,MR,Mauritania
+11,Tiris Zemmour Region,139,MR,Mauritania
+6,Trarza Region,139,MR,Mauritania
+AG,Agaléga,140,MU,Mauritius
+CC,Cargados Carajos,140,MU,Mauritius
+FL,Flacq District,140,MU,Mauritius
+GP,Grand Port District,140,MU,Mauritius
+MO,Moka District,140,MU,Mauritius
+PA,Pamplemousses District,140,MU,Mauritius
+PW,Plaines Wilhems District,140,MU,Mauritius
+PL,Port Louis District,140,MU,Mauritius
+RR,Rivière du Rempart District,140,MU,Mauritius
+BL,Rivière Noire District,140,MU,Mauritius
+RO,Rodrigues,140,MU,Mauritius
+SA,Savanne District,140,MU,Mauritius
+AGU,Aguascalientes,142,MX,Mexico
+BCN,Baja California,142,MX,Mexico
+BCS,Baja California Sur,142,MX,Mexico
+CAM,Campeche,142,MX,Mexico
+CHP,Chiapas,142,MX,Mexico
+CHH,Chihuahua,142,MX,Mexico
+COA,Coahuila,142,MX,Mexico
+COL,Colima,142,MX,Mexico
+DUR,Durango,142,MX,Mexico
+GUA,Guanajuato,142,MX,Mexico
+GRO,Guerrero,142,MX,Mexico
+HID,Hidalgo,142,MX,Mexico
+JAL,Jalisco,142,MX,Mexico
+MEX,México,142,MX,Mexico
+CMX,Mexico City,142,MX,Mexico
+MIC,Michoacán,142,MX,Mexico
+MOR,Morelos,142,MX,Mexico
+NAY,Nayarit,142,MX,Mexico
+NLE,Nuevo León,142,MX,Mexico
+OAX,Oaxaca,142,MX,Mexico
+PUE,Puebla,142,MX,Mexico
+QUE,Querétaro,142,MX,Mexico
+ROO,Quintana Roo,142,MX,Mexico
+SLP,San Luis Potosí,142,MX,Mexico
+SIN,Sinaloa,142,MX,Mexico
+SON,Sonora,142,MX,Mexico
+TAB,Tabasco,142,MX,Mexico
+TAM,Tamaulipas,142,MX,Mexico
+TLA,Tlaxcala,142,MX,Mexico
+VER,Veracruz,142,MX,Mexico
+YUC,Yucatán,142,MX,Mexico
+ZAC,Zacatecas,142,MX,Mexico
+TRK,Chuuk State,143,FM,Micronesia
+KSA,Kosrae State,143,FM,Micronesia
+PNI,Pohnpei State,143,FM,Micronesia
+YAP,Yap State,143,FM,Micronesia
+AN,Anenii Noi District,144,MD,Moldova
+BA,Bălți Municipality,144,MD,Moldova
+BS,Basarabeasca District,144,MD,Moldova
+BD,Bender Municipality,144,MD,Moldova
+BR,Briceni District,144,MD,Moldova
+CA,Cahul District,144,MD,Moldova
+CL,Călărași District,144,MD,Moldova
+CT,Cantemir District,144,MD,Moldova
+CS,Căușeni District,144,MD,Moldova
+CU,Chișinău Municipality,144,MD,Moldova
+CM,Cimișlia District,144,MD,Moldova
+CR,Criuleni District,144,MD,Moldova
+DO,Dondușeni District,144,MD,Moldova
+DR,Drochia District,144,MD,Moldova
+DU,Dubăsari District,144,MD,Moldova
+ED,Edineț District,144,MD,Moldova
+FA,Fălești District,144,MD,Moldova
+FL,Florești District,144,MD,Moldova
+GA,Gagauzia,144,MD,Moldova
+GL,Glodeni District,144,MD,Moldova
+HI,Hîncești District,144,MD,Moldova
+IA,Ialoveni District,144,MD,Moldova
+NI,Nisporeni District,144,MD,Moldova
+OC,Ocnița District,144,MD,Moldova
+OR,Orhei District,144,MD,Moldova
+RE,Rezina District,144,MD,Moldova
+RI,Rîșcani District,144,MD,Moldova
+SI,Sîngerei District,144,MD,Moldova
+SD,Șoldănești District,144,MD,Moldova
+SO,Soroca District,144,MD,Moldova
+SV,Ștefan Vodă District,144,MD,Moldova
+ST,Strășeni District,144,MD,Moldova
+TA,Taraclia District,144,MD,Moldova
+TE,Telenești District,144,MD,Moldova
+SN,Transnistria autonomous territorial unit,144,MD,Moldova
+UN,Ungheni District,144,MD,Moldova
+73,Arkhangai Province,146,MN,Mongolia
+71,Bayan-Ölgii Province,146,MN,Mongolia
+69,Bayankhongor Province,146,MN,Mongolia
+67,Bulgan Province,146,MN,Mongolia
+37,Darkhan-Uul Province,146,MN,Mongolia
+61,Dornod Province,146,MN,Mongolia
+59,Dundgovi Province,146,MN,Mongolia
+65,Govi-Altai Province,146,MN,Mongolia
+64,Govisümber Province,146,MN,Mongolia
+39,Khentii Province,146,MN,Mongolia
+43,Khovd Province,146,MN,Mongolia
+41,Khövsgöl Province,146,MN,Mongolia
+53,Ömnögovi Province,146,MN,Mongolia
+35,Orkhon Province,146,MN,Mongolia
+55,Övörkhangai Province,146,MN,Mongolia
+49,Selenge Province,146,MN,Mongolia
+51,Sükhbaatar Province,146,MN,Mongolia
+47,Töv Province,146,MN,Mongolia
+46,Uvs Province,146,MN,Mongolia
+57,Zavkhan Province,146,MN,Mongolia
+1,Andrijevica Municipality,147,ME,Montenegro
+2,Bar Municipality,147,ME,Montenegro
+3,Berane Municipality,147,ME,Montenegro
+4,Bijelo Polje Municipality,147,ME,Montenegro
+5,Budva Municipality,147,ME,Montenegro
+7,Danilovgrad Municipality,147,ME,Montenegro
+22,Gusinje Municipality,147,ME,Montenegro
+9,Kolašin Municipality,147,ME,Montenegro
+10,Kotor Municipality,147,ME,Montenegro
+11,Mojkovac Municipality,147,ME,Montenegro
+12,Nikšić Municipality,147,ME,Montenegro
+6,Old Royal Capital Cetinje,147,ME,Montenegro
+13,Plav Municipality,147,ME,Montenegro
+14,Pljevlja Municipality,147,ME,Montenegro
+15,Plužine Municipality,147,ME,Montenegro
+16,Podgorica Municipality,147,ME,Montenegro
+17,Rožaje Municipality,147,ME,Montenegro
+18,Šavnik Municipality,147,ME,Montenegro
+19,Tivat Municipality,147,ME,Montenegro
+20,Ulcinj Municipality,147,ME,Montenegro
+21,Žabljak Municipality,147,ME,Montenegro
+ASZ,Assa-Zag (EH-partial),149,MA,Morocco
+6,Casablanca-Settat,149,MA,Morocco
+8,Drâa-Tafilalet,149,MA,Morocco
+3,Fès-Meknès,149,MA,Morocco
+10,Guelmim-Oued Noun (EH-partial),149,MA,Morocco
+KEN,Kénitra,149,MA,Morocco
+KHN,Khénifra,149,MA,Morocco
+2,L'Oriental,149,MA,Morocco
+11,Laâyoune-Sakia El Hamra (EH-partial),149,MA,Morocco
+OUD,Oued Ed-Dahab (EH),149,MA,Morocco
+SAF,Safi,149,MA,Morocco
+1,Tanger-Tétouan-Al Hoceïma,149,MA,Morocco
+P,Cabo Delgado Province,150,MZ,Mozambique
+G,Gaza Province,150,MZ,Mozambique
+I,Inhambane Province,150,MZ,Mozambique
+B,Manica Province,150,MZ,Mozambique
+MPM,Maputo,150,MZ,Mozambique
+L,Maputo Province,150,MZ,Mozambique
+N,Nampula Province,150,MZ,Mozambique
+A,Niassa Province,150,MZ,Mozambique
+S,Sofala Province,150,MZ,Mozambique
+T,Tete Province,150,MZ,Mozambique
+Q,Zambezia Province,150,MZ,Mozambique
+7,Ayeyarwady Region,151,MM,Myanmar
+2,Bago,151,MM,Myanmar
+14,Chin State,151,MM,Myanmar
+11,Kachin State,151,MM,Myanmar
+12,Kayah State,151,MM,Myanmar
+13,Kayin State,151,MM,Myanmar
+3,Magway Region,151,MM,Myanmar
+4,Mandalay Region,151,MM,Myanmar
+15,Mon State,151,MM,Myanmar
+18,Naypyidaw Union Territory,151,MM,Myanmar
+16,Rakhine State,151,MM,Myanmar
+1,Sagaing Region,151,MM,Myanmar
+17,Shan State,151,MM,Myanmar
+5,Tanintharyi Region,151,MM,Myanmar
+6,Yangon Region,151,MM,Myanmar
+ER,Erongo Region,152,,Namibia
+HA,Hardap Region,152,,Namibia
+KA,Karas Region,152,,Namibia
+KE,Kavango East Region,152,,Namibia
+KH,Khomas Region,152,,Namibia
+KU,Kunene Region,152,,Namibia
+OW,Ohangwena Region,152,,Namibia
+OH,Omaheke Region,152,,Namibia
+OS,Omusati Region,152,,Namibia
+ON,Oshana Region,152,,Namibia
+OT,Oshikoto Region,152,,Namibia
+OD,Otjozondjupa Region,152,,Namibia
+CA,Zambezi Region,152,,Namibia
+1,Aiwo District,153,NR,Nauru
+2,Anabar District,153,NR,Nauru
+5,Baiti District,153,NR,Nauru
+10,Ijuw District,153,NR,Nauru
+11,Meneng District,153,NR,Nauru
+13,Uaboe District,153,NR,Nauru
+14,Yaren District,153,NR,Nauru
+1,Central Region,154,NP,Nepal
+4,Eastern Development Region,154,NP,Nepal
+5,Far-Western Development Region,154,NP,Nepal
+2,Mid-Western Region,154,NP,Nepal
+3,Western Region,154,NP,Nepal
+DR,Drenthe,156,NL,Netherlands
+FL,Flevoland,156,NL,Netherlands
+FR,Friesland,156,NL,Netherlands
+GE,Gelderland,156,NL,Netherlands
+GR,Groningen,156,NL,Netherlands
+LI,Limburg,156,NL,Netherlands
+NB,North Brabant,156,NL,Netherlands
+NH,North Holland,156,NL,Netherlands
+OV,Overijssel,156,NL,Netherlands
+ZH,South Holland,156,NL,Netherlands
+UT,Utrecht,156,NL,Netherlands
+ZE,Zeeland,156,NL,Netherlands
+AUK,Auckland Region,158,NZ,New Zealand
+BOP,Bay of Plenty Region,158,NZ,New Zealand
+CAN,Canterbury Region,158,NZ,New Zealand
+CIT,Chatham Islands,158,NZ,New Zealand
+GIS,Gisborne District,158,NZ,New Zealand
+HKB,Hawke's Bay Region,158,NZ,New Zealand
+MWT,Manawatu-Wanganui Region,158,NZ,New Zealand
+MBH,Marlborough Region,158,NZ,New Zealand
+NSN,Nelson Region,158,NZ,New Zealand
+NTL,Northland Region,158,NZ,New Zealand
+OTA,Otago Region,158,NZ,New Zealand
+STL,Southland Region,158,NZ,New Zealand
+TKI,Taranaki Region,158,NZ,New Zealand
+TAS,Tasman District,158,NZ,New Zealand
+WKO,Waikato Region,158,NZ,New Zealand
+WGN,Wellington Region,158,NZ,New Zealand
+WTC,West Coast Region,158,NZ,New Zealand
+BO,Boaco,159,NI,Nicaragua
+CA,Carazo,159,NI,Nicaragua
+CI,Chinandega,159,NI,Nicaragua
+CO,Chontales,159,NI,Nicaragua
+ES,Estelí,159,NI,Nicaragua
+GR,Granada,159,NI,Nicaragua
+JI,Jinotega,159,NI,Nicaragua
+LE,León,159,NI,Nicaragua
+MD,Madriz,159,NI,Nicaragua
+MN,Managua,159,NI,Nicaragua
+MS,Masaya,159,NI,Nicaragua
+MT,Matagalpa,159,NI,Nicaragua
+AN,North Caribbean Coast,159,NI,Nicaragua
+NS,Nueva Segovia	,159,NI,Nicaragua
+SJ,Río San Juan,159,NI,Nicaragua
+RI,Rivas,159,NI,Nicaragua
+AS,South Caribbean Coast,159,NI,Nicaragua
+1,Agadez Region,160,NE,Niger
+2,Diffa Region,160,NE,Niger
+3,Dosso Region,160,NE,Niger
+4,Maradi Region,160,NE,Niger
+5,Tahoua Region,160,NE,Niger
+6,Tillabéri Region,160,NE,Niger
+7,Zinder Region,160,NE,Niger
+AB,Abia,161,NG,Nigeria
+FC,Abuja Federal Capital Territory,161,NG,Nigeria
+AD,Adamawa,161,NG,Nigeria
+AK,Akwa Ibom,161,NG,Nigeria
+AN,Anambra,161,NG,Nigeria
+BA,Bauchi,161,NG,Nigeria
+BY,Bayelsa,161,NG,Nigeria
+BE,Benue,161,NG,Nigeria
+BO,Borno,161,NG,Nigeria
+CR,Cross River,161,NG,Nigeria
+DE,Delta,161,NG,Nigeria
+EB,Ebonyi,161,NG,Nigeria
+ED,Edo,161,NG,Nigeria
+EK,Ekiti,161,NG,Nigeria
+EN,Enugu,161,NG,Nigeria
+GO,Gombe,161,NG,Nigeria
+IM,Imo,161,NG,Nigeria
+JI,Jigawa,161,NG,Nigeria
+KD,Kaduna,161,NG,Nigeria
+KN,Kano,161,NG,Nigeria
+KT,Katsina,161,NG,Nigeria
+KE,Kebbi,161,NG,Nigeria
+KO,Kogi,161,NG,Nigeria
+KW,Kwara,161,NG,Nigeria
+LA,Lagos,161,NG,Nigeria
+,Nasarawa,161,NG,Nigeria
+NI,Niger,161,NG,Nigeria
+OG,Ogun,161,NG,Nigeria
+ON,Ondo,161,NG,Nigeria
+OS,Osun,161,NG,Nigeria
+OY,Oyo,161,NG,Nigeria
+PL,Plateau,161,NG,Nigeria
+RI,Rivers,161,NG,Nigeria
+SO,Sokoto,161,NG,Nigeria
+TA,Taraba,161,NG,Nigeria
+YO,Yobe,161,NG,Nigeria
+ZA,Zamfara,161,NG,Nigeria
+4,Chagang Province,115,KP,North Korea
+7,Kangwon Province,115,KP,North Korea
+9,North Hamgyong Province,115,KP,North Korea
+6,North Hwanghae Province,115,KP,North Korea
+3,North Pyongan Province,115,KP,North Korea
+1,Pyongyang,115,KP,North Korea
+13,Rason,115,KP,North Korea
+10,Ryanggang Province,115,KP,North Korea
+8,South Hamgyong Province,115,KP,North Korea
+5,South Hwanghae Province,115,KP,North Korea
+2,South Pyongan Province,115,KP,North Korea
+2,Akershus,165,NO,Norway
+6,Buskerud,165,NO,Norway
+20,Finnmark,165,NO,Norway
+4,Hedmark,165,NO,Norway
+12,Hordaland,165,NO,Norway
+15,Møre og Romsdal,165,NO,Norway
+18,Nordland,165,NO,Norway
+5,Oppland,165,NO,Norway
+3,Oslo,165,NO,Norway
+1,Østfold,165,NO,Norway
+11,Rogaland,165,NO,Norway
+14,Sogn og Fjordane,165,NO,Norway
+8,Telemark,165,NO,Norway
+19,Troms,165,NO,Norway
+50,Trøndelag,165,NO,Norway
+10,Vest-Agder,165,NO,Norway
+7,Vestfold,165,NO,Norway
+DA,Ad Dakhiliyah Governorate,166,OM,Oman
+ZA,Ad Dhahirah Governorate,166,OM,Oman
+BS,Al Batinah North Governorate,166,OM,Oman
+BA,Al Batinah Region,166,OM,Oman
+BU,Al Buraimi Governorate,166,OM,Oman
+WU,Al Wusta Governorate,166,OM,Oman
+SH,Ash Sharqiyah Region,166,OM,Oman
+ZU,Dhofar Governorate,166,OM,Oman
+MU,Musandam Governorate,166,OM,Oman
+MA,Muscat Governorate,166,OM,Oman
+JK,Azad Kashmir,167,PK,Pakistan
+BA,Balochistan,167,PK,Pakistan
+TA,Federally Administered Tribal Areas,167,PK,Pakistan
+GB,Gilgit-Baltistan,167,PK,Pakistan
+IS,Islamabad Capital Territory,167,PK,Pakistan
+KP,Khyber Pakhtunkhwa,167,PK,Pakistan
+PB,Punjab,167,PK,Pakistan
+SD,Sindh,167,PK,Pakistan
+2,Aimeliik,168,PW,Palau
+4,Airai,168,PW,Palau
+10,Angaur,168,PW,Palau
+50,Hatohobei,168,PW,Palau
+100,Kayangel,168,PW,Palau
+150,Koror,168,PW,Palau
+212,Melekeok,168,PW,Palau
+214,Ngaraard,168,PW,Palau
+218,Ngarchelong,168,PW,Palau
+222,Ngardmau,168,PW,Palau
+226,Ngchesar,168,PW,Palau
+227,Ngeremlengui,168,PW,Palau
+228,Ngiwal,168,PW,Palau
+350,Peleliu,168,PW,Palau
+370,Sonsorol,168,PW,Palau
+1,Bocas del Toro Province,170,PA,Panama
+4,Chiriquí Province,170,PA,Panama
+2,Coclé Province,170,PA,Panama
+3,Colón Province,170,PA,Panama
+5,Darién Province,170,PA,Panama
+EM,Emberá-Wounaan Comarca,170,PA,Panama
+KY,Guna Yala,170,PA,Panama
+6,Herrera Province,170,PA,Panama
+7,Los Santos Province,170,PA,Panama
+NB,Ngöbe-Buglé Comarca,170,PA,Panama
+10,Panamá Oeste Province,170,PA,Panama
+8,Panamá Province,170,PA,Panama
+9,Veraguas Province,170,PA,Panama
+NSB,Bougainville,171,PG,Papua new Guinea
+CPM,Central Province,171,PG,Papua new Guinea
+CPK,Chimbu Province,171,PG,Papua new Guinea
+EBR,East New Britain,171,PG,Papua new Guinea
+EHG,Eastern Highlands Province,171,PG,Papua new Guinea
+EPW,Enga Province,171,PG,Papua new Guinea
+GPK,Gulf,171,PG,Papua new Guinea
+HLA,Hela,171,PG,Papua new Guinea
+JWK,Jiwaka Province,171,PG,Papua new Guinea
+MPM,Madang Province,171,PG,Papua new Guinea
+MRL,Manus Province,171,PG,Papua new Guinea
+MBA,Milne Bay Province,171,PG,Papua new Guinea
+MPL,Morobe Province,171,PG,Papua new Guinea
+NIK,New Ireland Province,171,PG,Papua new Guinea
+NPP,Oro Province,171,PG,Papua new Guinea
+NCD,Port Moresby,171,PG,Papua new Guinea
+SAN,Sandaun Province,171,PG,Papua new Guinea
+SHM,Southern Highlands Province,171,PG,Papua new Guinea
+WBK,West New Britain Province,171,PG,Papua new Guinea
+WHM,Western Highlands Province,171,PG,Papua new Guinea
+WPD,Western Province,171,PG,Papua new Guinea
+16,Alto Paraguay Department,172,PY,Paraguay
+10,Alto Paraná Department,172,PY,Paraguay
+13,Amambay Department,172,PY,Paraguay
+19,Boquerón Department,172,PY,Paraguay
+5,Caaguazú,172,PY,Paraguay
+6,Caazapá,172,PY,Paraguay
+14,Canindeyú,172,PY,Paraguay
+11,Central Department,172,PY,Paraguay
+1,Concepción Department,172,PY,Paraguay
+3,Cordillera Department,172,PY,Paraguay
+4,Guairá Department,172,PY,Paraguay
+7,Itapúa,172,PY,Paraguay
+8,Misiones Department,172,PY,Paraguay
+12,Ñeembucú Department,172,PY,Paraguay
+9,Paraguarí Department,172,PY,Paraguay
+15,Presidente Hayes Department,172,PY,Paraguay
+2,San Pedro Department,172,PY,Paraguay
+AMA,Amazonas,173,PE,Peru
+ANC,Áncash,173,PE,Peru
+APU,Apurímac,173,PE,Peru
+ARE,Arequipa,173,PE,Peru
+AYA,Ayacucho,173,PE,Peru
+CAJ,Cajamarca,173,PE,Peru
+CAL,Callao,173,PE,Peru
+CUS,Cusco,173,PE,Peru
+HUV,Huancavelica,173,PE,Peru
+HUC,Huanuco,173,PE,Peru
+ICA,Ica,173,PE,Peru
+JUN,Junín,173,PE,Peru
+LAL,La Libertad,173,PE,Peru
+LAM,Lambayeque,173,PE,Peru
+LIM,Lima,173,PE,Peru
+LOR,Loreto,173,PE,Peru
+MDD,Madre de Dios,173,PE,Peru
+MOQ,Moquegua,173,PE,Peru
+PAS,Pasco,173,PE,Peru
+PIU,Piura,173,PE,Peru
+PUN,Puno,173,PE,Peru
+SAM,San Martín,173,PE,Peru
+TAC,Tacna,173,PE,Peru
+TUM,Tumbes,173,PE,Peru
+UCA,Ucayali,173,PE,Peru
+ABR,Abra,174,PH,Philippines
+AGN,Agusan del Norte,174,PH,Philippines
+AGS,Agusan del Sur,174,PH,Philippines
+ALB,Albay,174,PH,Philippines
+ANT,Antique,174,PH,Philippines
+14,Autonomous Region in Muslim Mindanao,174,PH,Philippines
+BAN,Bataan,174,PH,Philippines
+BTN,Batanes,174,PH,Philippines
+BEN,Benguet,174,PH,Philippines
+BOH,Bohol,174,PH,Philippines
+BUK,Bukidnon,174,PH,Philippines
+BUL,Bulacan,174,PH,Philippines
+CAG,Cagayan,174,PH,Philippines
+2,Cagayan Valley,174,PH,Philippines
+CAN,Camarines Norte,174,PH,Philippines
+13,Caraga,174,PH,Philippines
+3,Central Luzon,174,PH,Philippines
+15,Cordillera Administrative Region,174,PH,Philippines
+DVO,Davao Occidental,174,PH,Philippines
+11,Davao Region,174,PH,Philippines
+8,Eastern Visayas,174,PH,Philippines
+1,Ilocos Region,174,PH,Philippines
+NCR,Metro Manila,174,PH,Philippines
+MDC,Occidental Mindoro,174,PH,Philippines
+MDR,Oriental Mindoro,174,PH,Philippines
+12,Soccsksargen,174,PH,Philippines
+ZSI,Zamboanga Sibugay,174,PH,Philippines
+WP,Greater Poland Voivodeship,176,PL,Poland
+KP,Kuyavian-Pomeranian Voivodeship,176,PL,Poland
+MA,Lesser Poland Voivodeship,176,PL,Poland
+DS,Lower Silesian Voivodeship,176,PL,Poland
+LU,Lublin Voivodeship,176,PL,Poland
+LB,Lubusz Voivodeship,176,PL,Poland
+LD,Łódź Voivodeship,176,PL,Poland
+MZ,Masovian Voivodeship,176,PL,Poland
+OP,Opole Voivodeship,176,PL,Poland
+PK,Podkarpackie Voivodeship,176,PL,Poland
+PD,Podlaskie Voivodeship,176,PL,Poland
+PM,Pomeranian Voivodeship,176,PL,Poland
+SL,Silesian Voivodeship,176,PL,Poland
+SK,Świętokrzyskie Voivodeship,176,PL,Poland
+WN,Warmian-Masurian Voivodeship,176,PL,Poland
+ZP,West Pomeranian Voivodeship,176,PL,Poland
+20,Açores,177,PT,Portugal
+1,Aveiro,177,PT,Portugal
+2,Beja,177,PT,Portugal
+3,Braga,177,PT,Portugal
+4,Bragança,177,PT,Portugal
+5,Castelo Branco,177,PT,Portugal
+6,Coimbra,177,PT,Portugal
+7,Évora,177,PT,Portugal
+8,Faro,177,PT,Portugal
+9,Guarda,177,PT,Portugal
+10,Leiria,177,PT,Portugal
+11,Lisbon,177,PT,Portugal
+30,Madeira,177,PT,Portugal
+12,Portalegre,177,PT,Portugal
+13,Porto,177,PT,Portugal
+14,Santarém,177,PT,Portugal
+15,Setúbal,177,PT,Portugal
+16,Viana do Castelo,177,PT,Portugal
+17,Vila Real,177,PT,Portugal
+18,Viseu,177,PT,Portugal
+KH,Al Khor,179,QA,Qatar
+RA,Al Rayyan Municipality,179,QA,Qatar
+WA,Al Wakrah,179,QA,Qatar
+SH,Al-Shahaniya,179,QA,Qatar
+DA,Doha,179,QA,Qatar
+MS,Madinat ash Shamal,179,QA,Qatar
+US,Umm Salal Municipality,179,QA,Qatar
+AB,Alba,181,RO,Romania
+AR,Arad County,181,RO,Romania
+AG,Arges,181,RO,Romania
+BC,Bacău County,181,RO,Romania
+BH,Bihor County,181,RO,Romania
+BN,Bistrița-Năsăud County,181,RO,Romania
+BT,Botoșani County,181,RO,Romania
+BR,Braila,181,RO,Romania
+BV,Brașov County,181,RO,Romania
+B,Bucharest,181,RO,Romania
+BZ,Buzău County,181,RO,Romania
+CL,Călărași County,181,RO,Romania
+CS,Caraș-Severin County,181,RO,Romania
+CJ,Cluj County,181,RO,Romania
+CT,Constanța County,181,RO,Romania
+CV,Covasna County,181,RO,Romania
+DB,Dâmbovița County,181,RO,Romania
+DJ,Dolj County,181,RO,Romania
+GL,Galați County,181,RO,Romania
+GR,Giurgiu County,181,RO,Romania
+GJ,Gorj County,181,RO,Romania
+HR,Harghita County,181,RO,Romania
+HD,Hunedoara County,181,RO,Romania
+IL,Ialomița County,181,RO,Romania
+IS,Iași County,181,RO,Romania
+IF,Ilfov County,181,RO,Romania
+MM,Maramureș County,181,RO,Romania
+MH,Mehedinți County,181,RO,Romania
+MS,Mureș County,181,RO,Romania
+NT,Neamț County,181,RO,Romania
+OT,Olt County,181,RO,Romania
+PH,Prahova County,181,RO,Romania
+SJ,Sălaj County,181,RO,Romania
+SM,Satu Mare County,181,RO,Romania
+SB,Sibiu County,181,RO,Romania
+SV,Suceava County,181,RO,Romania
+TR,Teleorman County,181,RO,Romania
+TM,Timiș County,181,RO,Romania
+TL,Tulcea County,181,RO,Romania
+VL,Vâlcea County,181,RO,Romania
+VS,Vaslui County,181,RO,Romania
+VN,Vrancea County,181,RO,Romania
+ALT,Altai Krai,182,RU,Russia
+AL,Altai Republic,182,RU,Russia
+AMU,Amur Oblast,182,RU,Russia
+ARK,Arkhangelsk,182,RU,Russia
+AST,Astrakhan Oblast,182,RU,Russia
+BEL,Belgorod Oblast,182,RU,Russia
+BRY,Bryansk Oblast,182,RU,Russia
+CE,Chechen Republic,182,RU,Russia
+CHE,Chelyabinsk Oblast,182,RU,Russia
+CHU,Chukotka Autonomous Okrug,182,RU,Russia
+CU,Chuvash Republic,182,RU,Russia
+IVA,Ivanovo Oblast,182,RU,Russia
+YEV,Jewish Autonomous Oblast,182,RU,Russia
+KB,Kabardino-Balkar Republic,182,RU,Russia
+KGD,Kaliningrad,182,RU,Russia
+KLU,Kaluga Oblast,182,RU,Russia
+KAM,Kamchatka Krai,182,RU,Russia
+KC,Karachay-Cherkess Republic,182,RU,Russia
+KEM,Kemerovo Oblast,182,RU,Russia
+KHA,Khabarovsk Krai,182,RU,Russia
+KHM,Khanty-Mansi Autonomous Okrug,182,RU,Russia
+KIR,Kirov Oblast,182,RU,Russia
+KO,Komi Republic,182,RU,Russia
+KOS,Kostroma Oblast,182,RU,Russia
+KDA,Krasnodar Krai,182,RU,Russia
+KYA,Krasnoyarsk Krai,182,RU,Russia
+KGN,Kurgan Oblast,182,RU,Russia
+KRS,Kursk Oblast,182,RU,Russia
+LEN,Leningrad Oblast,182,RU,Russia
+LIP,Lipetsk Oblast,182,RU,Russia
+MAG,Magadan Oblast,182,RU,Russia
+ME,Mari El Republic,182,RU,Russia
+MOW,Moscow,182,RU,Russia
+MOS,Moscow Oblast,182,RU,Russia
+MUR,Murmansk Oblast,182,RU,Russia
+NEN,Nenets Autonomous Okrug,182,RU,Russia
+NIZ,Nizhny Novgorod Oblast,182,RU,Russia
+NGR,Novgorod Oblast,182,RU,Russia
+NVS,Novosibirsk,182,RU,Russia
+OMS,Omsk Oblast,182,RU,Russia
+ORE,Orenburg Oblast,182,RU,Russia
+ORL,Oryol Oblast,182,RU,Russia
+PNZ,Penza Oblast,182,RU,Russia
+PER,Perm Krai,182,RU,Russia
+PRI,Primorsky Krai,182,RU,Russia
+PSK,Pskov Oblast,182,RU,Russia
+AD,Republic of Adygea,182,RU,Russia
+BA,Republic of Bashkortostan,182,RU,Russia
+BU,Republic of Buryatia,182,RU,Russia
+DA,Republic of Dagestan,182,RU,Russia
+IN,Republic of Ingushetia,182,RU,Russia
+KL,Republic of Kalmykia,182,RU,Russia
+KR,Republic of Karelia,182,RU,Russia
+KK,Republic of Khakassia,182,RU,Russia
+MO,Republic of Mordovia,182,RU,Russia
+SE,Republic of North Ossetia-Alania,182,RU,Russia
+TA,Republic of Tatarstan,182,RU,Russia
+ROS,Rostov Oblast,182,RU,Russia
+RYA,Ryazan Oblast,182,RU,Russia
+SPE,Saint Petersburg,182,RU,Russia
+SA,Sakha Republic,182,RU,Russia
+SAK,Sakhalin,182,RU,Russia
+SAM,Samara Oblast,182,RU,Russia
+SAR,Saratov Oblast,182,RU,Russia
+UA-40,Sevastopol,182,RU,Russia
+SMO,Smolensk Oblast,182,RU,Russia
+STA,Stavropol Krai,182,RU,Russia
+SVE,Sverdlovsk,182,RU,Russia
+TAM,Tambov Oblast,182,RU,Russia
+TOM,Tomsk Oblast,182,RU,Russia
+TUL,Tula Oblast,182,RU,Russia
+TY,Tuva Republic,182,RU,Russia
+TVE,Tver Oblast,182,RU,Russia
+TYU,Tyumen Oblast,182,RU,Russia
+UD,Udmurt Republic,182,RU,Russia
+ULY,Ulyanovsk Oblast,182,RU,Russia
+VLA,Vladimir Oblast,182,RU,Russia
+VGG,Volgograd Oblast,182,RU,Russia
+VLG,Vologda Oblast,182,RU,Russia
+VOR,Voronezh Oblast,182,RU,Russia
+YAN,Yamalo-Nenets Autonomous Okrug,182,RU,Russia
+YAR,Yaroslavl Oblast,182,RU,Russia
+ZAB,Zabaykalsky Krai,182,RU,Russia
+2,Eastern Province,183,RW,Rwanda
+1,Kigali district,183,RW,Rwanda
+3,Northern Province,183,RW,Rwanda
+5,Southern Province,183,RW,Rwanda
+4,Western Province,183,RW,Rwanda
+1,Christ Church Nichola Town Parish,185,KN,Saint Kitts And Nevis
+2,Saint Anne Sandy Point Parish,185,KN,Saint Kitts And Nevis
+4,Saint George Gingerland Parish,185,KN,Saint Kitts And Nevis
+5,Saint James Windward Parish,185,KN,Saint Kitts And Nevis
+6,Saint John Capisterre Parish,185,KN,Saint Kitts And Nevis
+7,Saint John Figtree Parish,185,KN,Saint Kitts And Nevis
+8,Saint Mary Cayon Parish,185,KN,Saint Kitts And Nevis
+9,Saint Paul Capisterre Parish,185,KN,Saint Kitts And Nevis
+10,Saint Paul Charlestown Parish,185,KN,Saint Kitts And Nevis
+11,Saint Peter Basseterre Parish,185,KN,Saint Kitts And Nevis
+12,Saint Thomas Lowland Parish,185,KN,Saint Kitts And Nevis
+13,Saint Thomas Middle Island Parish,185,KN,Saint Kitts And Nevis
+15,Trinity Palmetto Point Parish,185,KN,Saint Kitts And Nevis
+1,Anse la Raye Quarter,186,LC,Saint Lucia
+12,Canaries,186,LC,Saint Lucia
+2,Castries Quarter,186,LC,Saint Lucia
+3,Choiseul Quarter,186,LC,Saint Lucia
+5,Dennery Quarter,186,LC,Saint Lucia
+6,Gros Islet Quarter,186,LC,Saint Lucia
+7,Laborie Quarter,186,LC,Saint Lucia
+8,Micoud Quarter,186,LC,Saint Lucia
+10,Soufrière Quarter,186,LC,Saint Lucia
+11,Vieux Fort Quarter,186,LC,Saint Lucia
+1,Charlotte Parish,188,VC,Saint Vincent And The Grenadines
+6,Grenadines Parish,188,VC,Saint Vincent And The Grenadines
+2,Saint Andrew Parish,188,VC,Saint Vincent And The Grenadines
+3,Saint David Parish,188,VC,Saint Vincent And The Grenadines
+4,Saint George Parish,188,VC,Saint Vincent And The Grenadines
+5,Saint Patrick Parish,188,VC,Saint Vincent And The Grenadines
+AA,A'ana,191,WS,Samoa
+AL,Aiga-i-le-Tai,191,WS,Samoa
+AT,Atua,191,WS,Samoa
+GI,Gaga'ifomauga,191,WS,Samoa
+PA,Palauli,191,WS,Samoa
+TU,Tuamasaga,191,WS,Samoa
+VF,Va'a-o-Fonoti,191,WS,Samoa
+VS,Vaisigano,191,WS,Samoa
+1,Acquaviva,192,SM,San Marino
+6,Borgo Maggiore,192,SM,San Marino
+2,Chiesanuova,192,SM,San Marino
+3,Domagnano,192,SM,San Marino
+4,Faetano,192,SM,San Marino
+5,Fiorentino,192,SM,San Marino
+8,Montegiardino,192,SM,San Marino
+7,San Marino,192,SM,San Marino
+9,Serravalle,192,SM,San Marino
+P,Príncipe Province,193,ST,Sao Tome and Principe
+S,São Tomé Province,193,ST,Sao Tome and Principe
+14,'Asir,194,SA,Saudi Arabia
+11,Al Bahah,194,SA,Saudi Arabia
+12,Al Jawf,194,SA,Saudi Arabia
+3,Al Madinah,194,SA,Saudi Arabia
+5,Al-Qassim,194,SA,Saudi Arabia
+4,Eastern Province,194,SA,Saudi Arabia
+6,Ha'il,194,SA,Saudi Arabia
+9,Jizan,194,SA,Saudi Arabia
+2,Makkah,194,SA,Saudi Arabia
+10,Najran,194,SA,Saudi Arabia
+8,Northern Borders,194,SA,Saudi Arabia
+1,Riyadh,194,SA,Saudi Arabia
+7,Tabuk,194,SA,Saudi Arabia
+DK,Dakar,195,SN,Senegal
+DB,Diourbel Region,195,SN,Senegal
+FK,Fatick,195,SN,Senegal
+KA,Kaffrine,195,SN,Senegal
+KL,Kaolack,195,SN,Senegal
+KE,Kédougou,195,SN,Senegal
+KD,Kolda,195,SN,Senegal
+LG,Louga,195,SN,Senegal
+MT,Matam,195,SN,Senegal
+SL,Saint-Louis,195,SN,Senegal
+SE,Sédhiou,195,SN,Senegal
+TC,Tambacounda Region,195,SN,Senegal
+TH,Thiès Region,195,SN,Senegal
+ZG,Ziguinchor,195,SN,Senegal
+2,Central Banat District,196,RS,Serbia
+VO,Vojvodina,196,RS,Serbia
+2,Anse Boileau,197,SC,Seychelles
+5,Anse Royale,197,SC,Seychelles
+8,Beau Vallon,197,SC,Seychelles
+10,Bel Ombre,197,SC,Seychelles
+11,Cascade,197,SC,Seychelles
+16,La Rivière Anglaise,197,SC,Seychelles
+21,Port Glaud,197,SC,Seychelles
+23,Takamaka,197,SC,Seychelles
+E,Eastern Province,198,SL,Sierra Leone
+N,Northern Province,198,SL,Sierra Leone
+S,Southern Province,198,SL,Sierra Leone
+W,Western Area,198,SL,Sierra Leone
+1,Central Singapore Community Development Council,199,SG,Singapore
+3,North West Community Development Council,199,SG,Singapore
+BC,Banská Bystrica Region,200,SK,Slovakia
+BL,Bratislava Region,200,SK,Slovakia
+KI,Košice Region,200,SK,Slovakia
+NI,Nitra Region,200,SK,Slovakia
+PV,Prešov Region,200,SK,Slovakia
+TC,Trenčín Region,200,SK,Slovakia
+TA,Trnava Region,200,SK,Slovakia
+ZI,Žilina Region,200,SK,Slovakia
+1,Ajdovščina Municipality,201,SI,Slovenia
+213,Ankaran Municipality,201,SI,Slovenia
+2,Beltinci Municipality,201,SI,Slovenia
+148,Benedikt Municipality,201,SI,Slovenia
+149,Bistrica ob Sotli Municipality,201,SI,Slovenia
+3,Bled Municipality,201,SI,Slovenia
+150,Bloke Municipality,201,SI,Slovenia
+4,Bohinj Municipality,201,SI,Slovenia
+5,Borovnica Municipality,201,SI,Slovenia
+6,Bovec Municipality,201,SI,Slovenia
+151,Braslovče Municipality,201,SI,Slovenia
+7,Brda Municipality,201,SI,Slovenia
+9,Brežice Municipality,201,SI,Slovenia
+8,Brezovica Municipality,201,SI,Slovenia
+152,Cankova Municipality,201,SI,Slovenia
+12,Cerklje na Gorenjskem Municipality,201,SI,Slovenia
+13,Cerknica Municipality,201,SI,Slovenia
+14,Cerkno Municipality,201,SI,Slovenia
+153,Cerkvenjak Municipality,201,SI,Slovenia
+11,City Municipality of Celje,201,SI,Slovenia
+85,City Municipality of Novo Mesto,201,SI,Slovenia
+15,Črenšovci Municipality,201,SI,Slovenia
+16,Črna na Koroškem Municipality,201,SI,Slovenia
+17,Črnomelj Municipality,201,SI,Slovenia
+18,Destrnik Municipality,201,SI,Slovenia
+19,Divača Municipality,201,SI,Slovenia
+154,Dobje Municipality,201,SI,Slovenia
+20,Dobrepolje Municipality,201,SI,Slovenia
+155,Dobrna Municipality,201,SI,Slovenia
+21,Dobrova–Polhov Gradec Municipality,201,SI,Slovenia
+156,Dobrovnik Municipality,201,SI,Slovenia
+22,Dol pri Ljubljani Municipality,201,SI,Slovenia
+157,Dolenjske Toplice Municipality,201,SI,Slovenia
+23,Domžale Municipality,201,SI,Slovenia
+24,Dornava Municipality,201,SI,Slovenia
+25,Dravograd Municipality,201,SI,Slovenia
+26,Duplek Municipality,201,SI,Slovenia
+27,Gorenja Vas–Poljane Municipality,201,SI,Slovenia
+28,Gorišnica Municipality,201,SI,Slovenia
+29,Gornja Radgona Municipality,201,SI,Slovenia
+30,Gornji Grad Municipality,201,SI,Slovenia
+31,Gornji Petrovci Municipality,201,SI,Slovenia
+158,Grad Municipality,201,SI,Slovenia
+32,Grosuplje Municipality,201,SI,Slovenia
+159,Hajdina Municipality,201,SI,Slovenia
+160,Hoče–Slivnica Municipality,201,SI,Slovenia
+161,Hodoš Municipality,201,SI,Slovenia
+162,Horjul Municipality,201,SI,Slovenia
+34,Hrastnik Municipality,201,SI,Slovenia
+35,Hrpelje–Kozina Municipality,201,SI,Slovenia
+36,Idrija Municipality,201,SI,Slovenia
+37,Ig Municipality,201,SI,Slovenia
+39,Ivančna Gorica Municipality,201,SI,Slovenia
+40,Izola Municipality,201,SI,Slovenia
+41,Jesenice Municipality,201,SI,Slovenia
+163,Jezersko Municipality,201,SI,Slovenia
+42,Juršinci Municipality,201,SI,Slovenia
+43,Kamnik Municipality,201,SI,Slovenia
+44,Kanal ob Soči Municipality,201,SI,Slovenia
+45,Kidričevo Municipality,201,SI,Slovenia
+46,Kobarid Municipality,201,SI,Slovenia
+47,Kobilje Municipality,201,SI,Slovenia
+48,Kočevje Municipality,201,SI,Slovenia
+49,Komen Municipality,201,SI,Slovenia
+164,Komenda Municipality,201,SI,Slovenia
+50,Koper City Municipality,201,SI,Slovenia
+165,Kostel Municipality,201,SI,Slovenia
+51,Kozje Municipality,201,SI,Slovenia
+52,Kranj City Municipality,201,SI,Slovenia
+53,Kranjska Gora Municipality,201,SI,Slovenia
+166,Križevci Municipality,201,SI,Slovenia
+55,Kungota,201,SI,Slovenia
+56,Kuzma Municipality,201,SI,Slovenia
+57,Laško Municipality,201,SI,Slovenia
+58,Lenart Municipality,201,SI,Slovenia
+59,Lendava Municipality,201,SI,Slovenia
+60,Litija Municipality,201,SI,Slovenia
+61,Ljubljana City Municipality,201,SI,Slovenia
+62,Ljubno Municipality,201,SI,Slovenia
+63,Ljutomer Municipality,201,SI,Slovenia
+64,Logatec Municipality,201,SI,Slovenia
+65,Loška Dolina Municipality,201,SI,Slovenia
+66,Loški Potok Municipality,201,SI,Slovenia
+167,Lovrenc na Pohorju Municipality,201,SI,Slovenia
+67,Luče Municipality,201,SI,Slovenia
+68,Lukovica Municipality,201,SI,Slovenia
+69,Majšperk Municipality,201,SI,Slovenia
+70,Maribor City Municipality,201,SI,Slovenia
+168,Markovci Municipality,201,SI,Slovenia
+71,Medvode Municipality,201,SI,Slovenia
+72,Mengeš Municipality,201,SI,Slovenia
+73,Metlika Municipality,201,SI,Slovenia
+74,Mežica Municipality,201,SI,Slovenia
+169,Miklavž na Dravskem Polju Municipality,201,SI,Slovenia
+75,Miren–Kostanjevica Municipality,201,SI,Slovenia
+170,Mirna Peč Municipality,201,SI,Slovenia
+76,Mislinja Municipality,201,SI,Slovenia
+77,Moravče Municipality,201,SI,Slovenia
+78,Moravske Toplice Municipality,201,SI,Slovenia
+79,Mozirje Municipality,201,SI,Slovenia
+195,Municipality of Apače,201,SI,Slovenia
+38,Municipality of Ilirska Bistrica,201,SI,Slovenia
+54,Municipality of Krško,201,SI,Slovenia
+123,Municipality of Škofljica,201,SI,Slovenia
+80,Murska Sobota City Municipality,201,SI,Slovenia
+81,Muta Municipality,201,SI,Slovenia
+82,Naklo Municipality,201,SI,Slovenia
+83,Nazarje Municipality,201,SI,Slovenia
+84,Nova Gorica City Municipality,201,SI,Slovenia
+86,Odranci Municipality,201,SI,Slovenia
+171,Oplotnica,201,SI,Slovenia
+87,Ormož Municipality,201,SI,Slovenia
+88,Osilnica Municipality,201,SI,Slovenia
+89,Pesnica Municipality,201,SI,Slovenia
+90,Piran Municipality,201,SI,Slovenia
+91,Pivka Municipality,201,SI,Slovenia
+92,Podčetrtek Municipality,201,SI,Slovenia
+172,Podlehnik Municipality,201,SI,Slovenia
+93,Podvelka Municipality,201,SI,Slovenia
+173,Polzela Municipality,201,SI,Slovenia
+94,Postojna Municipality,201,SI,Slovenia
+174,Prebold Municipality,201,SI,Slovenia
+95,Preddvor Municipality,201,SI,Slovenia
+175,Prevalje Municipality,201,SI,Slovenia
+96,Ptuj City Municipality,201,SI,Slovenia
+97,Puconci Municipality,201,SI,Slovenia
+98,Rače–Fram Municipality,201,SI,Slovenia
+99,Radeče Municipality,201,SI,Slovenia
+100,Radenci Municipality,201,SI,Slovenia
+101,Radlje ob Dravi Municipality,201,SI,Slovenia
+102,Radovljica Municipality,201,SI,Slovenia
+103,Ravne na Koroškem Municipality,201,SI,Slovenia
+176,Razkrižje Municipality,201,SI,Slovenia
+201,Renče–Vogrsko Municipality,201,SI,Slovenia
+104,Ribnica Municipality,201,SI,Slovenia
+177,Ribnica na Pohorju Municipality,201,SI,Slovenia
+106,Rogaška Slatina Municipality,201,SI,Slovenia
+105,Rogašovci Municipality,201,SI,Slovenia
+107,Rogatec Municipality,201,SI,Slovenia
+108,Ruše Municipality,201,SI,Slovenia
+33,Šalovci Municipality,201,SI,Slovenia
+178,Selnica ob Dravi Municipality,201,SI,Slovenia
+109,Semič Municipality,201,SI,Slovenia
+183,Šempeter–Vrtojba Municipality,201,SI,Slovenia
+117,Šenčur Municipality,201,SI,Slovenia
+118,Šentilj Municipality,201,SI,Slovenia
+119,Šentjernej Municipality,201,SI,Slovenia
+120,Šentjur Municipality,201,SI,Slovenia
+211,Šentrupert Municipality,201,SI,Slovenia
+110,Sevnica Municipality,201,SI,Slovenia
+111,Sežana Municipality,201,SI,Slovenia
+121,Škocjan Municipality,201,SI,Slovenia
+122,Škofja Loka Municipality,201,SI,Slovenia
+112,Slovenj Gradec City Municipality,201,SI,Slovenia
+113,Slovenska Bistrica Municipality,201,SI,Slovenia
+114,Slovenske Konjice Municipality,201,SI,Slovenia
+124,Šmarje pri Jelšah Municipality,201,SI,Slovenia
+206,Šmarješke Toplice Municipality,201,SI,Slovenia
+125,Šmartno ob Paki Municipality,201,SI,Slovenia
+194,Šmartno pri Litiji Municipality,201,SI,Slovenia
+179,Sodražica Municipality,201,SI,Slovenia
+180,Solčava Municipality,201,SI,Slovenia
+126,Šoštanj Municipality,201,SI,Slovenia
+202,Središče ob Dravi,201,SI,Slovenia
+115,Starše Municipality,201,SI,Slovenia
+127,Štore Municipality,201,SI,Slovenia
+203,Straža Municipality,201,SI,Slovenia
+181,Sveta Ana Municipality,201,SI,Slovenia
+204,Sveta Trojica v Slovenskih Goricah Municipality,201,SI,Slovenia
+182,Sveti Andraž v Slovenskih Goricah Municipality,201,SI,Slovenia
+210,Sveti Jurij v Slovenskih Goricah Municipality,201,SI,Slovenia
+205,Sveti Tomaž Municipality,201,SI,Slovenia
+184,Tabor Municipality,201,SI,Slovenia
+10,Tišina Municipality,201,SI,Slovenia
+128,Tolmin Municipality,201,SI,Slovenia
+129,Trbovlje Municipality,201,SI,Slovenia
+130,Trebnje Municipality,201,SI,Slovenia
+185,Trnovska Vas Municipality,201,SI,Slovenia
+131,Tržič Municipality,201,SI,Slovenia
+186,Trzin Municipality,201,SI,Slovenia
+132,Turnišče Municipality,201,SI,Slovenia
+187,Velika Polana Municipality,201,SI,Slovenia
+134,Velike Lašče Municipality,201,SI,Slovenia
+188,Veržej Municipality,201,SI,Slovenia
+135,Videm Municipality,201,SI,Slovenia
+136,Vipava Municipality,201,SI,Slovenia
+137,Vitanje Municipality,201,SI,Slovenia
+138,Vodice Municipality,201,SI,Slovenia
+139,Vojnik Municipality,201,SI,Slovenia
+189,Vransko Municipality,201,SI,Slovenia
+140,Vrhnika Municipality,201,SI,Slovenia
+141,Vuzenica Municipality,201,SI,Slovenia
+142,Zagorje ob Savi Municipality,201,SI,Slovenia
+190,Žalec Municipality,201,SI,Slovenia
+143,Zavrč Municipality,201,SI,Slovenia
+146,Železniki Municipality,201,SI,Slovenia
+191,Žetale Municipality,201,SI,Slovenia
+147,Žiri Municipality,201,SI,Slovenia
+192,Žirovnica Municipality,201,SI,Slovenia
+144,Zreče Municipality,201,SI,Slovenia
+193,Žužemberk Municipality,201,SI,Slovenia
+CE,Central Province,202,SB,Solomon Islands
+GU,Guadalcanal Province,202,SB,Solomon Islands
+IS,Isabel Province,202,SB,Solomon Islands
+MK,Makira-Ulawa Province,202,SB,Solomon Islands
+ML,Malaita Province,202,SB,Solomon Islands
+TE,Temotu Province,202,SB,Solomon Islands
+WE,Western Province,202,SB,Solomon Islands
+BK,Bakool,203,SO,Somalia
+BN,Banaadir,203,SO,Somalia
+BR,Bari,203,SO,Somalia
+BY,Bay,203,SO,Somalia
+GA,Galguduud,203,SO,Somalia
+GE,Gedo,203,SO,Somalia
+HI,Hiran,203,SO,Somalia
+JH,Lower Juba,203,SO,Somalia
+SH,Lower Shebelle,203,SO,Somalia
+JD,Middle Juba,203,SO,Somalia
+SD,Middle Shebelle,203,SO,Somalia
+MU,Mudug,203,SO,Somalia
+NU,Nugal,203,SO,Somalia
+SA,Sanaag Region,203,SO,Somalia
+TO,Togdheer Region,203,SO,Somalia
+EC,Eastern Cape,204,ZA,South Africa
+FS,Free State,204,ZA,South Africa
+GP,Gauteng,204,ZA,South Africa
+KZN,KwaZulu-Natal,204,ZA,South Africa
+LP,Limpopo,204,ZA,South Africa
+MP,Mpumalanga,204,ZA,South Africa
+NW,North West,204,ZA,South Africa
+NC,Northern Cape,204,ZA,South Africa
+WC,Western Cape,204,ZA,South Africa
+26,Busan,116,KR,South Korea
+27,Daegu,116,KR,South Korea
+30,Daejeon,116,KR,South Korea
+42,Gangwon Province,116,KR,South Korea
+29,Gwangju,116,KR,South Korea
+41,Gyeonggi Province,116,KR,South Korea
+28,Incheon,116,KR,South Korea
+49,Jeju,116,KR,South Korea
+43,North Chungcheong Province,116,KR,South Korea
+47,North Gyeongsang Province,116,KR,South Korea
+45,North Jeolla Province,116,KR,South Korea
+50,Sejong City,116,KR,South Korea
+11,Seoul,116,KR,South Korea
+44,South Chungcheong Province,116,KR,South Korea
+48,South Gyeongsang Province,116,KR,South Korea
+46,South Jeolla Province,116,KR,South Korea
+31,Ulsan,116,KR,South Korea
+LK,Lakes,206,SS,South Sudan
+AN,Andalusia,207,ES,Spain
+AR,Aragon,207,ES,Spain
+PM,Balearic Islands,207,ES,Spain
+PV,Basque Country,207,ES,Spain
+CN,Canary Islands,207,ES,Spain
+S,Cantabria,207,ES,Spain
+CM,Castilla La Mancha,207,ES,Spain
+CT,Catalonia,207,ES,Spain
+CE,Ceuta,207,ES,Spain
+EX,Extremadura,207,ES,Spain
+GA,Galicia,207,ES,Spain
+RI,La Rioja,207,ES,Spain
+LE,Léon,207,ES,Spain
+MD,Madrid,207,ES,Spain
+ML,Melilla,207,ES,Spain
+MC,Murcia,207,ES,Spain
+NC,Navarra,207,ES,Spain
+VC,Valencia,207,ES,Spain
+2,Central Province,208,LK,Sri Lanka
+11,Colombo District,208,LK,Sri Lanka
+5,Eastern Province,208,LK,Sri Lanka
+21,Kandy District,208,LK,Sri Lanka
+7,North Central Province,208,LK,Sri Lanka
+6,North Western Province,208,LK,Sri Lanka
+4,Northern Province,208,LK,Sri Lanka
+9,Sabaragamuwa Province,208,LK,Sri Lanka
+3,Southern Province,208,LK,Sri Lanka
+8,Uva Province,208,LK,Sri Lanka
+1,Western Province,208,LK,Sri Lanka
+GZ,Al Jazirah,209,SD,Sudan
+GD,Al Qadarif,209,SD,Sudan
+NB,Blue Nile,209,SD,Sudan
+DC,Central Darfur,209,SD,Sudan
+DE,East Darfur,209,SD,Sudan
+KA,Kassala,209,SD,Sudan
+KH,Khartoum,209,SD,Sudan
+DN,North Darfur,209,SD,Sudan
+KN,North Kordofan,209,SD,Sudan
+NO,Northern,209,SD,Sudan
+RS,Red Sea,209,SD,Sudan
+NR,River Nile,209,SD,Sudan
+SI,Sennar,209,SD,Sudan
+DS,South Darfur,209,SD,Sudan
+KS,South Kordofan,209,SD,Sudan
+DW,West Darfur,209,SD,Sudan
+GK,West Kordofan,209,SD,Sudan
+NW,White Nile,209,SD,Sudan
+BR,Brokopondo District,210,SR,Suriname
+CM,Commewijne District,210,SR,Suriname
+CR,Coronie District,210,SR,Suriname
+MA,Marowijne District,210,SR,Suriname
+NI,Nickerie District,210,SR,Suriname
+PR,Para District,210,SR,Suriname
+PM,Paramaribo District,210,SR,Suriname
+SA,Saramacca District,210,SR,Suriname
+WA,Wanica District,210,SR,Suriname
+HH,Hhohho District,212,SZ,Swaziland
+LU,Lubombo District,212,SZ,Swaziland
+MA,Manzini District,212,SZ,Swaziland
+SH,Shiselweni District,212,SZ,Swaziland
+K,Blekinge,213,SE,Sweden
+W,Dalarna County,213,SE,Sweden
+X,Gävleborg County,213,SE,Sweden
+I,Gotland County,213,SE,Sweden
+N,Halland County,213,SE,Sweden
+F,Jönköping County,213,SE,Sweden
+H,Kalmar County,213,SE,Sweden
+G,Kronoberg County,213,SE,Sweden
+BD,Norrbotten County,213,SE,Sweden
+T,Örebro County,213,SE,Sweden
+E,Östergötland County,213,SE,Sweden
+M,Skåne County,213,SE,Sweden
+D,Södermanland County,213,SE,Sweden
+AB,Stockholm County,213,SE,Sweden
+C,Uppsala County,213,SE,Sweden
+S,Värmland County,213,SE,Sweden
+AC,Västerbotten County,213,SE,Sweden
+Y,Västernorrland County,213,SE,Sweden
+U,Västmanland County,213,SE,Sweden
+O,Västra Götaland County,213,SE,Sweden
+AG,Aargau,214,CH,Switzerland
+AR,Appenzell Ausserrhoden,214,CH,Switzerland
+AI,Appenzell Innerrhoden,214,CH,Switzerland
+BL,Basel-Land,214,CH,Switzerland
+BS,Basel-Stadt,214,CH,Switzerland
+BE,Bern,214,CH,Switzerland
+FR,Fribourg,214,CH,Switzerland
+GE,Geneva,214,CH,Switzerland
+GL,Glarus,214,CH,Switzerland
+GR,Graubünden,214,CH,Switzerland
+JU,Jura,214,CH,Switzerland
+LU,Lucerne,214,CH,Switzerland
+NE,Neuchâtel,214,CH,Switzerland
+NW,Nidwalden,214,CH,Switzerland
+OW,Obwalden,214,CH,Switzerland
+SH,Schaffhausen,214,CH,Switzerland
+SZ,Schwyz,214,CH,Switzerland
+SO,Solothurn,214,CH,Switzerland
+SG,St. Gallen,214,CH,Switzerland
+TG,Thurgau,214,CH,Switzerland
+TI,Ticino,214,CH,Switzerland
+UR,Uri,214,CH,Switzerland
+VS,Valais,214,CH,Switzerland
+VD,Vaud,214,CH,Switzerland
+ZG,Zug,214,CH,Switzerland
+ZH,Zürich,214,CH,Switzerland
+HA,Al-Hasakah Governorate,215,SY,Syria
+RA,Al-Raqqah Governorate,215,SY,Syria
+HL,Aleppo Governorate,215,SY,Syria
+SU,As-Suwayda Governorate,215,SY,Syria
+DI,Damascus Governorate,215,SY,Syria
+DR,Daraa Governorate,215,SY,Syria
+DY,Deir ez-Zor Governorate,215,SY,Syria
+HM,Hama Governorate,215,SY,Syria
+HI,Homs Governorate,215,SY,Syria
+ID,Idlib Governorate,215,SY,Syria
+LA,Latakia Governorate,215,SY,Syria
+QU,Quneitra Governorate,215,SY,Syria
+RD,Rif Dimashq Governorate,215,SY,Syria
+TA,Tartus Governorate,215,SY,Syria
+CHA,Changhua,216,TW,Taiwan
+CYI,Chiayi,216,TW,Taiwan
+CYQ,Chiayi,216,TW,Taiwan
+HSQ,Hsinchu,216,TW,Taiwan
+HSZ,Hsinchu,216,TW,Taiwan
+HUA,Hualien,216,TW,Taiwan
+KHH,Kaohsiung,216,TW,Taiwan
+KIN,Kinmen,216,TW,Taiwan
+LIE,Lienchiang,216,TW,Taiwan
+MIA,Miaoli,216,TW,Taiwan
+NAN,Nantou,216,TW,Taiwan
+PEN,Penghu,216,TW,Taiwan
+PIF,Pingtung,216,TW,Taiwan
+TXG,Taichung,216,TW,Taiwan
+TNN,Tainan,216,TW,Taiwan
+TPE,Taipei,216,TW,Taiwan
+TTT,Taitung,216,TW,Taiwan
+TAO,Taoyuan,216,TW,Taiwan
+ILA,Yilan,216,TW,Taiwan
+YUN,Yunlin,216,TW,Taiwan
+RA,districts of Republican Subordination,217,TJ,Tajikistan
+GB,Gorno-Badakhshan Autonomous Province,217,TJ,Tajikistan
+KT,Khatlon Province,217,TJ,Tajikistan
+SU,Sughd Province,217,TJ,Tajikistan
+1,Arusha,218,TZ,Tanzania
+2,Dar es Salaam,218,TZ,Tanzania
+3,Dodoma,218,TZ,Tanzania
+27,Geita,218,TZ,Tanzania
+4,Iringa,218,TZ,Tanzania
+5,Kagera,218,TZ,Tanzania
+28,Katavi,218,TZ,Tanzania
+8,Kigoma,218,TZ,Tanzania
+9,Kilimanjaro,218,TZ,Tanzania
+12,Lindi,218,TZ,Tanzania
+26,Manyara,218,TZ,Tanzania
+13,Mara,218,TZ,Tanzania
+14,Mbeya,218,TZ,Tanzania
+16,Morogoro,218,TZ,Tanzania
+17,Mtwara,218,TZ,Tanzania
+18,Mwanza,218,TZ,Tanzania
+29,Njombe,218,TZ,Tanzania
+6,Pemba North,218,TZ,Tanzania
+10,Pemba South,218,TZ,Tanzania
+19,Pwani,218,TZ,Tanzania
+20,Rukwa,218,TZ,Tanzania
+21,Ruvuma,218,TZ,Tanzania
+22,Shinyanga,218,TZ,Tanzania
+30,Simiyu,218,TZ,Tanzania
+23,Singida,218,TZ,Tanzania
+24,Tabora,218,TZ,Tanzania
+25,Tanga,218,TZ,Tanzania
+7,Zanzibar North,218,TZ,Tanzania
+11,Zanzibar South,218,TZ,Tanzania
+15,Zanzibar West,218,TZ,Tanzania
+37,Amnat Charoen,219,TH,Thailand
+15,Ang Thong,219,TH,Thailand
+10,Bangkok,219,TH,Thailand
+38,Bueng Kan,219,TH,Thailand
+31,Buri Ram,219,TH,Thailand
+24,Chachoengsao,219,TH,Thailand
+18,Chai Nat,219,TH,Thailand
+36,Chaiyaphum,219,TH,Thailand
+22,Chanthaburi,219,TH,Thailand
+50,Chiang Mai,219,TH,Thailand
+57,Chiang Rai,219,TH,Thailand
+20,Chon Buri,219,TH,Thailand
+86,Chumphon,219,TH,Thailand
+46,Kalasin,219,TH,Thailand
+62,Kamphaeng Phet,219,TH,Thailand
+71,Kanchanaburi,219,TH,Thailand
+40,Khon Kaen,219,TH,Thailand
+81,Krabi,219,TH,Thailand
+52,Lampang,219,TH,Thailand
+51,Lamphun,219,TH,Thailand
+42,Loei,219,TH,Thailand
+16,Lop Buri,219,TH,Thailand
+58,Mae Hong Son,219,TH,Thailand
+44,Maha Sarakham,219,TH,Thailand
+49,Mukdahan,219,TH,Thailand
+26,Nakhon Nayok,219,TH,Thailand
+73,Nakhon Pathom,219,TH,Thailand
+48,Nakhon Phanom,219,TH,Thailand
+30,Nakhon Ratchasima,219,TH,Thailand
+60,Nakhon Sawan,219,TH,Thailand
+80,Nakhon Si Thammarat,219,TH,Thailand
+55,Nan,219,TH,Thailand
+96,Narathiwat,219,TH,Thailand
+39,Nong Bua Lam Phu,219,TH,Thailand
+43,Nong Khai,219,TH,Thailand
+12,Nonthaburi,219,TH,Thailand
+13,Pathum Thani,219,TH,Thailand
+94,Pattani,219,TH,Thailand
+82,Phangnga,219,TH,Thailand
+93,Phatthalung,219,TH,Thailand
+56,Phayao,219,TH,Thailand
+67,Phetchabun,219,TH,Thailand
+76,Phetchaburi,219,TH,Thailand
+66,Phichit,219,TH,Thailand
+65,Phitsanulok,219,TH,Thailand
+14,Phra Nakhon Si Ayutthaya,219,TH,Thailand
+54,Phrae,219,TH,Thailand
+83,Phuket,219,TH,Thailand
+25,Prachin Buri,219,TH,Thailand
+77,Prachuap Khiri Khan,219,TH,Thailand
+85,Ranong,219,TH,Thailand
+70,Ratchaburi,219,TH,Thailand
+21,Rayong,219,TH,Thailand
+45,Roi Et,219,TH,Thailand
+27,Sa Kaeo,219,TH,Thailand
+47,Sakon Nakhon,219,TH,Thailand
+11,Samut Prakan,219,TH,Thailand
+74,Samut Sakhon,219,TH,Thailand
+75,Samut Songkhram,219,TH,Thailand
+19,Saraburi,219,TH,Thailand
+91,Satun,219,TH,Thailand
+33,Si Sa Ket,219,TH,Thailand
+17,Sing Buri,219,TH,Thailand
+90,Songkhla,219,TH,Thailand
+64,Sukhothai,219,TH,Thailand
+72,Suphan Buri,219,TH,Thailand
+84,Surat Thani,219,TH,Thailand
+32,Surin,219,TH,Thailand
+63,Tak,219,TH,Thailand
+92,Trang,219,TH,Thailand
+23,Trat,219,TH,Thailand
+34,Ubon Ratchathani,219,TH,Thailand
+41,Udon Thani,219,TH,Thailand
+61,Uthai Thani,219,TH,Thailand
+53,Uttaradit,219,TH,Thailand
+95,Yala,219,TH,Thailand
+35,Yasothon,219,TH,Thailand
+C,Centrale Region,220,TG,Togo
+K,Kara Region,220,TG,Togo
+M,Maritime,220,TG,Togo
+P,Plateaux Region,220,TG,Togo
+S,Savanes Region,220,TG,Togo
+2,Haʻapai,222,TO,Tonga
+1,ʻEua,222,TO,Tonga
+3,Niuas,222,TO,Tonga
+4,Tongatapu,222,TO,Tonga
+5,Vavaʻu,222,TO,Tonga
+ARI,Arima,223,TT,Trinidad And Tobago
+CHA,Chaguanas,223,TT,Trinidad And Tobago
+CTT,Couva-Tabaquite-Talparo Regional Corporation,223,TT,Trinidad And Tobago
+DMN,Diego Martin Regional Corporation,223,TT,Trinidad And Tobago
+ETO,Eastern Tobago,223,TT,Trinidad And Tobago
+PED,Penal-Debe Regional Corporation,223,TT,Trinidad And Tobago
+PTF,Point Fortin,223,TT,Trinidad And Tobago
+POS,Port of Spain,223,TT,Trinidad And Tobago
+PRT,Princes Town Regional Corporation,223,TT,Trinidad And Tobago
+SFO,San Fernando,223,TT,Trinidad And Tobago
+SJL,San Juan-Laventille Regional Corporation,223,TT,Trinidad And Tobago
+SGE,Sangre Grande Regional Corporation,223,TT,Trinidad And Tobago
+SIP,Siparia Regional Corporation,223,TT,Trinidad And Tobago
+TUP,Tunapuna-Piarco Regional Corporation,223,TT,Trinidad And Tobago
+WTO,Western Tobago,223,TT,Trinidad And Tobago
+12,Ariana Governorate,224,TN,Tunisia
+13,Ben Arous Governorate,224,TN,Tunisia
+23,Bizerte Governorate,224,TN,Tunisia
+81,Gabès Governorate,224,TN,Tunisia
+71,Gafsa Governorate,224,TN,Tunisia
+32,Jendouba Governorate,224,TN,Tunisia
+41,Kairouan Governorate,224,TN,Tunisia
+42,Kasserine Governorate,224,TN,Tunisia
+31,Kassrine,224,TN,Tunisia
+73,Kebili Governorate,224,TN,Tunisia
+33,Kef Governorate,224,TN,Tunisia
+53,Mahdia Governorate,224,TN,Tunisia
+14,Manouba Governorate,224,TN,Tunisia
+82,Medenine Governorate,224,TN,Tunisia
+52,Monastir Governorate,224,TN,Tunisia
+61,Sfax Governorate,224,TN,Tunisia
+43,Sidi Bouzid Governorate,224,TN,Tunisia
+34,Siliana Governorate,224,TN,Tunisia
+51,Sousse Governorate,224,TN,Tunisia
+83,Tataouine Governorate,224,TN,Tunisia
+72,Tozeur Governorate,224,TN,Tunisia
+11,Tunis Governorate,224,TN,Tunisia
+22,Zaghouan Governorate,224,TN,Tunisia
+1,Adana,225,TR,Turkey
+2,Adıyaman,225,TR,Turkey
+3,Afyonkarahisar,225,TR,Turkey
+4,Ağrı,225,TR,Turkey
+68,Aksaray,225,TR,Turkey
+5,Amasya,225,TR,Turkey
+6,Ankara,225,TR,Turkey
+7,Antalya,225,TR,Turkey
+75,Ardahan,225,TR,Turkey
+8,Artvin,225,TR,Turkey
+9,Aydın,225,TR,Turkey
+10,Balıkesir,225,TR,Turkey
+74,Bartın,225,TR,Turkey
+72,Batman,225,TR,Turkey
+69,Bayburt,225,TR,Turkey
+11,Bilecik,225,TR,Turkey
+12,Bingöl,225,TR,Turkey
+13,Bitlis,225,TR,Turkey
+14,Bolu,225,TR,Turkey
+15,Burdur,225,TR,Turkey
+16,Bursa,225,TR,Turkey
+17,Çanakkale,225,TR,Turkey
+18,Çankırı,225,TR,Turkey
+19,Çorum,225,TR,Turkey
+20,Denizli,225,TR,Turkey
+21,Diyarbakır,225,TR,Turkey
+81,Düzce,225,TR,Turkey
+22,Edirne,225,TR,Turkey
+23,Elazığ,225,TR,Turkey
+24,Erzincan,225,TR,Turkey
+25,Erzurum,225,TR,Turkey
+26,Eskişehir,225,TR,Turkey
+27,Gaziantep,225,TR,Turkey
+28,Giresun,225,TR,Turkey
+29,Gümüşhane,225,TR,Turkey
+30,Hakkâri,225,TR,Turkey
+31,Hatay,225,TR,Turkey
+76,Iğdır,225,TR,Turkey
+32,Isparta,225,TR,Turkey
+34,Istanbul,225,TR,Turkey
+35,İzmir,225,TR,Turkey
+46,Kahramanmaraş,225,TR,Turkey
+78,Karabük,225,TR,Turkey
+70,Karaman,225,TR,Turkey
+36,Kars,225,TR,Turkey
+37,Kastamonu,225,TR,Turkey
+38,Kayseri,225,TR,Turkey
+79,Kilis,225,TR,Turkey
+71,Kırıkkale,225,TR,Turkey
+39,Kırklareli,225,TR,Turkey
+40,Kırşehir,225,TR,Turkey
+41,Kocaeli,225,TR,Turkey
+42,Konya,225,TR,Turkey
+43,Kütahya,225,TR,Turkey
+44,Malatya,225,TR,Turkey
+45,Manisa,225,TR,Turkey
+47,Mardin,225,TR,Turkey
+33,Mersin,225,TR,Turkey
+48,Muğla,225,TR,Turkey
+49,Muş,225,TR,Turkey
+50,Nevşehir,225,TR,Turkey
+51,Niğde,225,TR,Turkey
+52,Ordu,225,TR,Turkey
+80,Osmaniye,225,TR,Turkey
+53,Rize,225,TR,Turkey
+54,Sakarya,225,TR,Turkey
+55,Samsun,225,TR,Turkey
+63,Şanlıurfa,225,TR,Turkey
+56,Siirt,225,TR,Turkey
+57,Sinop,225,TR,Turkey
+58,Sivas,225,TR,Turkey
+73,Şırnak,225,TR,Turkey
+59,Tekirdağ,225,TR,Turkey
+60,Tokat,225,TR,Turkey
+61,Trabzon,225,TR,Turkey
+62,Tunceli,225,TR,Turkey
+64,Uşak,225,TR,Turkey
+65,Van,225,TR,Turkey
+77,Yalova,225,TR,Turkey
+66,Yozgat,225,TR,Turkey
+67,Zonguldak,225,TR,Turkey
+A,Ahal Region,226,TM,Turkmenistan
+S,Ashgabat,226,TM,Turkmenistan
+B,Balkan Region,226,TM,Turkmenistan
+D,Daşoguz Region,226,TM,Turkmenistan
+L,Lebap Region,226,TM,Turkmenistan
+M,Mary Region,226,TM,Turkmenistan
+FUN,Funafuti,228,TV,Tuvalu
+NMG,Nanumanga,228,TV,Tuvalu
+NIT,Niutao Island Council,228,TV,Tuvalu
+NUI,Nui,228,TV,Tuvalu
+NKF,Nukufetau,228,TV,Tuvalu
+VAI,Vaitupu,228,TV,Tuvalu
+C,Central Region,229,UG,Uganda
+E,Eastern Region,229,UG,Uganda
+N,Northern Region,229,UG,Uganda
+W,Western Region,229,UG,Uganda
+43,Autonomous Republic of Crimea,230,UA,Ukraine
+71,Cherkasy Oblast,230,UA,Ukraine
+74,Chernihiv Oblast,230,UA,Ukraine
+77,Chernivtsi Oblast,230,UA,Ukraine
+12,Dnipropetrovsk Oblast,230,UA,Ukraine
+14,Donetsk Oblast,230,UA,Ukraine
+26,Ivano-Frankivsk Oblast,230,UA,Ukraine
+63,Kharkiv Oblast,230,UA,Ukraine
+65,Kherson Oblast,230,UA,Ukraine
+68,Khmelnytsky Oblast,230,UA,Ukraine
+30,Kiev,230,UA,Ukraine
+35,Kirovohrad Oblast,230,UA,Ukraine
+32,Kyiv Oblast,230,UA,Ukraine
+9,Luhansk Oblast,230,UA,Ukraine
+46,Lviv Oblast,230,UA,Ukraine
+48,Mykolaiv Oblast,230,UA,Ukraine
+51,Odessa Oblast,230,UA,Ukraine
+56,Rivne Oblast,230,UA,Ukraine
+59,Sumy Oblast,230,UA,Ukraine
+61,Ternopil Oblast,230,UA,Ukraine
+5,Vinnytsia Oblast,230,UA,Ukraine
+7,Volyn Oblast,230,UA,Ukraine
+21,Zakarpattia Oblast,230,UA,Ukraine
+23,Zaporizhzhya Oblast,230,UA,Ukraine
+18,Zhytomyr Oblast,230,UA,Ukraine
+AZ,Abu Dhabi Emirate,231,AE,United Arab Emirates
+AJ,Ajman Emirate,231,AE,United Arab Emirates
+DU,Dubai,231,AE,United Arab Emirates
+FU,Fujairah,231,AE,United Arab Emirates
+RK,Ras al-Khaimah,231,AE,United Arab Emirates
+SH,Sharjah Emirate,231,AE,United Arab Emirates
+UQ,Umm al-Quwain,231,AE,United Arab Emirates
+ENG,England,232,GB,United Kingdom
+NYK,Northern Ireland,232,GB,United Kingdom
+SCT,Scotland,232,GB,United Kingdom
+WLS,Wales,232,GB,United Kingdom
+AL,Alabama,233,US,United States
+AK,Alaska,233,US,United States
+AZ,Arizona,233,US,United States
+AR,Arkansas,233,US,United States
+CA,California,233,US,United States
+CO,Colorado,233,US,United States
+CT,Connecticut,233,US,United States
+DE,Delaware,233,US,United States
+DC,District of Columbia,233,US,United States
+FL,Florida,233,US,United States
+GA,Georgia,233,US,United States
+HI,Hawaii,233,US,United States
+ID,Idaho,233,US,United States
+IL,Illinois,233,US,United States
+IN,Indiana,233,US,United States
+IA,Iowa,233,US,United States
+KS,Kansas,233,US,United States
+KY,Kentucky,233,US,United States
+LA,Louisiana,233,US,United States
+ME,Maine,233,US,United States
+MD,Maryland,233,US,United States
+MA,Massachusetts,233,US,United States
+MI,Michigan,233,US,United States
+MN,Minnesota,233,US,United States
+MS,Mississippi,233,US,United States
+MO,Missouri,233,US,United States
+MT,Montana,233,US,United States
+NE,Nebraska,233,US,United States
+NV,Nevada,233,US,United States
+NH,New Hampshire,233,US,United States
+NJ,New Jersey,233,US,United States
+NM,New Mexico,233,US,United States
+NY,New York,233,US,United States
+NC,North Carolina,233,US,United States
+ND,North Dakota,233,US,United States
+OH,Ohio,233,US,United States
+OK,Oklahoma,233,US,United States
+OR,Oregon,233,US,United States
+PA,Pennsylvania,233,US,United States
+PR,Puerto Rico,233,US,United States
+RI,Rhode Island,233,US,United States
+SC,South Carolina,233,US,United States
+SD,South Dakota,233,US,United States
+TN,Tennessee,233,US,United States
+TX,Texas,233,US,United States
+UT,Utah,233,US,United States
+VT,Vermont,233,US,United States
+VA,Virginia,233,US,United States
+WA,Washington,233,US,United States
+WV,West Virginia,233,US,United States
+WI,Wisconsin,233,US,United States
+WY,Wyoming,233,US,United States
+AR,Artigas Department,235,UY,Uruguay
+CA,Canelones Department,235,UY,Uruguay
+CL,Cerro Largo Department,235,UY,Uruguay
+CO,Colonia Department,235,UY,Uruguay
+DU,Durazno Department,235,UY,Uruguay
+FS,Flores Department,235,UY,Uruguay
+FD,Florida Department,235,UY,Uruguay
+LA,Lavalleja Department,235,UY,Uruguay
+MA,Maldonado Department,235,UY,Uruguay
+MO,Montevideo Department,235,UY,Uruguay
+PA,Paysandú Department,235,UY,Uruguay
+RN,Río Negro Department,235,UY,Uruguay
+RV,Rivera Department,235,UY,Uruguay
+RO,Rocha Department,235,UY,Uruguay
+SA,Salto Department,235,UY,Uruguay
+SJ,San José Department,235,UY,Uruguay
+SO,Soriano Department,235,UY,Uruguay
+TA,Tacuarembó Department,235,UY,Uruguay
+TT,Treinta y Tres Department,235,UY,Uruguay
+AN,Andijan Region,236,UZ,Uzbekistan
+BU,Bukhara Region,236,UZ,Uzbekistan
+FA,Fergana Region,236,UZ,Uzbekistan
+JI,Jizzakh Region,236,UZ,Uzbekistan
+QR,Karakalpakstan,236,UZ,Uzbekistan
+NG,Namangan Region,236,UZ,Uzbekistan
+NW,Navoiy Region,236,UZ,Uzbekistan
+QA,Qashqadaryo Region,236,UZ,Uzbekistan
+SA,Samarqand Region,236,UZ,Uzbekistan
+SI,Sirdaryo Region,236,UZ,Uzbekistan
+SU,Surxondaryo Region,236,UZ,Uzbekistan
+TK,Tashkent,236,UZ,Uzbekistan
+TO,Tashkent Region,236,UZ,Uzbekistan
+XO,Xorazm Region,236,UZ,Uzbekistan
+MAP,Malampa,237,VU,Vanuatu
+SAM,Sanma,237,VU,Vanuatu
+SEE,Shefa,237,VU,Vanuatu
+TAE,Tafea,237,VU,Vanuatu
+TOB,Torba,237,VU,Vanuatu
+Z,Amazonas,239,VE,Venezuela
+B,Anzoátegui,239,VE,Venezuela
+D,Aragua,239,VE,Venezuela
+E,Barinas,239,VE,Venezuela
+F,Bolívar,239,VE,Venezuela
+G,Carabobo,239,VE,Venezuela
+H,Cojedes,239,VE,Venezuela
+Y,Delta Amacuro,239,VE,Venezuela
+A,Distrito Capital,239,VE,Venezuela
+I,Falcón,239,VE,Venezuela
+J,Guárico,239,VE,Venezuela
+X,La Guaira,239,VE,Venezuela
+K,Lara,239,VE,Venezuela
+L,Mérida,239,VE,Venezuela
+M,Miranda,239,VE,Venezuela
+N,Monagas,239,VE,Venezuela
+O,Nueva Esparta,239,VE,Venezuela
+P,Portuguesa,239,VE,Venezuela
+R,Sucre,239,VE,Venezuela
+S,Táchira,239,VE,Venezuela
+T,Trujillo,239,VE,Venezuela
+U,Yaracuy,239,VE,Venezuela
+V,Zulia,239,VE,Venezuela
+44,An Giang,240,VN,Vietnam
+43,Bà Rịa-Vũng Tàu,240,VN,Vietnam
+54,Bắc Giang,240,VN,Vietnam
+53,Bắc Kạn,240,VN,Vietnam
+55,Bạc Liêu,240,VN,Vietnam
+56,Bắc Ninh,240,VN,Vietnam
+50,Bến Tre,240,VN,Vietnam
+57,Bình Dương,240,VN,Vietnam
+31,Bình Định,240,VN,Vietnam
+58,Bình Phước,240,VN,Vietnam
+40,Bình Thuận,240,VN,Vietnam
+59,Cà Mau,240,VN,Vietnam
+CT,Cần Thơ,240,VN,Vietnam
+4,Cao Bằng,240,VN,Vietnam
+DN,Đà Nẵng,240,VN,Vietnam
+33,Đắk Lắk,240,VN,Vietnam
+72,Đắk Nông,240,VN,Vietnam
+71,Điện Biên,240,VN,Vietnam
+39,Đồng Nai,240,VN,Vietnam
+45,Đồng Tháp,240,VN,Vietnam
+30,Gia Lai,240,VN,Vietnam
+3,Hà Giang,240,VN,Vietnam
+63,Hà Nam,240,VN,Vietnam
+HN,Hà Nội,240,VN,Vietnam
+23,Hà Tĩnh,240,VN,Vietnam
+61,Hải Dương,240,VN,Vietnam
+HP,Hải Phòng,240,VN,Vietnam
+73,Hậu Giang,240,VN,Vietnam
+SG,Hồ Chí Minh,240,VN,Vietnam
+14,Hòa Bình,240,VN,Vietnam
+66,Hưng Yên,240,VN,Vietnam
+34,Khánh Hòa,240,VN,Vietnam
+47,Kiên Giang,240,VN,Vietnam
+28,Kon Tum,240,VN,Vietnam
+1,Lai Châu,240,VN,Vietnam
+35,Lâm Đồng,240,VN,Vietnam
+9,Lạng Sơn,240,VN,Vietnam
+2,Lào Cai,240,VN,Vietnam
+41,Long An,240,VN,Vietnam
+67,Nam Định,240,VN,Vietnam
+22,Nghệ An,240,VN,Vietnam
+18,Ninh Bình,240,VN,Vietnam
+36,Ninh Thuận,240,VN,Vietnam
+68,Phú Thọ,240,VN,Vietnam
+32,Phú Yên,240,VN,Vietnam
+24,Quảng Bình,240,VN,Vietnam
+27,Quảng Nam,240,VN,Vietnam
+29,Quảng Ngãi,240,VN,Vietnam
+13,Quảng Ninh,240,VN,Vietnam
+25,Quảng Trị,240,VN,Vietnam
+52,Sóc Trăng,240,VN,Vietnam
+5,Sơn La,240,VN,Vietnam
+37,Tây Ninh,240,VN,Vietnam
+20,Thái Bình,240,VN,Vietnam
+69,Thái Nguyên,240,VN,Vietnam
+21,Thanh Hóa,240,VN,Vietnam
+26,Thừa Thiên-Huế,240,VN,Vietnam
+46,Tiền Giang,240,VN,Vietnam
+51,Trà Vinh,240,VN,Vietnam
+7,Tuyên Quang,240,VN,Vietnam
+49,Vĩnh Long,240,VN,Vietnam
+70,Vĩnh Phúc,240,VN,Vietnam
+6,Yên Bái,240,VN,Vietnam
+AD,'Adan Governorate,245,YE,Yemen
+AM,'Amran Governorate,245,YE,Yemen
+AB,Abyan Governorate,245,YE,Yemen
+BA,Al Bayda' Governorate,245,YE,Yemen
+HU,Al Hudaydah Governorate,245,YE,Yemen
+JA,Al Jawf Governorate,245,YE,Yemen
+MR,Al Mahrah Governorate,245,YE,Yemen
+MW,Al Mahwit Governorate,245,YE,Yemen
+DH,Dhamar Governorate,245,YE,Yemen
+HD,Hadhramaut Governorate,245,YE,Yemen
+HJ,Hajjah Governorate,245,YE,Yemen
+IB,Ibb Governorate,245,YE,Yemen
+LA,Lahij Governorate,245,YE,Yemen
+MA,Ma'rib Governorate,245,YE,Yemen
+RA,Raymah Governorate,245,YE,Yemen
+SD,Saada Governorate,245,YE,Yemen
+SN,Sana'a Governorate,245,YE,Yemen
+SH,Shabwah Governorate,245,YE,Yemen
+SU,Socotra Governorate,245,YE,Yemen
+TA,Ta'izz Governorate,245,YE,Yemen
+2,Central Province,246,ZM,Zambia
+8,Copperbelt Province,246,ZM,Zambia
+3,Eastern Province,246,ZM,Zambia
+4,Luapula Province,246,ZM,Zambia
+9,Lusaka Province,246,ZM,Zambia
+10,Muchinga Province,246,ZM,Zambia
+5,Northern Province,246,ZM,Zambia
+6,Northwestern Province,246,ZM,Zambia
+7,Southern Province,246,ZM,Zambia
+1,Western Province,246,ZM,Zambia
+BU,Bulawayo Province,247,ZW,Zimbabwe
+HA,Harare Province,247,ZW,Zimbabwe
+MA,Manicaland,247,ZW,Zimbabwe
+MC,Mashonaland Central Province,247,ZW,Zimbabwe
+ME,Mashonaland East Province,247,ZW,Zimbabwe
+MW,Mashonaland West Province,247,ZW,Zimbabwe
+MV,Masvingo Province,247,ZW,Zimbabwe
+MN,Matabeleland North Province,247,ZW,Zimbabwe
+MS,Matabeleland South Province,247,ZW,Zimbabwe
+MI,Midlands Province,247,ZW,Zimbabwe
