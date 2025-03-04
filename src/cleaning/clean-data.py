@@ -65,9 +65,9 @@ def building_city_df(data,output_filename):
     final_df = pd.concat([matched_df, unmatched_df], ignore_index=True)
 
     
-    selected_columns = ["name", "state_name", "country_name", "latitude", "longitude", "citied_by", "cover_date"]
+    selected_columns = ["name", "state_name", "country_name", "latitude", "area_km2", "citied_by", "cover_date"]
     
-    df_selected = merged_df[selected_columns]
+    df_selected = final_df[selected_columns]
     df_selected["citied_by"] = pd.to_numeric(df_selected["citied_by"], errors="coerce")
     df_selected = df_selected.dropna(subset=["state_name"])
     df_selected.to_csv(output_filename, index=False, sep=';', encoding='utf-8')
