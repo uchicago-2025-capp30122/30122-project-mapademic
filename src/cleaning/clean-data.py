@@ -8,7 +8,15 @@ import matplotlib.pyplot as plt
 from visualize_words_yr import generate_word_frq_yearlygif
 from unidecode import unidecode
 
-def building_city_df(data, output_filename: Path):
+def building_city_df(data,output_filename):
+    """
+    This function inputs a json file consists of the information for each paper
+    
+    Returns:
+        The return is a csv file map the affiliation state to its area.
+        We also do some calculations to construct an index of the academic power within the state
+        Each piece of data is a state with its 
+    """
     output_filename = Path(output_filename)
     paper_df = pd.DataFrame(data)
     code_df = pd.read_csv('data/raw_data/code_country.csv')
@@ -154,9 +162,6 @@ def plot_word_cloud(word_freq, output_filename: Path):
     plt.axis('off')
     plt.savefig(output_filename, format='png', dpi=300)
 
-def plot_frq_barchart(word_freq, output_filename: Path):
-    word_freq = 1
-    pass 
 
 
 YEARS = [2020,2021,2022,2023,2024]
