@@ -72,10 +72,10 @@ def remove(word_lst):
     return word_lst
 
 def ignore(word_lst):
-    new_words = [
-        word for word in word_lst
-        if word not in INDEX_IGNORE and not re.fullmatch(r"\d+|[a-zA-Z]{1,2}", word)
-    ]
+    new_words = []
+    for word in word_lst:
+        if word not in INDEX_IGNORE and not re.fullmatch(r"\d+|[a-zA-Z]{1,2}", word):
+            new_words.append(word)
     return new_words
 
 def process_word_list(word_list):
