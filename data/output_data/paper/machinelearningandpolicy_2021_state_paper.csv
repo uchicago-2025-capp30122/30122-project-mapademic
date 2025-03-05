@@ -20,6 +20,7 @@ massachusetts;ma;unitedstates;vabostonhealthcaresystem;0;2021-12-01;unitedstates
 quebec;qc;canada;mcgillfacultyofmedicineandhealthsciences;11;2021-12-01;canada;1505505.2764716432
 queensland;qld;australia;theuniversityofqueensland;74;2021-12-01;australia;1730135.5915559076
 california;ca;unitedstates;universityofcalifornia,sandiego;1;2021-12-01;unitedstatesofamerica;409736.05205120693
+<<<<<<< HEAD
 nuevoleon;nle;mexico;tecnologicodemonterrey;24;2021-12-01;mexico;64983.96629581631
 massachusetts;ma;unitedstates;harvardmedicalschool;9;2021-12-01;unitedstatesofamerica;21161.529388635758
 massachusetts;ma;unitedstates;mitschoolofengineering;91;2021-12-01;unitedstatesofamerica;21161.529388635758
@@ -35,6 +36,8 @@ pennsylvania;pa;unitedstates;foxschoolofbusiness;6;2021-12-01;unitedstatesofamer
 westvirginia;wv;unitedstates;wvuhealthsciencescentermorgantown;9;2021-12-01;unitedstatesofamerica;62735.37812376841
 california;ca;unitedstates;ucsantabarbaracollegeofengineering;12;2021-12-01;unitedstatesofamerica;409736.05205120693
 pennsylvania;pa;unitedstates;swansonschoolofengineering;4;2021-12-01;unitedstatesofamerica;119356.63855666919
+=======
+>>>>>>> 27d7f0d (Update test)
 pest;pest;hungary;hungarianuniversityofagricultureandlifesciences;11;2021-12-29;;6291.8847753371
 centralfinland;centralfinland;finland;universityofjyvaskyla;7;2021-12-15;;19394.201850594956
 ;thessaly;greece;universityofthessaly;15;2021-12-15;;
@@ -55,6 +58,7 @@ oslo;oslo;norway;internationalpeaceresearchinstitute,oslo;23;2021-12-01;;783.018
 shaanxi;shaanxi;china;northwesternpolytechnicaluniversity;5;2021-12-01;;205731.15957931342
 thuringen;thuringen;germany;friedrich-schiller-universitatjena;15;2021-12-01;;16067.872923430994
 leiria;leiria;portugal;polytechnicinstituteofleiria;4;2021-12-01;;3509.3929620205186
+<<<<<<< HEAD
 lisboa;lisboa;portugal;faculdadedecienciasdauniversidadedelisboa;7;2021-12-01;;2741.0940194363484
 ;macedonia;greece;centreforresearchandtechnology-hellas;30;2021-12-01;;
 ;navarre;spain;universidaddenavarra;16;2021-12-01;;
@@ -77,29 +81,17 @@ zanjan;zanjan;iran;instituteforadvancedstudiesinbasicsciences,zanjan;28;2021-12-
 ;khyberpakhtunkhwa;pakistan;sarhaduniversityofscienceandit;604;2021-12-01;;
 guangdong;guangdong;china;cityuniversityofhongkongshenzhenresearchinstitute;45;2021-12-01;;175489.81778468573
 guangdong;guangdong;china;tencent;51;2021-12-01;;175489.81778468573
+=======
+>>>>>>> 27d7f0d (Update test)
 beijing;na;china;chineseacademyofagriculturalsciences;3;2021-12-22;;16251.925428963288
 shanghai;na;china;shanghaijiaotonguniversity;4;2021-12-05;;6746.037435237712
 beijing;na;china;instituteofgeographicsciencesandnaturalresourcesresearch,chineseacademyofsciences;4;2021-12-01;;16251.925428963288
 ;na;iran;universityofzabol;3;2021-12-01;;
 ;na;unitedstates;theworldbank,usa;7;2021-12-01;;
 shanghai;na;china;shanghaioceanuniversity;4;2021-12-01;;6746.037435237712
-;na;china;hefeinormaluniversity;28;2021-12-01;;
-;na;ghana;internationalwatermanagementinstituteghana;14;2021-12-01;;
-;na;switzerland;institutdehautesetudesinternationalesetdudeveloppement,geneve;22;2021-12-01;;
-bucharest;na;romania;bucharestuniversityofeconomicstudies;21;2021-12-01;;284.4997537064901
-shanghai;na;china;shanghaiuniversity;2;2021-12-01;;6746.037435237712
-;na;indonesia;nasionaluniversity;1;2021-12-01;;
-dakar;na;senegal;institutsenegalaisderecherchesagricolesdakar;11;2021-12-01;;571.7497089445504
-brussels;na;belgium;europeancommissionjointresearchcentre;9;2021-12-01;;164.53809274643118
-dhaka;na;bangladesh;jahangirnagaruniversity;33;2021-12-01;;30548.5646266249
-danang;na;vietnam;duytanuniversity;68;2021-12-01;;723.1585708778244
-;na;na;na;1;2021-12-01;;
-;na;unitedkingdom;thealanturinginstitute;11;2021-12-01;;
 maryland;md;unitedstates;departmentofcomputerscience;2;2021-12-14;;
 maryland;md;unitedstates;departmentofcomputerscience;2;2021-12-14;;
 victoria;vic;australia;victoriauniversitymelbourne,instituteforhealthandsport;50;2021-12-08;;227944.59759415901
 victoria;vic;australia;victoriauniversitymelbourne,instituteforhealthandsport;50;2021-12-08;;227944.59759415901
-punjab;pb;india;chandigarhuniversity;13;2021-12-01;;50378.24244988747
-punjab;pb;india;chandigarhuniversity;13;2021-12-01;;50378.24244988747
 larioja;larioja;spain;internationaluniversityoflarioja;3;2021-12-01;;5331.755298293761
 larioja;larioja;spain;internationaluniversityoflarioja;3;2021-12-01;;5331.755298293761

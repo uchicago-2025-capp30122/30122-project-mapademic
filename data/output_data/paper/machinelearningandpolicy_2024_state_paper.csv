@@ -10,6 +10,7 @@ texas;tx;unitedstates;cockrellschoolofengineering;1;2024-12-23;unitedstatesofame
 newsouthwales;nsw;australia;universityoftechnologysydney;3;2024-12-21;australia;801934.7316220269
 haryana;hr;india;o.p.jindalglobaluniversity;0;2024-12-20;india;43945.43485960555
 gujarat;gj;india;marwadiuniversity;0;2024-12-20;india;184427.98178390934
+<<<<<<< HEAD
 california;ca;unitedstates;kaiserpermanentebernardj.tysonschoolofmedicine;1;2024-12-15;unitedstatesofamerica;409736.05205120693
 pennsylvania;pa;unitedstates;sidneykimmelmedicalcollege;0;2024-12-15;unitedstatesofamerica;119356.63855666919
 saopaulo;sp;brazil;universidadepaulista;2;2024-12-15;brazil;248638.14516769807
@@ -28,6 +29,8 @@ texas;tx;unitedstates;collegeofengineering;0;2024-12-01;unitedstatesofamerica;68
 andhrapradesh;ap;india;velagapudiramakrishnasiddharthaengineeringcollege;0;2024-12-01;india;160581.4926456832
 morelos;mor;mexico;centronacionaldeinvestigacionydesarrollotecnologico,mexico;0;2024-12-01;mexico;5079.890315081764
 utah;ut;unitedstates;brighamyounguniversity;0;2024-12-01;unitedstatesofamerica;219762.28584148962
+=======
+>>>>>>> 27d7f0d (Update test)
 ;jeollabuk-do;southkorea;ruraldevelopmentadministration;0;2024-12-31;;
 guangdong;guangdong;china;guangdonguniversityofscienceandtechnology;0;2024-12-30;;175489.81778468573
 tehran;tehran;iran;sharifuniversityoftechnology;0;2024-12-30;;14417.313695593963
@@ -52,6 +55,7 @@ shandong;shandong;china;shandonguniversity;0;2024-12-17;;155914.8264022369
 ;bo;italy;almamaterstudiorumuniversitadibologna;0;2024-12-16;;
 ;trondelag;norway;norgesteknisk-naturvitenskapeligeuniversitet;0;2024-12-15;;
 ;occitanie;france;universitetoulouseiii-paulsabatier;0;2024-12-15;;
+<<<<<<< HEAD
 hunan;hunan;china;thirdxiangyahospitalofcentralsouthuniversity;0;2024-12-15;;211351.48961511627
 guangdong;guangdong;china;southchinauniversityoftechnology;3;2024-12-15;;175489.81778468573
 ;vilnius;lithuania;europeanhumanitiesuniversity;0;2024-12-15;;
@@ -75,6 +79,8 @@ selangor;selangor;malaysia;xiamenuniversitymalaysia;0;2024-12-02;;7729.679785395
 ;lisbon;portugal;institutosuperiortecnico;0;2024-12-01;;
 xinjiang;xinjiang;china;xinjianginstituteofecologyandgeographychineseacademyofsciences;0;2024-12-01;;1630221.7282375696
 gansu;gansu;china;lanzhouuniversity;0;2024-12-01;;405554.43553606374
+=======
+>>>>>>> 27d7f0d (Update test)
 beijing;na;china;beijingnationalresearchcenterforinformationscienceandtechnology;0;2024-12-31;;16251.925428963288
 busan;na;southkorea;pukyongnationaluniversity;0;2024-12-31;;282.09415249777265
 ;na;indonesia;universitynegerisemarang;0;2024-12-31;;
@@ -88,15 +94,6 @@ beijing;na;china;universityofchineseacademyofsciences;3;2024-12-18;;16251.925428
 ;na;italy;johncabotuniversity;0;2024-12-16;;
 khulna;na;bangladesh;khulnauniversityofengineeringandtechnology;0;2024-12-15;;21822.391625903576
 ulsan;na;southkorea;ulsannationalinstituteofscienceandtechnology;0;2024-12-15;;1035.8002775231453
-shanghai;na;china;shanghaijiaotonguniversity;2;2024-12-15;;6746.037435237712
-;na;na;na;0;2024-12-12;;
-beijing;na;china;instituteofdisasterpreventionscienceandtechnology;0;2024-12-07;;16251.925428963288
-beijing;na;china;tsinghuauniversity;0;2024-12-07;;16251.925428963288
-taoyuan;na;taiwan;nationalcentraluniversity;0;2024-12-05;;1280.2512128382045
-shanghai;na;china;keylaboratoryofyangtzeriverwaterenvironmentministryofeducation;0;2024-12-05;;6746.037435237712
-;na;switzerland;ecolepolytechniquefederaledelausanne;1;2024-12-04;;
-;na;macao;cityuniversityofmacau;0;2024-12-03;;
-bucharest;na;romania;universitateaspiruharet;0;2024-12-01;;284.4997537064901
 victoria;vic;australia;rmituniversity;0;2024-12-23;;227944.59759415901
 victoria;vic;australia;rmituniversity;0;2024-12-23;;227944.59759415901
 ashsharqiyah;ashsharqiyah;saudiarabia;universityofhafral-batin;0;2024-12-15;;553148.0484543691

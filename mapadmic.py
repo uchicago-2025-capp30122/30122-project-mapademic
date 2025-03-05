@@ -55,6 +55,7 @@ user_keyword_input = st.text_input(
     value=st.session_state.global_keyword,
     key="global_keyword_input_top"
 )
+
 if user_keyword_input:
     st.session_state.global_keyword = user_keyword_input
 
@@ -87,6 +88,7 @@ if api_key:
                 subprocess.run(["python", "src/api-calling/affiliation_state_match.py"])
                 st.info("Calling the data cleaning script, please wait...")
                 subprocess.run(["python", "src/cleaning/clean_data.py"])
+                subprocess.run(["python", "src/cleaning/feature_selecting.py"])
 
                 st.session_state.search_completed = True
 
@@ -101,7 +103,7 @@ if api_key:
         years = [2020, 2021, 2022, 2023, 2024]
         try:
             fig = combined_heatmaps_with_timeline_and_arrows(
-                keywords=st.session_state.global_keyword,
+                keywords="machinelearningandpolicy",
                 years=years
             )
             st.plotly_chart(fig, use_container_width=True)
