@@ -1,7 +1,7 @@
 state_name;affiliation_state;affiliation_country;affiliation_name;citied_by;cover_date;country_name;area_km2
 tamilnadu;tn;india;saveethaschoolofengineering;0;2024-12-31;india;130683.69031632628
 colorado;co;unitedstates;nationalcenterforatmosphericresearch;0;2024-12-30;unitedstatesofamerica;269201.86023144564
-ohio;oh;unitedstates;theuniversityoftoledo;3;2024-12-30;unitedstatesofamerica;116043.6526534473
+ohio;oh;unitedstates;theuniversityoftoledo;4;2024-12-30;unitedstatesofamerica;116043.6526534473
 indiana;in;unitedstates;indianauniversity-purdueuniversityindianapolis;0;2024-12-26;unitedstatesofamerica;94332.34490782692
 queensland;qld;australia;theuniversityofqueensland;0;2024-12-26;australia;1730135.5915559076
 queensland;qld;australia;theuniversityofqueensland;0;2024-12-25;australia;1730135.5915559076
@@ -24,6 +24,7 @@ california;ca;unitedstates;departmentofenvironmentalscience,policy,andmanagement
 pennsylvania;pa;unitedstates;templeuniversity;0;2024-12-06;unitedstatesofamerica;119356.63855666919
 california;ca;unitedstates;universityofcalifornia,berkeley;0;2024-12-05;unitedstatesofamerica;409736.05205120693
 texas;tx;unitedstates;jointbasesanantonio;0;2024-12-04;unitedstatesofamerica;685338.8687343894
+texas;tx;unitedstates;collegeofengineering;0;2024-12-01;unitedstatesofamerica;685338.8687343894
 andhrapradesh;ap;india;velagapudiramakrishnasiddharthaengineeringcollege;0;2024-12-01;india;160581.4926456832
 morelos;mor;mexico;centronacionaldeinvestigacionydesarrollotecnologico,mexico;0;2024-12-01;mexico;5079.890315081764
 utah;ut;unitedstates;brighamyounguniversity;0;2024-12-01;unitedstatesofamerica;219762.28584148962
@@ -74,7 +75,6 @@ selangor;selangor;malaysia;xiamenuniversitymalaysia;0;2024-12-02;;7729.679785395
 ;lisbon;portugal;institutosuperiortecnico;0;2024-12-01;;
 xinjiang;xinjiang;china;xinjianginstituteofecologyandgeographychineseacademyofsciences;0;2024-12-01;;1630221.7282375696
 gansu;gansu;china;lanzhouuniversity;0;2024-12-01;;405554.43553606374
-yogyakarta;yogyakarta;indonesia;universitasnegeriyogyakarta;0;2024-12-01;;3040.9786266081396
 beijing;na;china;beijingnationalresearchcenterforinformationscienceandtechnology;0;2024-12-31;;16251.925428963288
 busan;na;southkorea;pukyongnationaluniversity;0;2024-12-31;;282.09415249777265
 ;na;indonesia;universitynegerisemarang;0;2024-12-31;;

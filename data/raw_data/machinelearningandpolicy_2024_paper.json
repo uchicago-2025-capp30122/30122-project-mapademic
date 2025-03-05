@@ -199,7 +199,7 @@
         "paper_title": "Design and optimization of a modular hydrogen-based integrated energy system to maximize revenue via nuclear-renewable sources",
         "paper_author": "Mahmud S.",
         "publication": "Energy",
-        "citied_by": "3",
+        "citied_by": "4",
         "cover_date": "2024-12-30",
         "Abstract": "This paper demonstrates a novel modular distributed framework that uses optimal energy-dispatching strategies to enable greater flexibility and profitability in nuclear-renewable integrated energy systems (NR-IES). Hydrogen is used as a commodity in this framework since its production can improve grid stability and system operational flexibility, decarbonize heavy industry, and create an additional revenue stream for electricity generators, particularly nuclear power plants with high operational expenses. The proposed solution addresses the challenges associated with merging multiple software and services from various domains by using functional mock-up units (FMU) to co-simulate diverse subsystems designed in various platforms. The tightly coupled integrated energy system (IES) is optimized to maximize revenue by utilizing the deep reinforcement learning (DRL) technique to make smart dispatching decisions based on variable electricity prices and the availability of renewable energy. Proximal policy optimization (PPO) algorithm is used in training and testing the DRL agent. Over a period of 120 days, the proposed hydrogen-based IES framework showed about 10% revenue boost compared to a non-hydrogen generating baseline IES while also providing an easily-adoptable framework which can help to improve the flexibility of future generation nuclear power plants.",
         "DOI": "10.1016/j.energy.2024.133763",
@@ -1260,6 +1260,20 @@
         "affiliation_state": "Selangor"
     },
     {
+        "paper_title": "Understanding the Truck Parking Behavior Using a Data-Driven Approach",
+        "paper_author": "Kong X.",
+        "publication": "Data Science for Transportation",
+        "citied_by": "0",
+        "cover_date": "2024-12-01",
+        "Abstract": "Commercial vehicle parking is a significant issue in the United States. However, it is unclear why truck drivers choose to park in unauthorized areas, like ramps, rather than authorized areas. This study used INRIX big truck probe data in Maryland to explore the factors that affect truck drivers’ parking decisions. Two interpretable machine learning frameworks—SHapley Additive exPlanations (SHAP) and Stable and Interpretable RUle Set (SIRUS)—were adopted to aid the research. The study finds that whether or not a designated parking lot is at capacity has a limited impact on truck drivers’ decision to park in authorized or unauthorized areas. Instead, the number of trucks parked in unauthorized areas upon a truck’s arrival is a dominant factor that triggers a decision to park in an unauthorized area, regardless of whether the parking lot is full or not. A possible explanation is the presence of trucks in unauthorized areas gives truck drivers the impression that the designated parking lot is full. Trucks with relatively longer next trip (longer than 60 miles) are more likely to park at authorized areas. Trucks with a shorter next trip are more likely to park in unauthorized areas. These trucks are probably staging, waiting for delivery windows, or avoiding peak hour traffic. The results also show that medium-weight class trucks are more likely to park in unauthorized areas than heavy trucks. Truck drivers are more likely to park in authorized areas during the mid-day and afternoon. These findings could help transportation agencies understand parking behavior and implement appropriate strategies and policies to improve truck parking.",
+        "DOI": "10.1007/s42421-024-00111-3",
+        "affiliation_name": "College of Engineering",
+        "affiliation_city": "College Station",
+        "affiliation_country": "United States",
+        "affiliation_id": "60148980",
+        "affiliation_state": "TX"
+    },
+    {
         "paper_title": "Predictive Modeling and Spatial Analysis of Cervix Uteri and Breast Cancer in India using Machine Learning and Big Data Frameworks",
         "paper_author": "Krotha D.P.",
         "publication": "Iranian Journal of Blood and Cancer",
@@ -1384,19 +1398,5 @@
         "affiliation_country": "China",
         "affiliation_id": "60028265",
         "affiliation_state": "Gansu"
-    },
-    {
-        "paper_title": "AIEd in Elementary School Nationalism Education: A Systematic Literature Review",
-        "paper_author": "Saputra B.D.",
-        "publication": "International Journal of Learning, Teaching and Educational Research",
-        "citied_by": "0",
-        "cover_date": "2024-12-01",
-        "Abstract": "This paper presents a systematic literature review (SLR) on artificial intelligence in education (AIEd) in elementary school nationalism education based on Scopus literature 2020-2024. This research, using the SLR method and PRISMA protocol, was carried out by means of an article search process through the stages of identification, filtering, eligibility, inclusion, and presentation of analysis with the Scopus database via Publish or Perish 7, VOSviewer and ATLAS.ti. The research findings indicate AIEd integrates AI and artificial technology, Google, Facebook, smartphones, and IoT with education, curriculum, learning, student skills, and assessment for improving nationalism learning in elementary schools. AIEd features have evolved from traditional AI technologies to more advanced ones: intelligent tutors, tutees, learning tools, and policy-making advisors. The AIEd programs include chatbots, ChatGPT, ChatGPT-3, ChatGPT-4, Microsoft Copilot, AI-Writer, Bard, Bing Chat, Botsify, Chat PDF, Claude, Consensus, Copy.ai, Duolingo, Ebbot by Learnify, Elicit, Ernie, Essay Writer, Jasper AI, Jenni AI, Laser AI, Lateral AI, Ludwig, PaperPal, Plaito, Querium, and Quillbot. Further programs include Research Rabbit, Scholarcy, SciSpace, Wisio, Wordtune, Writely AI, ALEKS, Deakin University's Genie, Pounce Chatbot, machine learning (ML), and deep learning (DL). In addition, there are also programs such as neural networks, quantum computing, Google's Teachable Machine, Machine Learning for Kids, Pop Bots, Scratch, Python, Khan Academy, Duolingo, Generative AI, and LLMs. The application of AIEd in elementary nationalism education implies the integration of technological pedagogical content knowledge TPACK, DL, predictive analysis, ML, neural networks, expert systems, and social robotics in fostering democratic and civic awareness with a combination of movies, puppets, comics, nationalism characters, integrity, and textbooks.",
-        "DOI": "10.26803/ijlter.23.12.10",
-        "affiliation_name": "Universitas Negeri Yogyakarta",
-        "affiliation_city": "Yogyakarta",
-        "affiliation_country": "Indonesia",
-        "affiliation_id": "60087601",
-        "affiliation_state": "Yogyakarta"
     }
 ]
