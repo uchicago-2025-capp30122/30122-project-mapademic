@@ -97,7 +97,7 @@ def fetch_results_with_cursor(keywords, year):
             cursor = next_cursor
 
             # Avoid hitting API rate limits
-            time.sleep(0.05)
+            time.sleep(0.5)
 
         # Major error type presented in the offical documentation. (400 majorly due to cursor; 429 is about api limit)
         elif response.status_code == 400:
@@ -164,10 +164,12 @@ def save_results(results):
                 search_result["affiliation_name"] = affiliation[0].get("affilname", "NA")
                 search_result["affiliation_city"] = affiliation[0].get("affiliation-city", "NA")
                 search_result["affiliation_country"] = affiliation[0].get("affiliation-country", "NA")
+                search_result["affiliation_id"] = affiliation[0].get("afid","NA")
             else:
                 search_result["affiliation_name"] = "NA"
                 search_result["affiliation_city"] = "NA"
                 search_result["affiliation_country"] = "NA"
+                search_result["affiliation_id"] = "NA"
 
             keyword_result.append(search_result)
 
@@ -179,7 +181,7 @@ def save_results(results):
 keywords = "machine learning and policy"
 # year = 2023
 
-file_name_lst = generate_filenames(keywords, 2020, 2024)
-for each_year_result in file_name_lst:
+FILENAME_LST = generate_filenames(keywords, 2020, 2024)
+for each_year_result in FILENAME_LST:
     year, FILENAME = each_year_result[0], each_year_result[1]
     fetch_results_with_cursor(keywords, year)
