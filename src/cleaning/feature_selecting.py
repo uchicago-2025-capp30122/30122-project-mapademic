@@ -72,4 +72,4 @@ KEY_WORDS = "machinelearningandpolicy"
 if __name__ == "__main__":
     for year in YEARS:
         data_file_name = f"data/raw_data/{KEY_WORDS}_{year}_paper.json"  
-        get_feature(data_file_name, f"data/output_data/{KEY_WORDS}_{year}_features.png")
+        get_feature(data_file_name, f"data/output_data/features/{KEY_WORDS}_{year}_features.png")
