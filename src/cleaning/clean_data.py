@@ -160,8 +160,11 @@ def building_state_df(data,output_filename):
 
 def calculate_crdi(final_df, output_filename, year):
     final_df = final_df.dropna(subset=["state_name","affiliation_country","area_km2",])
-    final_df["year"] = year
-    final_df["month"] = final_df["cover_date"].str.extract(r"-(\d{2})-").astype(int)
+    # final_df["year"] = year
+    # final_df["month"] = final_df["cover_date"].str.extract(r"-(\d{2})-").astype(int)
+    final_df.loc[:, "year"] = year
+    final_df.loc[:, "month"] = final_df["cover_date"].str.extract(r"-(\d{2})-").astype(int)
+
     # Calculate_total num of papers for a state/province
     paper_counts = final_df.groupby(["state_name","affiliation_country"]).size().reset_index(name="total_paper_num")
     
@@ -231,6 +234,7 @@ if __name__ == "__main__":
             data = json.load(f)
         # Get the geography data for papers
         state_df = building_state_df(data,f"data/output_data/paper/{KEY_WORDS}_{year}_state_paper.csv")
+        print(f"✅Finished building state dataframe for year: {year}")
         get_top_citations(state_df, f"data/output_data/institutions/{KEY_WORDS}_{year}_institution_citation.csv" )
         
         # Build crdi index to take the sqaure meteres into consideration
@@ -238,7 +242,7 @@ if __name__ == "__main__":
         word_freq = building_wordfrq_dict(data, f"data/output_data/word_frq/{KEY_WORDS}_{year}_word_frequency.csv")
         yearly_wordfrq_dict[year] = word_freq
         plot_word_cloud(word_freq, f"data/output_data/wordcloud/{KEY_WORDS}_{year}_word_cloud.png")
-        print(f"Finished data-cleaning for year: {year}")
+        print(f"✅Finished data-cleaning for year: {year}")
     generate_word_frq_yearlygif(yearly_wordfrq_dict)
 
     
