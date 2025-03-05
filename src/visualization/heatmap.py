@@ -22,14 +22,13 @@ def main_heatmap(keywords, year, geojson_data=None):
     if geojson_data is None:
         geojson_data = load_geojson()
     df = load_csv(keywords, year)
-    df["match_id"] = df["country"].astype(str) + "_" + df["state_name"].astype(str)
     
     # Create a choropleth map using Plotly Express
     fig = px.choropleth_map(
         df,
         geojson=geojson_data,
-        locations='match_id',               # Column with region names
-        featureidkey='properties.match_id',   # Key in GeoJSON for matching regions
+        locations='state_name',               # Column with region names
+        featureidkey='properties.name',   # Key in GeoJSON for matching regions
         color='CRDI',                         # Research density value
         color_continuous_scale=[
             "#E9F8F6", "#C2DEDB", "#9CC4C1", "#75AAA6",
