@@ -40,7 +40,8 @@ def generate_word_frq_yearlygif(word_freq_year):
         plt.tight_layout()
         
         # 保存图像
-        filename = f'frame_{idx:03d}.png'
+        filename = f'data/output_data/dynamic_wordfrq/frame_{idx:03d}.png'
+        # filename = f'frame_{idx:03d}.png'
         plt.savefig(filename, bbox_inches='tight')
         plt.close()
         filenames.append(filename)
@@ -49,4 +50,4 @@ def generate_word_frq_yearlygif(word_freq_year):
     images = []
     for filename in filenames:
         images.append(imageio.imread(filename))
-    imageio.mimsave('data/output_data/word_freq_animation.gif', images, duration=1000)
+    imageio.mimsave('data/output_data/dynamic_wordfrq/word_freq.gif', images, duration=1000)
