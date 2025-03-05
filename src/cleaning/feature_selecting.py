@@ -59,9 +59,9 @@ def get_feature(data_filename, output_filename: Path):
     plt.ylabel("Variables")
     plt.title("Top 30 Lasso Regression Coefficients")
     plt.savefig(output_filename, format='png', dpi=300)
-    # print("Top k features for citing:")
-    # print("============")
-    # print(top_30_features[:10])
+    print("Top k features for citing:")
+    print("============")
+    print(top_30_features[:10])
 
 YEARS = [2020,2021,2022,2023,2024]
 KEY_WORDS = "machinelearningandpolicy"
