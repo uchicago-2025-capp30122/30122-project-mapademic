@@ -158,8 +158,7 @@ def building_state_df(data,output_filename):
 
 
 def calculate_crdi(final_df, output_filename, year):
-    final_df = final_df.dropna(subset=["state_name"])
-    final_df = final_df.dropna(subset=["area_km2"])
+    final_df = final_df.dropna(subset=["state_name","affiliation_country","area_km2",])
     final_df["year"] = year
     final_df["month"] = final_df["cover_date"].str.extract(r"-(\d{2})-").astype(int)
     # Calculate_total num of papers for a state/province
@@ -167,16 +166,23 @@ def calculate_crdi(final_df, output_filename, year):
     
     # Calculate_total num of total citations for a city
     citied_counts = final_df.groupby(["state_name","affiliation_country"])["citied_by"].sum().reset_index(name="total_cited_num")
-
-    final_df = final_df.merge(paper_counts, on="state_name", how="left")
-    final_df = final_df.merge(citied_counts, on="state_name", how="left")
+    
+    final_df = final_df.merge(paper_counts[["state_name","total_paper_num"]], on="state_name", how="left")
+    final_df = final_df.merge(citied_counts[["state_name","total_cited_num"]], on="state_name", how="left")
     final_df["paper_num_density"] = final_df["total_paper_num"] / np.log(final_df["area_km2"] + 1)
     final_df["citation_density"] = final_df["total_cited_num"] / np.log(final_df["area_km2"] + 1)
     final_df["academic_index"] = final_df["total_cited_num"] / (final_df["total_paper_num"] + 1)
     final_df["crdi_index"] = (final_df["paper_num_density"] + final_df["citation_density"] + final_df["academic_index"]) / 3
-    
+    final_df = final_df[(final_df["state_name"] != "") & (final_df["affiliation_country"] != "")]
+
+    selected_columns = ["state_name", "affiliation_state", "affiliation_country", "total_paper_num","total_cited_num", "area_km2", "paper_num_density", "citation_density", "academic_index", "crdi_index"]
+    final_df = final_df[selected_columns]
+    final_df = final_df[selected_columns].drop_duplicates(subset=["state_name", "affiliation_country"], keep="first")
+    final_df = final_df.sort_values(by="crdi_index", ascending=False)
+
     # Output the file
     final_df.to_csv(output_filename, index=False, sep=';', encoding='utf-8')
+    return final_df
     
 def get_top_citations(final_df, output_filename):
     final_df["citied_by"] = pd.to_numeric(final_df["citied_by"], errors="coerce")
@@ -232,6 +238,7 @@ if __name__ == "__main__":
         word_freq = building_wordfrq_dict(data, f"data/output_data/word_frq/{KEY_WORDS}_{year}_word_frequency.csv")
         yearly_wordfrq_dict[year] = word_freq
         plot_word_cloud(word_freq, f"data/output_data/wordcloud/{KEY_WORDS}_{year}_word_cloud.png")
+        print(f"Finished data-cleaning for year: {year}")
     generate_word_frq_yearlygif(yearly_wordfrq_dict)
 
     
