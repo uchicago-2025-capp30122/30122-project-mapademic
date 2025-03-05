@@ -38,9 +38,31 @@ state_name_counts = AREA_DF['state_name'].value_counts()
 DUPLICATE_STATES  = state_name_counts[state_name_counts > 1].index.tolist()
 DUPLICATE_STATES = set(filter(None, DUPLICATE_STATES))
 
+# Here I load the code data frame and set as a global variable
+CODE_DF = pd.read_csv('data/raw_data/code_country.csv')
+CODE_DF = clean_columns(CODE_DF, ['state_code', 'state_name', 'country_name'])
+
+def clean_duplicates(duplicate_final_df):
+    """
+    This function inputs a dataframe whose "statename" is a duplicated one.
+    (i.e. different countries have the same states)
+    
+    Returns:
+        I will check which country this state/province is really in and return a re-matched dataframe. 
+    """
+    
+    duplicate_merged_df = duplicate_final_df.merge(
+        AREA_DF,
+        left_on=['state_name', 'affiliation_country'], 
+        right_on=['state_name', 'country_name'],
+        how='left'
+    )
+    selected_columns = ["state_name","affiliation_state", "affiliation_country", "affiliation_name","citied_by", "cover_date","area_km2"]
+    return duplicate_merged_df[selected_columns]
+
 def match_na_state(state_na):
     """
-    This function inputs a dataframe where "affiliation_state" is "NA" (a string not nan)
+    This function inputs a dataframe where some samples' "affiliation_state" is "NA" (a string not nan)
     
     Returns:
         I will check if we can match the data to the state_area. 
@@ -58,8 +80,9 @@ def match_na_state(state_na):
     )
     selected_columns = ["state_name","affiliation_state", "affiliation_country", "affiliation_name","citied_by", "cover_date","area_km2"]
     return matched_df[selected_columns]
-    
-def building_city_df(data,output_filename):
+
+
+def building_state_df(data,output_filename):
     """
     This function inputs a json file consists of the information for each paper
     
@@ -70,92 +93,80 @@ def building_city_df(data,output_filename):
     """
     output_filename = Path(output_filename)
     paper_df = pd.DataFrame(data)
-    paper_df = clean_columns(paper_df, ["affiliation_state","affiliation_city","affiliation_country"])
+    paper_df = clean_columns(paper_df, ["affiliation_name", "affiliation_state","affiliation_city","affiliation_country"])
     state_na = paper_df[paper_df["affiliation_state"] == "na"]
     
     # First I matched the data with "NA" in "affiliation_state"
     match_na = match_na_state(state_na)
-    print("NA:")
-    print(match_na[:3])
+    
     # Second, match those data whose "affiliation_state" is not "NA"
     paper_df = paper_df[paper_df["affiliation_state"] != "na"]
     
-    
-    code_df = pd.read_csv('data/raw_data/code_country.csv')
-    code_df = clean_columns(code_df, ['state_code', 'state_name', 'country_name'])
-    
     # We map the paper_df with code_df using 'state_code' and 'country_name'
     # To make sure they are for the same state/province in the same country
-    merged_df = pd.merge(paper_df, code_df[['state_code', 'state_name', 'country_name']], 
+    # This ensures that we get the "state_name" with given code and country to match the area in provinces_area data
+    merged_df = pd.merge(paper_df, CODE_DF[['state_code', 'state_name', 'country_name']], 
                         left_on=['affiliation_state', 'affiliation_country'], 
                         right_on=['state_code', 'country_name'], 
                         how='left',
                         indicator = True)
     matched_df = merged_df[merged_df["_merge"] == "both"].drop(columns=["_merge"])
-    
     selected_columns = ["state_name", "affiliation_state", "affiliation_country", "affiliation_name","citied_by", "cover_date",]
     matched_df = matched_df[selected_columns]
+    
+    # Merge the mathced samples with province_area
     matched_df = matched_df.merge(
         AREA_DF,
         on = "state_name",
         how="left"
     )
-    print("看看什么Match上了：")
-    print(matched_df[:5])
     
     # We find those papers that can't match their state/province
     # Some of them don't have a code, instead, they just put the state/province name in 'affiliation_state'.
-    # We can match directly using the province_area data
+    # We can match directly with the province_area data using 'affiliation_state' for these samples.
     unmatched_df = merged_df[merged_df["_merge"] == "left_only"].drop(columns=["_merge"])
-    unmatched_df = unmatched_df[selected_columns]
-    # First, I try to match the matched data using state_name.
+    
+    # Just keep the columns in the paper_df for the unmatched samples
+    unmatched_df = unmatched_df[paper_df.columns]
     unmatched_df = unmatched_df.merge(
         AREA_DF,
         left_on= 'affiliation_state',
         right_on = "state_name",
         how="left"
     )
-    unmatched_df["state_name"] = unmatched_df["state_name_y"].fillna(unmatched_df["state_name_x"])
-    unmatched_df.drop(columns=["state_name_x", "state_name_y"], inplace=True)
-    print("看看没Match上的现在怎么了：")
-    print(unmatched_df[:5])
-    # Secondly, I try to match the unmatched data with the sqaure kilometers using affiliation_state.
-    # For the unmatched data, some of them don't use a code for a state/province;
-    # They just used the name of the state/province, so we may map them with the area directly
     
+    selected_columns = ["state_name", "affiliation_state", "affiliation_country", "affiliation_name","citied_by", "cover_date","area_km2"]
+    unmatched_df = unmatched_df[selected_columns]
 
-    final_df = pd.concat([matched_df, unmatched_df,match_na], ignore_index=True)
-    # 筛选出 final_df 中 state_name 在 duplicates 中的行
-    filtered_final_df = final_df[final_df['state_name'].isin(DUPLICATE_STATES)]
-    filtered_final_df = filtered_final_df.drop(columns=['country_name', 'area_km2'])
-    no_duplicate_df = final_df[~final_df['state_name'].isin(DUPLICATE_STATES)]
-    # 使用 merge 将 filtered_final_df 和 AREA_DF 按照 'state_name' 和 'affiliation_country' / 'country_name' 进行匹配
-    filter_merged_df = filtered_final_df.merge(
-        AREA_DF,
-        left_on=['state_name', 'affiliation_country'], 
-        right_on=['state_name', 'country_name'],
-        how='left'  # 选择左连接（如果匹配不到会填充 NaN）
-    )
-    final_df = pd.concat([no_duplicate_df, filter_merged_df], ignore_index=True)
-    print("Finally!!!")
-    print(final_df[:10])
+    cleaned_df = pd.concat([matched_df, unmatched_df,match_na], ignore_index=True)
+    
+    
+    duplicate_final_df = cleaned_df[cleaned_df['state_name'].isin(DUPLICATE_STATES)]
+    
+    # Their area and country is unclear so we need to drop them first
+    duplicate_final_df = duplicate_final_df.drop(columns=['country_name', 'area_km2'])
+    duplicate_final_df = clean_duplicates(duplicate_final_df)
+    
+    # Merge the re-matched duplicate dataframe with the no-duplicate dataframe
+    no_duplicate_df = cleaned_df[~cleaned_df['state_name'].isin(DUPLICATE_STATES)]
+    final_df = pd.concat([no_duplicate_df, duplicate_final_df], ignore_index=True)
+    final_df["citied_by"] = pd.to_numeric(final_df["citied_by"], errors="coerce")
     final_df.to_csv(output_filename, index=False, sep=';', encoding='utf-8')
-    print("Finished")
     return final_df
+
+
+
 
 def calculate_crdi(final_df, output_filename, year):
     final_df = final_df.dropna(subset=["state_name"])
     final_df = final_df.dropna(subset=["area_km2"])
     final_df["year"] = year
     final_df["month"] = final_df["cover_date"].str.extract(r"-(\d{2})-").astype(int)
-    final_df["citied_by"] = pd.to_numeric(final_df["citied_by"], errors="coerce")
-    
-    #final_df = pd.to_numeric(final_df["area_km2"], errors="coerce")
     # Calculate_total num of papers for a state/province
-    paper_counts = final_df.groupby("state_name").size().reset_index(name="total_paper_num")
+    paper_counts = final_df.groupby(["state_name","affiliation_country"]).size().reset_index(name="total_paper_num")
     
     # Calculate_total num of total citations for a city
-    citied_counts = final_df.groupby("state_name")["citied_by"].sum().reset_index(name="total_cited_num")
+    citied_counts = final_df.groupby(["state_name","affiliation_country"])["citied_by"].sum().reset_index(name="total_cited_num")
 
     final_df = final_df.merge(paper_counts, on="state_name", how="left")
     final_df = final_df.merge(citied_counts, on="state_name", how="left")
@@ -163,20 +174,15 @@ def calculate_crdi(final_df, output_filename, year):
     final_df["citation_density"] = final_df["total_cited_num"] / np.log(final_df["area_km2"] + 1)
     final_df["academic_index"] = final_df["total_cited_num"] / (final_df["total_paper_num"] + 1)
     final_df["crdi_index"] = (final_df["paper_num_density"] + final_df["citation_density"] + final_df["academic_index"]) / 3
-    print(final_df[:3])
     
-    
-    
+    # Output the file
     final_df.to_csv(output_filename, index=False, sep=';', encoding='utf-8')
     
-def get_top_citations(final_df):
+def get_top_citations(final_df, output_filename):
     final_df["citied_by"] = pd.to_numeric(final_df["citied_by"], errors="coerce")
-    grouped_df = final_df.groupby(['affiliation_name', 'affiliation_country'], as_index=False)['citied_by'].sum()
+    grouped_df = final_df.groupby(['affiliation_name', 'state_name','affiliation_country'], as_index=False)['citied_by'].sum()
     grouped_df = grouped_df.sort_values(by='citied_by', ascending=False)
-    grouped_df.to_csv('grouped_cited_by.csv', index=False)
-
-    # 输出结果
-    print(grouped_df)
+    grouped_df.to_csv( output_filename, index=False,  sep=';', encoding='utf-8')
 
 def building_wordfrq_dict(data, output_filename: Path):
     output_filename = Path(output_filename)
@@ -208,8 +214,7 @@ def plot_word_cloud(word_freq, output_filename: Path):
 
 
 
-#YEARS = [2020,2021,2022,2023,2024]
-YEARS = [2020]
+YEARS = [2020,2021,2022,2023,2024]
 KEY_WORDS = "machinelearningandpolicy"
 
 if __name__ == "__main__":
@@ -219,17 +224,15 @@ if __name__ == "__main__":
         with open(data_file_name, 'r', encoding='utf-8') as f:
             data = json.load(f)
         # Get the geography data for papers
-        new_df = building_city_df(data,f"data/output_data/{KEY_WORDS}_{year}_state_data1.csv")
-        get_top_citations(new_df)
-        # Build crdi model to take the sqaure meteres into consideration
-        calculate_crdi(new_df,f"data/output_data/province/{KEY_WORDS}_{year}_state_data.csv",year)
+        state_df = building_state_df(data,f"data/output_data/paper/{KEY_WORDS}_{year}_state_paper.csv")
+        get_top_citations(state_df, f"data/output_data/institutions/{KEY_WORDS}_{year}_institution_citation.csv" )
         
-        #这里是对的但我先注释掉
-        # word_freq = building_wordfrq_dict(data, f"data/output_data/{KEY_WORDS}_{year}_word_frequency.csv")
-        # yearly_wordfrq_dict[year] = word_freq
-        # plot_word_cloud(word_freq, f"data/output_data/{KEY_WORDS}_{year}_word_cloud.png")
-    #这里也是对的
-    # generate_word_frq_yearlygif(yearly_wordfrq_dict)
+        # Build crdi index to take the sqaure meteres into consideration
+        calculate_crdi(state_df,f"data/output_data/state_crdi/{KEY_WORDS}_{year}_state_crdi.csv",year)
+        word_freq = building_wordfrq_dict(data, f"data/output_data/word_frq/{KEY_WORDS}_{year}_word_frequency.csv")
+        yearly_wordfrq_dict[year] = word_freq
+        plot_word_cloud(word_freq, f"data/output_data/wordcloud/{KEY_WORDS}_{year}_word_cloud.png")
+    generate_word_frq_yearlygif(yearly_wordfrq_dict)
 
     
    
