@@ -83,10 +83,10 @@ if api_key:
                 os.environ["SEARCH_KEYWORD"] = st.session_state.global_keyword  # 供 keyword_search.py 使用
 
                 st.info("Calling the API to get the data, please wait...")
-                subprocess.run(["python", "api-calling/keyword_search.py"])
-
+                subprocess.run(["python", "src/api-calling/keyword_search.py"])
+                subprocess.run(["python", "src/api-calling/affiliation_state_match.py"])
                 st.info("Calling the data cleaning script, please wait...")
-                subprocess.run(["python", "cleaning/clean-data.py"])
+                subprocess.run(["python", "src/cleaning/clean_data.py"])
 
                 st.session_state.search_completed = True
 

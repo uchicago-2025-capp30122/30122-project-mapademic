@@ -8,6 +8,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from visualize_words_yr import generate_word_frq_yearlygif
 from unidecode import unidecode
+import streamlit as st
 
 
 def clean_columns(df, columns):
@@ -218,10 +219,9 @@ def plot_word_cloud(word_freq, output_filename: Path):
     plt.axis('off')
     plt.savefig(output_filename, format='png', dpi=300)
 
-
-
 YEARS = [2020,2021,2022,2023,2024]
 KEY_WORDS = "machinelearningandpolicy"
+# KEY_WORDS = st.session_state.global_keyword
 
 if __name__ == "__main__":
     yearly_wordfrq_dict = {}
