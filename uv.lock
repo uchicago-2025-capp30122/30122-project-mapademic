@@ -36,6 +36,12 @@ wheels = [
 ]
 
 [[package]]
+name = "cache"
+version = "1.0.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/ca/ebaa3f186417a5b73f1876d8ca0d00314fd7f595b1b13a121ed7eab3922d/cache-1.0.3.tar.gz", hash = "sha256:ac063f2490c0794d5cf482bfff10b6339c441a6658f8f00fe653bd65b3ce85fb", size = 2705 }
+
+[[package]]
 name = "cachetools"
 version = "5.5.2"
 source = { registry = "https://pypi.org/simple" }
@@ -805,6 +811,7 @@ name = "src"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "cache" },
     { name = "imageio" },
     { name = "openpyxl" },
     { name = "pandas" },
@@ -821,6 +828,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
+    { name = "cache", specifier = ">=1.0.3" },
     { name = "imageio", specifier = ">=2.37.0" },
     { name = "openpyxl", specifier = ">=3.1.5" },
     { name = "pandas", specifier = ">=2.2.3" },
