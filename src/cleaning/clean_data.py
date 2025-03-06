@@ -8,6 +8,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from visualize_words_yr import generate_word_frq_yearlygif
 from unidecode import unidecode
+import streamlit as st
 
 
 def clean_columns(df, columns):
@@ -29,6 +30,7 @@ def clean_columns(df, columns):
 # Here I load the provinces_area data and set as a global variable
 with open('data/raw_data/provinces_area.json', "r", encoding="utf-8") as f:
     area_data = json.load(f)
+
 AREA_DF = pd.DataFrame(area_data)
 # Rename the column so it is easier to merge later
 AREA_DF = AREA_DF.rename(columns={"name": "state_name"})
@@ -81,7 +83,19 @@ def match_na_state(state_na):
     selected_columns = ["state_name","affiliation_state", "affiliation_country", "affiliation_name","citied_by", "cover_date","area_km2"]
     return matched_df[selected_columns]
 
-
+def match_nocode_state(unmatched_df):
+    unmatched_df = unmatched_df.merge(
+            AREA_DF,
+            left_on= 'affiliation_state',
+            right_on = "state_name",
+            how="left"
+        )
+        
+    selected_columns = ["state_name", "affiliation_state", "affiliation_country", "affiliation_name","citied_by", "cover_date","area_km2"]
+    unmatched_df = unmatched_df[selected_columns]
+    return unmatched_df
+    
+    
 def building_state_df(data,output_filename):
     """
     This function inputs a json file consists of the information for each paper
@@ -125,16 +139,8 @@ def building_state_df(data,output_filename):
     # Some of them don't have a code, instead, they just put the state/province name in 'affiliation_state'.
     # We can match directly with the province_area data using 'affiliation_state' for these samples.
     unmatched_df = merged_df[merged_df["_merge"] == "left_only"].drop(columns=["_merge"])
-    
-    # Just keep the columns in the paper_df for the unmatched samples
     unmatched_df = unmatched_df[paper_df.columns]
-    unmatched_df = unmatched_df.merge(
-        AREA_DF,
-        left_on= 'affiliation_state',
-        right_on = "state_name",
-        how="left"
-    )
-    
+    unmatched_df = match_nocode_state(unmatched_df)
     selected_columns = ["state_name", "affiliation_state", "affiliation_country", "affiliation_name","citied_by", "cover_date","area_km2"]
     unmatched_df = unmatched_df[selected_columns]
 
@@ -157,8 +163,11 @@ def building_state_df(data,output_filename):
 
 def calculate_crdi(final_df, output_filename, year):
     final_df = final_df.dropna(subset=["state_name","affiliation_country","area_km2",])
-    final_df["year"] = year
-    final_df["month"] = final_df["cover_date"].str.extract(r"-(\d{2})-").astype(int)
+    final_df = final_df.assign(
+        year=year,
+        month=final_df["cover_date"].str.extract(r"-(\d{2})-").astype(int)
+    )   
+
     # Calculate_total num of papers for a state/province
     paper_counts = final_df.groupby(["state_name","affiliation_country"]).size().reset_index(name="total_paper_num")
     
@@ -174,7 +183,8 @@ def calculate_crdi(final_df, output_filename, year):
     final_df["crdi_index"] = (final_df["paper_num_density"] + final_df["citation_density"] + final_df["academic_index"]) / 3
     final_df = final_df[(final_df["state_name"] != "") & (final_df["affiliation_country"] != "")]
 
-    selected_columns = ["state_name", "affiliation_state", "affiliation_country", "total_paper_num","total_cited_num", "area_km2", "paper_num_density", "citation_density", "academic_index", "crdi_index"]
+    selected_columns = ["state_name", "affiliation_state", "affiliation_country", "total_paper_num","total_cited_num", "area_km2", "paper_num_density", "citation_density", "academic_index", "crdi_index","year","month"]
+    final_df = final_df[selected_columns]
     final_df = final_df[selected_columns].drop_duplicates(subset=["state_name", "affiliation_country"], keep="first")
     final_df = final_df.sort_values(by="crdi_index", ascending=False)
 
@@ -217,10 +227,9 @@ def plot_word_cloud(word_freq, output_filename: Path):
     plt.axis('off')
     plt.savefig(output_filename, format='png', dpi=300)
 
-
-
 YEARS = [2020,2021,2022,2023,2024]
 KEY_WORDS = "machinelearningandpolicy"
+# KEY_WORDS = st.session_state.global_keyword
 
 if __name__ == "__main__":
     yearly_wordfrq_dict = {}
@@ -230,6 +239,7 @@ if __name__ == "__main__":
             data = json.load(f)
         # Get the geography data for papers
         state_df = building_state_df(data,f"data/output_data/paper/{KEY_WORDS}_{year}_state_paper.csv")
+        print(f"✅Finished building state dataframe for year: {year}")
         get_top_citations(state_df, f"data/output_data/institutions/{KEY_WORDS}_{year}_institution_citation.csv" )
         
         # Build crdi index to take the sqaure meteres of a state/ province into consideration
@@ -237,7 +247,8 @@ if __name__ == "__main__":
         word_freq = building_wordfrq_dict(data, f"data/output_data/word_frq/{KEY_WORDS}_{year}_word_frequency.csv")
         yearly_wordfrq_dict[year] = word_freq
         plot_word_cloud(word_freq, f"data/output_data/wordcloud/{KEY_WORDS}_{year}_word_cloud.png")
-        print(f"Finished data-cleaning for year: {year}")
+        print(f"✅Finished data-cleaning for year: {year}")
+        print()
     generate_word_frq_yearlygif(yearly_wordfrq_dict)
 
     

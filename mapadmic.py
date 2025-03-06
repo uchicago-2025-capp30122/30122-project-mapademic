@@ -5,22 +5,16 @@ import json
 import requests
 import pandas as pd
 
-# 导入 visualization 分支下的 basic_vis.py 中的函数
-from src.visualization.basic_vis import generate_basic_choropleth_map
-# from ..visualization.basic_vis import generate_basic_choropleth_map
+# 导入 visualization 分支下的 heatmap.py 中的新可视化函数
+from src.visualization.heatmap import combined_heatmaps_with_timeline_and_arrows
 
 # 1) 初始化 Session State
 if "search_completed" not in st.session_state:
     st.session_state.search_completed = False
-
 if "discipline" not in st.session_state:
     st.session_state.discipline = ""
-
 if "global_keyword" not in st.session_state:
     st.session_state.global_keyword = ""
-
-if "selected_year" not in st.session_state:
-    st.session_state.selected_year = 2020
 
 # 2) 应用标题 & 说明
 st.title("Mapedemic-Demo")
@@ -36,7 +30,7 @@ login_method = st.radio(
 api_key = None
 if login_method == "Login with API Key":
     api_key = st.text_input("Please enter your API Key:", type="password", key="api_key_input")
-elif login_method == "Log in with your University of Chicago account password":
+elif login_method == "Login with University of Chicago Account Password":
     uc_username = st.text_input("Please enter your University of Chicago account number:", key="uc_username_input")
     uc_password = st.text_input("Please enter your password:", type="password", key="uc_password_input")
     if st.button("Get API Key", key="get_api_btn"):
@@ -50,85 +44,76 @@ elif login_method == "Log in with your University of Chicago account password":
             st.error("Login failed, please check your account and password.")
 
 # 4) 全局输入 - 学科与关键词
-#输入学科
 st.session_state.discipline = st.text_input(
     "Please enter the subject you are interested in:",
     value=st.session_state.discipline,
     key="discipline_input_top"
 )
 
-#输入关键词
 user_keyword_input = st.text_input(
     "Please enter keywords:",
     value=st.session_state.global_keyword,
     key="global_keyword_input_top"
 )
 
-# 若用户输入了新的关键词，更新 session_state
 if user_keyword_input:
     st.session_state.global_keyword = user_keyword_input
-
 
 # 5) 主逻辑： 若已登录，则可以进行搜索、可视化
 if api_key:
     st.write("You have successfully logged in and your API Key has been authenticated.")
-
-    #出现【Search】按钮
+    
     if not st.session_state.search_completed:
-        # key
         st.session_state.discipline = st.text_input(
             "Update the subject (optional):",
             value=st.session_state.discipline,
             key="discipline_input_search"
         )
-
         new_keyword_input = st.text_input(
             "Update the keywords (optional):",
             value=st.session_state.global_keyword,
             key="global_keyword_input_search"
         )
-
         if new_keyword_input:
             st.session_state.global_keyword = new_keyword_input
 
         if st.button("Search", key="search_btn"):
             if st.session_state.global_keyword and st.session_state.discipline:
-                # 将 API Key 设置为环境变量，供外部脚本使用
+                # 将 API Key 及关键词传递给外部脚本
                 os.environ["API_KEY"] = api_key
+                os.environ["SEARCH_KEYWORD"] = st.session_state.global_keyword  # 供 keyword_search.py 使用
 
-                st.info("The API is being called to get the data, please wait...")
-                subprocess.run(["python", "api-calling/keyword_search.py"])
-
-                st.info("The data cleaning script is being called, please wait...")
-                subprocess.run(["python", "cleaning/clean-data.py"])
+                st.info("Calling the API to get the data, please wait...")
+                subprocess.run(["python", "src/api-calling/keyword_search.py"])
+                subprocess.run(["python", "src/api-calling/affiliation_state_match.py"])
+                st.info("Calling the data cleaning script, please wait...")
+                subprocess.run(["python", "src/cleaning/clean_data.py"])
+                subprocess.run(["python", "src/cleaning/feature_selecting.py"])
 
                 st.session_state.search_completed = True
-                st.experimental_rerun()
+
+                # 不使用 experimental_rerun，改用 st.stop() 停止执行，让页面立即呈现新状态
+                st.success("Search completed. Please scroll down or proceed to the next step.")
+                st.stop()
 
     else:
-        # 6) 显示可视化： 允许用户选择年份
-        st.write("### The search and data processing is completed and the visualisation results are displayed:")
+        st.write("### The search and data processing is completed. Displaying visualisation results:")
 
-        st.session_state.selected_year = st.selectbox(
-            "Please select a year from 2020 to 2024:",
-            [2020, 2021, 2022, 2023, 2024],
-            index=[2020, 2021, 2022, 2023, 2024].index(st.session_state.selected_year),
-            key="year_selectbox"
-        )
-        st.write(f"**Selected year:** {st.session_state.selected_year}")
-
+        # 直接展示多年份(2020~2024)的组合热力图
+        years = [2020, 2021, 2022, 2023, 2024]
         try:
-            fig = generate_basic_choropleth_map()
+            fig = combined_heatmaps_with_timeline_and_arrows(
+                keywords="machinelearningandpolicy",
+                years=years
+            )
             st.plotly_chart(fig, use_container_width=True)
         except Exception as e:
-            st.error(f"Error generating a visualisation chart: {e}")
+            st.error(f"Error generating the visualisation chart: {e}")
 
-        # 提供按钮以继续搜索
         if st.button("🔄 Continue searching", key="continue_btn"):
             st.session_state.search_completed = False
-            # st.session_state.discipline = ""
-            # st.session_state.global_keyword = ""
-            st.experimental_rerun()
+            # 移除 rerun；只要用户再次点击“Search”，就会重新跑流程
+            st.stop()
 
 else:
     st.warning("Please login or enter a valid API Key first.")
