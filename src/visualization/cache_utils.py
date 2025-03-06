@@ -4,11 +4,6 @@ import json
 import pandas as pd
 import streamlit as st
 from unidecode import unidecode
-<<<<<<< HEAD
-
-=======
-import re
->>>>>>> 27d7f0d (Update test)
 
 @st.cache_data(show_spinner=False)
 def load_geojson():
@@ -18,22 +13,12 @@ def load_geojson():
         geodata = json.load(f)
 
         for province in geodata["features"]:
-<<<<<<< HEAD
             name = province["properties"].get("name", "")
             if isinstance(name, str):
                 name = name.lower()
                 name = unidecode(name)
                 name = re.sub(r'[^a-z0-9]', '', name)
             province["properties"]["name"] = name
-=======
-            name = province["properties"].get("name", "")  # 取 name，防止 KeyError
-            if isinstance(name, str):  # 确保 name 是字符串
-                name = name.lower()  # 转小写
-                name = unidecode(name)  # 去掉重音字符等特殊字符
-                name = re.sub(r'[^a-z0-9]', '', name)  # 只保留字母和数字，去掉特殊字符
-
-            province["properties"]["name"] = name  # 更新 JSON 数据
->>>>>>> 27d7f0d (Update test)
 
     return geodata
 
