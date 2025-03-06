@@ -27,19 +27,18 @@ def main_heatmap(keywords, year, geojson_data=None):
     fig = px.choropleth_map(
         df,
         geojson=geojson_data,
-        locations= 'state_name',               # Column with region names
-        featureidkey='properties.name',   # Key in GeoJSON for matching regions
+        locations='state_name',                     # Column with region names
+        featureidkey='properties.name',             # Key in GeoJSON for matching regions
         color='crdi_index',                         # Research density value
         color_continuous_scale=[
             "#E9F8F6", "#C2DEDB", "#9CC4C1", "#75AAA6",
             "#4D908A", "#277670", "#005C55"
         ],  # Custom color scale
-        map_style="carto-positron",           # Map style
-        center={"lat": 20, "lon": 160},       # Map center coordinates
-        zoom=0.8,                             # Zoom level
-        opacity=0.7,                          # Map layer opacity
-        labels={'CRDI': 'Research Density'},  # Label for the color bar
-        # animation_frame='year',               # Animation frame (not used in static figure)
+        map_style="carto-positron",                 # Map style
+        center={"lat": 20, "lon": 160},             # Map center coordinates
+        zoom=0.8,                                   # Zoom level
+        opacity=0.7,                                # Map layer opacity
+        labels={'crdi_index': 'Research Density'},  # Label for the color bar
     )
     
     # Update layout: add a centered title

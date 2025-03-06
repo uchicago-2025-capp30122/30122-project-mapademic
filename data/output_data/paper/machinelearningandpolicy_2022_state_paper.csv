@@ -13,6 +13,27 @@ ontario;on;canada;schulichschoolofbusiness;22;2022-12-01;canada;1077587.55387618
 connecticut;ct;unitedstates;yaleschooloftheenvironment;14;2022-12-01;unitedstatesofamerica;12704.52326463746
 parana;pr;brazil;universidadeestadualdemaringa;10;2022-12-01;brazil;198666.17842736215
 texas;tx;unitedstates;cockrellschoolofengineering;4;2022-12-01;unitedstatesofamerica;685338.8687343894
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+alberta;ab;canada;universityofalberta;2;2022-12-01;canada;663739.1300613766
+georgia;ga;unitedstates;collegeofengineering;15;2022-12-01;unitedstatesofamerica;152164.11432143187
+tamilnadu;tn;india;tamilnaduagriculturaluniversity;12;2022-12-01;india;130683.69031632628
+districtofcolumbia;dc;unitedstates;johnshopkinsuniversityschoolofadvancedinternationalstudies;4;2022-12-01;unitedstatesofamerica;162.23529163041653
+newjersey;nj;unitedstates;nokiabelllabs;4;2022-12-01;unitedstatesofamerica;19667.40324367006
+ohio;oh;unitedstates;collegeofengineeringandcomputerscienceatwrightstateuniversity;10;2022-12-01;unitedstatesofamerica;116043.6526534473
+westbengal;wb;india;raiganjuniversity;7;2022-12-01;india;86363.04812620154
+tennessee;tn;unitedstates;oakridgenationallaboratory;6;2022-12-01;unitedstatesofamerica;109298.32311644025
+tennessee;tn;unitedstates;middletennesseestateuniversity;2;2022-12-01;unitedstatesofamerica;109298.32311644025
+indiana;in;unitedstates;butleruniversity;5;2022-12-01;unitedstatesofamerica;94332.34490782692
+brussels-capitalregion;bru;belgium;hopitalerasme;3;2022-12-01;;
+newfoundlandandlabrador;nl;canada;c-coreresearchinstitute;19;2022-12-01;canada;403323.6392799639
+jharkhand;jh;india;birlainstituteoftechnology,mesra;19;2022-12-01;india;77947.98877239911
+newyork;ny;unitedstates;unitednationsdevelopmentprogramme;10;2022-12-01;unitedstatesofamerica;136932.6539458316
+utah;ut;unitedstates;johnandmarciapricecollegeofengineering;7;2022-12-01;unitedstatesofamerica;219762.28584148962
+=======
+>>>>>>> 27d7f0d (Update test)
+>>>>>>> feature-vis
 kocaeli;kocaeli;turkey;kocaeliuniversitesi;0;2022-12-31;;3989.218719727912
 isparta;isparta;turkey;suleymandemireluniversitesi;2;2022-12-31;;8772.938924914406
 guangdong;guangdong;china;southernmarinescienceandengineeringguangdonglaboratory;6;2022-12-30;;175489.81778468573

@@ -46,6 +46,26 @@ beijing;na;china;tsinghuauniversity;6;2023-12-05;;16251.925428963288
 beijing;na;china;tsinghuauniversity;1;2023-12-05;;16251.925428963288
 beijing;na;china;instituteofinformationengineering;3;2023-12-04;;16251.925428963288
 seoul;na;southkorea;konkukuniversity;0;2023-12-01;;577.7896951119151
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+;na;armenia;nationalacademyofsciencesoftherepublicofarmenia;0;2023-12-01;;
+;na;na;na;0;2023-12-01;;
+beijing;na;china;beijinginstituteoffashiontechnology;7;2023-12-01;;16251.925428963288
+;na;singapore;leekuanyewschoolofpublicpolicy;6;2023-12-01;;
+busan;na;southkorea;koreamaritimeinstitute;2;2023-12-01;;282.09415249777265
+;na;na;na;1;2023-12-01;;
+;na;hongkong;chineseuniversityofhongkong,facultyofmedicine;0;2023-12-01;;
+;na;unitedkingdom;ucldivisionofmedicine;2;2023-12-01;;
+;na;thailand;kingmongkut'sinstituteoftechnologyladkrabang;0;2023-12-01;;
+;na;pakistan;hazarauniversitypakistan;9;2023-12-01;;
+;na;singapore;leekuanyewschoolofpublicpolicy;5;2023-12-01;;
+beijing;na;china;"chinauniversityofmining&amp;technology,beijing";2;2023-12-01;;16251.925428963288
+beijing;na;china;universityofchineseacademyofsciences;0;2023-12-01;;16251.925428963288
+;na;greece;forestresearchinstitute;1;2023-12-01;;
+=======
+>>>>>>> 27d7f0d (Update test)
+>>>>>>> feature-vis
 distritofederal;df;brazil;universidadedebrasilia;9;2023-12-15;;5792.140276367324
 distritofederal;df;brazil;universidadedebrasilia;9;2023-12-15;;5792.140276367324
 tashkent;na;uzbekistan;tashkentstateuniversityofeconomics;1;2023-12-21;;14929.1146663136
