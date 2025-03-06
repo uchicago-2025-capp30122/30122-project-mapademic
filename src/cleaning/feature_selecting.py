@@ -6,7 +6,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Lasso
 from pathlib import Path
 from sklearn.feature_extraction.text import CountVectorizer
-from utils import remove
+from .utils import remove
 import matplotlib.pyplot as plt
 
 def preprocess_title(title):

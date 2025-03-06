@@ -3,10 +3,10 @@ import pandas as pd
 import numpy as np
 from collections import Counter
 from pathlib import Path
-from utils import remove, ignore, process_word_list
+from .utils import remove, ignore, process_word_list
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-from visualize_words_yr import generate_word_frq_yearlygif
+from .visualize_words_yr import generate_word_frq_yearlygif
 from unidecode import unidecode
 import streamlit as st
 
@@ -239,7 +239,7 @@ if __name__ == "__main__":
             data = json.load(f)
         # Get the geography data for papers
         state_df = building_state_df(data,f"data/output_data/paper/{KEY_WORDS}_{year}_state_paper.csv")
-        print(f"✅Finished building state dataframe for year: {year}")
+        print(f"✅Finished {year} building state dataframe! 😊")
         get_top_citations(state_df, f"data/output_data/institutions/{KEY_WORDS}_{year}_institution_citation.csv" )
         
         # Build crdi index to take the sqaure meteres of a state/ province into consideration
@@ -247,9 +247,13 @@ if __name__ == "__main__":
         word_freq = building_wordfrq_dict(data, f"data/output_data/word_frq/{KEY_WORDS}_{year}_word_frequency.csv")
         yearly_wordfrq_dict[year] = word_freq
         plot_word_cloud(word_freq, f"data/output_data/wordcloud/{KEY_WORDS}_{year}_word_cloud.png")
-        print(f"✅Finished data-cleaning for year: {year}")
-        print()
+        print(f"✅Finished {year} word visualizations!      😆") 
     generate_word_frq_yearlygif(yearly_wordfrq_dict)
+    print("✅Finished all data cleaning & processing!🤩")
+    print()
+    print("✅🎉 Now let's go to map visualizations.....")
+
+
 
     
    
