@@ -114,7 +114,7 @@ def building_state_df(data,output_filename):
     selected_columns = ["state_name", "affiliation_state", "affiliation_country", "affiliation_name","citied_by", "cover_date",]
     matched_df = matched_df[selected_columns]
     
-    # Merge the mathced samples with province_area
+    # Merge the mathced samples with province_area data
     matched_df = matched_df.merge(
         AREA_DF,
         on = "state_name",
@@ -139,11 +139,9 @@ def building_state_df(data,output_filename):
     unmatched_df = unmatched_df[selected_columns]
 
     cleaned_df = pd.concat([matched_df, unmatched_df,match_na], ignore_index=True)
-    
-    
     duplicate_final_df = cleaned_df[cleaned_df['state_name'].isin(DUPLICATE_STATES)]
     
-    # Their area and country is unclear so we need to drop them first
+    # Their area and country is unclear so we need to rematch them
     duplicate_final_df = duplicate_final_df.drop(columns=['country_name', 'area_km2'])
     duplicate_final_df = clean_duplicates(duplicate_final_df)
     
@@ -167,6 +165,7 @@ def calculate_crdi(final_df, output_filename, year):
     # Calculate_total num of total citations for a city
     citied_counts = final_df.groupby(["state_name","affiliation_country"])["citied_by"].sum().reset_index(name="total_cited_num")
     
+    # Conduct CRDI model and calculate the academic index for each state/province
     final_df = final_df.merge(paper_counts[["state_name","total_paper_num"]], on="state_name", how="left")
     final_df = final_df.merge(citied_counts[["state_name","total_cited_num"]], on="state_name", how="left")
     final_df["paper_num_density"] = final_df["total_paper_num"] / np.log(final_df["area_km2"] + 1)
@@ -176,7 +175,6 @@ def calculate_crdi(final_df, output_filename, year):
     final_df = final_df[(final_df["state_name"] != "") & (final_df["affiliation_country"] != "")]
 
     selected_columns = ["state_name", "affiliation_state", "affiliation_country", "total_paper_num","total_cited_num", "area_km2", "paper_num_density", "citation_density", "academic_index", "crdi_index"]
-    final_df = final_df[selected_columns]
     final_df = final_df[selected_columns].drop_duplicates(subset=["state_name", "affiliation_country"], keep="first")
     final_df = final_df.sort_values(by="crdi_index", ascending=False)
 
@@ -201,10 +199,11 @@ def building_wordfrq_dict(data, output_filename: Path):
     filtered_list = []
     for word in processed_list:
         is_keyword_substring = False
-        if word in KEY_WORDS:  # 检查 word 是否是 keyword 的子字符串
+        if word in KEY_WORDS:
             is_keyword_substring  = True
+        # We don't want to include the words already in the keywords for word frequency
         if not is_keyword_substring:
-            filtered_list.append(word)  # 只有不是子字符串的词才加入 filtered_list
+            filtered_list.append(word)
 
     word_freq = Counter(filtered_list)
     word_freq_df = pd.DataFrame(word_freq.items(), columns=["word", "frequency"])
@@ -233,7 +232,7 @@ if __name__ == "__main__":
         state_df = building_state_df(data,f"data/output_data/paper/{KEY_WORDS}_{year}_state_paper.csv")
         get_top_citations(state_df, f"data/output_data/institutions/{KEY_WORDS}_{year}_institution_citation.csv" )
         
-        # Build crdi index to take the sqaure meteres into consideration
+        # Build crdi index to take the sqaure meteres of a state/ province into consideration
         calculate_crdi(state_df,f"data/output_data/state_crdi/{KEY_WORDS}_{year}_state_crdi.csv",year)
         word_freq = building_wordfrq_dict(data, f"data/output_data/word_frq/{KEY_WORDS}_{year}_word_frequency.csv")
         yearly_wordfrq_dict[year] = word_freq
