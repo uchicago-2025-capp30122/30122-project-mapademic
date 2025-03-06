@@ -3,10 +3,10 @@ import pandas as pd
 import numpy as np
 from collections import Counter
 from pathlib import Path
-from utils import remove, ignore, process_word_list
+from .utils import remove, ignore, process_word_list
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-from visualize_words_yr import generate_word_frq_yearlygif
+from .visualize_words_yr import generate_word_frq_yearlygif
 from unidecode import unidecode
 import streamlit as st
 
@@ -128,7 +128,7 @@ def building_state_df(data,output_filename):
     selected_columns = ["state_name", "affiliation_state", "affiliation_country", "affiliation_name","citied_by", "cover_date",]
     matched_df = matched_df[selected_columns]
     
-    # Merge the mathced samples with province_area
+    # Merge the mathced samples with province_area data
     matched_df = matched_df.merge(
         AREA_DF,
         on = "state_name",
@@ -145,11 +145,9 @@ def building_state_df(data,output_filename):
     unmatched_df = unmatched_df[selected_columns]
 
     cleaned_df = pd.concat([matched_df, unmatched_df,match_na], ignore_index=True)
-    
-    
     duplicate_final_df = cleaned_df[cleaned_df['state_name'].isin(DUPLICATE_STATES)]
     
-    # Their area and country is unclear so we need to drop them first
+    # Their area and country is unclear so we need to rematch them
     duplicate_final_df = duplicate_final_df.drop(columns=['country_name', 'area_km2'])
     duplicate_final_df = clean_duplicates(duplicate_final_df)
     
@@ -176,6 +174,7 @@ def calculate_crdi(final_df, output_filename, year):
     # Calculate_total num of total citations for a city
     citied_counts = final_df.groupby(["state_name","affiliation_country"])["citied_by"].sum().reset_index(name="total_cited_num")
     
+    # Conduct CRDI model and calculate the academic index for each state/province
     final_df = final_df.merge(paper_counts[["state_name","total_paper_num"]], on="state_name", how="left")
     final_df = final_df.merge(citied_counts[["state_name","total_cited_num"]], on="state_name", how="left")
     final_df["paper_num_density"] = final_df["total_paper_num"] / np.log(final_df["area_km2"] + 1)
@@ -210,10 +209,11 @@ def building_wordfrq_dict(data, output_filename: Path):
     filtered_list = []
     for word in processed_list:
         is_keyword_substring = False
-        if word in KEY_WORDS:  # 检查 word 是否是 keyword 的子字符串
+        if word in KEY_WORDS:
             is_keyword_substring  = True
+        # We don't want to include the words already in the keywords for word frequency
         if not is_keyword_substring:
-            filtered_list.append(word)  # 只有不是子字符串的词才加入 filtered_list
+            filtered_list.append(word)
 
     word_freq = Counter(filtered_list)
     word_freq_df = pd.DataFrame(word_freq.items(), columns=["word", "frequency"])
@@ -239,17 +239,21 @@ if __name__ == "__main__":
             data = json.load(f)
         # Get the geography data for papers
         state_df = building_state_df(data,f"data/output_data/paper/{KEY_WORDS}_{year}_state_paper.csv")
-        print(f"✅Finished building state dataframe for year: {year}")
+        print(f"✅Finished {year} building state dataframe! 😊")
         get_top_citations(state_df, f"data/output_data/institutions/{KEY_WORDS}_{year}_institution_citation.csv" )
         
-        # Build crdi index to take the sqaure meteres into consideration
+        # Build crdi index to take the sqaure meteres of a state/ province into consideration
         calculate_crdi(state_df,f"data/output_data/state_crdi/{KEY_WORDS}_{year}_state_crdi.csv",year)
         word_freq = building_wordfrq_dict(data, f"data/output_data/word_frq/{KEY_WORDS}_{year}_word_frequency.csv")
         yearly_wordfrq_dict[year] = word_freq
         plot_word_cloud(word_freq, f"data/output_data/wordcloud/{KEY_WORDS}_{year}_word_cloud.png")
-        print(f"✅Finished data-cleaning for year: {year}")
-        print()
+        print(f"✅Finished {year} word visualizations!      😆") 
     generate_word_frq_yearlygif(yearly_wordfrq_dict)
+    print("✅Finished all data cleaning & processing!🤩")
+    print()
+    print("✅🎉 Now let's go to map visualizations.....")
+
+
 
     
    

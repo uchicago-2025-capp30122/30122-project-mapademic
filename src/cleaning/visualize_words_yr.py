@@ -41,7 +41,6 @@ def generate_word_frq_yearlygif(word_freq_year):
         
         # 保存图像
         filename = f'data/output_data/dynamic_wordfrq/frame_{idx:03d}.png'
-        # filename = f'frame_{idx:03d}.png'
         plt.savefig(filename, bbox_inches='tight')
         plt.close()
         filenames.append(filename)
