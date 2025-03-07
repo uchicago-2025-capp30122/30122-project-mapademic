@@ -20,27 +20,6 @@ massachusetts;ma;unitedstates;vabostonhealthcaresystem;0;2021-12-01;unitedstates
 quebec;qc;canada;mcgillfacultyofmedicineandhealthsciences;11;2021-12-01;canada;1505505.2764716432
 queensland;qld;australia;theuniversityofqueensland;74;2021-12-01;australia;1730135.5915559076
 california;ca;unitedstates;universityofcalifornia,sandiego;1;2021-12-01;unitedstatesofamerica;409736.05205120693
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-nuevoleon;nle;mexico;tecnologicodemonterrey;24;2021-12-01;mexico;64983.96629581631
-massachusetts;ma;unitedstates;harvardmedicalschool;9;2021-12-01;unitedstatesofamerica;21161.529388635758
-massachusetts;ma;unitedstates;mitschoolofengineering;91;2021-12-01;unitedstatesofamerica;21161.529388635758
-massachusetts;ma;unitedstates;collegeofengineering;9;2021-12-01;unitedstatesofamerica;21161.529388635758
-california;ca;unitedstates;californiainstituteoftechnologydivisionofengineeringandappliedscience;46;2021-12-01;unitedstatesofamerica;409736.05205120693
-connecticut;ct;unitedstates;universityofconnecticutaverypointcampus;5;2021-12-01;unitedstatesofamerica;12704.52326463746
-districtofcolumbia;dc;unitedstates;usdanaturalresourcesconservationservice;28;2021-12-01;unitedstatesofamerica;162.23529163041653
-texas;tx;unitedstates;southtexasveteranshealthcaresystem;20;2021-12-01;unitedstatesofamerica;685338.8687343894
-texas;tx;unitedstates;universityoftexasofthepermianbasin;8;2021-12-01;unitedstatesofamerica;685338.8687343894
-rhodeisland;ri;unitedstates;departmentofcomputerscience;61;2021-12-01;unitedstatesofamerica;2832.3850914376494
-california;ca;unitedstates;samuelischoolofengineering;10;2021-12-01;unitedstatesofamerica;409736.05205120693
-pennsylvania;pa;unitedstates;foxschoolofbusiness;6;2021-12-01;unitedstatesofamerica;119356.63855666919
-westvirginia;wv;unitedstates;wvuhealthsciencescentermorgantown;9;2021-12-01;unitedstatesofamerica;62735.37812376841
-california;ca;unitedstates;ucsantabarbaracollegeofengineering;12;2021-12-01;unitedstatesofamerica;409736.05205120693
-pennsylvania;pa;unitedstates;swansonschoolofengineering;4;2021-12-01;unitedstatesofamerica;119356.63855666919
-=======
->>>>>>> 27d7f0d (Update test)
->>>>>>> feature-vis
 pest;pest;hungary;hungarianuniversityofagricultureandlifesciences;11;2021-12-29;;6291.8847753371
 centralfinland;centralfinland;finland;universityofjyvaskyla;7;2021-12-15;;19394.201850594956
 ;thessaly;greece;universityofthessaly;15;2021-12-15;;
@@ -61,34 +40,6 @@ oslo;oslo;norway;internationalpeaceresearchinstitute,oslo;23;2021-12-01;;783.018
 shaanxi;shaanxi;china;northwesternpolytechnicaluniversity;5;2021-12-01;;205731.15957931342
 thuringen;thuringen;germany;friedrich-schiller-universitatjena;15;2021-12-01;;16067.872923430994
 leiria;leiria;portugal;polytechnicinstituteofleiria;4;2021-12-01;;3509.3929620205186
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-lisboa;lisboa;portugal;faculdadedecienciasdauniversidadedelisboa;7;2021-12-01;;2741.0940194363484
-;macedonia;greece;centreforresearchandtechnology-hellas;30;2021-12-01;;
-;navarre;spain;universidaddenavarra;16;2021-12-01;;
-harare;harare;zimbabwe;zimbabweparksandwildlifemanagementauthority;18;2021-12-01;;929.1671029565815
-;attica;greece;bankofgreece;20;2021-12-01;;
-madrid;madrid;spain;universidadreyjuancarlos;3;2021-12-01;;8000.7993162945595
-beijing;beijing;china;instituteofcomputingtechnologychineseacademyofsciences;2;2021-12-01;;16251.925428963288
-jiangsu;jiangsu;china;nanjinguniversityofaeronauticsandastronautics;4;2021-12-01;;100090.77729351394
-antioquia;antioquia;colombia;universidadcooperativadecolombia;15;2021-12-01;;63351.14474212045
-barcelona;barcelona;spain;universitatpolitecnicadecatalunya;7;2021-12-01;;7753.049916418421
-;vlaams-brabant;belgium;kuleuvenenergieinstituut;2;2021-12-01;;
-beijing;beijing;china;ministryofagricultureofthepeople'srepublicofchina;22;2021-12-01;;16251.925428963288
-chongqing;chongqing;china;chongqingnormaluniversity;1;2021-12-01;;82362.54643078936
-heilongjiang;heilongjiang;china;harbininstituteoftechnology;13;2021-12-01;;452255.98597234936
-;gangwon-do;southkorea;kangwonnationaluniversity;5;2021-12-01;;
-;scotland;unitedkingdom;edinburghmedicalschool;32;2021-12-01;;
-;eastjava;indonesia;brawijayauniversity;3;2021-12-01;;
-tehran;tehran;iran;islamicazaduniversity;6;2021-12-01;;14417.313695593963
-zanjan;zanjan;iran;instituteforadvancedstudiesinbasicsciences,zanjan;28;2021-12-01;;22206.30189661021
-;khyberpakhtunkhwa;pakistan;sarhaduniversityofscienceandit;604;2021-12-01;;
-guangdong;guangdong;china;cityuniversityofhongkongshenzhenresearchinstitute;45;2021-12-01;;175489.81778468573
-guangdong;guangdong;china;tencent;51;2021-12-01;;175489.81778468573
-=======
->>>>>>> 27d7f0d (Update test)
->>>>>>> feature-vis
 beijing;na;china;chineseacademyofagriculturalsciences;3;2021-12-22;;16251.925428963288
 shanghai;na;china;shanghaijiaotonguniversity;4;2021-12-05;;6746.037435237712
 beijing;na;china;instituteofgeographicsciencesandnaturalresourcesresearch,chineseacademyofsciences;4;2021-12-01;;16251.925428963288
