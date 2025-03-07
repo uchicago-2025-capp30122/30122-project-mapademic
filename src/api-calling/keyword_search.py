@@ -56,7 +56,7 @@ def fetch_results_with_cursor(keywords, year):
     results = []
     cursor = "*"  # First request starts with cursor="*"
     retrieved_count = 0
-    MAX_RESULTS = 50 # Using for demo
+    MAX_RESULTS = 2000 # Using for demo
     # MAX_RESULTS = total_available # Number of results to fetch
 
     while retrieved_count < min(MAX_RESULTS, total_available):
@@ -139,49 +139,92 @@ def generate_filenames(keyword, start_year, end_year):
     year_filenames = []
     keyword_lower = keyword.lower().replace(" ","")
     for year in range(start_year, end_year + 1):
-        filename = f"data/raw_data/{keyword_lower}_{year}_paper.json"
+        filename = f"data/raw_data/raw_api_data/{keyword_lower}_{year}_raw.json"
         year_filenames.append((year, filename))
     return year_filenames
 
 def save_results(results):
     # Save results to a JSON file
     with open(FILENAME, "w", encoding="utf-8") as f:
-        keyword_result = []
-        for each_search in results:
-            # Important!! Using dict.get is necessary and safe, since there exsists missing part of the imfo          
-            search_result = {
-                "paper_title": each_search.get("dc:title","NA"),
-                "paper_author": each_search.get("dc:creator","NA"),
-                "publication": each_search.get("prism:publicationName","NA"),
-                "citied_by": each_search.get("citedby-count","NA"),
-                "cover_date" : each_search.get("prism:coverDate","NA"),
-                "Abstract": each_search.get("dc:description","NA"),
-                "DOI": each_search.get("prism:doi","NA")
-            }
+        json.dump(results, f, ensure_ascii=False, indent=4)
 
-            affiliation = each_search.get("affiliation", [])
-            if affiliation and isinstance(affiliation, list) and len(affiliation) > 0:
-                search_result["affiliation_name"] = affiliation[0].get("affilname", "NA")
-                search_result["affiliation_city"] = affiliation[0].get("affiliation-city", "NA")
-                search_result["affiliation_country"] = affiliation[0].get("affiliation-country", "NA")
-                search_result["affiliation_id"] = affiliation[0].get("afid","NA")
-            else:
+    print(f"Results saved to {FILENAME}")
+
+# Demo Example
+KEYWORDS = "machine learning and policy"
+# year = 2023
+
+FILENAME_LST = generate_filenames(KEYWORDS, 2020, 2024)
+for each_year_result in FILENAME_LST:
+    year, FILENAME = each_year_result[0], each_year_result[1]
+
+    if os.path.exists(FILENAME):  # Check if the file exists
+        print(f"File already exists: {FILENAME}, skipping fetch.")
+    else:
+        print(f"Fetching data for {year}...")
+        fetch_results_with_cursor(KEYWORDS, year)
+
+for each_year_result in FILENAME_LST:
+    year, FILENAME = each_year_result[0], each_year_result[1]
+    keyword_lower = KEYWORDS.lower().replace(" ","")
+    filename_filtered = f"data/raw_data/{keyword_lower}_{year}_paper.json"
+    
+    with open (filename_filtered,"w") as f:
+        with open (FILENAME, "r") as resource:
+            keyword_result = []
+            raw_data = json.load(resource)
+            for each_search in raw_data:
+                # Important!! Using dict.get is necessary and safe, since there exsists missing part of the imfo          
+                search_result = {
+                    "paper_title": each_search.get("dc:title","NA"),
+                    # "paper_author": each_search.get("dc:creator","NA"),
+                    "publication": each_search.get("prism:publicationName","NA"),
+                    "citied_by": each_search.get("citedby-count","NA"),
+                    "cover_date" : each_search.get("prism:coverDate","NA"),
+                    "Abstract": each_search.get("dc:description","NA"),
+                    "DOI": each_search.get("prism:doi","NA")
+                }
+
+                author = each_search.get("author",[])
+                if author and isinstance(author, list) and len(author) > 0:
+                    search_result["paper_author"] = author[0].get("authname", "NA")
+
+                    author_afid = author[0].get("afid", [])
+                    if isinstance(author_afid, list) and len(author_afid) > 0:
+                        author_afid = author_afid[0].get("$", "NA") 
+                    else:
+                        author_afid = "NA"
+                else:
+                    search_result["paper_author"] = "NA"
+                    author_afid = "NA"
+
+                    # search_result["paper_author"] = author[0].get("authname", "NA")
+                    # author_afid = author[0].get("afid", [])
+                    # author_afid = author_afid[0].get("$", "NA") if author_afid else "NA"
+
+                affiliation = each_search.get("affiliation", [])
+
                 search_result["affiliation_name"] = "NA"
                 search_result["affiliation_city"] = "NA"
                 search_result["affiliation_country"] = "NA"
                 search_result["affiliation_id"] = "NA"
 
-            keyword_result.append(search_result)
+                if affiliation and isinstance(affiliation, list) and len(affiliation) > 0:
+                    for each_affiliation in affiliation:
+                        if each_affiliation.get("afid") == author_afid:
+                            search_result["affiliation_name"] = each_affiliation.get("affilname", "NA")
+                            search_result["affiliation_city"] = each_affiliation.get("affiliation-city", "NA")
+                            search_result["affiliation_country"] = each_affiliation.get("affiliation-country", "NA")
+                            search_result["affiliation_id"] =  each_affiliation.get("afid","NA")
+                            break
+                    
+                # else:
+                #     search_result["affiliation_name"] = "NA"
+                #     search_result["affiliation_city"] = "NA"
+                #     search_result["affiliation_country"] = "NA"
+                #     search_result["affiliation_id"] = "NA"
 
-        json.dump(keyword_result, f, ensure_ascii=False, indent=4)
+                keyword_result.append(search_result)
+            json.dump(keyword_result, f, ensure_ascii=False, indent=4)
 
-    print(f"Results saved to {FILENAME}")
-
-# Demo Example
-keywords = "machine learning and policy"
-# year = 2023
-
-FILENAME_LST = generate_filenames(keywords, 2020, 2024)
-for each_year_result in FILENAME_LST:
-    year, FILENAME = each_year_result[0], each_year_result[1]
-    fetch_results_with_cursor(keywords, year)
+    print(f"📂 Results saved to {filename_filtered}")
