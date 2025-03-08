@@ -6,14 +6,14 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import Lasso
 from pathlib import Path
 from sklearn.feature_extraction.text import CountVectorizer
-from .utils import remove
+from .utils import remove,ignore
 import matplotlib.pyplot as plt
 
 def preprocess_title(title):
     title = title.lower()
     title = re.sub(r'\d+', '', title)
     words = title.split()
-    words = remove(words)
+    words = ignore(remove(words))
     return ' '.join(words)
 
 def get_feature(data_filename, output_filename: Path):
@@ -46,11 +46,11 @@ def get_feature(data_filename, output_filename: Path):
     lasso = Lasso(alpha=0.01, max_iter=1000)
     lasso.fit(X_scaled, y)
     coef_series = pd.Series(lasso.coef_, index=X.columns)
-    
     non_zero_coefs = coef_series[coef_series != 0].sort_values(key=abs, ascending=False)
     top_30_features = non_zero_coefs.head(30)
     inverse_top_30_features = top_30_features.iloc[::-1]
     
+    # I used red to display the positive value and blue for the negative
     colors = ['red' if coef > 0 else 'blue' for coef in inverse_top_30_features.values]
     plt.figure(figsize=(10, 6))
     bars = plt.barh(inverse_top_30_features.index, inverse_top_30_features.values, color=colors, alpha=0.7)
@@ -59,15 +59,9 @@ def get_feature(data_filename, output_filename: Path):
     plt.ylabel("Variables")
     plt.title("Top 30 Lasso Regression Coefficients")
     plt.savefig(output_filename, format='png', dpi=300)
-    # print("Top k features for citing:")
-    # print("============")
-    # print(top_30_features[:10])
 
 YEARS = [2020,2021,2022,2023,2024]
 KEY_WORDS = "machinelearningandpolicy"
-
-
-
 
 if __name__ == "__main__":
     for year in YEARS:
