@@ -9,24 +9,28 @@ applications,9
 existing,12
 solution,20
 mainly,3
-generative,2
+generative,9
 adversarial,6
 network,12
 limited,7
 due,11
 lack,3
 modeling,4
-decisionmaking,19
+decisionmaking,20
 novel,14
 imitation,2
-learningbased,2
+learningbased,3
 synthesize,2
-model,63
+model,61
 utilizes,2
 semanticsbased,1
 interaction,1
 mechanism,7
+<<<<<<< HEAD
 strategy,18
+=======
+strategy,17
+>>>>>>> e939bfd (New Visualization Type)
 visitations,1
 diverse,7
 geographical,2
@@ -35,7 +39,11 @@ semantic,1
 domain,7
 uniform,1
 manner,2
+<<<<<<< HEAD
 augment,1
+=======
+augment,2
+>>>>>>> e939bfd (New Visualization Type)
 ability,3
 realworld,3
 feature,9
@@ -43,8 +51,13 @@ extraction,3
 extract,1
 internal,2
 latent,3
+<<<<<<< HEAD
 factor,8
 variation,2
+=======
+factor,7
+variation,1
+>>>>>>> e939bfd (New Visualization Type)
 individual,7
 then,8
 selfattentionbased,1
@@ -53,11 +66,11 @@ capture,4
 longterm,5
 correlation,4
 mobility,2
-pattern,10
+pattern,9
 better,10
 reward,13
 user,7
-behavior,5
+behavior,8
 multiscale,1
 combined,4
 mutual,1
@@ -67,25 +80,29 @@ characteristics,3
 cohesive,1
 extensive,3
 experimental,5
+<<<<<<< HEAD
 show,14
+=======
+show,15
+>>>>>>> e939bfd (New Visualization Type)
 highquality,4
-compared,14
+compared,12
 stateoftheart,4
 baseline,5
-term,7
+term,9
 key,15
 usability,3
 metric,7
-well,8
+well,7
 support,9
 practical,5
 demonstrating,1
-effectiveness,4
+effectiveness,5
 explainable,2
 knowledge,6
 automatically,5
 statistical,6
-relation,2
+relation,3
 address,14
 static,1
 dynamic,9
@@ -101,14 +118,14 @@ uncertain,2
 context,9
 hindering,2
 appropriate,3
-reinforcement,19
-technique,16
+reinforcement,20
+technique,17
 enhance,16
 adaptive,5
 continuously,1
 modifies,1
 obtained,6
-during,8
+during,6
 goal,6
 improving,3
 resilience,1
@@ -117,11 +134,11 @@ behaviour,1
 investigation,2
 covers,1
 various,17
-algorithm,22
-deep,12
+algorithm,23
+deep,14
 qnetwork,2
 dqn,1
-improvement,3
+improvement,2
 proximal,3
 optimization,6
 ippo,1
@@ -132,25 +149,29 @@ flexible,2
 customized,2
 specific,6
 demand,8
-activity,9
-assess,3
-efficiency,10
-flexibility,5
-change,24
+activity,10
+assess,4
+efficiency,12
+flexibility,7
+change,23
 environment,10
 robustness,5
 uncertainty,7
 testing,5
+<<<<<<< HEAD
 simulated,3
+=======
+simulated,4
+>>>>>>> e939bfd (New Visualization Type)
 scenario,8
 demonstrate,8
-skill,4
+skill,5
 enable,3
 navigate,1
 perform,2
 task,8
 adeptly,1
-demanding,1
+demanding,2
 methane,12
 rice,14
 strong,2
@@ -160,14 +181,14 @@ accurate,7
 estimation,2
 essential,6
 combat,1
-climate,19
-conducted,6
+climate,18
+conducted,5
 gradient,10
 boosting,5
 gbm,1
 local,8
 assimilation,1
-prediction,14
+prediction,16
 ldaps,1
 normalized,2
 difference,2
@@ -183,19 +204,19 @@ imaging,5
 spectroradiometer,2
 modis,2
 fluxnet,1
-ground,4
+ground,2
 cheorwon,1
 paddy,2
-region,13
+region,11
 estimate,6
-emission,29
+emission,24
 south,1
 korea,3
 create,5
 gridded,1
 spatial,5
 map,8
-concentration,6
+concentration,3
 kilometers,1
 identified,3
 detailed,1
@@ -206,7 +227,7 @@ analyze,2
 seasonal,1
 predict,5
 considered,4
-meteorological,3
+meteorological,2
 heat,2
 flux,2
 humidity,3
@@ -224,7 +245,7 @@ addition,6
 anaerobic,1
 condition,17
 necessary,3
-production,8
+production,9
 affect,7
 methanogenic,1
 microorganisms,1
@@ -235,7 +256,11 @@ visualized,1
 understand,1
 response,6
 changing,4
+<<<<<<< HEAD
 weather,3
+=======
+weather,2
+>>>>>>> e939bfd (New Visualization Type)
 showed,5
 coefficient,3
 mean,6
@@ -252,16 +277,16 @@ loyo,1
 expected,1
 contribute,3
 understanding,7
-generation,9
+generation,10
 constructed,1
 important,3
 basis,3
 establishing,1
-reduction,15
+reduction,10
 agricultural,10
 sector,16
 effective,6
-future,17
+future,18
 increasing,5
 crop,5
 caused,2
@@ -269,13 +294,17 @@ underscore,3
 necessity,2
 yield,9
 staple,2
-account,6
+account,7
 integrating,5
-satellite,3
+satellite,2
 imagery,1
 artificial,7
 intelligence,12
+<<<<<<< HEAD
 precipitation,2
+=======
+precipitation,1
+>>>>>>> e939bfd (New Visualization Type)
 solar,2
 radiation,1
 derived,1
@@ -289,13 +318,17 @@ shuttle,1
 radar,1
 topography,1
 mission,1
-digital,27
+digital,33
 elevation,1
 srtm,1
 dem,1
 incorporate,2
 topographic,1
+<<<<<<< HEAD
 comprehensive,8
+=======
+comprehensive,7
+>>>>>>> e939bfd (New Visualization Type)
 database,4
 indices,1
 visible,1
@@ -308,8 +341,8 @@ employed,6
 optimize,3
 validation,2
 demonstrated,5
-high,9
-predictive,6
+high,8
+predictive,8
 accuracy,8
 utilizing,5
 achieving,5
@@ -319,10 +352,10 @@ climateresilient,1
 enhanced,3
 food,6
 security,5
-work,9
+work,10
 wind,9
 energy,39
-potential,19
+potential,18
 semarang,1
 city,1
 central,2
@@ -337,16 +370,16 @@ neighbor,2
 interpolation,1
 nni,2
 methodology,6
-integrated,8
+integrated,7
 uniquely,1
 combines,1
 power,12
 speed,4
 historical,4
 mapping,3
-capability,9
+capability,10
 provide,12
-seamless,1
+seamless,2
 visualization,1
 distribution,3
 sparsity,1
@@ -357,7 +390,11 @@ localized,1
 than,5
 traditional,5
 additionally,5
+<<<<<<< HEAD
 air,5
+=======
+air,1
+>>>>>>> e939bfd (New Visualization Type)
 density,3
 calculate,1
 enabling,5
@@ -372,18 +409,199 @@ estimated,2
 wm2,1
 feasibility,2
 smallscale,1
+<<<<<<< HEAD
 area,9
+=======
+area,8
+>>>>>>> e939bfd (New Visualization Type)
 actionable,3
 insight,7
 advancing,1
 renewable,11
-implementation,6
-level,22
+implementation,5
+level,20
+background,4
+enterprise,7
+systembased,1
+worker,2
+tracking,4
+monitoring,18
+socially,1
+responsible,2
+organizational,3
+practice,7
+employee,5
+performance,26
+management,35
+satisfaction,3
+resource,11
+procedures,1
+relationship,7
+outcomes,6
+hiring,3
+objective,5
+assessment,6
+function,8
+productivity,8
+operational,6
+analytical,2
+cloud,3
+realtime,2
+anomalous,1
+recognition,2
+further,9
+fintech,3
+credit,2
+lending,2
+service,7
+payment,2
+analytic,4
+risk,13
+mitigation,1
+tool,15
+bolster,1
+collaborative,3
+interconnected,1
+sensor,2
+tailored,4
+finetuned,1
+product,10
+workflow,3
+innovation,16
+driving,8
+agile,1
+transformative,1
+twin,3
+industrial,3
+metaverse,3
+purpose,3
+aidriven,1
+schedule,1
+job,5
+search,3
+algorithmic,2
+synthetic,2
+training,12
+improve,21
+team,2
+selection,6
+firing,1
+decision,10
+workforce,5
+blockchainbased,1
+operation,7
+shape,6
+cloudbased,1
+financial,8
+banking,2
+quotetocash,1
+automation,3
+cashsettled,1
+crypto,1
+loan,1
+decisioning,1
+asset,2
+tokenization,1
+transaction,6
+switching,1
+routing,1
+peertopeer,1
+proactive,1
+line,1
+unstructured,1
+processing,7
+infrastructure,4
+governance,3
+retrieval,1
+augmented,2
+descriptive,2
+surge,2
+competitive,1
+advantage,4
+reference,2
+review,17
+together,1
+evidence,7
+synthesis,1
+screening,2
+software,7
+harnessed,1
+abstrackr,1
+amstar,1
+asreview,1
+lab,1
+casp,1
+catchii,1
+citationchaser,1
+distillersr,1
+jbi,1
+sumari,1
+litstream,1
+pico,1
+portal,1
+rayyan,1
+&,1
+value,5
+added,2
+current,9
+state,9
+art,1
+improved,7
+theory,5
+issue,7
+workplace,2
+gauge,1
+build,1
+resilient,3
+satisfied,1
+engaged,1
+capital,1
+career,1
+drive,2
+expectations,1
+stability,4
+turnover,1
+retention,1
+loyalty,1
+servicing,1
+deployed,1
+embedded,2
+cryptocurrency,1
+trading,1
+transfers,1
+corporate,4
+retail,1
+fraud,4
+prevention,1
+reshape,2
+reimagine,1
+meaningful,2
+involving,2
+creativity,1
+adaptable,3
+sustained,2
+providing,4
+valuable,3
+constructive,1
+feedback,12
+optimizing,6
+psychological,1
+safety,3
+measuring,1
+supporting,4
+autonomy,1
+flexibilitybased,1
+configuring,1
+engaging,1
+rewarding,1
+experience,6
+edge,2
+computing,1
+device,4
 rapidly,5
 evolving,2
 landscape,2
 economy,9
-optimizing,5
 international,5
 trade,8
 pathways,8
@@ -391,7 +609,7 @@ enhancing,4
 economic,12
 competitiveness,1
 design,10
-simulation,8
+simulation,7
 framework,13
 advanced,5
 encompassing,1
@@ -405,12 +623,10 @@ supervised,3
 forecasting,2
 unsupervised,4
 clustering,1
-relationship,6
 component,4
 allows,1
 stakeholders,4
 visualize,2
-outcomes,5
 varying,2
 intervention,2
 aim,6
@@ -426,7 +642,7 @@ ultimately,4
 deeper,2
 interplay,1
 bet,1
-transformation,11
+transformation,10
 highlighting,5
 need,12
 digitally,1
@@ -440,7 +656,6 @@ theoreticalmethodological,1
 addressing,6
 pressing,2
 faced,1
-risk,12
 threat,7
 scale,5
 authors,3
@@ -453,18 +668,20 @@ socioeconomic,3
 particular,1
 focus,7
 implementing,1
-experience,5
 standard,5
 modern,1
-trend,11
+trend,10
 book,1
 consists,2
 nine,1
 chapter,2
 exploring,2
-significant,14
+significant,13
 aspects,1
+<<<<<<< HEAD
 current,8
+=======
+>>>>>>> e939bfd (New Visualization Type)
 forwardlooking,1
 importance,3
 trauma,1
@@ -486,13 +703,15 @@ professional,3
 exists,1
 upskill,1
 health,8
-workforce,3
 strengthen,1
 access,9
 nonspecialist,1
 providers,1
 nationally,1
+<<<<<<< HEAD
 review,16
+=======
+>>>>>>> e939bfd (New Visualization Type)
 completed,1
 partnership,1
 ugandan,1
@@ -501,21 +720,26 @@ consortium,1
 partners,1
 capacity,4
 building,20
-east,3
+east,2
 africa,1
 built,4
+<<<<<<< HEAD
 practice,5
+=======
+>>>>>>> e939bfd (New Visualization Type)
 expertise,2
 explore,6
 emerging,7
 virtual,1
+<<<<<<< HEAD
 augmented,1
+=======
+>>>>>>> e939bfd (New Visualization Type)
 reality,1
 meet,2
 delivering,1
 rapid,3
 equitable,1
-training,11
 collection,2
 narrative,2
 literature,5
@@ -533,7 +757,6 @@ lowresource,1
 broad,2
 engagement,1
 ambition,1
-infrastructure,3
 available,3
 feasibly,1
 deliver,1
@@ -545,7 +768,11 @@ option,1
 series,4
 recommendations,2
 education,3
+<<<<<<< HEAD
 transport,4
+=======
+transport,2
+>>>>>>> e939bfd (New Visualization Type)
 decarbonization,2
 railway,8
 electrification,2
@@ -568,7 +795,7 @@ efficiently,3
 cater,1
 traction,2
 grid,14
-source,5
+sources,4
 nontraction,1
 load,3
 electrified,1
@@ -579,9 +806,8 @@ electric,6
 vehicle,7
 fleets,1
 scheduling,5
-implement,4
+implement,3
 efficient,9
-tool,10
 agent,13
 introduced,4
 formulating,1
@@ -593,12 +819,11 @@ long,4
 shortterm,2
 memory,2
 bilstm,1
-improved,6
 twinsactor,2
 deterministic,4
 ddpg,2
 reduce,7
-overall,8
+overall,7
 computational,3
 complexity,4
 fast,1
@@ -609,27 +834,23 @@ streamline,1
 case,6
 studies,8
 confirm,1
-operation,4
 achieve,8
 cost,5
 meeting,2
 size,1
 saving,5
 robust,4
-management,28
 ems,5
 hybrid,5
 hevs,2
 requires,3
 several,2
 control,23
-objective,4
 drivability,1
 reducing,5
 fuel,5
 consumption,7
 maintaining,2
-state,9
 battery,8
 charge,1
 soc,3
@@ -645,16 +866,17 @@ ice,1
 lead,4
 suboptimal,3
 episodic,1
-driving,6
 cycles,2
 previous,5
 efforts,1
 encountered,1
 slow,1
 convergence,1
-tracking,2
 inadequate,2
+<<<<<<< HEAD
 performance,19
+=======
+>>>>>>> e939bfd (New Visualization Type)
 real,6
 intelligent,5
 knowledgeassisted,1
@@ -675,8 +897,11 @@ mode,3
 –567,1
 online,1
 maintains,1
+<<<<<<< HEAD
 stability,3
 improve,20
+=======
+>>>>>>> e939bfd (New Visualization Type)
 negative,2
 motor,1
 torque,1
@@ -693,7 +918,6 @@ ignore,1
 unsafety,1
 complex,2
 simple,2
-function,7
 express,1
 proposes,7
 safeoff,1
@@ -705,7 +929,7 @@ truckfollowing,2
 order,9
 solve,2
 firstly,1
-upper,2
+upper,1
 layer,3
 designed,6
 gradientddpg,1
@@ -715,22 +939,21 @@ collision,1
 lower,3
 learningrl,1
 new,10
-shape,4
 guide,5
 finally,4
 proved,2
 rate,5
 reach,2
-safety,2
-meaningful,1
-processing,5
 poverty,3
 missouri,2
 quadrant,1
 county,3
 separate,1
 definitions,6
+<<<<<<< HEAD
 decision,7
+=======
+>>>>>>> e939bfd (New Visualization Type)
 tree,4
 random,9
 forest,13
@@ -754,7 +977,6 @@ runs,1
 highest,5
 coincided,1
 expenditure,2
-value,4
 whilst,1
 2–4,1
 lowest,1
@@ -765,7 +987,7 @@ changed,1
 1’s,1
 category,6
 double,1
-reduced,3
+reduced,2
 there,2
 similarities,2
 ranking,6
@@ -800,7 +1022,10 @@ obtain,1
 multiarea,2
 cooperative,1
 resulting,2
+<<<<<<< HEAD
 issue,6
+=======
+>>>>>>> e939bfd (New Visualization Type)
 greedy,2
 replay,2
 decouple,1
@@ -863,7 +1088,6 @@ loss,6
 verify,1
 cascaded,1
 utilization,2
-further,8
 sustainability,4
 modular,1
 distributed,1
@@ -872,7 +1096,6 @@ profitability,1
 nuclearrenewable,1
 nries,1
 commodity,1
-operational,4
 decarbonize,1
 heavy,1
 industry,5
@@ -887,8 +1110,6 @@ expenses,1
 associated,4
 merging,1
 multiple,7
-software,6
-service,5
 functional,1
 mockup,1
 fmu,1
@@ -906,13 +1127,12 @@ dispatching,1
 prices,1
 availability,2
 ppo,1
-period,3
+period,2
 days,2
 hydrogenbased,1
 boost,1
 nonhydrogen,1
 generating,1
-providing,3
 easilyadoptable,1
 garnered,1
 attention,4
@@ -943,7 +1163,6 @@ habits,1
 arising,1
 recurrent,1
 rppo,2
-background,3
 chest,4
 radiography,2
 otherwise,1
@@ -961,10 +1180,12 @@ respiratory,1
 diseases,2
 globally,1
 heath,1
+<<<<<<< HEAD
 assessment,4
+=======
+>>>>>>> e939bfd (New Visualization Type)
 preemployment,1
 preoperative,1
-purpose,2
 already,2
 proving,1
 overwhelming,1
@@ -989,12 +1210,10 @@ introduction,2
 raid,1
 evolutionary,1
 seeks,1
-evidence,6
 progress,1
 unfold,1
 detection,5
 clinical,3
-search,2
 certain,4
 keywords,1
 [machine,1
@@ -1014,7 +1233,6 @@ content,7
 thorough,1
 substance,1
 bring,2
-workflow,2
 useful,2
 performing,2
 administrative,1
@@ -1027,7 +1245,6 @@ suited,1
 classification,6
 spectrum,1
 anomaly,3
-involving,1
 mldl,1
 fldl,1
 nlpdlml,1
@@ -1042,7 +1259,6 @@ stages;,1
 serve,2
 road,1
 routine,1
-governance,2
 code,7
 attack,9
 play,3
@@ -1115,7 +1331,6 @@ meanwhile,2
 proper,1
 structure,3
 suppressing,1
-innovation,14
 mediating,1
 recommended,1
 decisionmakers,2
@@ -1124,14 +1339,13 @@ align,3
 financing,1
 cuts,1
 societal,2
-advantage,3
 considerable,1
 prospects,2
 developing,4
 equilibrium,1
 docking,2
 unmanned,1
-surface,3
+surface,2
 vessel,2
 usv,2
 maritime,1
@@ -1164,7 +1378,6 @@ cyber,2
 cti,1
 identifying,2
 theme,4
-collaborative,1
 directions,3
 decisionsthis,1
 status,1
@@ -1178,7 +1391,6 @@ strategieskey,1
 include,3
 prominence,1
 entity,1
-recognition,1
 fieldthematic,1
 evolution,3
 adoption,4
@@ -1213,9 +1425,13 @@ convergenceour,1
 carla,1
 not,9
 only,3
+<<<<<<< HEAD
 comparison,2
+=======
+comparison,1
+>>>>>>> e939bfd (New Visualization Type)
 wider,1
-similar,2
+similar,1
 flourishing,1
 phenomenon,2
 firm,2
@@ -1226,7 +1442,6 @@ microeconomic,1
 whether,2
 transformational,2
 induced,1
-corporate,3
 underlying,3
 fully,1
 explored,1
@@ -1234,9 +1449,9 @@ panel,2
 chinese,1
 listed,1
 spanning,1
-suggest,5
+suggest,4
 effectively,4
-sensitivity,7
+sensitivity,6
 checks,1
 significantly,3
 r&d,3
@@ -1245,13 +1460,11 @@ innovationpromoting,1
 manifested,1
 output,3
 benefit,5
-observed,4
+observed,3
 stateowned,1
-enterprise,4
 nonhightech,1
-valuable,2
 countries,2
-china,2
+china,1
 agriculture,7
 cultivation,1
 irrigation,2
@@ -1269,7 +1482,7 @@ aimed,4
 examine,2
 academicians,2
 designmethodologyapproach,1
-main,4
+main,2
 material,4
 people,1
 officials,1
@@ -1289,8 +1502,11 @@ private,2
 collaboration,5
 originalityvalue,1
 digitalization,1
+<<<<<<< HEAD
 sensor,1
 automation,1
+=======
+>>>>>>> e939bfd (New Visualization Type)
 robotic,1
 remote,8
 etc,3
@@ -1299,8 +1515,6 @@ advance,4
 manpower,1
 precise,1
 farm,1
-resource,9
-productivity,2
 turkish,1
 parallel,1
 developments,3
@@ -1311,7 +1525,7 @@ turkey,1
 technoparks,1
 agroparks,1
 accelerated,1
-recent,5
+recent,4
 sense,1
 collecting,1
 subject,2
@@ -1319,8 +1533,7 @@ suggestions,1
 possible,2
 academy,1
 trustworthy,1
-responsible,1
-bottomup,2
+bottomup,1
 trust,4
 highly,3
 alternatives,2
@@ -1336,16 +1549,14 @@ broader,2
 related,4
 tradeoff,4
 handling,1
-successful,3
+successful,2
 controltheory,1
 actor,2
-theory,4
 depict,1
 accept,1
 right,2
 iterative,2
 interactive,1
-feedback,11
 acceptability,1
 examining,3
 consensus,1
@@ -1353,7 +1564,7 @@ rounds,2
 refine,1
 hypothetical,1
 emphasize,3
-primary,3
+primary,2
 accurately,2
 fosters,2
 harmony,1
@@ -1403,8 +1614,6 @@ sampling,1
 pooling,1
 accommodate,1
 newly,2
-added,1
-product,9
 preserves,1
 smoothly,1
 handle,1
@@ -1423,27 +1632,21 @@ transition,4
 facilitate,2
 smooth,1
 discuss,4
-supporting,3
 toward,2
 increased,5
 technological,3
 supportive,1
 sustainable,5
-resilient,1
-drive,1
 cleaner,1
 ghg,1
 australia,1
 approximately,1
-accounting,3
+accounting,2
 concerning,1
-selection,5
-reference,1
 overlook,1
 sectoral,2
 contextspecific,1
 disaggregated,1
-analytical,1
 generalised,1
 additive,1
 gams,1
@@ -1453,8 +1656,8 @@ co2e,3
 australian,2
 inventories,1
 mlbased,1
-revealed,4
-decline,2
+revealed,2
+decline,1
 median,1
 past,3
 optimising,1
@@ -1466,7 +1669,6 @@ millennium,1
 drought,1
 contribution,4
 establishment,1
-adaptable,2
 activitylevel,1
 allocation,2
 applicability,2
@@ -1486,7 +1688,6 @@ node,8
 undirected,1
 unweighted,1
 represent,2
-edges,1
 infectious,1
 begin,2
 single,2
@@ -1508,7 +1709,6 @@ active,7
 bayesian,1
 disagreement,1
 outbreak,5
-synthetic,1
 distanceweighted,1
 infection,1
 candidate,3
@@ -1522,7 +1722,6 @@ situations,1
 administratorcentered,1
 failures,3
 breaches,1
-financial,7
 reputation,1
 damage,1
 graphical,3
@@ -1546,7 +1745,7 @@ requirement,3
 specifications,1
 adaptation,4
 negatively,1
-respectively,3
+respectively,1
 paving,1
 everincreasing,1
 patient,14
@@ -1558,7 +1757,7 @@ osa,7
 treated,1
 continuous,1
 airway,1
-pressure,2
+pressure,1
 cpap,8
 overstretches,1
 conventional,3
@@ -1567,7 +1766,6 @@ cpaptreated,3
 needed,3
 strike,1
 balance,1
-monitoring,15
 inperson,3
 patienthealthcareprofessional,1
 contacts,1
@@ -1607,10 +1805,8 @@ low,1
 progression,1
 here,3
 multidisciplinary,1
-teams,1
 connected,1
 wearable,1
-device,3
 physical,1
 pros,1
 cons,1
@@ -1638,7 +1834,6 @@ andor,1
 colleagues,1
 disciplines,2
 appropriately,1
-tailored,2
 hashtags,3
 common,1
 ecigarette,7
@@ -1655,7 +1850,6 @@ topic,4
 tiktok,3
 vape,6
 final,1
-analytic,1
 sample,3
 posts,1
 fitting,1
@@ -1750,18 +1944,19 @@ members,1
 equal,1
 contract,2
 rules,2
+<<<<<<< HEAD
 embedded,1
+=======
+>>>>>>> e939bfd (New Visualization Type)
 susceptible,1
 fraudulent,3
 compromise,1
 flaw,1
 hackers,1
-fraud,3
 evaluating,2
 detect,3
 ethereum,1
 blockchain,1
-transactions,3
 consisting,1
 nonfraudulent,1
 logistic,3
@@ -1815,7 +2010,6 @@ reinsurance,1
 [8],1
 exploratory,1
 cum,1
-descriptive,1
 followed,1
 diabetes,10
 farreaching,1
@@ -1825,7 +2019,6 @@ families,1
 unhealthy,1
 eating,1
 sedentary,1
-surge,1
 blood,1
 sugar,1
 stem,1
@@ -1840,7 +2033,6 @@ apps,1
 telemedicine,1
 mhealth,1
 poised,1
-reshape,1
 great,2
 encourage,1
 hold,1
@@ -1850,11 +2042,11 @@ instances,1
 overhauling,1
 possibilities,1
 revolutionary,1
-shift,2
+shift,1
 tremendous,1
 promises,1
 elevate,1
-quality,5
+quality,2
 uniformity,1
 transcending,1
 constraints,3
@@ -1871,10 +2063,14 @@ opportunity,5
 arise,1
 anticipation,1
 multifaceted,1
+<<<<<<< HEAD
 driver,3
+=======
+drivers,1
+>>>>>>> e939bfd (New Visualization Type)
 disparities,1
 political,1
-measurements,3
+measurements,1
 encompass,1
 inherent,1
 majority,1
@@ -1965,7 +2161,7 @@ latency,2
 tail,1
 received,2
 indeed,1
-substantial,5
+substantial,3
 trialanderror,1
 posed,2
 impediment,1
@@ -1995,7 +2191,7 @@ codesign,1
 difficulty,1
 adsorption,11
 organic,2
-pollutants,3
+pollutants,1
 carbonaceous,2
 highlights,1
 presenting,1
@@ -2028,7 +2224,7 @@ initiative,1
 youth,1
 flipped,1
 classroom,1
-secondary,4
+secondary,3
 students’,4
 onegroup,1
 pretestposttest,1
@@ -2036,7 +2232,6 @@ paired,1
 ttest,1
 assessed,1
 student,3
-satisfaction,2
 consisted,1
 school,1
 thailand’s,1
@@ -2062,22 +2257,21 @@ regimes,2
 exposure,1
 necessitating,1
 nonlinear,2
-precursors,3
+precursors,1
 guiding,1
 spatiotemporal,1
 chemistry,1
 situ,1
 alter,1
-sustained,1
-asia,4
-decreased,3
-formation,2
+asia,1
+decreased,1
+formation,1
 formaldehyde,1
 hcho,3
 fine,1
-particulate,2
-matter,2
-pm25,5
+particulate,1
+matter,1
+pm25,3
 counteracting,1
 adverse,1
 hightemperature,1
@@ -2088,14 +2282,18 @@ concentrated,1
 wildfirerisk,1
 zones,2
 elevated,1
-downwind,2
+downwind,1
 wildfireendangered,1
-western,2
+western,1
 canada,1
 heatwaveexposed,1
 southeastern,1
 united,1
+<<<<<<< HEAD
 contributed,2
+=======
+contributed,1
+>>>>>>> e939bfd (New Visualization Type)
 chemically,1
 increase,2
 μgm3month,1
@@ -2157,7 +2355,6 @@ add,1
 original,1
 survey,2
 german,1
-employees,2
 aware,3
 frequently,1
 paid,1
@@ -2166,12 +2363,14 @@ labor,1
 markets,1
 reviewed,1
 automate,1
+<<<<<<< HEAD
 jobs,2
+=======
+>>>>>>> e939bfd (New Visualization Type)
 likely,1
 transform,1
 necessarily,1
 displacing,1
-workers,1
 altering,1
 potentially,1
 geography,1
@@ -2200,7 +2399,7 @@ squared,1
 rmse,1
 rsquared,1
 r2,1
-slightly,3
+slightly,2
 margins,1
 provided,1
 reasonable,1
@@ -2308,6 +2507,7 @@ birdlife,1
 biodiversity,1
 agroecological,1
 france,1
+<<<<<<< HEAD
 northeast,2
 suffers,1
 prompting,1
@@ -2353,3 +2553,5 @@ longrange,1
 gaseous,1
 highlighted,1
 targeting,1
+=======
+>>>>>>> e939bfd (New Visualization Type)

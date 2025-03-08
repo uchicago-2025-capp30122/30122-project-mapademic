@@ -6,7 +6,7 @@ import requests
 import pandas as pd
 
 # 导入 visualization 分支下的 heatmap.py 中的新可视化函数
-from src.visualization.heatmap import combined_heatmaps_with_timeline_and_arrows
+from src.visualization.heatmap import combined_heatmaps_vertical_with_left_timeline
 
 # 1) 初始化 Session State
 if "search_completed" not in st.session_state:
@@ -102,7 +102,7 @@ if api_key:
         # 直接展示多年份(2020~2024)的组合热力图
         years = [2020, 2021, 2022, 2023, 2024]
         try:
-            fig = combined_heatmaps_with_timeline_and_arrows(
+            fig = combined_heatmaps_vertical_with_left_timeline(
                 keywords="machinelearningandpolicy",
                 years=years
             )
