@@ -3,16 +3,14 @@ import pytest
 import pandas as pd
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
-import sys
-import os
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
+
+# Import functions from the new visualization code
 from src.visualization.heatmap import (
     main_heatmap,
-    create_subplot_figure,
+    create_map_and_left_timeline_figure,
     generate_heatmaps,
-    add_heatmaps_to_figure,
-    add_timeline_and_arrows,
-    combined_heatmaps_with_timeline_and_arrows
+    add_maps_and_left_timeline,
+    combined_heatmaps_vertical_with_left_timeline
 )
 
 # --------------------------
@@ -20,61 +18,49 @@ from src.visualization.heatmap import (
 # --------------------------
 
 def dummy_load_csv(keywords, year):
-    """Return a simple DataFrame for testing."""
+    """Return a simple DataFrame for testing with field names consistent with the new code."""
     data = {
         'country': ['TestState'],
         'state_name': ['TestCountry'],
-        'CRDI': [1.0],
+        'crdi_index': [1.0],
         'year': [year]
     }
     return pd.DataFrame(data)
 
-
 def dummy_load_geojson():
-    """Return a minimal GeoJSON object for testing."""
+    """Return a minimal GeoJSON object for testing with the 'name' property key."""
     return {
         "type": "FeatureCollection",
         "features": [{
             "type": "Feature",
-            "properties": {"match_id": "TestCountry_TestState"},
+            "properties": {"name": "TestCountry"},
             "geometry": {
                 "type": "Polygon",
-                "coordinates": [[[0,0], [0,1], [1,1], [1,0], [0,0]]]
+                "coordinates": [[[0, 0], [0, 1], [1, 1], [1, 0], [0, 0]]]
             }
         }]
     }
 
-
 def dummy_main_heatmap(keywords, year, geojson_data):
     """
-    A dummy version of main_heatmap that returns a minimal figure
-    with a Scattermapbox trace (compatible with mapbox subplots).
+    Dummy version of main_heatmap that returns a simple figure with a choroplethmap trace.
+    This ensures compatibility with "map" subplots.
     """
     fig = go.Figure()
-    # Use Scattermapbox instead of Scatter
-    fig.add_trace(go.Scattermap(
-        lat=[20],  # dummy latitude
-        lon=[160], # dummy longitude
-        mode='markers',
-        marker=dict(size=10)
+    fig.add_trace(go.Choroplethmap(
+        locations=["TestCountry"],
+        z=[1.0],
+        geojson=dummy_load_geojson(),
+        featureidkey='properties.name'
     ))
-    fig.update_layout(
-        title_text=f"{year} World Research Heat Distribution",
-        map={"center": {"lat": 20, "lon": 160}, "zoom": 0.8, "style": "carto-positron"}
-    )
+    fig.update_layout(title_text=f"{year} World Research Distribution")
     return fig
 
 # --------------------------
-# Monkeypatching Loader Functions
+# Monkeypatch Loader Functions
 # --------------------------
-# Because in heatmap.py the functions are imported via:
-#   from .cache_utils import load_csv, load_geojson
-# we must patch the names used in that module.
-#
-# Additionally, if caching from streamlit is wrapping load_csv, we patch the underlying function.
 @pytest.fixture(autouse=True)
 def patch_load_functions(monkeypatch):
-    # Patch both in heatmap.py and in cache_utils.py to be safe.
     monkeypatch.setattr("src.visualization.heatmap.load_csv", dummy_load_csv)
     monkeypatch.setattr("src.visualization.heatmap.load_geojson", dummy_load_geojson)
     monkeypatch.setattr("src.visualization.cache_utils.load_csv", dummy_load_csv)
@@ -85,125 +71,118 @@ def patch_load_functions(monkeypatch):
 # --------------------------
 
 def test_main_heatmap():
-    """Test that main_heatmap returns a valid figure with the expected title."""
+    """
+    Test the main_heatmap function:
+      - Ensure it returns a valid Figure object.
+      - Check that the title contains the year and is centered (title_x == 0.5).
+      - Verify that the trace type is one of: choropleth, choroplethmapbox, or choroplethmap.
+    """
     keywords = "test"
     year = 2021
     geojson_data = dummy_load_geojson()
     fig = main_heatmap(keywords, year, geojson_data)
     assert isinstance(fig, go.Figure)
-    # Check that the title text contains the year.
-    assert f"{year}" in fig.layout.title.text
+    # Verify title text and centering
+    assert f"{year} World Research Distribution" in fig.layout.title.text
+    assert fig.layout.title.x == 0.5
+    # Allow for multiple trace types
+    valid_types = ["choropleth", "choroplethmapbox", "choroplethmap"]
+    assert len(fig.data) > 0
+    assert fig.data[0].type in valid_types
 
-
-def test_create_subplot_figure():
-    """Test the creation of the subplot layout and returned layout parameters."""
-    n = 4
-    num_cols = 2
-    timeline_height = 0.15
-    fig, r_map, map_row_height = create_subplot_figure(n, num_cols, timeline_height)
-    expected_r_map = math.ceil(n / num_cols)
-    expected_map_row_height = (1 - timeline_height) / expected_r_map
-    assert r_map == expected_r_map
-    assert abs(map_row_height - expected_map_row_height) < 1e-6
+def test_create_map_and_left_timeline_figure():
+    """
+    Test the creation of the subplot layout with a left timeline:
+      - Verify that the returned object is a Figure.
+      - Check that the left subplot's x-axis domain is close to [0.0, 0.2].
+      - Ensure the number of right-side map subplots equals the number of rows.
+    """
+    n = 3
+    fig = create_map_and_left_timeline_figure(n)
     assert isinstance(fig, go.Figure)
-
+    # Check left subplot x-axis domain
+    assert math.isclose(fig.layout.xaxis.domain[0], 0.0, abs_tol=1e-6)
+    assert math.isclose(fig.layout.xaxis.domain[1], 0.2, rel_tol=0.02)
+    # Only count layout keys that start with "map" but not "mapbox"
+    map_keys = [key for key in fig.layout if key.startswith("map") and not key.startswith("mapbox")]
+    assert len(map_keys) == n
 
 def test_generate_heatmaps(monkeypatch):
-    """Test that generate_heatmaps returns a dictionary with figures for each year."""
+    """
+    Test the generate_heatmaps function:
+      - Ensure it returns a dictionary with years as keys and corresponding heatmap Figures as values.
+      - Use dummy_main_heatmap to simplify concurrent execution.
+    """
     keywords = "test"
     years = [2020, 2021]
     geojson_data = dummy_load_geojson()
-    # Override main_heatmap to use our dummy version.
     monkeypatch.setattr("src.visualization.heatmap.main_heatmap", dummy_main_heatmap)
     heatmaps = generate_heatmaps(keywords, years, geojson_data)
     assert isinstance(heatmaps, dict)
     assert set(heatmaps.keys()) == set(years)
+    valid_types = ["choropleth", "choroplethmapbox", "choroplethmap"]
     for year in years:
         fig = heatmaps[year]
         assert isinstance(fig, go.Figure)
-        # Check that each dummy figure has at least one trace.
         assert len(fig.data) > 0
-        # Also check that the trace is of type 'scattermapbox'
-        assert fig.data[0].type == "scattermap"
+        assert fig.data[0].type in valid_types
 
-
-def test_add_heatmaps_to_figure():
+def test_add_maps_and_left_timeline():
     """
-    Test adding dummy heatmaps to a subplot figure and computing arrow positions.
-    Here we create dummy heatmap figures with Scattermapbox traces.
+    Test the add_maps_and_left_timeline function:
+      - Add a left timeline with year labels to the subplot.
+      - Add heatmap traces for each year to the corresponding right-side subplot.
+      - Verify that the timeline trace's mode is "lines+markers+text".
     """
     n = 2
-    num_cols = 2
-    timeline_height = 0.15
-    fig, r_map, map_row_height = create_subplot_figure(n, num_cols, timeline_height)
+    fig = create_map_and_left_timeline_figure(n)
     
-    # Create a dummy heatmap figure with a Scattermapbox trace.
+    # Create a dummy heatmap Figure with a choroplethmap trace (compatible with "map" subplots)
     dummy_fig = go.Figure()
-    dummy_fig.add_trace(go.Scattermap(
-        lat=[20],
-        lon=[160],
-        mode='markers',
-        marker=dict(size=10)
+    dummy_fig.add_trace(go.Choroplethmap(
+        locations=["TestCountry"],
+        z=[1.0],
+        geojson=dummy_load_geojson(),
+        featureidkey='properties.name'
     ))
     dummy_fig.update_layout(
-        mapbox={"center": {"lat": 20, "lon": 160}, "zoom": 0.8, "style": "carto-positron"}
+        map={'center': {'lat': 20, 'lon': 160}, 'zoom': 0.8, 'style': 'carto-positron'}
     )
     heatmap_results = {2020: dummy_fig, 2021: dummy_fig}
     years = [2020, 2021]
-    arrow_info = add_heatmaps_to_figure(
-        fig, heatmap_results, years, num_cols, map_row_height, timeline_height, r_map
-    )
-    # Verify that arrow_info is a list with one entry per year.
-    assert isinstance(arrow_info, list)
-    assert len(arrow_info) == len(years)
-    # Each arrow_info dictionary should contain the required keys.
-    for info in arrow_info:
-        for key in ["map_x", "map_y", "timeline_x", "year"]:
-            assert key in info
-    # Also check that traces have been added to the figure.
-    # Since each dummy_fig has one trace and we add one per year:
-    assert len(fig.data) >= len(years)
-
-
-def test_add_timeline_and_arrows():
-    """
-    Test that add_timeline_and_arrows correctly adds the timeline trace and dotted lines.
-    This test uses a subplot figure created by create_subplot_figure.
-    """
-    # Create a dummy subplot figure. For timeline, we expect the last row.
-    n = 2
-    num_cols = 2
-    timeline_height = 0.15
-    fig, r_map, map_row_height = create_subplot_figure(n, num_cols, timeline_height)
+    add_maps_and_left_timeline(fig, heatmap_results, years)
     
-    # Provide dummy arrow info.
-    arrow_info = [
-        {"map_x": 0.3, "map_y": 0.5, "timeline_x": 0.4, "year": 2020},
-        {"map_x": 0.7, "map_y": 0.5, "timeline_x": 0.6, "year": 2021}
+    # Filter for scatter traces with the expected mode for the timeline
+    timeline_traces = [
+        trace for trace in fig.data 
+        if getattr(trace, "type", None) == "scatter" and getattr(trace, "mode", None) == "lines+markers+text"
     ]
-    # This function will add a timeline trace into the subplot grid.
-    add_timeline_and_arrows(fig, arrow_info, timeline_height, r_map)
-    
-    # Find the timeline trace by checking its mode.
-    timeline_traces = [trace for trace in fig.data if trace.mode == "markers+lines+text"]
     assert len(timeline_traces) == 1
-    # Check that at least as many shapes (dotted lines) are added as arrow infos.
-    assert len(fig.layout.shapes) >= len(arrow_info)
+    timeline_text = timeline_traces[0].text
+    for year in sorted(years):
+        assert str(year) in timeline_text
+    
+    # Verify the first row "map" layout update
+    assert "map" in fig.layout
+    center = fig.layout["map"]["center"]
+    assert math.isclose(center["lat"], 20, abs_tol=1e-6)
+    assert math.isclose(center["lon"], 160, abs_tol=1e-6)
 
-
-def test_combined_heatmaps_with_timeline_and_arrows(monkeypatch):
+def test_combined_heatmaps_vertical_with_left_timeline(monkeypatch):
     """
-    Integration test for the complete combined figure function.
-    Ensure that the overall title is set and that a timeline trace exists.
+    Integration test for the combined_heatmaps_vertical_with_left_timeline function:
+      - Ensure the final figure is a valid Figure.
+      - Check that the title is set as expected.
+      - Confirm that the left timeline trace exists.
     """
     keywords = "test"
     years = [2020, 2021]
-    # Override main_heatmap to use our dummy_main_heatmap that returns a Scattermapbox trace.
     monkeypatch.setattr("src.visualization.heatmap.main_heatmap", dummy_main_heatmap)
-    fig = combined_heatmaps_with_timeline_and_arrows(keywords, years)
+    fig = combined_heatmaps_vertical_with_left_timeline(keywords, years)
     assert isinstance(fig, go.Figure)
-    # Verify that the title is correctly set.
-    assert "World Research Heat Distribution Timeline" in fig.layout.title.text
-    # Check that a timeline trace is present (look for mode "markers+lines+text").
-    timeline_traces = [trace for trace in fig.data if trace.mode == "markers+lines+text"]
+    assert "Dummy Research Heatmaps + Left Timeline" in fig.layout.title.text
+    timeline_traces = [
+        trace for trace in fig.data 
+        if getattr(trace, "type", None) == "scatter" and getattr(trace, "mode", None) == "lines+markers+text"
+    ]
     assert len(timeline_traces) == 1

@@ -3,10 +3,10 @@ import pandas as pd
 import numpy as np
 from collections import Counter
 from pathlib import Path
-from .utils import remove, ignore, process_word_list
+from utils import remove, ignore, process_word_list
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-from .visualize_words_yr import generate_word_frq_yearlygif
+from visualize_words_yr import generate_word_frq_yearlygif
 from unidecode import unidecode
 import streamlit as st
 

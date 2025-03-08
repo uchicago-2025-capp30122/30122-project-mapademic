@@ -2,7 +2,7 @@ state_name;affiliation_state;affiliation_country;affiliation_name;citied_by;cove
 karnataka;ka;india;dayanandasagarcollegeofengineering;2;2022-12-20;india;191841.35560540104
 michigan;mi;unitedstates;universityofmichiganmedicalschool;14;2022-12-20;unitedstatesofamerica;250043.56921919566
 rhodeisland;ri;unitedstates;thefmglobalgroup;12;2022-12-15;unitedstatesofamerica;2832.3850914376494
-texas;tx;unitedstates;cullencollegeofengineering;14;2022-12-15;unitedstatesofamerica;685338.8687343894
+texas;tx;unitedstates;cullencollegeofengineering;15;2022-12-15;unitedstatesofamerica;685338.8687343894
 texas;tx;unitedstates;collegeofengineering;7;2022-12-09;unitedstatesofamerica;685338.8687343894
 ontario;on;canada;instituteofhealthpolicy,managementandevaluation;11;2022-12-09;canada;1077587.553876187
 tamilnadu;tn;india;bharathinstituteofhighereducationandresearch;0;2022-12-07;india;130683.69031632628
@@ -14,7 +14,7 @@ connecticut;ct;unitedstates;yaleschooloftheenvironment;14;2022-12-01;unitedstate
 parana;pr;brazil;universidadeestadualdemaringa;10;2022-12-01;brazil;198666.17842736215
 texas;tx;unitedstates;cockrellschoolofengineering;4;2022-12-01;unitedstatesofamerica;685338.8687343894
 kocaeli;kocaeli;turkey;kocaeliuniversitesi;0;2022-12-31;;3989.218719727912
-isparta;isparta;turkey;suleymandemireluniversitesi;2;2022-12-31;;8772.938924914406
+isparta;isparta;turkiye;suleymandemireluniversitesi;2;2022-12-31;;8772.938924914406
 guangdong;guangdong;china;southernmarinescienceandengineeringguangdonglaboratory;6;2022-12-30;;175489.81778468573
 ;mi;italy;politecnicodimilano;10;2022-12-30;;
 syddanmark;syddanmark;denmark;syddanskuniversitet;5;2022-12-25;;11879.216633243565
@@ -36,7 +36,7 @@ beijing;na;china;beijingnationalresearchcenterforinformationscienceandtechnology
 chongqing;na;china;southwestuniversity;13;2022-12-25;;82362.54643078936
 ;na;germany;infineontechnologiesag;21;2022-12-22;;
 beijing;na;china;tsinghuauniversity;22;2022-12-15;;16251.925428963288
-van;na;turkiye;vanyuzuncuyiluniversitesi;34;2022-12-15;;19472.94801969977
+van;na;turkiye;vanyuzuncuyiluniversitesi;35;2022-12-15;;19472.94801969977
 beijing;na;china;universityofchineseacademyofsciences;14;2022-12-15;;16251.925428963288
 shanghai;na;china;statekeylaboratoryofoceanengineering;46;2022-12-10;;6746.037435237712
 ;na;singapore;schoolofcivilandenvironmentalengineering;8;2022-12-10;;

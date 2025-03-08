@@ -23,7 +23,7 @@
         "paper_author": "Çapalı B.",
         "affiliation_name": "Süleyman Demirel Üniversitesi",
         "affiliation_city": "Isparta",
-        "affiliation_country": "Turkey",
+        "affiliation_country": "Türkiye",
         "affiliation_id": "60000231",
         "affiliation_state": "Isparta"
     },
@@ -226,7 +226,7 @@
     {
         "paper_title": "An interpretable forecasting framework for energy consumption and CO<inf>2</inf> emissions",
         "publication": "Applied Energy",
-        "citied_by": "34",
+        "citied_by": "35",
         "cover_date": "2022-12-15",
         "Abstract": "It is a well-established fact that energy consumption and production, as the primary sources of greenhouse gases, contribute to climate change and global warming issues. The analysis and estimation of the factors that contribute to these harmful gases will be of great assistance in the development of policies to reduce carbon dioxide emissions. In addition to identifying the factors related to energy consumption and CO2 emissions, forecasting the variable of interest as accurately as possible has a key role in increasing the efficiency of energy strategies to be implemented. Unlike studies in the literature, this study not only forecasts the future value of energy consumption and CO2 emissions but also determines the relationship between the predictions and the influential variables by revealing the contribution of each variable to the prediction. For this purpose, the study proposes an interpretable forecasting framework based on values of the Shapley additive explanation (SHAP) to provide a simpler explanation of machine learning (ML) models in forecasting energy consumption and CO2 emissions. The results obtained show that the total electricity generation from different energy sources is found to be the most important variable interacting positively with both energy consumption and CO2 emissions. Also, the influence of the predictors on projections made before and after COVID-19 has changed dramatically. The proposed method may assist policymakers in making future energy investments and establishing energy laws more accurately and efficiently as it explains the drivers of the forecasts.",
         "DOI": "10.1016/j.apenergy.2022.120163",
@@ -282,7 +282,7 @@
     {
         "paper_title": "Machine-Learning-Empowered Passive Beamforming and Routing Design for Multi-RIS-Assisted Multihop Networks",
         "publication": "IEEE Internet of Things Journal",
-        "citied_by": "14",
+        "citied_by": "15",
         "cover_date": "2022-12-15",
         "Abstract": "This article proposes a novel machine-learning-based routing optimization for the multiple reconfigurable intelligent surfaces (M-RIS)-assisted multihop cooperative networks, in which a practical phase model for reconfigurable intelligent surface (RIS) with the amplitude variation based on the corresponding discrete phase shift is considered. We aim to maximize the end-to-end data rate in the proposed network by jointly optimizing the data transmission path, the passive beamforming design of RIS, and transmit power allocation. To tackle this complicated nonconvex problem, we divide it into two subtasks: 1) the passive beamforming design of the RIS and 2) joint routing and power allocation optimization. First, for the passive beamforming design of RIS, we develop a distributed learning algorithm that employs a cascade forward backpropagation network in each relay node to solve the RIS coefficients optimization problem by directly using the optimization target to train the cascade networks. This solution can avoid the curse of dimensionality of traditional reinforcement learning algorithms in the RIS optimization problem. Then, based on the result of RIS optimization, we introduce the proximal policy optimization (PPO) algorithm with the clipping method to find solutions for joint optimization of routing and power allocation via achieving the long-term benefit in the Markov decision process (MDP). Simulation results show that the proposed learning-based scheme can learn from the environment to improve its policy stability and efficiency in the iterative training process for optimizing routing and RIS and significantly outperform the benchmark schemes.",
         "DOI": "10.1109/JIOT.2022.3195543",
