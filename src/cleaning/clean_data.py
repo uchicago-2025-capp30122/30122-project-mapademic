@@ -39,7 +39,7 @@ AREA_DF = clean_columns(AREA_DF, ["state_name", "country_name"])
 state_name_counts = AREA_DF['state_name'].value_counts()
 DUPLICATE_STATES  = state_name_counts[state_name_counts > 1].index.tolist()
 DUPLICATE_STATES = set(filter(None, DUPLICATE_STATES))
-
+print("Duplicate:",DUPLICATE_STATES)
 # Here I load the code data frame and set as a global variable
 CODE_DF = pd.read_csv('data/raw_data/code_country.csv')
 CODE_DF = clean_columns(CODE_DF, ['state_code', 'state_name', 'country_name'])
