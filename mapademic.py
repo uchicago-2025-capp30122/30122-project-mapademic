@@ -17,32 +17,36 @@ if "discipline" not in st.session_state:
 if "global_keyword" not in st.session_state:
     st.session_state.global_keyword = ""
 
-# 2) 应用标题 & 说明
-st.title("Mapedemic-Demo")
-st.write("Explore the geographic distribution of academic papers from Science Direct based on the keywords you enter.")
+page = st.sidebar.selectbox("Navigate", ["Search", "Results"])
+
+if page == "Search":
+
+    # 2) 应用标题 & 说明
+    st.title("Mapedemic-Demo")
+    st.write("Explore the geographic distribution of academic papers from Science Direct based on the keywords you enter.")
 
 # 3) 用户登录方式
-login_method = st.radio(
-    "Please select the login method:",
-    ("Login with API Key", "Login with University of Chicago Account Password"),
-    key="login_method_radio" 
-)
+    login_method = st.radio(
+        "Please select the login method:",
+        ("Login with API Key", "Login with University of Chicago Account Password"),
+        key="login_method_radio" 
+    )
 
-api_key = None
-if login_method == "Login with API Key":
-    api_key = st.text_input("Please enter your API Key:", type="password", key="api_key_input")
-elif login_method == "Login with University of Chicago Account Password":
-    uc_username = st.text_input("Please enter your University of Chicago account number:", key="uc_username_input")
-    uc_password = st.text_input("Please enter your password:", type="password", key="uc_password_input")
-    if st.button("Get API Key", key="get_api_btn"):
-        login_url = "https://api.elsevier.com/authenticate"
-        payload = {"username": uc_username, "password": uc_password}
-        response = requests.post(login_url, json=payload)
-        if response.status_code == 200:
-            api_key = response.json().get("api_key")
-            st.success("API Key Application successful: " + api_key)
-        else:
-            st.error("Login failed, please check your account and password.")
+    api_key = None
+    if login_method == "Login with API Key":
+        api_key = st.text_input("Please enter your API Key:", type="password", key="api_key_input")
+    elif login_method == "Login with University of Chicago Account Password":
+        uc_username = st.text_input("Please enter your University of Chicago account number:", key="uc_username_input")
+        uc_password = st.text_input("Please enter your password:", type="password", key="uc_password_input")
+        if st.button("Get API Key", key="get_api_btn"):
+            login_url = "https://api.elsevier.com/authenticate"
+            payload = {"username": uc_username, "password": uc_password}
+            response = requests.post(login_url, json=payload)
+            if response.status_code == 200:
+                api_key = response.json().get("api_key")
+                st.success("API Key Application successful: " + api_key)
+            else:
+                st.error("Login failed, please check your account and password.")
 
 # 4) 全局输入 - 学科与关键词
 st.session_state.discipline = st.text_input(
@@ -94,9 +98,18 @@ if api_key:
                 st.session_state.search_completed = True
 
                 # 不使用 experimental_rerun，改用 st.stop() 停止执行，让页面立即呈现新状态
-                st.success("Search completed. Please scroll down or proceed to the next step.")
+                st.success("Search completed. Please switch to the Results page from the sidebar.")
                 st.stop()
+        
+        else:
+            st.info("Search has been completed. Please switch to the Results page from the sidebar.")
+    else:
+        st.warning("Please login or enter a valid API Key first.")
 
+elif page == "Results":
+    st.title("Mapedemic-Demo - Results")
+    if not st.session_state.search_completed:
+        st.warning("Please perform a search first in the Search page.")
     else:
         st.write("### The search and data processing is completed. Displaying visualisation results:")
 
@@ -114,7 +127,7 @@ if api_key:
         if st.button("🔄 Continue searching", key="continue_btn"):
             st.session_state.search_completed = False
             # 移除 rerun；只要用户再次点击“Search”，就会重新跑流程
-            st.stop()
+            st.experimental_rerun()
 
 
         #（Top Features, Word Cloud, Dynamic Word Frequency）
