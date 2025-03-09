@@ -229,6 +229,8 @@ def plot_word_cloud(word_freq, output_filename: Path):
 
 YEARS = [2020,2021,2022,2023,2024]
 KEY_WORDS = "machinelearningandpolicy"
+KEY_WORDS = st.session_state.global_keyword
+KEY_WORDS = KEY_WORDS.lower().replace(" ","")
 # KEY_WORDS = st.session_state.global_keyword
 
 if __name__ == "__main__":

@@ -2,6 +2,7 @@ import requests
 import json
 import time
 import os
+import streamlit as st
 
 # Remember to use the command 'export API_KEY = "your API Key"' at the every beginning
 try:
@@ -178,7 +179,8 @@ def save_results(results):
     print(f"Results saved to {FILENAME}")
 
 # Demo Example
-keywords = "machine learning and policy"
+# keywords = "machine learning and policy"
+keywords = st.session_state.global_keyword
 # year = 2023
 
 FILENAME_LST = generate_filenames(keywords, 2020, 2024)
