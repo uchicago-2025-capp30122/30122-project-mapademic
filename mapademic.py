@@ -87,8 +87,8 @@ if api_key:
                 subprocess.run(["python", "src/api-calling/keyword_search.py"])
                 subprocess.run(["python", "src/api-calling/affiliation_state_match.py"])
                 st.info("Calling the data cleaning script, please wait...")
-                subprocess.run(["python", "src/cleaning/clean_data.py"])
-                subprocess.run(["python", "src/cleaning/feature_selecting.py"])
+                subprocess.run(["python","-m", "src.cleaning.clean_data"])
+                subprocess.run(["python","-m", "src.cleaning.feature_selecting"])
 
                 st.session_state.search_completed = True
 
