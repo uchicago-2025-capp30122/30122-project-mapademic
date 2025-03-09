@@ -115,5 +115,58 @@ if api_key:
             # 移除 rerun；只要用户再次点击“Search”，就会重新跑流程
             st.stop()
 
+
+    #（Top Features, Word Cloud, Dynamic Word Frequency）
+    st.write("## Additional Visual Insights")
+
+    # 1) Top Features
+    st.subheader("Top Features")
+    selected_year_features = st.selectbox(
+        "Select a year for top features:",
+        years,
+        key="features_year_selector"
+    )
+    #data/output_data/features/{keyword}_{year}_features.png
+    features_path = f"data/output_data/features/{st.session_state.global_keyword}_{selected_year_features}_features.png"
+
+    if os.path.exists(features_path):
+        st.image(features_path, caption=f"Top features for {selected_year_features}")
+    else:
+        st.warning(f"No features image found for year {selected_year_features}.")
+
+    # 2) Word Cloud
+    st.subheader("Word Cloud")
+    selected_year_wordcloud = st.selectbox(
+        "Select a year for word cloud:",
+        years,
+        key="wordcloud_year_selector"
+    )
+    # data/output_data/word_cloud/{keyword}_{year}_word_cloud.png
+    wordcloud_path = f"data/output_data/word_cloud/{st.session_state.global_keyword}_{selected_year_wordcloud}_word_cloud.png"
+
+    if os.path.exists(wordcloud_path):
+        st.image(wordcloud_path, caption=f"Word cloud for {selected_year_wordcloud}")
+    else:
+        st.warning(f"No word cloud image found for year {selected_year_wordcloud}.")
+
+    # 3) Dynamic Word Frequency
+    st.subheader("Dynamic Word Frequency")
+    selected_year_dynamic = st.selectbox(
+        "Select a year for dynamic word frequency:",
+        years,
+        key="dynamic_year_selector"
+    )
+    # data/output_data/dynamic_wordfrq/{keyword}_{year}_word_freq.png
+    dynamic_freq_path = f"data/output_data/dynamic_wordfrq/{st.session_state.global_keyword}_{selected_year_dynamic}_word_freq.png"
+
+    if os.path.exists(dynamic_freq_path):
+        st.image(dynamic_freq_path, caption=f"Dynamic word frequency for {selected_year_dynamic}")
+    else:
+        st.warning(f"No dynamic word frequency image found for year {selected_year_dynamic}.")
+
+
+
+        
+
 else:
     st.warning("Please login or enter a valid API Key first.")
