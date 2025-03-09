@@ -209,7 +209,7 @@ def combined_heatmaps_vertical_with_left_timeline(keywords: str, years: list):
     fig.update_layout(
         plot_bgcolor='rgba(0,0,0,0)',
         height=1500,
-        width=900,
+        width=1000,
         title_text="Dummy Research Heatmaps + Left Timeline",
         title_x=0.5,
         margin={"r": 20, "t": 50, "l": 20, "b": 20},

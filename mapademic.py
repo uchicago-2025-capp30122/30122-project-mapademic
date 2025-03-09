@@ -5,6 +5,7 @@ import json
 import requests
 import pandas as pd
 
+years = [2020, 2021, 2022, 2023, 2024]
 # 导入 visualization 分支下的 heatmap.py 中的新可视化函数
 from src.visualization.heatmap import combined_heatmaps_vertical_with_left_timeline
 
@@ -100,7 +101,7 @@ if api_key:
         st.write("### The search and data processing is completed. Displaying visualisation results:")
 
         # 直接展示多年份(2020~2024)的组合热力图
-        years = [2020, 2021, 2022, 2023, 2024]
+        # years = [2020, 2021, 2022, 2023, 2024]
         try:
             fig = combined_heatmaps_vertical_with_left_timeline(
                 keywords="machinelearningandpolicy",
@@ -116,54 +117,61 @@ if api_key:
             st.stop()
 
 
-    #（Top Features, Word Cloud, Dynamic Word Frequency）
-    st.write("## Additional Visual Insights")
+        #（Top Features, Word Cloud, Dynamic Word Frequency）
+        st.write("## Additional Visual Insights")
 
-    # 1) Top Features
-    st.subheader("Top Features")
-    selected_year_features = st.selectbox(
-        "Select a year for top features:",
-        years,
-        key="features_year_selector"
-    )
-    #data/output_data/features/{keyword}_{year}_features.png
-    features_path = f"data/output_data/features/{st.session_state.global_keyword}_{selected_year_features}_features.png"
+        # 1) Top Features
+        st.subheader("Top Features")
+        print(years)
+        selected_year_features = st.selectbox(
+            "Select a year for top features:",
+            years,
+            key="features_year_selector"
+        )
+        #data/output_data/features/{keyword}_{year}_features.png
+        features_path = f"data/output_data/features/{st.session_state.global_keyword}_{selected_year_features}_features.png"
 
-    if os.path.exists(features_path):
-        st.image(features_path, caption=f"Top features for {selected_year_features}")
-    else:
-        st.warning(f"No features image found for year {selected_year_features}.")
+        if os.path.exists(features_path):
+            st.image(features_path, caption=f"Top features for {selected_year_features}")
+        else:
+            st.warning(f"No features image found for year {selected_year_features}.")
 
-    # 2) Word Cloud
-    st.subheader("Word Cloud")
-    selected_year_wordcloud = st.selectbox(
-        "Select a year for word cloud:",
-        years,
-        key="wordcloud_year_selector"
-    )
-    # data/output_data/word_cloud/{keyword}_{year}_word_cloud.png
-    wordcloud_path = f"data/output_data/word_cloud/{st.session_state.global_keyword}_{selected_year_wordcloud}_word_cloud.png"
+        # 2) Word Cloud
+        st.subheader("Word Cloud")
+        selected_year_wordcloud = st.selectbox(
+            "Select a year for word cloud:",
+            years,
+            key="wordcloud_year_selector"
+        )
+        # data/output_data/word_cloud/{keyword}_{year}_word_cloud.png
+        wordcloud_path = f"data/output_data/wordcloud/{st.session_state.global_keyword}_{selected_year_wordcloud}_word_cloud.png"
 
-    if os.path.exists(wordcloud_path):
-        st.image(wordcloud_path, caption=f"Word cloud for {selected_year_wordcloud}")
-    else:
-        st.warning(f"No word cloud image found for year {selected_year_wordcloud}.")
+        if os.path.exists(wordcloud_path):
+            st.image(wordcloud_path, caption=f"Word cloud for {selected_year_wordcloud}")
+        else:
+            st.warning(f"No word cloud image found for year {selected_year_wordcloud}.")
 
-    # 3) Dynamic Word Frequency
-    st.subheader("Dynamic Word Frequency")
-    selected_year_dynamic = st.selectbox(
-        "Select a year for dynamic word frequency:",
-        years,
-        key="dynamic_year_selector"
-    )
-    # data/output_data/dynamic_wordfrq/{keyword}_{year}_word_freq.png
-    dynamic_freq_path = f"data/output_data/dynamic_wordfrq/{st.session_state.global_keyword}_{selected_year_dynamic}_word_freq.png"
+        # 3) Dynamic Word Frequency
+        # st.subheader("Dynamic Word Frequency")
+        st.write("## Dynamic Word Frequency")
+        gif_path = f"data/output_data/dynamic_wordfrq/{st.session_state.global_keyword}_dynamic_wordfreq.gif"
 
-    if os.path.exists(dynamic_freq_path):
-        st.image(dynamic_freq_path, caption=f"Dynamic word frequency for {selected_year_dynamic}")
-    else:
-        st.warning(f"No dynamic word frequency image found for year {selected_year_dynamic}.")
+        if os.path.exists(gif_path):
+            st.image(gif_path)
+        # selected_year_dynamic = st.selectbox(
+        #     "Select a year for dynamic word frequency:",
+        #     years,
+        #     key="dynamic_year_selector"
+        # )
+        # data/output_data/dynamic_wordfrq/{keyword}_{year}_word_freq.png
+        # dynamic_freq_path = f"data/output_data/dynamic_wordfrq/{st.session_state.global_keyword}_{selected_year_dynamic}_dynamic_wordfreq.gif"
 
+        # if os.path.exists(dynamic_freq_path):
+        #     st.image(dynamic_freq_path, caption=f"Dynamic word frequency for {selected_year_dynamic}")
+        # else:
+        #     st.warning(f"No dynamic word frequency image found for year {selected_year_dynamic}.")
+        else:
+            st.warning("Noooooo")
 
 
         
