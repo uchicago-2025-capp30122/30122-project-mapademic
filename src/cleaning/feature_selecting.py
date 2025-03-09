@@ -8,6 +8,8 @@ from pathlib import Path
 from sklearn.feature_extraction.text import CountVectorizer
 from .utils import remove,ignore
 import matplotlib.pyplot as plt
+import streamlit as st
+import os
 
 def preprocess_title(title):
     title = title.lower()
@@ -61,7 +63,9 @@ def get_feature(data_filename, output_filename: Path):
     plt.savefig(output_filename, format='png', dpi=300)
 
 YEARS = [2020,2021,2022,2023,2024]
-KEY_WORDS = "machinelearningandpolicy"
+KEYWORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none")
+KEY_WORDS = KEYWORDS
+KEY_WORDS = KEY_WORDS.lower().replace(" ","")
 
 if __name__ == "__main__":
     for year in YEARS:

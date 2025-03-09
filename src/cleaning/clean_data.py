@@ -8,7 +8,9 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from .visualize_words_yr import generate_word_frq_yearlygif
 from unidecode import unidecode
-import streamlit as st
+
+import os
+KEYWORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none")
 
 
 def clean_columns(df, columns):
@@ -39,7 +41,7 @@ AREA_DF = clean_columns(AREA_DF, ["state_name", "country_name"])
 state_name_counts = AREA_DF['state_name'].value_counts()
 DUPLICATE_STATES  = state_name_counts[state_name_counts > 1].index.tolist()
 DUPLICATE_STATES = set(filter(None, DUPLICATE_STATES))
-print("Duplicate:",DUPLICATE_STATES)
+# print("Duplicate:",DUPLICATE_STATES)
 # Here I load the code data frame and set as a global variable
 CODE_DF = pd.read_csv('data/raw_data/code_country.csv')
 CODE_DF = clean_columns(CODE_DF, ['state_code', 'state_name', 'country_name'])
@@ -228,10 +230,8 @@ def plot_word_cloud(word_freq, output_filename: Path):
     plt.savefig(output_filename, format='png', dpi=300)
 
 YEARS = [2020,2021,2022,2023,2024]
-KEY_WORDS = "machinelearningandpolicy"
-KEY_WORDS = st.session_state.global_keyword
+KEY_WORDS = KEYWORDS
 KEY_WORDS = KEY_WORDS.lower().replace(" ","")
-# KEY_WORDS = st.session_state.global_keyword
 
 if __name__ == "__main__":
     yearly_wordfrq_dict = {}

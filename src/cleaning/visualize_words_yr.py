@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
 import imageio
 import os
-KEY_WORDS = "machinelearningandpolicy"
+
+KEYWORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none")
+KEY_WORDS = KEYWORDS.lower().replace(" ","")
 
 def generate_word_frq_yearlygif(word_freq_year):
     

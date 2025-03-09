@@ -1,8 +1,10 @@
 import json
 import requests
 import os
-# from keyword_search import FILENAME_LST
+import streamlit as st
 
+# from keyword_search import FILENAME_LST
+KEYWORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none")
 def generate_filenames(keyword, start_year, end_year):
     year_filenames = []
     keyword_lower = keyword.lower().replace(" ","")
@@ -11,7 +13,9 @@ def generate_filenames(keyword, start_year, end_year):
         year_filenames.append((year, filename))
     return year_filenames
 
-keywords = "machine learning and policy"
+# keywords = "machine learning and policy"
+
+keywords = KEYWORDS
 FILENAME_LST = generate_filenames(keywords, 2020, 2024)
 
 SEARCH_RESULT = set()
