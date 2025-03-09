@@ -1,4 +1,3 @@
-import math
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
@@ -27,24 +26,23 @@ def main_heatmap(keywords, year, geojson_data=None):
     fig = px.choropleth_map(
         df,
         geojson=geojson_data,
-        locations= 'state_name',               # Column with region names
-        featureidkey='properties.name',   # Key in GeoJSON for matching regions
+        locations='state_name',                     # Column with region names
+        featureidkey='properties.name',             # Key in GeoJSON for matching regions
         color='crdi_index',                         # Research density value
         color_continuous_scale=[
             "#E9F8F6", "#C2DEDB", "#9CC4C1", "#75AAA6",
             "#4D908A", "#277670", "#005C55"
-        ],  # Custom color scale
-        map_style="carto-positron",           # Map style
-        center={"lat": 20, "lon": 160},       # Map center coordinates
-        zoom=0.8,                             # Zoom level
-        opacity=0.7,                          # Map layer opacity
-        labels={'CRDI': 'Research Density'},  # Label for the color bar
-        # animation_frame='year',               # Animation frame (not used in static figure)
+        ],                                          # Custom color scale
+        map_style="carto-positron",                 # Map style
+        center={"lat": 20, "lon": 160},             # Map center coordinates
+        zoom=0.8,                                   # Zoom level
+        opacity=0.7,                                # Map layer opacity
+        labels={'crdi_index': 'Research Density'},  # Label for the color bar
     )
     
     # Update layout: add a centered title
     fig.update_layout(
-        title_text=f"{year} World Research Heat Distribution",
+        title_text=f"{year} World Research Distribution",
         title_x=0.5,
         margin={"r": 0, "t": 50, "l": 0, "b": 0}
     )
@@ -61,35 +59,33 @@ def main_heatmap(keywords, year, geojson_data=None):
     return fig
 
 
-def create_subplot_figure(n: int, num_cols: int = 2, timeline_height: float = 0.15):
+def create_map_and_left_timeline_figure(n: int):
     """
-    Create the overall figure with map subplots and a timeline subplot.
-
+    Creates a subplot figure with two columns:
+      - The left column is reserved for a vertical timeline that spans all n rows.
+      - The right column contains the maps, with one map per row.
+      
     Parameters:
-        n (int): Total number of years.
-        num_cols (int): Number of maps per row (default is 2).
-        timeline_height (float): Proportion of the figure's height allocated for the timeline.
+        n (int): Number of rows (i.e., number of years/maps to display).
 
     Returns:
-        tuple: (fig, r_map, map_row_height)
-            fig: The subplot figure object.
-            r_map: Number of map rows.
-            map_row_height: Height proportion for each map row.
+        plotly.graph_objects.Figure: A subplot figure configured with n rows and 2 columns,
+        where the left column is for the timeline and the right column for the maps.
     """
-    r_map = math.ceil(n / num_cols)
-    map_row_height = (1 - timeline_height) / r_map
-
-    # Build subplot specs: first r_map rows for maps, last row for the timeline
-    specs = [[{'type': 'map'} for _ in range(num_cols)] for _ in range(r_map)]
-    specs.append([{'type': 'xy', 'colspan': num_cols}, None])
-
+    # In the first row, the left subplot is set to span all n rows using "rowspan".
+    specs = [[{'type': 'xy', 'rowspan': n}, {'type': 'map'}]]
+    # For the remaining n-1 rows, leave the left cell empty and continue to create map subplots on the right.
+    for _ in range(n - 1):
+        specs.append([None, {'type': 'map'}])
     fig = make_subplots(
-        rows=r_map + 1, cols=num_cols,
-        row_heights=[map_row_height] * r_map + [timeline_height],
+        rows=n, cols=2,
         specs=specs,
+        row_heights=[1/n] * n,
+        column_widths=[0.17, 0.65],
+        horizontal_spacing=0.02,
         vertical_spacing=0.02
     )
-    return fig, r_map, map_row_height
+    return fig
 
 
 def generate_heatmaps(keywords: str, years: list, geojson_data):
@@ -116,130 +112,113 @@ def generate_heatmaps(keywords: str, years: list, geojson_data):
     return heatmap_results
 
 
-def add_heatmaps_to_figure(fig, heatmap_results: dict, years: list, num_cols: int, map_row_height: float, timeline_height: float, r_map: int):
+def add_maps_and_left_timeline(fig, heatmap_results: dict, years: list):
     """
-    Add each year's heatmap to the combined figure and calculate positions for connecting lines.
-
+    Adds the timeline and maps to the given subplot figure.
+    
+    This function performs the following:
+      1. Adds a vertical timeline (with year labels) in the left column (cell (1,1)) that spans all rows.
+      2. Adds the corresponding map for each year into the right column (cell (row, 2)), in ascending order of years.
+    
     Parameters:
-        fig: The subplot figure object.
-        heatmap_results (dict): Mapping of year to heatmap figure.
-        years (list): List of years.
-        num_cols (int): Number of maps per row.
-        map_row_height (float): Height proportion for each map row.
-        timeline_height (float): Proportion of the figure's height allocated for the timeline.
-        r_map (int): Number of map rows.
-
+        fig (plotly.graph_objects.Figure): The subplot figure to which traces are added.
+        heatmap_results (dict): A dictionary mapping each year to its corresponding heatmap figure.
+        years (list): A list of years.
+    
     Returns:
-        list: A list of dictionaries containing each map's center position and its corresponding timeline node position.
+        None
     """
-    arrow_info = []
-    n = len(years)
-    for idx, year in enumerate(years):
-        row_idx = idx // num_cols + 1         # Map row index (1-indexed)
-        col_idx = idx % num_cols + 1          # Column index
-
-        single_fig = heatmap_results[year]
-        # Add all traces from the single-year figure to the appropriate subplot
-        for trace in single_fig.data:
-            fig.add_trace(trace, row=row_idx, col=col_idx)
-
-        # Update the current subplot's mapbox settings
-        map_key = "map" if (row_idx - 1) * num_cols + col_idx == 1 else f"map{(row_idx - 1) * num_cols + col_idx}"
-        fig.layout[map_key].update({
-            "center": single_fig.layout['map']['center'],
-            "zoom": single_fig.layout['map']['zoom'],
-            "style": single_fig.layout['map']['style']
-        })
-
-        # Calculate the center position of the current map cell (for connecting lines)
-        cell_x0 = (col_idx - 1) / num_cols
-        cell_x1 = col_idx / num_cols
-        map_center_x = (cell_x0 + cell_x1) / 2
-        map_bottom_y = 1 - row_idx * map_row_height
-
-        # Calculate the timeline node position (evenly distributed along the width)
-        timeline_node_x = (idx + 1) / (n + 1)
-
-        arrow_info.append({
-            "map_x": map_center_x,
-            "map_y": map_bottom_y,
-            "timeline_x": timeline_node_x,
-            "year": year
-        })
-    return arrow_info
-
-
-def add_timeline_and_arrows(fig, arrow_info: list, timeline_height: float, r_map: int):
-    """
-    Add the timeline subplot and dotted lines connecting each map to its corresponding timeline node.
-
-    Parameters:
-        fig: The subplot figure object.
-        arrow_info (list): List of dictionaries containing map center and timeline node positions.
-        timeline_height (float): Proportion of the figure's height allocated for the timeline.
-        r_map (int): Number of map rows.
-    """
-    timeline_node_y = timeline_height  # Y-coordinate in paper reference
-    timeline_xs = [info["timeline_x"] for info in arrow_info]
-    timeline_ys = [timeline_node_y] * len(arrow_info)
-
-    # Add the timeline trace
+    # Assume that 'years' is already in ascending order (e.g., [2000, 2001, 2002, 2003, 2004])
+    sorted_years = sorted(years)
+    n = len(sorted_years)
+    
+    # Create the timeline trace for the left column (cell (1,1)) that spans all rows.
+    # Use the actual year values as y-coordinates.
+    time_x = [0] * n
+    time_y = sorted_years  # e.g., [2000, 2001, ..., 2004]
     timeline_trace = go.Scatter(
-        x=timeline_xs,
-        y=timeline_ys,
-        mode='markers+lines+text',
-        text=[str(info["year"]) for info in arrow_info],
-        textposition='top center',
+        x=time_x,
+        y=time_y,
+        mode='lines+markers+text',
+        text=[str(y) for y in time_y],
+        textposition='middle right',
+        line=dict(
+            width=6,
+            color='#c78247'
+        ),
         marker=dict(size=10),
-        line=dict(width=2)
+        showlegend=False
     )
-    fig.add_trace(timeline_trace, row=r_map + 1, col=1)
+    fig.add_trace(timeline_trace, row=1, col=1)
+    
+    # Update the left subplot's x-axis and y-axis: hide x-axis, and configure y-axis.
+    fig.update_xaxes(visible=False, row=1, col=1)
+    # Manually set the domain of the left subplot to fill the entire left column.
+    fig.layout.xaxis.domain = [0.0, 0.2]
+    fig.layout.yaxis.domain = [0, 1]
+    # Configure the y-axis ticks: hide tick labels (if desired) or set them to display actual years.
+    fig.update_yaxes(
+        showticklabels=False,
+        showgrid=False,
+        zeroline=False,
+        showline=False,
+        tickvals=sorted_years,
+        ticktext=[str(y) for y in sorted_years],
+        autorange="reversed",  # Reverse to have the smallest year at the top if needed
+        row=1, col=1
+    )
+    
+    # Add maps to the right column (col=2) in each row.
+    for idx, year in enumerate(sorted_years):
+        row_idx = idx + 1
+        single_fig = heatmap_results[year]
+        for trace in single_fig.data:
+            # Bind the trace to a common coloraxis.
+            trace.update(coloraxis='coloraxis')
+            fig.add_trace(trace, row=row_idx, col=2)
+        map_key = "map" if row_idx == 1 else f"map{row_idx}"
+        if map_key in fig.layout:
+            fig.layout[map_key].update({
+                "center": {"lat": 20, "lon": 160},
+                "zoom": 0.1,
+                "style": single_fig.layout['map']['style']
+            })
 
-    # Add dotted lines connecting each map to the corresponding timeline node
-    for info in arrow_info:
-        fig.add_shape(
-            type="line",
-            xref="paper", yref="paper",
-            x0=info["map_x"], y0=info["map_y"],
-            x1=info["timeline_x"], y1=timeline_node_y,
-            line=dict(color="black", width=1, dash="dot")
-        )
 
-
-def combined_heatmaps_with_timeline_and_arrows(keywords: str, years: list):
+def combined_heatmaps_vertical_with_left_timeline(keywords: str, years: list):
     """
-    Combine heatmaps for different years arranged in a two-column grid and add a timeline with connecting dotted lines.
-
+    Combines multiple year-based heatmaps (arranged vertically) with a left-side timeline.
+    
+    The left column displays a vertical timeline with year labels (without axis tick numbers or gridlines),
+    while the right column displays the corresponding heatmaps for each year.
+    
     Parameters:
-        keywords (str): Research keywords.
-        years (list): List of years.
-
+        keywords (str): The research keywords used to filter the data.
+        years (list): A list of integer years to be visualized.
+    
     Returns:
-        plotly.graph_objects.Figure: The complete combined figure.
+        plotly.graph_objects.Figure: The final Plotly figure combining the left timeline and vertical heatmaps.
     """
     n = len(years)
-    num_cols = 2
-    timeline_height = 0.15
-
-    # Create subplot layout and get layout parameters
-    fig, r_map, map_row_height = create_subplot_figure(n, num_cols, timeline_height)
-
-    geojson_data = load_geojson()  # Assume load_geojson is defined elsewhere
-
-    # Generate heatmaps in parallel for each year
+    fig = create_map_and_left_timeline_figure(n)
+    geojson_data = load_geojson()
     heatmap_results = generate_heatmaps(keywords, years, geojson_data)
-
-    # Add heatmaps to the subplots and calculate arrow positions for connecting lines
-    arrow_info = add_heatmaps_to_figure(fig, heatmap_results, years, num_cols, map_row_height, timeline_height, r_map)
-
-    # Add timeline and connecting dotted lines
-    add_timeline_and_arrows(fig, arrow_info, timeline_height, r_map)
-
-    # Update overall layout with a title and margins
+    add_maps_and_left_timeline(fig, heatmap_results, years)
+    
+    # Apply unified coloraxis settings and overall layout configuration.
     fig.update_layout(
-        title_text="World Research Heat Distribution Timeline",
+        plot_bgcolor='rgba(0,0,0,0)',
+        height=1500,
+        width=1000,
+        title_text="Dummy Research Heatmaps + Left Timeline",
         title_x=0.5,
-        margin={"r": 20, "t": 50, "l": 20, "b": 20}
+        margin={"r": 20, "t": 50, "l": 20, "b": 20},
+        coloraxis=dict(
+            colorscale=[
+                "#D1D4FC", "#B0B5FA", "#8E96F5", "#6E7CEF",
+                "#5A65C9", "#464FA0", "#333C80"
+            ],
+            colorbar=dict(title='Research Density')
+        )
     )
-
     return fig
