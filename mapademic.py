@@ -101,21 +101,28 @@ if api_key:
 
         # 1) Top Features - 遍历所有年份显示
         st.subheader("Top Features")
-        for yr in years:
-            features_path = f"data/output_data/features/{key_word}_{yr}_features.png"
-            if os.path.exists(features_path):
-                st.image(features_path, caption=f"Top features for {yr}")
-            else:
-                st.warning(f"No features image found for year {yr}.")
+        # 根据年份动态生成多个标签页
+        tabs1 = st.tabs([f"{yr}" for yr in years])
+
+        # 将每个标签与对应的年份绑定
+        for i, yr in enumerate(years):
+            with tabs1[i]:
+                features_path = f"data/output_data/features/{key_word}_{yr}_features.png"
+                if os.path.exists(features_path):
+                    st.image(features_path, caption=f"Top features for {yr}")
+                else:
+                    st.warning(f"No features image found for year {yr}.")
 
         # 2) Word Cloud - 遍历所有年份显示
         st.subheader("Word Cloud")
-        for yr in years:
-            wordcloud_path = f"data/output_data/wordcloud/{key_word}_{yr}_word_cloud.png"
-            if os.path.exists(wordcloud_path):
-                st.image(wordcloud_path, caption=f"Word cloud for {yr}")
-            else:
-                st.warning(f"No word cloud image found for year {yr}.")
+        tabs2 = st.tabs([f"{yr}" for yr in years])
+        for i, yr in enumerate(years):
+            with tabs2[i]:
+                wordcloud_path = f"data/output_data/wordcloud/{key_word}_{yr}_word_cloud.png"
+                if os.path.exists(wordcloud_path):
+                    st.image(wordcloud_path, caption=f"Word cloud for {yr}")
+                else:
+                    st.warning(f"No word cloud image found for year {yr}.")
 
         # 3) Dynamic Word Frequency
         st.write("## Dynamic Word Frequency")
