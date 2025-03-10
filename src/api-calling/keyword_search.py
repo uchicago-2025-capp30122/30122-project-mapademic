@@ -2,7 +2,8 @@ import requests
 import json
 import time
 import os
-
+import streamlit as st
+# from mapademic import KEYWORDS
 # Remember to use the command 'export API_KEY = "your API Key"' at the every beginning
 try:
     API_KEY = os.environ["API_KEY"]
@@ -11,6 +12,7 @@ except KeyError:
         "Make sure that you have set the API Key environment variable as "
         "described in the README."
     )
+KEYWORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none")
 
 
 """Part I: Get the raw data from API"""
@@ -56,7 +58,7 @@ def fetch_results_with_cursor(keywords, year):
     results = []
     cursor = "*"  # First request starts with cursor="*"
     retrieved_count = 0
-    MAX_RESULTS = 2000 # Using for demo
+    MAX_RESULTS = 100 # Using for demo
     # MAX_RESULTS = total_available # Number of results to fetch
 
     while retrieved_count < min(MAX_RESULTS, total_available):
@@ -64,6 +66,7 @@ def fetch_results_with_cursor(keywords, year):
             "query": f"TITLE-ABS-KEY({keywords}) AND PUBYEAR = {year}",
             "httpAccept": "application/json",
             "count": PAGE_SIZE,  # Max results per request
+            "sort": "-citedby-count",
             "cursor": cursor,  # Cursor-based pagination
             "view": "COMPLETE" # The "COMPLETE" option can only be used through school network, comfired by scopus support team
                                 # Again! Important, under "COMPLETE", PAGE_SIZE can maximum be set as 25
@@ -151,7 +154,9 @@ def save_results(results):
     print(f"Results saved to {FILENAME}")
 
 # Demo Example
-KEYWORDS = "machine learning and policy"
+# KEYWORDS = "machine learning and policy"
+# KEYWORDS = st.session_state.get("global_keyword"," ")
+# print("Key:",KEYWORDS)
 # year = 2023
 
 FILENAME_LST = generate_filenames(KEYWORDS, 2020, 2024)

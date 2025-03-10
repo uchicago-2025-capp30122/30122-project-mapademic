@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
 import imageio
 import os
-KEY_WORDS = "machinelearningandpolicy"
+
+KEYWORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none")
+KEY_WORDS = KEYWORDS.lower().replace(" ","")
 
 def generate_word_frq_yearlygif(word_freq_year):
     
@@ -49,4 +51,4 @@ def generate_word_frq_yearlygif(word_freq_year):
     images = []
     for filename in filenames:
         images.append(imageio.imread(filename))
-    imageio.mimsave(f'data/output_data/dynamic_wordfrq/{KEY_WORDS}_dynamic_wordfreq.gif', images, duration=1000)
+    imageio.mimsave(f'data/output_data/dynamic_wordfrq/{KEY_WORDS}_dynamic_wordfreq.gif', images, duration=1000, loop = 0)
