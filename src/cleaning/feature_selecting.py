@@ -8,8 +8,10 @@ from pathlib import Path
 from sklearn.feature_extraction.text import CountVectorizer
 from .utils import remove,ignore
 import matplotlib.pyplot as plt
-import streamlit as st
 import os
+
+KEY_WORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none").lower().replace(" ","")
+YEARS = [2020,2021,2022,2023,2024]
 
 def preprocess_title(title):
     title = title.lower()
@@ -19,6 +21,12 @@ def preprocess_title(title):
     return ' '.join(words)
 
 def get_feature(data_filename, output_filename: Path):
+    """
+    This function inputs a json file consists of the information for each paper. It will build a Lasso
+    Model to select the top features with high absolute value for the num_of_citations.
+    
+    It will plot the coefficients for the top 30 features.
+    """
     with open(data_filename, 'r', encoding='utf-8') as f:
         data = json.load(f)
     paper_df = pd.DataFrame(data)
@@ -61,11 +69,6 @@ def get_feature(data_filename, output_filename: Path):
     plt.ylabel("Variables")
     plt.title("Top 30 Lasso Regression Coefficients")
     plt.savefig(output_filename, format='png', dpi=300)
-
-YEARS = [2020,2021,2022,2023,2024]
-KEYWORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none")
-KEY_WORDS = KEYWORDS
-KEY_WORDS = KEY_WORDS.lower().replace(" ","")
 
 if __name__ == "__main__":
     for year in YEARS:

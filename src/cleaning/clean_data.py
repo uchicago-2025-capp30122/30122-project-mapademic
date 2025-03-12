@@ -10,7 +10,8 @@ from .visualize_words_yr import generate_word_frq_yearlygif
 from unidecode import unidecode
 
 import os
-KEYWORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none")
+KEY_WORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none").lower().replace(" ","")
+YEARS = [2020,2021,2022,2023,2024]
 
 
 def clean_columns(df, columns):
@@ -41,8 +42,6 @@ AREA_DF = clean_columns(AREA_DF, ["state_name", "country_name"])
 state_name_counts = AREA_DF['state_name'].value_counts()
 DUPLICATE_STATES  = state_name_counts[state_name_counts > 1].index.tolist()
 DUPLICATE_STATES = set(filter(None, DUPLICATE_STATES))
-# print("Duplicate:",DUPLICATE_STATES)
-# Here I load the code data frame and set as a global variable
 CODE_DF = pd.read_csv('data/raw_data/code_country.csv')
 CODE_DF = clean_columns(CODE_DF, ['state_code', 'state_name', 'country_name'])
 
@@ -86,6 +85,13 @@ def match_na_state(state_na):
     return matched_df[selected_columns]
 
 def match_nocode_state(unmatched_df):
+    """
+    This function inputs a dataframe where some samples' "affiliation_state" is not a code like "CA", "IL"
+    Instead, it just gives us the state/province full name
+    
+    Returns:
+        New dataframe after match.
+    """
     unmatched_df = unmatched_df.merge(
             AREA_DF,
             left_on= 'affiliation_state',
@@ -97,7 +103,6 @@ def match_nocode_state(unmatched_df):
     unmatched_df = unmatched_df[selected_columns]
     return unmatched_df
     
-    
 def building_state_df(data,output_filename):
     """
     This function inputs a json file consists of the information for each paper
@@ -105,7 +110,7 @@ def building_state_df(data,output_filename):
     Returns:
         The return is a csv file map the affiliation state to its area.
         We also do some calculations to construct an index of the academic power within the state
-        Each piece of data is a state with its 
+        Each piece of data is a state with its area square kilometers included.
     """
     output_filename = Path(output_filename)
     paper_df = pd.DataFrame(data)
@@ -160,10 +165,13 @@ def building_state_df(data,output_filename):
     final_df.to_csv(output_filename, index=False, sep=';', encoding='utf-8')
     return final_df
 
-
-
-
 def calculate_crdi(final_df, output_filename, year):
+    """
+    This function inputs a dataframe of the cleaned/matched paper data.
+    
+    Returns:
+        We will use total_paper_num, total_cited_num within the state to conduct a research index crdi for each state.
+    """
     final_df = final_df.dropna(subset=["state_name","affiliation_country","area_km2",])
     final_df = final_df.assign(
         year=year,
@@ -195,19 +203,28 @@ def calculate_crdi(final_df, output_filename, year):
     return final_df
     
 def get_top_citations(final_df, output_filename):
+    """
+    This function inputs a dataframe and outputs a csv file with all the institutions with affiliation numbers
+    from high to low
+    """
     final_df["citied_by"] = pd.to_numeric(final_df["citied_by"], errors="coerce")
     grouped_df = final_df.groupby(['affiliation_name', 'state_name','affiliation_country'], as_index=False)['citied_by'].sum()
     grouped_df = grouped_df.sort_values(by='citied_by', ascending=False)
     grouped_df.to_csv( output_filename, index=False,  sep=';', encoding='utf-8')
 
 def building_wordfrq_dict(data, output_filename: Path):
-    output_filename = Path(output_filename)
+    """
+    This function deals with the text data of the papers. 
+    The input is the json data we get from api calling.
     
+    Returns:
+        The return is a csv file consists of the word frequency for each year.
+    """
+    output_filename = Path(output_filename)
     paper_df = pd.DataFrame(data)
     abstract_list = paper_df["Abstract"].tolist()
     full_text = ignore(remove(" ".join(abstract_list).lower().split()))
     processed_list = process_word_list(full_text)
-    
     filtered_list = []
     for word in processed_list:
         is_keyword_substring = False
@@ -228,10 +245,6 @@ def plot_word_cloud(word_freq, output_filename: Path):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis('off')
     plt.savefig(output_filename, format='png', dpi=300)
-
-YEARS = [2020,2021,2022,2023,2024]
-KEY_WORDS = KEYWORDS
-KEY_WORDS = KEY_WORDS.lower().replace(" ","")
 
 if __name__ == "__main__":
     yearly_wordfrq_dict = {}
