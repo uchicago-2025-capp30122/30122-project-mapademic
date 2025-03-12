@@ -222,7 +222,7 @@ def combined_heatmaps_vertical_with_left_timeline(keywords: str, years: list):
         plot_bgcolor='rgba(0,0,0,0)',
         height=1500,
         width=1000,
-        title_text=f"{years[0]}-{years[4]} World Research Distribution",
+        title_text=f"{years[0]}-{years[-1]} World Research Distribution",
         title_x=0.15,
         title_font=dict(size=22, family="Arial", color="black"), 
         margin={"r": 20, "t": 50, "l": 20, "b": 20},
