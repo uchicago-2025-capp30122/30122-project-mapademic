@@ -1,7 +1,3 @@
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 ![GitHub issues](https://img.shields.io/github/issues/uchicago-2025-capp30122/30122-project-mapademic?style=flat&color=gray)
 ![GitHub forks](https://img.shields.io/github/forks/uchicago-2025-capp30122/30122-project-mapademic?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/uchicago-2025-capp30122/30122-project-mapademic?style=social)
