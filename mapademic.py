@@ -8,6 +8,78 @@ import pandas as pd
 years = [2020, 2021, 2022, 2023, 2024]
 # 导入 visualization 分支下的 heatmap.py 中的新可视化函数
 from src.visualization.heatmap import combined_heatmaps_vertical_with_left_timeline
+LOGO = "./doc/pics/mapademic-logo.png"
+LOGO_SMALL = "./doc/pics/mapademic-logo-small.png"
+st.set_page_config(page_title="Mapademic",
+                   layout="centered",
+                   page_icon=LOGO_SMALL,
+                   initial_sidebar_state="expanded",
+                   menu_items={
+                       "Get Help": "mailto:peiyuch@uchicago.edu",
+                       "About": "**Unfold the Map of Discovery**"
+                    }
+)
+
+st.logo(
+    LOGO,
+    size="large"
+)
+st.sidebar.markdown("""
+                    *Unfold the Map of Discovery*
+                    """)
+
+# 1. About Mapademic
+st.sidebar.header("About")
+st.sidebar.markdown("""
+**Purpose**: Mapademic is an interactive platform that visualizes the global distribution and trends of academic research.  
+**Approach**: We combine bibliometric data (via Scopus API) with geospatial analysis (via Natural Earth) to highlight research hotspots.  
+""")
+
+# 2. How to Use
+st.sidebar.header("How to Use")
+st.sidebar.markdown("""
+- **Login**: Select your preferred login method (API key or University account).  
+- **Enter Keywords**: Provide research keywords (e.g., “AI policy”).  
+- **Select Year**: Pick the publication year or range you want to explore.  
+- **View Results**: An interactive heatmap and other visualizations (word clouds, top features, etc.) will appear.
+""")
+
+# 3. Data & Method
+st.sidebar.header("Data & Method")
+st.sidebar.markdown("""
+- **Bibliometric Data**: Retrieved from the Scopus API.  
+- **Geospatial Data**: Based on Natural Earth's administrative boundaries.  
+- **Research Density**: We use a custom CRDI (Comprehensive Research Density Index) to measure how concentrated research is in each region.  
+""")
+
+# 4. Team
+st.sidebar.header("Team")
+st.sidebar.markdown("""
+- **[Allen Wu](https://github.com/songting-byte)**: API integrations, database building.  
+- **[Peiyu Chen](https://github.com/Jalkey-Chen)**: Geospatial processing, heatmap visualization.  
+- **[Shiyao Wang](https://github.com/Shiyao-611)**: Data cleaning, Lasso model, CRDI calculation.  
+- **[Yue Pan](https://github.com/pppanyue17)**: Front-end design, user inputs, word cloud display.
+""")
+
+# 5. Cautions
+st.sidebar.header("Cautions")
+st.sidebar.markdown("""
+- **API Key**: Keep an eye on the call limit; the project defaults to 2,000 requests per year.  
+- **Geospatial Matching**: If you notice strange mismatches on the map, please report them on GitHub.
+""")
+
+# 6. Learn More
+st.sidebar.header("Learn More")
+st.sidebar.markdown("""
+- **GitHub Repo**: https://github.com/uchicago-2025-capp30122/30122-project-mapademic  
+- **Documentation**: Check out our [latest report](https://drive.google.com/file/d/1pSZaeGiK8_Asq8SryrE6Y0orglsRUPax/view?usp=sharing) for details on data sources, methods, and future improvements.  
+- **Contact**: If you have any questions or find issues, please open a GitHub Issue or reach out to us. Or email peiyuch@uchicago.edu
+""")
+
+st.sidebar.markdown(
+    '<p style="color: grey; font-size: 12px;">Version: 0.3 -- 12/3/2025 </p>',
+    unsafe_allow_html=True
+)
 
 # 1) 初始化 Session State
 if "search_completed" not in st.session_state:
@@ -16,8 +88,8 @@ if "global_keyword" not in st.session_state:
     st.session_state.global_keyword = ""
 
 # 2) 应用标题 & 说明
-st.title("Mapedemic")
-st.write("Explore the geographic distribution of academic papers from Science Direct based on the keywords you enter.")
+st.title("Mapademic")
+st.write("Explore Global Academic Mobility and Knowledge Evolution")
 
 # 3) 用户登录方式
 login_method = st.radio(
