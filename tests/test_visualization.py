@@ -2,7 +2,6 @@ import math
 import pytest
 import pandas as pd
 import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 
 # Import functions from the new visualization code
 from src.visualization.heatmap import (
@@ -21,11 +20,12 @@ def dummy_load_csv(keywords, year):
     """Return a simple DataFrame for testing with field names consistent with the new code."""
     data = {
         'country': ['TestState'],
-        'state_name': ['TestCountry'],
+        'state_name': ['testcountry'],
         'crdi_index': [1.0],
         'year': [year]
     }
     return pd.DataFrame(data)
+
 
 def dummy_load_geojson():
     """Return a minimal GeoJSON object for testing with the 'name' property key."""
@@ -33,13 +33,15 @@ def dummy_load_geojson():
         "type": "FeatureCollection",
         "features": [{
             "type": "Feature",
-            "properties": {"name": "TestCountry"},
+            "properties": {"name": "TestCountry", 
+                           "clean_name": "testcountry"},
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [[[0, 0], [0, 1], [1, 1], [1, 0], [0, 0]]]
             }
         }]
     }
+
 
 def dummy_main_heatmap(keywords, year, geojson_data):
     """
@@ -90,6 +92,7 @@ def test_main_heatmap():
     assert len(fig.data) > 0
     assert fig.data[0].type in valid_types
 
+
 def test_create_map_and_left_timeline_figure():
     """
     Test the creation of the subplot layout with a left timeline:
@@ -106,6 +109,7 @@ def test_create_map_and_left_timeline_figure():
     # Only count layout keys that start with "map" but not "mapbox"
     map_keys = [key for key in fig.layout if key.startswith("map") and not key.startswith("mapbox")]
     assert len(map_keys) == n
+
 
 def test_generate_heatmaps(monkeypatch):
     """
@@ -126,6 +130,7 @@ def test_generate_heatmaps(monkeypatch):
         assert isinstance(fig, go.Figure)
         assert len(fig.data) > 0
         assert fig.data[0].type in valid_types
+
 
 def test_add_maps_and_left_timeline():
     """
@@ -168,6 +173,7 @@ def test_add_maps_and_left_timeline():
     assert math.isclose(center["lat"], 20, abs_tol=1e-6)
     assert math.isclose(center["lon"], 160, abs_tol=1e-6)
 
+
 def test_combined_heatmaps_vertical_with_left_timeline(monkeypatch):
     """
     Integration test for the combined_heatmaps_vertical_with_left_timeline function:
@@ -180,7 +186,7 @@ def test_combined_heatmaps_vertical_with_left_timeline(monkeypatch):
     monkeypatch.setattr("src.visualization.heatmap.main_heatmap", dummy_main_heatmap)
     fig = combined_heatmaps_vertical_with_left_timeline(keywords, years)
     assert isinstance(fig, go.Figure)
-    assert "Dummy Research Heatmaps + Left Timeline" in fig.layout.title.text
+    assert "2020-2021 World Research Distribution" in fig.layout.title.text
     timeline_traces = [
         trace for trace in fig.data 
         if getattr(trace, "type", None) == "scatter" and getattr(trace, "mode", None) == "lines+markers+text"
