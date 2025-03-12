@@ -22,12 +22,18 @@ def main_heatmap(keywords, year, geojson_data=None):
         geojson_data = load_geojson()
     df = load_csv(keywords, year)
     
-    # Create a choropleth map using Plotly Express
+    # Create a mapping from cleaned name to original name from the GeoJSON
+    mapping = {feature['properties']['clean_name']: feature['properties']['name']
+               for feature in geojson_data['features']}
+    # Add a new column to the DataFrame for display purposes using the original name
+    df['region_display'] = df['state_name'].map(mapping)
+    
+    # Create a choropleth map using Plotly Express, with custom_data for displaying the original name
     fig = px.choropleth_map(
         df,
         geojson=geojson_data,
-        locations='state_name',                     # Column with region names
-        featureidkey='properties.name',             # Key in GeoJSON for matching regions
+        locations='state_name',                     # Column used for matching (contains clean_name)
+        featureidkey='properties.clean_name',       # Key in GeoJSON for matching regions
         color='crdi_index',                         # Research density value
         color_continuous_scale=[
             "#E9F8F6", "#C2DEDB", "#9CC4C1", "#75AAA6",
@@ -37,7 +43,11 @@ def main_heatmap(keywords, year, geojson_data=None):
         center={"lat": 20, "lon": 160},             # Map center coordinates
         zoom=0.8,                                   # Zoom level
         opacity=0.7,                                # Map layer opacity
-        labels={'crdi_index': 'Research Density'},  # Label for the color bar
+        labels={
+            'crdi_index': 'Research Density',
+            'region_display': 'Region'
+        },  # Set labels for the color bar and display column
+        custom_data=['region_display']              # Pass the original region name for hover display
     )
     
     # Update layout: add a centered title
@@ -47,16 +57,17 @@ def main_heatmap(keywords, year, geojson_data=None):
         margin={"r": 0, "t": 50, "l": 0, "b": 0}
     )
     
-    # Customize hover template to display additional information
+    # Customize hover template to display additional information using custom_data
     fig.update_traces(
         hovertemplate=(
-            "<b>%{location}</b><br>"
+            "<b>%{customdata[0]}</b><br>"  # Display the original region name (properties.name)
             "Research Density: %{z}<br>"
         ),
         marker_line_width=0
     )
     
     return fig
+
 
 
 def create_map_and_left_timeline_figure(n: int):
@@ -164,6 +175,7 @@ def add_maps_and_left_timeline(fig, heatmap_results: dict, years: list):
         showline=False,
         tickvals=sorted_years,
         ticktext=[str(y) for y in sorted_years],
+        tickfont=dict(size=18),
         autorange="reversed",  # Reverse to have the smallest year at the top if needed
         row=1, col=1
     )
@@ -211,14 +223,17 @@ def combined_heatmaps_vertical_with_left_timeline(keywords: str, years: list):
         height=1500,
         width=1000,
         title_text=f"{years[0]}-{years[4]} World Research Distribution",
-        title_x=0.5,
+        title_x=0.15,
+        title_font=dict(size=22, family="Arial", color="black"), 
         margin={"r": 20, "t": 50, "l": 20, "b": 20},
         coloraxis=dict(
             colorscale=[
                 "#D1D4FC", "#B0B5FA", "#8E96F5", "#6E7CEF",
                 "#5A65C9", "#464FA0", "#333C80"
             ],
-            colorbar=dict(title='Research Density')
+            colorbar=dict(title=dict(text='Research Density',
+                                     font=dict(size=18)),
+                          tickfont=dict(size=14))
         )
     )
     return fig

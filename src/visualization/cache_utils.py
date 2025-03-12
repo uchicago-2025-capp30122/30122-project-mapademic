@@ -18,7 +18,7 @@ def load_geojson():
                 name = name.lower()
                 name = unidecode(name)
                 name = re.sub(r'[^a-z0-9]', '', name)
-            province["properties"]["name"] = name
+            province["properties"]["clean_name"] = name
 
     return geodata
 
