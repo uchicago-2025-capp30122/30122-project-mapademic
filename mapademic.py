@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st   
 import os
 import subprocess
 import json
@@ -12,15 +12,10 @@ from src.visualization.heatmap import combined_heatmaps_vertical_with_left_timel
 # 1) 初始化 Session State
 if "search_completed" not in st.session_state:
     st.session_state.search_completed = False
-if "discipline" not in st.session_state:
-    st.session_state.discipline = ""
 if "global_keyword" not in st.session_state:
     st.session_state.global_keyword = ""
 
-
-
-
-    # 2) 应用标题 & 说明
+# 2) 应用标题 & 说明
 st.title("Mapedemic")
 st.write("Explore the geographic distribution of academic papers from Science Direct based on the keywords you enter.")
 
@@ -47,14 +42,7 @@ elif login_method == "Login with University of Chicago Account Password":
         else:
             st.error("Login failed, please check your account and password.")
 
-# 4) 全局输入 - 学科与关键词
-
-st.session_state.discipline = st.text_input(
-    "Please enter the subject you are interested in:",
-    value=st.session_state.discipline,
-    key="discipline_input_top"
-)
-
+# 4) 全局输入 - 仅关键词
 user_keyword_input = st.text_input(
     "Please enter keywords:",
     value=st.session_state.global_keyword,
@@ -64,18 +52,12 @@ user_keyword_input = st.text_input(
 if user_keyword_input:
     st.session_state.global_keyword = user_keyword_input
 KEYWORDS = st.session_state.global_keyword
-# print("KEYWORDS!!!!",KEYWORDS)
+
 # 5) 主逻辑： 若已登录，则可以进行搜索、可视化
 if api_key:
     st.write("You have successfully logged in and your API Key has been authenticated.")
     
     if not st.session_state.search_completed:
-    
-        st.session_state.discipline = st.text_input(
-            "Update the subject (optional):",
-            value=st.session_state.discipline,
-            key="discipline_input_search"
-        )
         new_keyword_input = st.text_input(
             "Update the keywords (optional):",
             value=st.session_state.global_keyword,
@@ -85,7 +67,7 @@ if api_key:
             st.session_state.global_keyword = new_keyword_input
 
         if st.button("Search", key="search_btn"):
-            if st.session_state.global_keyword and st.session_state.discipline:
+            if st.session_state.global_keyword:
                 # 将 API Key 及关键词传递给外部脚本
                 os.environ["API_KEY"] = api_key
                 os.environ["SEARCH_KEYWORD"] = st.session_state.global_keyword  # 供 keyword_search.py 使用
@@ -94,20 +76,18 @@ if api_key:
                 subprocess.run(["python", "src/api-calling/keyword_search.py"])
                 subprocess.run(["python", "src/api-calling/affiliation_state_match.py"])
                 st.info("Calling the data cleaning script, please wait...")
-                subprocess.run(["python","-m", "src.cleaning.clean_data"])
-                subprocess.run(["python","-m", "src.cleaning.feature_selecting"])
+                subprocess.run(["python", "-m", "src.cleaning.clean_data"])
+                subprocess.run(["python", "-m", "src.cleaning.feature_selecting"])
 
                 st.session_state.search_completed = True
 
-                # 不使用 experimental_rerun，改用 st.stop() 停止执行，让页面立即呈现新状态
-                st.success("Search completed. Please scroll down or proceed to next step.")
+                st.success("Search completed. Please click on the SEARCH button and we'll start making visualizations!")
                 st.stop()
     
     else:
         st.write("### The search and data processing is completed. Displaying visualisation results:")
-        key_word = st.session_state.global_keyword.lower().replace(" ","")
+        key_word = st.session_state.global_keyword.lower().replace(" ", "")
         # 直接展示多年份(2020~2024)的组合热力图
-        # years = [2020, 2021, 2022, 2023, 2024]
         try:
             fig = combined_heatmaps_vertical_with_left_timeline(
                 keywords=key_word,
@@ -117,72 +97,47 @@ if api_key:
         except Exception as e:
             st.error(f"Error generating the visualisation chart: {e}")
 
-        if st.button("🔄 Continue searching", key="continue_btn"):
-            st.session_state.search_completed = False
-            # 移除 rerun；只要用户再次点击“Search”，就会重新跑流程
-            st.experimental_rerun()
-
-
-        #（Top Features, Word Cloud, Dynamic Word Frequency）
         st.write("## Additional Visual Insights")
 
-        # 1) Top Features
+        # 1) Top Features - 遍历所有年份显示
         st.subheader("Top Features")
-        print(years)
-        selected_year_features = st.selectbox(
-            "Select a year for top features:",
-            years,
-            key="features_year_selector"
-        )
-        #data/output_data/features/{keyword}_{year}_features.png
-        
-        features_path = f"data/output_data/features/{key_word}_{selected_year_features}_features.png"
+        # 根据年份动态生成多个标签页
+        tabs1 = st.tabs([f"{yr}" for yr in years])
 
-        if os.path.exists(features_path):
-            st.image(features_path, caption=f"Top features for {selected_year_features}")
-        else:
-            st.warning(f"No features image found for year {selected_year_features}.")
+        # 将每个标签与对应的年份绑定
+        for i, yr in enumerate(years):
+            with tabs1[i]:
+                features_path = f"data/output_data/features/{key_word}_{yr}_features.png"
+                if os.path.exists(features_path):
+                    st.image(features_path, caption=f"Top features for {yr}")
+                else:
+                    st.warning(f"No features image found for year {yr}.")
 
-        # 2) Word Cloud
+        # 2) Word Cloud - 遍历所有年份显示
         st.subheader("Word Cloud")
-        selected_year_wordcloud = st.selectbox(
-            "Select a year for word cloud:",
-            years,
-            key="wordcloud_year_selector"
-        )
-        # data/output_data/word_cloud/{keyword}_{year}_word_cloud.png
-        wordcloud_path = f"data/output_data/wordcloud/{key_word}_{selected_year_wordcloud}_word_cloud.png"
-
-        if os.path.exists(wordcloud_path):
-            st.image(wordcloud_path, caption=f"Word cloud for {selected_year_wordcloud}")
-        else:
-            st.warning(f"No word cloud image found for year {selected_year_wordcloud}.")
+        tabs2 = st.tabs([f"{yr}" for yr in years])
+        for i, yr in enumerate(years):
+            with tabs2[i]:
+                wordcloud_path = f"data/output_data/wordcloud/{key_word}_{yr}_word_cloud.png"
+                if os.path.exists(wordcloud_path):
+                    st.image(wordcloud_path, caption=f"Word cloud for {yr}")
+                else:
+                    st.warning(f"No word cloud image found for year {yr}.")
 
         # 3) Dynamic Word Frequency
-        # st.subheader("Dynamic Word Frequency")
         st.write("## Dynamic Word Frequency")
         gif_path = f"data/output_data/dynamic_wordfrq/{key_word}_dynamic_wordfreq.gif"
 
         if os.path.exists(gif_path):
             st.image(gif_path)
-        # selected_year_dynamic = st.selectbox(
-        #     "Select a year for dynamic word frequency:",
-        #     years,
-        #     key="dynamic_year_selector"
-        # )
-        # data/output_data/dynamic_wordfrq/{keyword}_{year}_word_freq.png
-        # dynamic_freq_path = f"data/output_data/dynamic_wordfrq/{st.session_state.global_keyword}_{selected_year_dynamic}_dynamic_wordfreq.gif"
-
-        # if os.path.exists(dynamic_freq_path):
-        #     st.image(dynamic_freq_path, caption=f"Dynamic word frequency for {selected_year_dynamic}")
-        # else:
-        #     st.warning(f"No dynamic word frequency image found for year {selected_year_dynamic}.")
         else:
-            st.warning("Noooooo")
-
-
+            st.warning("No dynamic word frequency image found.")
         
+        # 按钮：点击后保留 API Key，清空关键词以进行新搜索
+        if st.button("Try a new search", key="new_search_btn"):
+            st.session_state.search_completed = False
+            st.session_state.global_keyword = ""
+            st.experimental_rerun()
 
 else:
     st.warning("Please login or enter a valid API Key first.")
-
