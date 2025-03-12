@@ -3,8 +3,8 @@ import requests
 import os
 import streamlit as st
 
-# from keyword_search import FILENAME_LST
 KEYWORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none")
+
 def generate_filenames(keyword, start_year, end_year):
     year_filenames = []
     keyword_lower = keyword.lower().replace(" ","")
@@ -12,8 +12,6 @@ def generate_filenames(keyword, start_year, end_year):
         filename = f"data/raw_data/{keyword_lower}_{year}_paper.json"
         year_filenames.append((year, filename))
     return year_filenames
-
-# keywords = "machine learning and policy"
 
 keywords = KEYWORDS
 FILENAME_LST = generate_filenames(keywords, 2020, 2024)
@@ -29,6 +27,7 @@ except KeyError:
         "described in the README."
     )
 
+# Scopus API Configuration for affiliation search function
 AFFILIATION_URL = "https://api.elsevier.com/content/affiliation"
 HEADERS = {
     "Accept": "application/json",
@@ -56,7 +55,9 @@ def affiliation_state(afid):
         
         return state_info
 
-    except requests.exceptions.RequestException as e:
+    # Using try..except.. here to make sure even if the building dict meets problem, the program can keep running
+    # At the same time, the problem can easily been seen and fixed, majorly due to too many API calling
+    except requests.exceptions.RequestException as e: 
         print(f"Error fetching affiliation data for {afid}: {e}")
         return "NA"
 
@@ -68,26 +69,29 @@ def generate_state_date(filename):
     
     return SEARCH_RESULT
 
+# Using magic number [0:5] here and bolew showing 5 elements (5 years through 2020-2024)
 for filename in FILENAME_LST[0:5]:
     generate_state_date(filename[1])
 
-print(FILENAME_LST[0:5])
+# print(FILENAME_LST[0:5])
 print(len(SEARCH_RESULT))
 
 file_path = "data/raw_data/afid_state_dataset.json"
 
-if os.path.exists(file_path):  # Check if the file exists
+if os.path.exists(file_path):
+    # Keeping updating the JSON(dict), without covering anything written before
     try:
         with open(file_path, "r") as base_dataset:
-            STATE_DICT = json.load(base_dataset)  # Try loading JSON data
-    except json.JSONDecodeError:  # Handle empty or corrupted JSON file
-        STATE_DICT = {}  # Initialize an empty dictionary
+            STATE_DICT = json.load(base_dataset)
+    except json.JSONDecodeError:  # Handle empty or broken JSON file
+        STATE_DICT = {}  
 else:
     STATE_DICT = {}
 
+# print statement in this loop, is to let users know the program is actually working, since large amount of searching results cost time.
 for each_ID in SEARCH_RESULT:
     if each_ID in STATE_DICT:
-        print(f"{each_ID} already here")
+        print(f"{each_ID} already here") 
         continue
     else:
         print(f"Added {each_ID}")
@@ -97,6 +101,7 @@ with open ("data/raw_data/afid_state_dataset.json", "w") as base_dataset:
     json.dump(STATE_DICT, base_dataset, ensure_ascii=False, indent=4)
 
     for filename in FILENAME_LST[0:5]:
+        # Since the each element's struction in FILENAME_LST is (year, filename), filename[1] below indicates the file name
         with open(filename[1], "r") as resource:
             paper_data = json.load(resource)
 

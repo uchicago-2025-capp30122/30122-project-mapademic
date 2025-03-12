@@ -3,8 +3,8 @@ import json
 import time
 import os
 import streamlit as st
-# from mapademic import KEYWORDS
-# Remember to use the command 'export API_KEY = "your API Key"' at the every beginning
+
+# Remember to use the command 'export API_KEY="your API Key"' at the every beginning
 try:
     API_KEY = os.environ["API_KEY"]
 except KeyError:
@@ -12,24 +12,22 @@ except KeyError:
         "Make sure that you have set the API Key environment variable as "
         "described in the README."
     )
+
 KEYWORDS = os.environ.get("SEARCH_KEYWORD", "default_keyword_if_none")
 
-
-"""Part I: Get the raw data from API"""
-# Scopus API Configuration
+# Scopus API Configuration for keyword search function
 SEARCH_URL = "https://api.elsevier.com/content/search/scopus"
 HEADERS = {
     "Accept": "application/json",
     "X-ELS-APIKey": API_KEY
 }
 
-# RESULTS_JSON = "data/scopus_cursor_results_demo.json"
 PAGE_SIZE = 25 # When set the parameter "view" as "COMPLETE", MAXIMUM be 25 !!!
                # when set the parameter "view" as "STANDARD", Maximum could be 200
 
 def get_total_results(keywords, year):
     # Fetch total number of search results to check how many exist.
-    # Season: for every search, api would response the total number of the searching results 
+    # Reason: for every search, api would response the total number of the searching results 
     params = {
         "query": f"TITLE-ABS-KEY({keywords}) AND PUBYEAR = {year}",
         "httpAccept": "application/json",
@@ -58,7 +56,7 @@ def fetch_results_with_cursor(keywords, year):
     results = []
     cursor = "*"  # First request starts with cursor="*"
     retrieved_count = 0
-    MAX_RESULTS = 100 # Using for demo
+    MAX_RESULTS = 25 # Using for demo
     # MAX_RESULTS = total_available # Number of results to fetch
 
     while retrieved_count < min(MAX_RESULTS, total_available):
@@ -66,7 +64,7 @@ def fetch_results_with_cursor(keywords, year):
             "query": f"TITLE-ABS-KEY({keywords}) AND PUBYEAR = {year}",
             "httpAccept": "application/json",
             "count": PAGE_SIZE,  # Max results per request
-            "sort": "-citedby-count",
+            "sort": "-citedby-count", # Sort the search result by the cited amout ("-" in front means descending)
             "cursor": cursor,  # Cursor-based pagination
             "view": "COMPLETE" # The "COMPLETE" option can only be used through school network, comfired by scopus support team
                                 # Again! Important, under "COMPLETE", PAGE_SIZE can maximum be set as 25
@@ -89,8 +87,8 @@ def fetch_results_with_cursor(keywords, year):
             # Extract next cursor
             next_cursor = data["search-results"].get("cursor", {}).get("@next", None)
 
-            # Debugging: Print the cursor
-            print(f"Next Cursor: {next_cursor}")
+            # Debugging for the cursor
+            # print(f"Next Cursor: {next_cursor}")
 
             if not next_cursor:
                 print("No further cursor available. Ending fetch.")
@@ -149,31 +147,24 @@ def generate_filenames(keyword, start_year, end_year):
 def save_results(results):
     # Save results to a JSON file
     with open(FILENAME, "w", encoding="utf-8") as f:
+        # ensure_ascii=False here and below is necessary to encoding some "hard-to-read" code in the result
         json.dump(results, f, ensure_ascii=False, indent=4)
 
     print(f"Results saved to {FILENAME}")
 
-# Demo Example
-# KEYWORDS = "machine learning and policy"
-# KEYWORDS = st.session_state.get("global_keyword"," ")
-# print("Key:",KEYWORDS)
-# year = 2023
+if __name__ == "__main__":
+    FILENAME_LST = generate_filenames(KEYWORDS, 2020, 2024)
 
-FILENAME_LST = generate_filenames(KEYWORDS, 2020, 2024)
-for each_year_result in FILENAME_LST:
-    year, FILENAME = each_year_result[0], each_year_result[1]
+    for each_year_result in FILENAME_LST:
+        year, FILENAME = each_year_result[0], each_year_result[1]
 
-    if os.path.exists(FILENAME):  # Check if the file exists
-        print(f"File already exists: {FILENAME}, skipping fetch.")
-    else:
-        print(f"Fetching data for {year}...")
-        fetch_results_with_cursor(KEYWORDS, year)
-
-for each_year_result in FILENAME_LST:
-    year, FILENAME = each_year_result[0], each_year_result[1]
-    keyword_lower = KEYWORDS.lower().replace(" ","")
-    filename_filtered = f"data/raw_data/{keyword_lower}_{year}_paper.json"
+        if os.path.exists(FILENAME):  # Check if the file exists
+            print(f"File already exists: {FILENAME}, skipping fetch.")
+        else:
+            print(f"Fetching data for {year}...")
+            fetch_results_with_cursor(KEYWORDS, year)
     
+def build_paper_json(FILENAME,filename_filtered):
     with open (filename_filtered,"w") as f:
         with open (FILENAME, "r") as resource:
             keyword_result = []
@@ -203,10 +194,6 @@ for each_year_result in FILENAME_LST:
                     search_result["paper_author"] = "NA"
                     author_afid = "NA"
 
-                    # search_result["paper_author"] = author[0].get("authname", "NA")
-                    # author_afid = author[0].get("afid", [])
-                    # author_afid = author_afid[0].get("$", "NA") if author_afid else "NA"
-
                 affiliation = each_search.get("affiliation", [])
 
                 search_result["affiliation_name"] = "NA"
@@ -222,14 +209,15 @@ for each_year_result in FILENAME_LST:
                             search_result["affiliation_country"] = each_affiliation.get("affiliation-country", "NA")
                             search_result["affiliation_id"] =  each_affiliation.get("afid","NA")
                             break
-                    
-                # else:
-                #     search_result["affiliation_name"] = "NA"
-                #     search_result["affiliation_city"] = "NA"
-                #     search_result["affiliation_country"] = "NA"
-                #     search_result["affiliation_id"] = "NA"
 
                 keyword_result.append(search_result)
             json.dump(keyword_result, f, ensure_ascii=False, indent=4)
 
     print(f"📂 Results saved to {filename_filtered}")
+
+if __name__ == "__main__":
+    for each_year_result in FILENAME_LST:
+        year, FILENAME = each_year_result[0], each_year_result[1]
+        keyword_lower = KEYWORDS.lower().replace(" ","")
+        filename_filtered = f"data/raw_data/{keyword_lower}_{year}_paper.json"
+        build_paper_json(FILENAME,filename_filtered)

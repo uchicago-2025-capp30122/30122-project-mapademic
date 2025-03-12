@@ -1,0 +1,118 @@
+[
+    {
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85200538602",
+        "dc:identifier": "SCOPUS_ID:85200538602",
+        "eid": "2-s2.0-85200538602",
+        "dc:title": "LEGAL INSTRUMENTS FOR ENVIRONMENTAL PROTECTION AND COMBATTING CLIMATE CHANGE IN THE COMMON AGRICULTURAL POLICY 2023–2027",
+        "dc:creator": "Włodarczyk B.",
+        "prism:publicationName": "Przeglad Prawa Rolnego",
+        "prism:issn": "18977626",
+        "prism:eIssn": "27197026",
+        "prism:volume": "31",
+        "prism:issueIdentifier": "2",
+        "prism:pageRange": "11-26",
+        "prism:coverDate": "2022-12-20",
+        "prism:coverDisplayDate": "20 December 2022",
+        "prism:doi": "10.14746/ppr.2022.31.2.1",
+        "dc:description": "The subject of this article is the legal instruments for environmental protection and combatting climate change in the Common Agricultural Policy (CAP) for 2023–2027. The analysis was conducted in the context of the agricultural model adopted in the European Union. The starting point of the considerations was the construction of the new CAP and its budget, as well as the shape that the EU legislator gave to the legal instruments of this policy. The possible impact of the geopolitical situation on the implementation of CAP objectives was also examined. The legal instruments for environmental protection and combatting climate change have been significantly strengthened in the new CAP and the disbursement of the increasingly higher amounts of support depends now, among other things, on the implementation of these instruments by the Member States. The green architecture of the CAP has also been expanded. Its objectives are ambitious and concern many spheres of agricultural activity. However, it will only be possible to assess the effectiveness of these environmen-tal-climate instruments once experience of their implementation has been gained. Moreover, it may turn out that due to the need to ensure food security globally, it will be necessary to modify the CAP priorities, even if at the expense of the environment challenges.",
+        "citedby-count": "1",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60104538",
+                "afid": "60104538",
+                "affilname": "Institute of Legal Studies of the Polish Academy of Sciences",
+                "affiliation-city": "Warsaw",
+                "affiliation-country": "Poland"
+            }
+        ],
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/59475739800",
+                "authid": "59475739800",
+                "orcid": "0000-0002-0864-6442",
+                "authname": "Włodarczyk B.",
+                "surname": "Włodarczyk",
+                "given-name": "Beata",
+                "initials": "B.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60104538"
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85200538602",
+        "dc:identifier": "SCOPUS_ID:85200538602",
+        "eid": "2-s2.0-85200538602",
+        "dc:title": "LEGAL INSTRUMENTS FOR ENVIRONMENTAL PROTECTION AND COMBATTING CLIMATE CHANGE IN THE COMMON AGRICULTURAL POLICY 2023–2027",
+        "dc:creator": "Włodarczyk B.",
+        "prism:publicationName": "Przeglad Prawa Rolnego",
+        "prism:issn": "18977626",
+        "prism:eIssn": "27197026",
+        "prism:volume": "31",
+        "prism:issueIdentifier": "2",
+        "prism:pageRange": "11-26",
+        "prism:coverDate": "2022-12-20",
+        "prism:coverDisplayDate": "20 December 2022",
+        "prism:doi": "10.14746/ppr.2022.31.2.1",
+        "dc:description": "The subject of this article is the legal instruments for environmental protection and combatting climate change in the Common Agricultural Policy (CAP) for 2023–2027. The analysis was conducted in the context of the agricultural model adopted in the European Union. The starting point of the considerations was the construction of the new CAP and its budget, as well as the shape that the EU legislator gave to the legal instruments of this policy. The possible impact of the geopolitical situation on the implementation of CAP objectives was also examined. The legal instruments for environmental protection and combatting climate change have been significantly strengthened in the new CAP and the disbursement of the increasingly higher amounts of support depends now, among other things, on the implementation of these instruments by the Member States. The green architecture of the CAP has also been expanded. Its objectives are ambitious and concern many spheres of agricultural activity. However, it will only be possible to assess the effectiveness of these environmen-tal-climate instruments once experience of their implementation has been gained. Moreover, it may turn out that due to the need to ensure food security globally, it will be necessary to modify the CAP priorities, even if at the expense of the environment challenges.",
+        "citedby-count": "1",
+        "affiliation": [
+            {
+                "@_fa": "true",
+                "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60104538",
+                "afid": "60104538",
+                "affilname": "Institute of Legal Studies of the Polish Academy of Sciences",
+                "affiliation-city": "Warsaw",
+                "affiliation-country": "Poland"
+            }
+        ],
+        "author": []
+    },
+
+    {
+        "prism:url": "https://api.elsevier.com/content/abstract/scopus_id/85200538602",
+        "dc:identifier": "SCOPUS_ID:85200538602",
+        "eid": "2-s2.0-85200538602",
+        "dc:title": "LEGAL INSTRUMENTS FOR ENVIRONMENTAL PROTECTION AND COMBATTING CLIMATE CHANGE IN THE COMMON AGRICULTURAL POLICY 2023–2027",
+        "dc:creator": "Włodarczyk B.",
+        "prism:publicationName": "Przeglad Prawa Rolnego",
+        "prism:issn": "18977626",
+        "prism:eIssn": "27197026",
+        "prism:volume": "31",
+        "prism:issueIdentifier": "2",
+        "prism:pageRange": "11-26",
+        "prism:coverDate": "2022-12-20",
+        "prism:coverDisplayDate": "20 December 2022",
+        "prism:doi": "10.14746/ppr.2022.31.2.1",
+        "dc:description": "The subject of this article is the legal instruments for environmental protection and combatting climate change in the Common Agricultural Policy (CAP) for 2023–2027. The analysis was conducted in the context of the agricultural model adopted in the European Union. The starting point of the considerations was the construction of the new CAP and its budget, as well as the shape that the EU legislator gave to the legal instruments of this policy. The possible impact of the geopolitical situation on the implementation of CAP objectives was also examined. The legal instruments for environmental protection and combatting climate change have been significantly strengthened in the new CAP and the disbursement of the increasingly higher amounts of support depends now, among other things, on the implementation of these instruments by the Member States. The green architecture of the CAP has also been expanded. Its objectives are ambitious and concern many spheres of agricultural activity. However, it will only be possible to assess the effectiveness of these environmen-tal-climate instruments once experience of their implementation has been gained. Moreover, it may turn out that due to the need to ensure food security globally, it will be necessary to modify the CAP priorities, even if at the expense of the environment challenges.",
+        "citedby-count": "1",
+        "affiliation": [],
+        "author": [
+            {
+                "@_fa": "true",
+                "@seq": "1",
+                "author-url": "https://api.elsevier.com/content/author/author_id/59475739800",
+                "authid": "59475739800",
+                "orcid": "0000-0002-0864-6442",
+                "authname": "Włodarczyk B.",
+                "surname": "Włodarczyk",
+                "given-name": "Beata",
+                "initials": "B.",
+                "afid": [
+                    {
+                        "@_fa": "true",
+                        "$": "60104538"
+                    }
+                ]
+            }
+        ]
+    }
+]
