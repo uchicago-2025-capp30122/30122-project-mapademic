@@ -86,7 +86,7 @@ def test_calculate_crdi1(sample_testcrdi_df1, tmp_path):
 
 @pytest.fixture
 def test_duplicate_sample():
-    """ 伪造输入 dataframe，其中有同名但不同国家的州 """
+    """ Fake input dataframe with states of the same name but different countries """
     return pd.DataFrame({
         "state_name": ["saintpaul", "saintpaul", "maryland", "maryland"],
         "affiliation_state": ["saintpaul", "saintpaul", "maryland", "maryland"],
@@ -135,7 +135,7 @@ def test_clean_duplicates(test_duplicate_sample):
 
 @pytest.fixture
 def test_NA_sample():
-    """ 伪造输入 dataframe，其中有同名但不同国家的州 """
+    """ Fake input dataframe with states of the same name but different countries """
     return pd.DataFrame({
         "affiliation_city": ["beijing", "shanghai", "zabol", "washington,d.c."],
         "affiliation_state": ["NA", "NA", "NA", "NA", ],
@@ -165,7 +165,7 @@ def test_NA_match(test_NA_sample):
 ])
 def test_preprocess_title(input_title, expected_output):
     """
-    测试 preprocess_title 函数是否正确处理标题。
+    Tests that the preprocess_title function handles titles correctly.
     """
     result = preprocess_title(input_title)
     assert result == expected_output

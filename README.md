@@ -149,7 +149,7 @@ This indicator reflects the citation density by dividing the total number of cit
 #### **3. Global Quality Coefficient (GQC)**
 
 $$
-\text{GQC} = \frac{\sum_{t=0}^{T} \text{Citation Count}_t}{\sum_{t=0}^{T} \text{Paper Count}_t + \epsilon}
+\text{GQC} = \frac{\sum_{t=0}^{T} \text{Citation Count}_t}{\sum_{t=0}^{T}\text{Paper Count}_t + \epsilon}
 $$
 
 The global quality coefficient represents the average citation impact of research papers in the region. A small constant $\epsilon$ is added to prevent division by zero when the total paper count is extremely low.

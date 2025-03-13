@@ -1,8 +1,8 @@
 import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
-from .cache_utils import load_geojson, load_csv
 from plotly.subplots import make_subplots
+from .cache_utils import load_geojson, load_csv
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
 def main_heatmap(keywords, year, geojson_data=None):
@@ -67,7 +67,6 @@ def main_heatmap(keywords, year, geojson_data=None):
     )
     
     return fig
-
 
 
 def create_map_and_left_timeline_figure(n: int):
@@ -139,7 +138,6 @@ def add_maps_and_left_timeline(fig, heatmap_results: dict, years: list):
     Returns:
         None
     """
-    # Assume that 'years' is already in ascending order (e.g., [2000, 2001, 2002, 2003, 2004])
     sorted_years = sorted(years)
     n = len(sorted_years)
     

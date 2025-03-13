@@ -1,7 +1,8 @@
-import streamlit as st   
 import os
-import subprocess
+import base64
 import requests
+import subprocess
+import streamlit as st   
 
 
 years = [2020, 2021, 2022, 2023, 2024]
@@ -73,7 +74,19 @@ st.sidebar.markdown("""
 - **GitHub Repo**: https://github.com/uchicago-2025-capp30122/30122-project-mapademic  
 - **Documentation**: Check out our [latest report](https://drive.google.com/file/d/1pSZaeGiK8_Asq8SryrE6Y0orglsRUPax/view?usp=sharing) for details on data sources, methods, and future improvements.  
 - **Contact**: If you have any questions or find issues, please open a GitHub Issue or reach out to us. Or email peiyuch@uchicago.edu
-""")
+""", unsafe_allow_html=True)
+
+def img_to_base64(img_path):
+    with open(img_path, "rb") as img_file:
+        return base64.b64encode(img_file.read()).decode()
+img_base64 = img_to_base64("doc/pics/video_cover.png")
+
+st.sidebar.markdown(
+        f'<a href="https://www.youtube.com/watch?v=bWuNfNd4cSs">'
+        f'<img src="data:image/png;base64,{img_base64}" width="100%">'
+        f'</a>',
+        unsafe_allow_html=True
+    )
 
 st.sidebar.markdown(
     '<p style="color: grey; font-size: 12px;">Version: 0.3 -- 12/3/2025 </p>',
