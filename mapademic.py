@@ -1,12 +1,11 @@
 import streamlit as st   
 import os
 import subprocess
-import json
 import requests
-import pandas as pd
+
 
 years = [2020, 2021, 2022, 2023, 2024]
-# 导入 visualization 分支下的 heatmap.py 中的新可视化函数
+# Import the new visualisation function in heatmap.py under the visualization branch.
 from src.visualization.heatmap import combined_heatmaps_vertical_with_left_timeline
 LOGO = "./doc/pics/mapademic-logo.png"
 LOGO_SMALL = "./doc/pics/mapademic-logo-small.png"
@@ -81,22 +80,18 @@ st.sidebar.markdown(
     unsafe_allow_html=True
 )
 
-# 1) 初始化 Session State
+# 1) Initialise Session State
 if "search_completed" not in st.session_state:
     st.session_state.search_completed = False
 if "global_keyword" not in st.session_state:
     st.session_state.global_keyword = ""
 
-# 2) 应用标题 & 说明
-<<<<<<< HEAD
+
+# 2) Application Title & Description
 st.title("Mapademic")
 st.write("Explore Global Academic Mobility and Knowledge Evolution")
-=======
-st.title("Mapedemic")
-st.write("Explore the geographic distribution of academic papers from Science Direct based on the keywords you enter.")
->>>>>>> 572f289 (s)
 
-# 3) 用户登录方式
+# 3) User login
 login_method = st.radio(
     "Please select the login method:",
     ("Login with API Key", "Login with University of Chicago Account Password"),
@@ -106,6 +101,7 @@ login_method = st.radio(
 api_key = None
 if login_method == "Login with API Key":
     api_key = st.text_input("Please enter your API Key:", type="password", key="api_key_input")
+
 elif login_method == "Login with University of Chicago Account Password":
     uc_username = st.text_input("Please enter your University of Chicago account number:", key="uc_username_input")
     uc_password = st.text_input("Please enter your password:", type="password", key="uc_password_input")
@@ -119,7 +115,7 @@ elif login_method == "Login with University of Chicago Account Password":
         else:
             st.error("Login failed, please check your account and password.")
 
-# 4) 全局输入 - 仅关键词
+# 4) Global Input - Keywords
 user_keyword_input = st.text_input(
     "Please enter keywords:",
     value=st.session_state.global_keyword,
@@ -130,7 +126,7 @@ if user_keyword_input:
     st.session_state.global_keyword = user_keyword_input
 KEYWORDS = st.session_state.global_keyword
 
-# 5) 主逻辑： 若已登录，则可以进行搜索、可视化
+# 5) Main Logic: If logged in, search, visualise
 if api_key:
     st.write("You have successfully logged in and your API Key has been authenticated.")
     
@@ -145,9 +141,9 @@ if api_key:
 
         if st.button("Search", key="search_btn"):
             if st.session_state.global_keyword:
-                # 将 API Key 及关键词传递给外部脚本
+                # Pass API Key and keywords to other function
                 os.environ["API_KEY"] = api_key
-                os.environ["SEARCH_KEYWORD"] = st.session_state.global_keyword  # 供 keyword_search.py 使用
+                os.environ["SEARCH_KEYWORD"] = st.session_state.global_keyword
 
                 st.info("Calling the API to get the data, please wait...")
                 subprocess.run(["python", "src/api-calling/keyword_search.py"])
@@ -164,7 +160,7 @@ if api_key:
     else:
         st.write("### The search and data processing is completed. Displaying visualisation results:")
         key_word = st.session_state.global_keyword.lower().replace(" ", "")
-        # 直接展示多年份(2020~2024)的组合热力图
+        #Display of combined heat maps for multiple years
         try:
             fig = combined_heatmaps_vertical_with_left_timeline(
                 keywords=key_word,
@@ -176,13 +172,13 @@ if api_key:
 
         st.write("## Additional Visual Insights")
 
-        # 1) Top Features - 遍历所有年份显示
+        # Addtional visulization 
+        # 1) Top Features
         st.subheader("Top Features")
-<<<<<<< HEAD
-        # 根据年份动态生成多个标签页
+        # Dynamically generate multiple tabs based on year
         tabs1 = st.tabs([f"{yr}" for yr in years])
 
-        # 将每个标签与对应的年份绑定
+        # Bind each label to the corresponding year
         for i, yr in enumerate(years):
             with tabs1[i]:
                 features_path = f"data/output_data/features/{key_word}_{yr}_features.png"
@@ -191,7 +187,7 @@ if api_key:
                 else:
                     st.warning(f"No features image found for year {yr}.")
 
-        # 2) Word Cloud - 遍历所有年份显示
+        # 2) Word Cloud
         st.subheader("Word Cloud")
         tabs2 = st.tabs([f"{yr}" for yr in years])
         for i, yr in enumerate(years):
@@ -201,23 +197,6 @@ if api_key:
                     st.image(wordcloud_path, caption=f"Word cloud for {yr}")
                 else:
                     st.warning(f"No word cloud image found for year {yr}.")
-=======
-        for yr in years:
-            features_path = f"data/output_data/features/{key_word}_{yr}_features.png"
-            if os.path.exists(features_path):
-                st.image(features_path, caption=f"Top features for {yr}")
-            else:
-                st.warning(f"No features image found for year {yr}.")
-
-        # 2) Word Cloud - 遍历所有年份显示
-        st.subheader("Word Cloud")
-        for yr in years:
-            wordcloud_path = f"data/output_data/wordcloud/{key_word}_{yr}_word_cloud.png"
-            if os.path.exists(wordcloud_path):
-                st.image(wordcloud_path, caption=f"Word cloud for {yr}")
-            else:
-                st.warning(f"No word cloud image found for year {yr}.")
->>>>>>> 572f289 (s)
 
         # 3) Dynamic Word Frequency
         st.write("## Dynamic Word Frequency")
@@ -228,11 +207,11 @@ if api_key:
         else:
             st.warning("No dynamic word frequency image found.")
         
-        # 按钮：点击后保留 API Key，清空关键词以进行新搜索
+        # Try a new search 
         if st.button("Try a new search", key="new_search_btn"):
             st.session_state.search_completed = False
             st.session_state.global_keyword = ""
-            st.experimental_rerun()
+            st.stop
 
 else:
     st.warning("Please login or enter a valid API Key first.")
