@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st   
 import os
 import subprocess
 import json
@@ -6,25 +6,92 @@ import requests
 import pandas as pd
 
 years = [2020, 2021, 2022, 2023, 2024]
-# 导入 visualization 分支下的 heatmap.py 中的新可视化函数
+# Import the new visualisation function in heatmap.py under the visualization branch.
 from src.visualization.heatmap import combined_heatmaps_vertical_with_left_timeline
+LOGO = "./doc/pics/mapademic-logo.png"
+LOGO_SMALL = "./doc/pics/mapademic-logo-small.png"
+st.set_page_config(page_title="Mapademic",
+                   layout="centered",
+                   page_icon=LOGO_SMALL,
+                   initial_sidebar_state="expanded",
+                   menu_items={
+                       "Get Help": "mailto:peiyuch@uchicago.edu",
+                       "About": "**Unfold the Map of Discovery**"
+                    }
+)
 
-# 1) 初始化 Session State
+st.logo(
+    LOGO,
+    size="large"
+)
+st.sidebar.markdown("""
+                    *Unfold the Map of Discovery*
+                    """)
+
+# 1. About Mapademic
+st.sidebar.header("About")
+st.sidebar.markdown("""
+**Purpose**: Mapademic is an interactive platform that visualizes the global distribution and trends of academic research.  
+**Approach**: We combine bibliometric data (via Scopus API) with geospatial analysis (via Natural Earth) to highlight research hotspots.  
+""")
+
+# 2. How to Use
+st.sidebar.header("How to Use")
+st.sidebar.markdown("""
+- **Login**: Select your preferred login method (API key or University account).  
+- **Enter Keywords**: Provide research keywords (e.g., “AI policy”).  
+- **Select Year**: Pick the publication year or range you want to explore.  
+- **View Results**: An interactive heatmap and other visualizations (word clouds, top features, etc.) will appear.
+""")
+
+# 3. Data & Method
+st.sidebar.header("Data & Method")
+st.sidebar.markdown("""
+- **Bibliometric Data**: Retrieved from the Scopus API.  
+- **Geospatial Data**: Based on Natural Earth's administrative boundaries.  
+- **Research Density**: We use a custom CRDI (Comprehensive Research Density Index) to measure how concentrated research is in each region.  
+""")
+
+# 4. Team
+st.sidebar.header("Team")
+st.sidebar.markdown("""
+- **[Allen Wu](https://github.com/songting-byte)**: API integrations, database building.  
+- **[Peiyu Chen](https://github.com/Jalkey-Chen)**: Geospatial processing, heatmap visualization.  
+- **[Shiyao Wang](https://github.com/Shiyao-611)**: Data cleaning, Lasso model, CRDI calculation.  
+- **[Yue Pan](https://github.com/pppanyue17)**: Front-end design, user inputs, word cloud display.
+""")
+
+# 5. Cautions
+st.sidebar.header("Cautions")
+st.sidebar.markdown("""
+- **API Key**: Keep an eye on the call limit; the project defaults to 2,000 requests per year.  
+- **Geospatial Matching**: If you notice strange mismatches on the map, please report them on GitHub.
+""")
+
+# 6. Learn More
+st.sidebar.header("Learn More")
+st.sidebar.markdown("""
+- **GitHub Repo**: https://github.com/uchicago-2025-capp30122/30122-project-mapademic  
+- **Documentation**: Check out our [latest report](https://drive.google.com/file/d/1pSZaeGiK8_Asq8SryrE6Y0orglsRUPax/view?usp=sharing) for details on data sources, methods, and future improvements.  
+- **Contact**: If you have any questions or find issues, please open a GitHub Issue or reach out to us. Or email peiyuch@uchicago.edu
+""")
+
+st.sidebar.markdown(
+    '<p style="color: grey; font-size: 12px;">Version: 0.3 -- 12/3/2025 </p>',
+    unsafe_allow_html=True
+)
+
+# 1) Initialise Session State
 if "search_completed" not in st.session_state:
     st.session_state.search_completed = False
-if "discipline" not in st.session_state:
-    st.session_state.discipline = ""
 if "global_keyword" not in st.session_state:
     st.session_state.global_keyword = ""
 
+# 2) Application Title & Description
+st.title("Mapademic")
+st.write("Explore Global Academic Mobility and Knowledge Evolution")
 
-
-
-    # 2) 应用标题 & 说明
-st.title("Mapedemic")
-st.write("Explore the geographic distribution of academic papers from Science Direct based on the keywords you enter.")
-
-# 3) 用户登录方式
+# 3) User login
 login_method = st.radio(
     "Please select the login method:",
     ("Login with API Key", "Login with University of Chicago Account Password"),
@@ -34,6 +101,7 @@ login_method = st.radio(
 api_key = None
 if login_method == "Login with API Key":
     api_key = st.text_input("Please enter your API Key:", type="password", key="api_key_input")
+
 elif login_method == "Login with University of Chicago Account Password":
     uc_username = st.text_input("Please enter your University of Chicago account number:", key="uc_username_input")
     uc_password = st.text_input("Please enter your password:", type="password", key="uc_password_input")
@@ -47,14 +115,7 @@ elif login_method == "Login with University of Chicago Account Password":
         else:
             st.error("Login failed, please check your account and password.")
 
-# 4) 全局输入 - 学科与关键词
-
-st.session_state.discipline = st.text_input(
-    "Please enter the subject you are interested in:",
-    value=st.session_state.discipline,
-    key="discipline_input_top"
-)
-
+# 4) Global Input - Keywords
 user_keyword_input = st.text_input(
     "Please enter keywords:",
     value=st.session_state.global_keyword,
@@ -64,18 +125,12 @@ user_keyword_input = st.text_input(
 if user_keyword_input:
     st.session_state.global_keyword = user_keyword_input
 KEYWORDS = st.session_state.global_keyword
-# print("KEYWORDS!!!!",KEYWORDS)
-# 5) 主逻辑： 若已登录，则可以进行搜索、可视化
+
+# 5) Main Logic: If logged in, search, visualise
 if api_key:
     st.write("You have successfully logged in and your API Key has been authenticated.")
     
     if not st.session_state.search_completed:
-    
-        st.session_state.discipline = st.text_input(
-            "Update the subject (optional):",
-            value=st.session_state.discipline,
-            key="discipline_input_search"
-        )
         new_keyword_input = st.text_input(
             "Update the keywords (optional):",
             value=st.session_state.global_keyword,
@@ -85,29 +140,27 @@ if api_key:
             st.session_state.global_keyword = new_keyword_input
 
         if st.button("Search", key="search_btn"):
-            if st.session_state.global_keyword and st.session_state.discipline:
-                # 将 API Key 及关键词传递给外部脚本
+            if st.session_state.global_keyword:
+                # Pass API Key and keywords to other function
                 os.environ["API_KEY"] = api_key
-                os.environ["SEARCH_KEYWORD"] = st.session_state.global_keyword  # 供 keyword_search.py 使用
+                os.environ["SEARCH_KEYWORD"] = st.session_state.global_keyword
 
                 st.info("Calling the API to get the data, please wait...")
                 subprocess.run(["python", "src/api-calling/keyword_search.py"])
                 subprocess.run(["python", "src/api-calling/affiliation_state_match.py"])
                 st.info("Calling the data cleaning script, please wait...")
-                subprocess.run(["python","-m", "src.cleaning.clean_data"])
-                subprocess.run(["python","-m", "src.cleaning.feature_selecting"])
+                subprocess.run(["python", "-m", "src.cleaning.clean_data"])
+                subprocess.run(["python", "-m", "src.cleaning.feature_selecting"])
 
                 st.session_state.search_completed = True
 
-                # 不使用 experimental_rerun，改用 st.stop() 停止执行，让页面立即呈现新状态
-                st.success("Search completed. Please scroll down or proceed to next step.")
+                st.success("Search completed. Please click on the SEARCH button and we'll start making visualizations!")
                 st.stop()
     
     else:
         st.write("### The search and data processing is completed. Displaying visualisation results:")
-        key_word = st.session_state.global_keyword.lower().replace(" ","")
-        # 直接展示多年份(2020~2024)的组合热力图
-        # years = [2020, 2021, 2022, 2023, 2024]
+        key_word = st.session_state.global_keyword.lower().replace(" ", "")
+        #Display of combined heat maps for multiple years
         try:
             fig = combined_heatmaps_vertical_with_left_timeline(
                 keywords=key_word,
@@ -117,72 +170,44 @@ if api_key:
         except Exception as e:
             st.error(f"Error generating the visualisation chart: {e}")
 
-        if st.button("🔄 Continue searching", key="continue_btn"):
-            st.session_state.search_completed = False
-            # 移除 rerun；只要用户再次点击“Search”，就会重新跑流程
-            st.experimental_rerun()
-
-
-        #（Top Features, Word Cloud, Dynamic Word Frequency）
         st.write("## Additional Visual Insights")
 
+
+        # Addtional visulization 
         # 1) Top Features
         st.subheader("Top Features")
-        print(years)
-        selected_year_features = st.selectbox(
-            "Select a year for top features:",
-            years,
-            key="features_year_selector"
-        )
-        #data/output_data/features/{keyword}_{year}_features.png
-        
-        features_path = f"data/output_data/features/{key_word}_{selected_year_features}_features.png"
+        # Dynamically generate multiple tabs based on year
+        tabs1 = st.tabs([f"{yr}" for yr in years])
 
-        if os.path.exists(features_path):
-            st.image(features_path, caption=f"Top features for {selected_year_features}")
-        else:
-            st.warning(f"No features image found for year {selected_year_features}.")
+        # Bind each label to the corresponding year
+        for i, yr in enumerate(years):
+            with tabs1[i]:
+                features_path = f"data/output_data/features/{key_word}_{yr}_features.png"
+                if os.path.exists(features_path):
+                    st.image(features_path, caption=f"Top features for {yr}")
+                else:
+                    st.warning(f"No features image found for year {yr}.")
 
         # 2) Word Cloud
         st.subheader("Word Cloud")
-        selected_year_wordcloud = st.selectbox(
-            "Select a year for word cloud:",
-            years,
-            key="wordcloud_year_selector"
-        )
-        # data/output_data/word_cloud/{keyword}_{year}_word_cloud.png
-        wordcloud_path = f"data/output_data/wordcloud/{key_word}_{selected_year_wordcloud}_word_cloud.png"
-
-        if os.path.exists(wordcloud_path):
-            st.image(wordcloud_path, caption=f"Word cloud for {selected_year_wordcloud}")
-        else:
-            st.warning(f"No word cloud image found for year {selected_year_wordcloud}.")
+        tabs2 = st.tabs([f"{yr}" for yr in years])
+        for i, yr in enumerate(years):
+            with tabs2[i]:
+                wordcloud_path = f"data/output_data/wordcloud/{key_word}_{yr}_word_cloud.png"
+                if os.path.exists(wordcloud_path):
+                    st.image(wordcloud_path, caption=f"Word cloud for {yr}")
+                else:
+                    st.warning(f"No word cloud image found for year {yr}.")
 
         # 3) Dynamic Word Frequency
-        # st.subheader("Dynamic Word Frequency")
         st.write("## Dynamic Word Frequency")
         gif_path = f"data/output_data/dynamic_wordfrq/{key_word}_dynamic_wordfreq.gif"
 
         if os.path.exists(gif_path):
             st.image(gif_path)
-        # selected_year_dynamic = st.selectbox(
-        #     "Select a year for dynamic word frequency:",
-        #     years,
-        #     key="dynamic_year_selector"
-        # )
-        # data/output_data/dynamic_wordfrq/{keyword}_{year}_word_freq.png
-        # dynamic_freq_path = f"data/output_data/dynamic_wordfrq/{st.session_state.global_keyword}_{selected_year_dynamic}_dynamic_wordfreq.gif"
-
-        # if os.path.exists(dynamic_freq_path):
-        #     st.image(dynamic_freq_path, caption=f"Dynamic word frequency for {selected_year_dynamic}")
-        # else:
-        #     st.warning(f"No dynamic word frequency image found for year {selected_year_dynamic}.")
         else:
-            st.warning("Noooooo")
-
-
+            st.warning("No dynamic word frequency image found.")
         
 
 else:
     st.warning("Please login or enter a valid API Key first.")
-
