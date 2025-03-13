@@ -64,7 +64,7 @@ st.sidebar.markdown("""
 # 5. Cautions
 st.sidebar.header("Cautions")
 st.sidebar.markdown("""
-- **API Key**: Keep an eye on the call limit; the project defaults to 2,000 requests per year.  
+- **API Key**: Keep an eye on the call limit; the project defaults to 100 requests per year.  
 - **Geospatial Matching**: If you notice strange mismatches on the map, please report them on GitHub.
 """)
 
