@@ -88,8 +88,13 @@ if "global_keyword" not in st.session_state:
     st.session_state.global_keyword = ""
 
 # 2) 应用标题 & 说明
+<<<<<<< HEAD
 st.title("Mapademic")
 st.write("Explore Global Academic Mobility and Knowledge Evolution")
+=======
+st.title("Mapedemic")
+st.write("Explore the geographic distribution of academic papers from Science Direct based on the keywords you enter.")
+>>>>>>> 572f289 (s)
 
 # 3) 用户登录方式
 login_method = st.radio(
@@ -173,6 +178,7 @@ if api_key:
 
         # 1) Top Features - 遍历所有年份显示
         st.subheader("Top Features")
+<<<<<<< HEAD
         # 根据年份动态生成多个标签页
         tabs1 = st.tabs([f"{yr}" for yr in years])
 
@@ -195,6 +201,23 @@ if api_key:
                     st.image(wordcloud_path, caption=f"Word cloud for {yr}")
                 else:
                     st.warning(f"No word cloud image found for year {yr}.")
+=======
+        for yr in years:
+            features_path = f"data/output_data/features/{key_word}_{yr}_features.png"
+            if os.path.exists(features_path):
+                st.image(features_path, caption=f"Top features for {yr}")
+            else:
+                st.warning(f"No features image found for year {yr}.")
+
+        # 2) Word Cloud - 遍历所有年份显示
+        st.subheader("Word Cloud")
+        for yr in years:
+            wordcloud_path = f"data/output_data/wordcloud/{key_word}_{yr}_word_cloud.png"
+            if os.path.exists(wordcloud_path):
+                st.image(wordcloud_path, caption=f"Word cloud for {yr}")
+            else:
+                st.warning(f"No word cloud image found for year {yr}.")
+>>>>>>> 572f289 (s)
 
         # 3) Dynamic Word Frequency
         st.write("## Dynamic Word Frequency")
