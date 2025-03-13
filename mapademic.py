@@ -1,9 +1,8 @@
 import streamlit as st   
 import os
 import subprocess
-import json
 import requests
-import pandas as pd
+
 
 years = [2020, 2021, 2022, 2023, 2024]
 # Import the new visualisation function in heatmap.py under the visualization branch.
