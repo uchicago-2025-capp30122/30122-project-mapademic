@@ -1,7 +1,3 @@
-<script type="text/javascript" async
-  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-</script>
-
 ![GitHub issues](https://img.shields.io/github/issues/uchicago-2025-capp30122/30122-project-mapademic?style=flat&color=gray)
 ![GitHub forks](https://img.shields.io/github/forks/uchicago-2025-capp30122/30122-project-mapademic?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/uchicago-2025-capp30122/30122-project-mapademic?style=social)
@@ -15,6 +11,12 @@
 </p>
 
 **"Unfold the Map of Discovery" — A Global Visualization Platform for Academic Mobility and Knowledge Evolution**  
+
+---
+
+12/3/2025: Version 0.3
+
+Optimized the interactive interface UI, optimized the logic of heat map hovering display, and supplemented the test files of each part.This is the final delivery version of CAPP 122 Winter 2025.
 
 ---
 
@@ -44,7 +46,7 @@ This version of the files output and delivery of the various modules is not yet 
   - [Data Sourse](#data-sources)
   - [Model](#model)
 - [Project Structure](#project-structure)
-- [Contribution Guidelines](#contribution-guidelines)
+- [Introduction Video](#introduction-video)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 - [Contact Us](#contact-us)
@@ -52,18 +54,21 @@ This version of the files output and delivery of the various modules is not yet 
 ---
 
 ## Project Introduction
-**Mapademic** is an innovative academic analysis platform that blends modern data visualization techniques to offer a dynamic view of the global academic landscape. It is designed to:
 
-- 🌍 **Visualize Global Research Distribution**:  
-  Create interactive maps that display the worldwide spread of academic fields and emerging research hotspots.
+**Mapademic 🌍** is an interactive visualization platform that charts the global distribution and temporal dynamics of academic research. By integrating bibliometric analysis with geospatial visualization, Mapademic addresses strategic needs in education 🎓 and industry 🏭.
 
-- 🏢 **Track Researcher Mobility** (Scheduled):  
-  Illustrate scholars' career trajectories and cross-institutional transitions, highlighting the dynamic nature of academic careers.
+🔑 **Key Features:**
 
-- 📊 **Reveal Evolutionary Trends**:  
-  Use timelines and network graphs to uncover how academic disciplines evolve over time and how collaborations shift across regions.
+- 📌 **Interactive Exploration**
+- 📈 **Trend Identification**
+- ☁️ **Dynamic Visualizations**
+- 🖥️ **User-Friendly Interface**
 
-By leveraging keyword-driven data, Mapademic transforms static academic records into a vibrant, interactive experience—connecting the dots between research institutions, scholar movements, and global knowledge evolution.
+🎯 **Objectives:**
+- Assisting students and researchers in identifying geographic regions where and what specific research is concentrated.
+- Providing industry stakeholders insights into geographic areas favorable for academic-industry collaboration.
+
+🌟 Driven by the principle that knowledge is a public asset, Mapademic continues to evolve toward becoming a comprehensive global platform to explore academic mobility and knowledge evolution
 
 ---
 
@@ -71,8 +76,7 @@ By leveraging keyword-driven data, Mapademic transforms static academic records 
 | Feature Module           | Description                                                                 | Example                   |
 |--------------------------|-----------------------------------------------------------------------------|--------------------------|
 | **Academic Distribution Map**    | Global research hotspot heatmap based on geographic distribution, supporting drill-down at province levels. |![Academic Distribution Map](./doc/pics/basic-map.png)|
-| **Timeline Evolution** | Slide along the timeline to observe the evolution of academic fields, dynamically rendering the diffusion and decline of hotspots. |                      |
-| **Scholar Migration Paths** (scheduled) | Animated "star trails" display the career trajectories of top scholars, supporting comparison of institutional influence. |                      |
+| **Timeline Evolution** | Slide along the timeline to observe the evolution of academic fields, dynamically rendering the diffusion and decline of hotspots. |![Timeline Word Cloud](./doc/pics/timeline_wordcloud.png)|
 | **Personalized Analysis** | Enter keywords (e.g., "quantum computing") to generate a specialized academic pulse report for that field. |                      |
 
 ---
@@ -98,8 +102,14 @@ uv sync
 ```
 
 ### Configuration
-1. **Obtain a ScienceDirect API Key**:  
+1. **Obtain a Scopus API Key**:  
    - Visit the [Elsevier Developer Portal](https://dev.elsevier.com/) to register and apply for an API key.
+
+2. **Test**:
+```bash
+uv run pytest tests/$file_name$
+```
+All tests should pass!
 
 
 ### Running
@@ -162,15 +172,14 @@ Mapademic/
 ├── data/
 │   ├── raw_data/
 │   │   └── raw_api_data/
-│   ├── output_data/
-│   │   ├── dynamic_wordfrp/
-│   │   ├── features/
-│   │   ├── institutions/
-│   │   ├── paper/
-│   │   ├── state_crdi/
-│   │   ├── wordcloud/
-│   │   └── word_frq
-│   └── example_data/
+│   └── output_data/
+│       ├── dynamic_wordfrp/
+│       ├── features/
+│       ├── institutions/
+│       ├── paper/
+│       ├── state_crdi/
+│       ├── wordcloud/
+│       └── word_frq
 │
 ├── src/
 │   ├── __init__.py
@@ -181,29 +190,36 @@ Mapademic/
 │   ├── cleaning
 │   │   ├── __init__.py
 │   │   ├── clean-data.py
+│   │   ├── feature_selecting.py
+│   │   ├── visualize_words_yr.py
 │   │   └── utils.py
-│   └── vis
+│   └── visualization
 │       ├── __init__.py
-│       └── basci-vis.py
+│       ├── heatmap.py
+│       └── cache_utils.py
 │ 
 ├── docs/
-│   ├── pics/
-│   └── video/
+│   └── pics/
 │
 ├── milestones/
 │
 ├── tests/
-│   ├── test_api.py
+│   ├── test_api_data.py
 │   ├── test_data_clean.py
-│   └── test_app.py
+│   └── test_visualization.py
 │
 ├── LICENSE
 ├── .python-version
 ├── .gitignore
+├── mapademic.py
 ├── uv.lock
 ├── pyproject.toml
 └── README.md
 ```
+---
+
+## Introduction Video
+[![Watch introduction video](./doc/pics/video_cover.png)](https://www.youtube.com/watch?v=bWuNfNd4cSs)
 
 ---
 
@@ -213,7 +229,7 @@ This project is licensed under the [MIT License](LICENSE); you are free to use a
 ---
 
 ## Acknowledgements
-- **Data Support**: Elsevier ScienceDirect & Natural Earth  
+- **Data Support**: Elsevier Scopus & Natural Earth  
 - **Development Team**: Allen Wu, Shiyao Wang, Peiyu Chen, Yue Pan
 - **Advisors**: [James Turk](https://github.com/jamesturk), [Gregory Mitchell](https://github.com/gregthemitch)
 ---
